@@ -8,6 +8,8 @@ function App() {
   const { logout } = useAuth0();
   const {user} = useAuth0();
 
+
+
   if(user){
     console.log(user)
     return(
