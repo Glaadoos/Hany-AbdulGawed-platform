@@ -25,7 +25,7 @@ function App() {
     return(
       <div>
         <button onClick={() => loginWithRedirect()}>Log In</button>
-        <button onClick={() => logout({ logoutParams: { returnTo: 'https://bahget.github.io/Hany-AbdulGawed-platform/' } })}>Log Out</button>
+        <button onClick={() => logout({ logoutParams: { returnTo: window.location.href } })}>Log Out</button>
       </div>
     );
   }
