@@ -6,13 +6,128 @@ header, ul{
   list-style-type: none;
   background-color: #F1F1F1;
 }
-
 #logo{
   width: 120px;
-  height: 100px;
+  height: 77px;
   padding-right: 10px;
 }
-ul.navbar>li{
+ul.navbar>li,ul.navbar>li>a{
   padding: 10px;
   margin: 5px;
+  text-decoration: none !important;
+  color: black;
+}
+
+.main{
+  display: flex;
+  justify-content: space-around;
+  width: 100vw;
+  animation: fadeInAnimation ease 3s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+#master{
+  width: 40%;
+  height: 40%;
+}
+
+.main-text{
+  margin-left: 5%;
+  margin-top: 10%;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
+}
+
+.master-name{
+  font-family: 'Rubik', sans-serif;
+  font-size: 5.5em;
+  color: #B20600;
+}
+
+.solgen{
+  margin-left: -5%;
+  font-family: 'Rubik', sans-serif;
+  font-size: 4.5em;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+.dropdown-span::before{
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+  content: "";
+  background: url(./components/photos/arrow-down.png);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  transition: background .2s;
+  transition-timing-function: ease-in;
+}
+.dropdown:hover .dropdown-span::before{
+  background: url(./components/photos/arrow-up.png);
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  transition: background .2s;
+}
+
+.dropdown-content {
+  display: none;
+  margin: 10px 0 0 -39px;
+  padding: 12px 16px;
+  position: absolute;
+  min-width: 160px;
+  z-index: 1;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(11.7px);
+  -webkit-backdrop-filter: blur(11.7px);
+  border: 1px solid rgba(255, 255, 255, 0.14);
+}
+
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.dropdown-menu-info{
+  display:flex;
+  justify-content: space-around;
+  
+}
+
+.dropdown-menu-info>img{
+  width: 50px;
+  height: 50px;
+  font-family: 'Roboto Flex', sans-serif;
+  padding: 21px 10px 0 0;
+  margin-bottom: -10px;
+}
+.dropdonwitem-user-name{
+  font-size: 15px;
+}
+
+button{
+  background-color: #B20600; /* Green */
+  border: none;
+  color: white;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family: 'Roboto Flex', sans-serif;
+  cursor:pointer;
+  border-radius: 16px;
 }
