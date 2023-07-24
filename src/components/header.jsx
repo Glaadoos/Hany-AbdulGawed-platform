@@ -44,6 +44,19 @@ const Header = ({user}) =>{
             ]
         }
     ]
+
+    const handeNavDropDownMenu = () =>{
+        const dropDownSpan = document.querySelector('.dropdown-span');
+        if(dropDownSpan){
+            dropDownSpan.addEventListener('onClick', ()=>{
+                const dropDown =document.querySelector(".dropdown")
+                dropDown.style.setProperty('visibility', 'visible')
+                console.log('clicked')
+            })
+        }
+        
+    }
+
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />
@@ -52,9 +65,32 @@ const Header = ({user}) =>{
                                 if(obj.id ===3){
                                     if(user){
                                         return(
-                                            <li className={'item'+obj.id} key={'item'+obj.id}>
+                                            <li onClick={handeNavDropDownMenu()} className={'item'+obj.id} key={'item'+obj.id}>
+                                                <span  className='dropdown-span'>{obj.arbicName}</span>
+                                                <ul className="dropdown">
+                                                    <li>
+                                                        {obj.dropDown.map(item=>{
+                                                                if(item.EngName ==='#logout'){
+                                                                    return(<LogoutBtn/>)
+                                                                }
+                                                                if(item.EngName ==='#profile'){
+                                                                    return(<div className='dropdown-menu-info'>
+                                                                        <img src={user.picture} alt='profile'/>
+                                                                        <h2 className='dropdownitem-user-name' key={'dropdonwitem'+item.id}>{user.name}</h2>
+                                                                    </div>)
+                                                                }
+                                                                else{return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{item.arbicName}</p>)}
+                                                            })}
+                                                    </li>
+                                                    
+                                                </ul>
+                                                {/*
+                                                
+                                                
+                                                
+                                                
+                                                
                                                 <div className="dropdown">
-                                                    <span className='dropdown-span'>{obj.arbicName}</span>
                                                     <div className="dropdown-content">
                                                         {obj.dropDown.map(item=>{
                                                             if(item.EngName ==='#logout'){
@@ -69,7 +105,7 @@ const Header = ({user}) =>{
                                                             else{return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{item.arbicName}</p>)}
                                                         })}
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </li>
                                         )
                                     }else{

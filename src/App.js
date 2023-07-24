@@ -19,27 +19,7 @@ function App() {
     </div>
   )
 
-  /* if(user){
-    console.log(user)
-    return(
-      <div>
-        <button onClick={() => loginWithRedirect()}>Log In</button>
-        <button onClick={() => logout({ logoutParams: { returnTo: 'https://bahget.github.io/Hany-AbdulGawed-platform/' } })}>Log Out</button>
-        <div>
-          <img src={user.picture} alt={user.name} />
-          <h2>{user.name}</h2>
-          <p>{user.email}</p>
-        </div>
-      </div>
-    );
-  }else{
-    return(
-      <div>
-        <button onClick={() => loginWithRedirect()}>Log In</button>
-        <button onClick={() => logout({ logoutParams: { returnTo: 'https://bahget.github.io/Hany-AbdulGawed-platform/' } })}>Log Out</button>
-      </div>
-    );
-  } */
+
 }
 
 export default App;
