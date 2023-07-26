@@ -1,4 +1,4 @@
-import React from 'react';
+import {React, useState} from 'react';
 import logoCroped from './photos/logo croped.png'
 import LoginBtn from './login'
 import LogoutBtn from './logout'
@@ -44,17 +44,10 @@ const Header = ({user}) =>{
             ]
         }
     ]
+    const [show, setShow] =useState(false);
 
     const handeNavDropDownMenu = () =>{
-        const dropDownSpan = document.querySelector('.dropdown-span');
-        if(dropDownSpan){
-            dropDownSpan.addEventListener('onClick', ()=>{
-                const dropDown =document.querySelector(".dropdown")
-                dropDown.style.setProperty('visibility', 'visible')
-                console.log('clicked')
-            })
-        }
-        
+        return setShow(!show)
     }
 
     return(
@@ -65,47 +58,27 @@ const Header = ({user}) =>{
                                 if(obj.id ===3){
                                     if(user){
                                         return(
-                                            <li onClick={handeNavDropDownMenu()} className={'item'+obj.id} key={'item'+obj.id}>
-                                                <span  className='dropdown-span'>{obj.arbicName}</span>
-                                                <ul className="dropdown">
-                                                    <li>
-                                                        {obj.dropDown.map(item=>{
-                                                                if(item.EngName ==='#logout'){
-                                                                    return(<LogoutBtn/>)
-                                                                }
-                                                                if(item.EngName ==='#profile'){
-                                                                    return(<div className='dropdown-menu-info'>
-                                                                        <img src={user.picture} alt='profile'/>
-                                                                        <h2 className='dropdownitem-user-name' key={'dropdonwitem'+item.id}>{user.name}</h2>
-                                                                    </div>)
-                                                                }
-                                                                else{return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{item.arbicName}</p>)}
-                                                            })}
-                                                    </li>
-                                                    
-                                                </ul>
-                                                {/*
-                                                
-                                                
-                                                
-                                                
-                                                
+                                            show ? 
+                                            <li className={'item'+obj.id} key={'item'+obj.id}>
+                                                <button onClick={handeNavDropDownMenu}  className='dropdown-span true'>{obj.arbicName}</button>
                                                 <div className="dropdown">
-                                                    <div className="dropdown-content">
-                                                        {obj.dropDown.map(item=>{
+                                                    {obj.dropDown.map(item=>{
                                                             if(item.EngName ==='#logout'){
                                                                 return(<LogoutBtn/>)
                                                             }
                                                             if(item.EngName ==='#profile'){
                                                                 return(<div className='dropdown-menu-info'>
                                                                     <img src={user.picture} alt='profile'/>
-                                                                    <h2 className='dropdonwitem-user-name' key={'dropdonwitem'+item.id}>{user.name}</h2>
+                                                                    <h2 className='dropdownitem-user-name' key={'dropdonwitem'+item.id}>{user.name}</h2>
                                                                 </div>)
                                                             }
                                                             else{return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{item.arbicName}</p>)}
-                                                        })}
-                                                    </div>
-                                                </div> */}
+                                                    })}   
+                                                </div>
+                                            </li>
+                                            :
+                                            <li className={'item'+obj.id} key={'item'+obj.id}>
+                                                <button onClick={handeNavDropDownMenu}  className='dropdown-span false'>{obj.arbicName}</button>
                                             </li>
                                         )
                                     }else{
