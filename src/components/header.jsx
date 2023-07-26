@@ -77,7 +77,7 @@ const Header = ({user}) =>{
                                                 </div>
                                             </li>
                                             :
-                                            <li className={'item'+obj.id} key={'item'+obj.id}>
+                                            <li className={'item'+obj.id} key={obj.id+'item'}>
                                                 <button onClick={handeNavDropDownMenu}  className='dropdown-span false'>{obj.arbicName}</button>
                                             </li>
                                         )
