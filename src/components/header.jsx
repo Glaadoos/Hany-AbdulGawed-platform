@@ -61,13 +61,13 @@ const Header = ({user}) =>{
                                             show ? 
                                             <li className={'item'+obj.id} key={'item'+obj.id}>
                                                 <button onClick={handeNavDropDownMenu}  className='dropdown-span true'>{obj.arbicName}</button>
-                                                <div className="dropdown">
+                                                <div key={'dropdown'} className="dropdown">
                                                     {obj.dropDown.map(item=>{
                                                             if(item.EngName ==='#logout'){
                                                                 return(<LogoutBtn/>)
                                                             }
                                                             if(item.EngName ==='#profile'){
-                                                                return(<div className='dropdown-menu-info'>
+                                                                return(<div key={'dropdown-menu-info'} className='dropdown-menu-info'>
                                                                     <img src={user.picture} alt='profile'/>
                                                                     <h2 className='dropdownitem-user-name' key={'dropdonwitem'+item.id}>{user.name}</h2>
                                                                 </div>)
