@@ -5,6 +5,7 @@ import Header from './components/header'
 import Main from './components/main'
 import Lectures from './components/lectures'
 import SpatialEngineering from './components/spatialEngineering'
+import Algebra from './components/Algebra'
 import * as Api from './API/UesrApi'
 import {useAuth0} from "@auth0/auth0-react";
 
@@ -24,7 +25,7 @@ function App() {
   const id=localStorage.getItem("userEmail")
   const name=localStorage.getItem("userName")
   const email=localStorage.getItem("userEmail")
-  const payingSystem='MPS'
+
 
   const handleUserexist = async ()=>{
     // Check if the user on server side exist or not
@@ -37,22 +38,19 @@ function App() {
       setUserExist(false)
     }
   }
-
   const handelUserCreation = async () =>{   
     const checkUserExist = await Api.getSpecific(currentUser.email)
     if(!(checkUserExist.message === undefined)){
       // Create new user
-      await Api.createUser(id,name,email,payingSystem)
+      await Api.createUser(id,name,email,userPayingSystem)
     }  
   }
-
   const handelUserUpdating = async () =>{
     if(userExist){
       // update user payingSystem
       await Api.updateUser(email,'LPS')
     }
   }
-
   const handeNavDropDownMenu = () =>{
     return setShow(!show)
   }
@@ -84,6 +82,7 @@ function App() {
 
         handleUserexist();
     }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
 
 // console.log(userExist)
@@ -106,7 +105,10 @@ function App() {
           </div>
         }/>
         <Route path='/spatialEngineering' element={
-          <SpatialEngineering />
+          <SpatialEngineering userPayingSystem={userPayingSystem} />
+        }/>
+        <Route path='/Algebra' element={
+          <Algebra userPayingSystem={userPayingSystem} />
         }/>
       </Routes>
 

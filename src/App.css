@@ -67,6 +67,7 @@ ul.navbar>li,ul.navbar>li>a{
 
 .title{
   font-family: 'Rubik', sans-serif;
+  font-weight: lighter;
   font-size: 4.5em;
 }
 
@@ -184,3 +185,49 @@ button{
   filter: blur(3px);
   transition: all .5s;
 }
+
+.lesson-title{
+  width: 80%;
+  margin: auto;
+  padding: 20px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
+  background-color: #FFD5D5;
+}
+
+.lesson{
+  text-align: right;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.lecture-name{
+  background-color: #FFD5D5;
+  margin: 0;
+}
+.sdad{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  margin-right: auto;
+  content: "";
+  background: url(./components/photos/arrow-up-filled.png);
+  background-position:center;
+  background-size: 32px 32px;
+  background-repeat: no-repeat;
+  transition: background .2s;
+  transition-timing-function: ease-in;
+}
+
+.arrow-div{
+  position: absolute;
+  width: 35px;
+  height: 35px;
+}
+
+.lecture-name.open{
+  background-color: #FF4A4A;
+}
+
