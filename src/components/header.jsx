@@ -1,11 +1,11 @@
-import {React, useState, useEffect} from 'react';
+import {React} from 'react';
 import logoCroped from './photos/logo croped.png'
 import LoginBtn from './login'
 import LogoutBtn from './logout'
 
 
-const Header = ({user}) =>{
-    const [currentUser, setCurrentUser] = useState(null);
+const Header = ({user,show,handeNavDropDownMenu,currentUser,userPayingSystem}) =>{
+    
     const navber_name =[
         {
             'id' :0,
@@ -34,8 +34,8 @@ const Header = ({user}) =>{
                 },
                 {
                     'id' :1,
-                    'EngName' : '#ass',
-                    'arbicName' : 'الحضور',
+                    'EngName' : '#payingsystem',
+                    'arbicName' : ':نوع الاشتراك',
                 },
                 {
                     'id' :3,
@@ -45,38 +45,13 @@ const Header = ({user}) =>{
             ]
         }
     ]
-    const [show, setShow] =useState(false);
-
-    useEffect(()=>{
-        if(user){
-            localStorage.setItem("userEmail", user.email)
-            localStorage.setItem("userName", user.name)
-            localStorage.setItem("userPicture", user.picture)
-            setCurrentUser({
-                'name':user.name,
-                'email':user.email,
-                'picture':user.picture
-            })
-        }
-        if(localStorage.getItem("userName")){
-            setCurrentUser({
-                'name':localStorage.getItem("userName"),
-                'email':localStorage.getItem("userEmail"),
-                'picture':localStorage.getItem("userPicture")
-            })
-        }
-    },[user])
-
-    const handeNavDropDownMenu = () =>{
-        return setShow(!show)
-    }
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />
             <ul className='navbar'>
                 {navber_name.map((obj) =>{
                                 if(obj.id ===3){
-                                    if(currentUser || user){
+                                    if(currentUser.name !=='' || user){
                                         return(
                                             show ? 
                                             <li className={'item'+obj.id} key={'item'+obj.id}>
@@ -85,6 +60,14 @@ const Header = ({user}) =>{
                                                     {obj.dropDown.map(item=>{
                                                             if(item.EngName ==='#logout'){
                                                                 return(<LogoutBtn show={show}/>)
+                                                            }
+                                                            if(item.EngName ==='#payingsystem'){
+                                                                return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{
+                                                                    userPayingSystem === undefined ?
+                                                                    'غير محدد'
+                                                                    :
+                                                                    userPayingSystem + item.arbicName
+                                                                    }</p>)
                                                             }
                                                             if(item.EngName ==='#profile'){
                                                                 return(<div key={'dropdown-menu-info'} className='dropdown-menu-info'>
@@ -105,10 +88,16 @@ const Header = ({user}) =>{
                                         return(<LoginBtn/>)   
                                     }
                                 }else{
-                                    return(
-                                        <li className={'item'+obj.id} key={'item'+obj.id}>
-                                            <a href={obj.EngName}>{obj.arbicName}</a>
+                                        if(obj.EngName ==='#main'){
+                                            return(<li className={'item'+obj.id} key={'item'+obj.id}>
+                                            <a href='/'>{obj.arbicName}</a>
                                             </li>)
+                                        }else{
+                                            return(
+                                                <li className={'item'+obj.id} key={'item'+obj.id}>
+                                                    <a href={obj.EngName}>{obj.arbicName}</a>
+                                                    </li>)
+                                        }
                                 }
                 })}
             </ul>
