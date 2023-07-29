@@ -1,18 +1,29 @@
 html {
   scroll-behavior: smooth;
 }
-header, ul{
+header{
   position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   list-style-type: none;
   background-color: #F1F1F1;
+  font-family: 'Rubik', sans-serif !important;
+
+}
+ul{
+  position: relative;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  /* border-radius: 20px; */
+  list-style-type: none;
+  background-color: #F1F1F1;
 }
 #logo{
   width: 120px;
   height: 77px;
-  padding-right: 10px;
+  padding-right: 20px;
 }
 ul.navbar>li,ul.navbar>li>a{
   padding: 10px;
@@ -67,16 +78,23 @@ ul.navbar>li,ul.navbar>li>a{
 
 .title{
   font-family: 'Rubik', sans-serif;
-  font-weight: lighter;
+  font-weight: bold;
   font-size: 4.5em;
 }
 
 .dropdown-span{
   background-color: transparent;
-  color: black;
+  display: flex;
+  flex-direction: row-reverse;
+  border-radius: 20px !important;
+  margin-top: 5px !important;
+  font-size: 15px !important;
+  font-family: 'Rubik', sans-serif !important;
+  font-weight: light !important;
+  color: black !important;
   padding:0;
 }
-.true::before{
+.dropdown-span::after{
   display: inline-block;
   width: 30px;
   height: 20px;
@@ -87,18 +105,9 @@ ul.navbar>li,ul.navbar>li>a{
   transition: background .2s;
   transition-timing-function: ease-in;
 }
-.false::before{
-  display: inline-block;
-  width: 30px;
-  height: 20px;
-  content: "";
-  background: url(./components/photos/arrow-up.png);
-  background-size: 32px 32px;
-  background-repeat: no-repeat;
-  transition: background .2s;
-  transition-timing-function: ease-in;
+.dropdown-span:hover{
+  background-color: #ffd5d541  !important;
 }
-
 
 .dropdown {
   position: absolute;
@@ -125,10 +134,10 @@ ul.navbar>li,ul.navbar>li>a{
   height: 40px;
   font-family: 'Roboto Flex', sans-serif;
   padding: 4px 10px 0 0;
-  margin-bottom: -10px;
+  margin-bottom: -5px;
 }
 .dropdownitem-user-name{
-  font-size: 10px;
+  font-size: 15px;
 }
 button{
   background-color: #B20600; /* Green */
@@ -144,39 +153,32 @@ button{
   border-radius: 16px;
 }
 
-
+/* lectures section */
 .lectures{
   width: 80%;
   margin: auto;
+  margin-bottom: 50px;
   text-align: center;
   font-family: 'Rubik', sans-serif;
 }
-.branches-list{
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    background-color: #ffffff;
-}
 
 .branch{
-  text-align: right;
-  width: 350px;
   border: 1px solid black;
   border-radius: 5px;
-  padding: 0px;
-  margin: 10px;
+  background-color: white;
 }
 
 .branch-name{
   margin: 0px;
-  font-size: 40px;
+  font-size: 35px;
+  padding: 5px;
   border-bottom: 2.5px solid black;
 }
 
 .branches-img{
   width: 100%;
-  height: 80%;
-  object-fit:cover;
+  height: 82%;
+  object-fit:contain;
   margin: auto;
   display: block;
 }
@@ -186,6 +188,7 @@ button{
   transition: all .5s;
 }
 
+/* branch page */
 .lesson-title{
   width: 80%;
   margin: auto;
@@ -207,19 +210,7 @@ button{
   background-color: #FFD5D5;
   margin: 0;
 }
-.sdad{
-  display: inline-block;
-  width: 35px;
-  height: 35px;
-  margin-right: auto;
-  content: "";
-  background: url(./components/photos/arrow-up-filled.png);
-  background-position:center;
-  background-size: 32px 32px;
-  background-repeat: no-repeat;
-  transition: background .2s;
-  transition-timing-function: ease-in;
-}
+
 
 .arrow-div{
   position: absolute;

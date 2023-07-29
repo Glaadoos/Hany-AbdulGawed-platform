@@ -33,7 +33,13 @@ const SpatialEngineering = ({userPayingSystem}) =>{
             'exam' : 'امتحان الهندسة الفراغية 2 '
         }
     ]
-
+   if(userPayingSystem === undefined){
+    return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+        نظام الاشتراك غير محدد
+        <br/>
+        يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
+    </h1>)
+   }
     if(userPayingSystem === 'LPS'){
         return(
             <div className="lessons-box">

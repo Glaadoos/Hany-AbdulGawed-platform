@@ -1,4 +1,9 @@
-import React from 'react';
+import * as React from 'react';
+import { styled } from '@mui/material/styles';
+import Box from '@mui/material/Box';
+import Paper from '@mui/material/Paper';
+import Grid from '@mui/material/Unstable_Grid2';
+
 
 import Algebra from './photos/branches-images/Algebra.png'
 import spatialEngineering from './photos/branches-images/spatialEngineering.jpg'
@@ -64,6 +69,25 @@ const Lectures = ()=>{
     return(
         <div id='lectures' className='lectures'>
             <h1 className='title'>المحاضرات</h1>
+            <Grid container spacing={2} columns={12}>
+                {branches.map(obj =>{
+                        return (
+                            <Grid xs={4} className='branch' key={obj.EngCode}>
+                                <h2 onClick={handleURLChange} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</h2>
+                                <img onClick={handleURLChange} className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/>
+                            </Grid>
+                        )
+                    })}
+            </Grid>
+        </div>
+    )
+}
+
+export default Lectures;
+
+
+/* 
+<h1 className='title'>المحاضرات</h1>
             <ul className='branches-list'>
                 {branches.map(obj =>{
                     return (
@@ -73,8 +97,5 @@ const Lectures = ()=>{
                         </li>)
                 })}
             </ul>
-        </div>
-    )
-}
 
-export default Lectures;
+*/

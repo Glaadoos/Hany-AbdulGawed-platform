@@ -1,11 +1,51 @@
-import {React} from 'react';
+import * as React from 'react';
+import Button from '@mui/material/Button';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
+import { styled } from '@mui/material/styles';
 import logoCroped from './photos/logo croped.png'
 import LoginBtn from './login'
 import LogoutBtn from './logout'
 
 
-const Header = ({user,show,handeNavDropDownMenu,currentUser,userPayingSystem}) =>{
+
+const Header = ({user,show,currentUser,userPayingSystem}) =>{
     
+    const [anchorEl, setAnchorEl] = React.useState(null);
+    const open = Boolean(anchorEl);
+    const handleClick = (event) => {
+        setAnchorEl(event.currentTarget);
+    };
+    const handleClose = () => {
+        setAnchorEl(null);
+    };
+
+    const StyledMenu = styled((props) => (
+        <Menu
+          elevation={0}
+          anchorOrigin={{
+            vertical: 'bottom',
+            horizontal: 'right',
+          }}
+          transformOrigin={{
+            vertical: 'top',
+            horizontal: 'right',
+          }}
+          {...props}
+        />
+      ))(() => ({
+        '& .css-6hp17o-MuiList-root-MuiMenu-list': {
+            display:'flex',
+            flexDirection: 'column',
+        },
+        '& .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root': {
+            margin:'auto'
+        },
+        '& .css-1x7jfmm-MuiPaper-root-MuiPopover-paper-MuiMenu-paper': {
+            borderRadius:'10px'
+        },
+      }));
+
     const navber_name =[
         {
             'id' :0,
@@ -14,7 +54,7 @@ const Header = ({user,show,handeNavDropDownMenu,currentUser,userPayingSystem}) =
         },
         {
             'id' :1,
-            'EngName' : '#lectures',
+            'EngName' : '/#lectures',
             'arbicName' : 'المحاضرات'
         },
         {
@@ -53,36 +93,45 @@ const Header = ({user,show,handeNavDropDownMenu,currentUser,userPayingSystem}) =
                                 if(obj.id ===3){
                                     if(currentUser.name !=='' || user){
                                         return(
-                                            show ? 
-                                            <li className={'item'+obj.id} key={'item'+obj.id}>
-                                                <button onClick={handeNavDropDownMenu}  className='dropdown-span true'>{obj.arbicName}</button>
-                                                <div key={'dropdown'} className="dropdown">
-                                                    {obj.dropDown.map(item=>{
-                                                            if(item.EngName ==='#logout'){
-                                                                return(<LogoutBtn show={show}/>)
-                                                            }
-                                                            if(item.EngName ==='#payingsystem'){
-                                                                return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{
-                                                                    userPayingSystem === undefined ?
-                                                                    'غير محدد'
-                                                                    :
-                                                                    userPayingSystem + item.arbicName
-                                                                    }</p>)
-                                                            }
-                                                            if(item.EngName ==='#profile'){
-                                                                return(<div key={'dropdown-menu-info'} className='dropdown-menu-info'>
-                                                                    <img src={currentUser.picture} alt='profile'/>
-                                                                    <h2 className='dropdownitem-user-name' key={'dropdonwitem'+item.id}>{currentUser.name}</h2>
-                                                                </div>)
-                                                            }
-                                                            else{return(<p className={'dropdonwitem'+item.id} key={'dropdonwitem'+item.id}>{item.arbicName}</p>)}
-                                                    })}   
+                                            
+                                            <div>
+                                                <Button
+                                                    id="fade-button"
+                                                    aria-controls={open ? 'fade-menu' : undefined}
+                                                    aria-haspopup="true"
+                                                    aria-expanded={open ? 'true' : undefined}
+                                                    onClick={handleClick}
+                                                    className='dropdown-span'
+                                                >
+                                                    حسابي
+                                                </Button>
+                                                <StyledMenu
+                                                    id="demo-customized-menu"
+                                                    MenuListProps={{
+                                                    'aria-labelledby': 'demo-customized-button',
+                                                    }}
+                                                    anchorEl={anchorEl}
+                                                    open={open}
+                                                    onClose={handleClose}
+                                                >
+                                                    <MenuItem onClick={handleClose}>
+                                                        <div key={'dropdown-menu-info'} className='dropdown-menu-info'>
+                                                            <img src={currentUser.picture} alt='profile'/>
+                                                            <h2 className='dropdownitem-user-name' key={'dropdonwitem'}>{currentUser.name}</h2>
+                                                        </div>
+                                                    </MenuItem>
+                                                    <MenuItem onClick={handleClose}>
+                                                        <p className={'dropdonwitem'} key={'dropdonwitem'}>{
+                                                            userPayingSystem === undefined ?
+                                                            'غير محدد'
+                                                            :
+                                                            userPayingSystem + ':نوع الاشتراك'
+                                                            }</p>
+                                                    </MenuItem>
+                                                    <MenuItem onClick={handleClose}><LogoutBtn show={show}/></MenuItem>
+                                                </StyledMenu>
                                                 </div>
-                                            </li>
-                                            :
-                                            <li className={'item'+obj.id} key={obj.id+'item'}>
-                                                <button onClick={handeNavDropDownMenu}  className='dropdown-span false'>{obj.arbicName}</button>
-                                            </li>
+                                            
                                         )
                                     }else{
                                         return(<LoginBtn/>)   

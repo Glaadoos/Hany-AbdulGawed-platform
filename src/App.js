@@ -51,9 +51,7 @@ function App() {
       await Api.updateUser(email,'LPS')
     }
   }
-  const handeNavDropDownMenu = () =>{
-    return setShow(!show)
-  }
+  
   
   useEffect(()=>{
     if(user){
@@ -90,7 +88,7 @@ function App() {
 
   return(
     <div>
-      <Header user={user} show={show} handeNavDropDownMenu={handeNavDropDownMenu} currentUser={currentUser} userPayingSystem={userPayingSystem}/>
+      <Header user={user} show={show} currentUser={currentUser} userPayingSystem={userPayingSystem}/>
       <Routes>
         <Route exac path='/' element={
           <div>
