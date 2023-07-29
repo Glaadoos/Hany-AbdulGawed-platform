@@ -6,6 +6,7 @@ import Main from './components/main'
 import Lectures from './components/lectures'
 import SpatialEngineering from './components/spatialEngineering'
 import Algebra from './components/Algebra'
+import LessonPlayer from './components/lessonPlayer'
 import * as Api from './API/UesrApi'
 import {useAuth0} from "@auth0/auth0-react";
 
@@ -18,6 +19,7 @@ function App() {
     'payingSystem':''
 });
   const [userPayingSystem, setPayingSystem] = useState(null);
+  const [videoId, setVideoId] = useState(localStorage.getItem("videoId"));
   const [userExist, setUserExist] = useState(false);
   const {user} = useAuth0();
 
@@ -51,7 +53,21 @@ function App() {
     }
   }
   
-  
+  const getYoutubeVideoDuration = async(videoId)=>{
+    const key1 = 'AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg'
+    const key = 'AIzaSyAXPC5sP8ItkyMaVY5akzqqWvtjsYf1qfc'
+    const id = videoId
+    const url = `https://www.googleapis.com/youtube/v3/videos?key=${key}&part=contentDetails&id=${id}`
+    let res;
+    try{
+      res = await fetch(url).then(res => res.json())
+    }catch(err){
+      console.log(err)
+    }
+    const data = await res
+    return(data);
+  }
+
   useEffect(()=>{
     if(user){
         localStorage.setItem("userEmail", user.email)
@@ -82,7 +98,7 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
 
-// console.log(email)
+// console.log(videoId)
 
 
   return(
@@ -105,7 +121,10 @@ function App() {
           <SpatialEngineering user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Algebra' element={
-          <Algebra user={email} userPayingSystem={userPayingSystem} />
+          <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
+        }/>
+        <Route path={`/lessonView`} element={
+          <LessonPlayer videoId={videoId} />
         }/>
       </Routes>
 
