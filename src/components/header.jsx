@@ -37,12 +37,19 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
         '& .css-6hp17o-MuiList-root-MuiMenu-list': {
             display:'flex',
             flexDirection: 'column',
+            background: 'rgba(255, 255, 255, 0.15)',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(90px)'
         },
         '& .css-kk1bwy-MuiButtonBase-root-MuiMenuItem-root': {
             margin:'auto'
         },
         '& .css-1x7jfmm-MuiPaper-root-MuiPopover-paper-MuiMenu-paper': {
-            borderRadius:'10px'
+            borderRadius:'10px',
+            background: 'rgba(255, 255, 255, 0.15)',
+            boxShadow: '0 4px 30px rgba(0, 0, 0, 0.1)',
+            backdropFilter: 'blur(90px)'
+            
         },
       }));
 
@@ -92,8 +99,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                 {navber_name.map((obj) =>{
                                 if(obj.id ===3){
                                     if(currentUser.name !=='' || user){
-                                        return(
-                                            
+                                        return(  
                                             <div>
                                                 <Button
                                                     id="fade-button"
@@ -130,8 +136,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                                     </MenuItem>
                                                     <MenuItem onClick={handleClose}><LogoutBtn show={show}/></MenuItem>
                                                 </StyledMenu>
-                                                </div>
-                                            
+                                            </div> 
                                         )
                                     }else{
                                         return(<LoginBtn/>)   

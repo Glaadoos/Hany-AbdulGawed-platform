@@ -1,6 +1,7 @@
 import arrowUp from './photos/arrow-up-filled.png'
+import LoginBtn from './login'
 
-const SpatialEngineering = ({userPayingSystem}) =>{
+const SpatialEngineering = ({user, userPayingSystem}) =>{
     const SpatialEngineeringlessons = [
         {
             'name' : ':المحاضرة الأولي',
@@ -33,13 +34,23 @@ const SpatialEngineering = ({userPayingSystem}) =>{
             'exam' : 'امتحان الهندسة الفراغية 2 '
         }
     ]
-   if(userPayingSystem === undefined){
-    return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
-        نظام الاشتراك غير محدد
-        <br/>
-        يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
+    
+    if(user === null){
+        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+            يرجي تسجيل الدخول
+            <br />
+            <LoginBtn/>
     </h1>)
-   }
+    }
+
+    if(userPayingSystem === null){
+        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+            نظام الاشتراك غير محدد
+            <br/>
+            يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
+        </h1>)
+    }
+
     if(userPayingSystem === 'LPS'){
         return(
             <div className="lessons-box">
@@ -71,6 +82,17 @@ const SpatialEngineering = ({userPayingSystem}) =>{
                     )
                 })}
             </div>
+        );
+    }
+
+    if(userPayingSystem === 'MPS'){
+        return(
+            <div className='video-player'>
+                <div>
+                    <iframe title='video' width="800" height="443" type="text/html" src="https://www.youtube.com/embed/9OhPTtoYTFQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
+                </div>
+            </div>
+
         );
     }
 }

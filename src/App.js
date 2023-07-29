@@ -11,7 +11,6 @@ import {useAuth0} from "@auth0/auth0-react";
 
 
 function App() {
-  const [show, setShow] =useState(false);
   const [currentUser, setCurrentUser] = useState({
     'name':'',
     'email':'',
@@ -83,12 +82,12 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
 
-// console.log(userExist)
+// console.log(email)
 
 
   return(
     <div>
-      <Header user={user} show={show} currentUser={currentUser} userPayingSystem={userPayingSystem}/>
+      <Header user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
       <Routes>
         <Route exac path='/' element={
           <div>
@@ -99,14 +98,14 @@ function App() {
         <Route path='/Hany-AbdulGawed-platform' element={
           <div>
             <Main />
-            <Lectures  />
+            <Lectures />
           </div>
         }/>
         <Route path='/spatialEngineering' element={
-          <SpatialEngineering userPayingSystem={userPayingSystem} />
+          <SpatialEngineering user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Algebra' element={
-          <Algebra userPayingSystem={userPayingSystem} />
+          <Algebra user={email} userPayingSystem={userPayingSystem} />
         }/>
       </Routes>
 

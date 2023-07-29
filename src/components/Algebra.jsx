@@ -1,5 +1,6 @@
 import arrowUp from './photos/arrow-up-filled.png'
-const Algebra = ({userPayingSystem}) =>{
+import LoginBtn from './login'
+const Algebra = ({user, userPayingSystem}) =>{
 
     const Algebralessons = [
         {
@@ -78,6 +79,20 @@ const Algebra = ({userPayingSystem}) =>{
         },
 
     ]
+    if(user === null){
+        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+            يرجي تسجيل الدخول
+            <br />
+            <LoginBtn/>
+    </h1>)
+    }
+   if(userPayingSystem === null){
+    return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+        نظام الاشتراك غير محدد
+        <br/>
+        يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
+    </h1>)
+   }
     if(userPayingSystem === 'LPS'){
         return(
             <div className="lessons-box">
@@ -91,11 +106,11 @@ const Algebra = ({userPayingSystem}) =>{
                                 <h1 className="lecture-name">{lesson.name}</h1>
                                 <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
                             </div>
-                            <ul>
+                            <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
                                     return(
                                         <li key={'partObject'+num}>
-                                            <ul>
+                                            <ul className='lesson-part'>
                                                 <li key={'partName'+num}>{part}</li>
                                             </ul>
                                         </li>
@@ -114,3 +129,9 @@ const Algebra = ({userPayingSystem}) =>{
 }
 
 export default Algebra;
+
+
+/* 
+
+
+*/

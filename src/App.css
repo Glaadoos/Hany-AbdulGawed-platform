@@ -197,20 +197,22 @@ button{
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  background-color: #FFD5D5;
+  background-color: #FF4A4A;
 }
 
 .lesson{
   text-align: right;
   font-size: 20px;
   font-weight: bold;
+  padding: 5px;
 }
 
 .lecture-name{
-  background-color: #FFD5D5;
   margin: 0;
 }
-
+.lecture-name.open{
+  background-color: #FF4A4A;
+}
 
 .arrow-div{
   position: absolute;
@@ -218,7 +220,29 @@ button{
   height: 35px;
 }
 
-.lecture-name.open{
-  background-color: #FF4A4A;
+.lesson-parts{
+  width: 70%;
+  margin: auto;
+  padding: 20px;
+  flex-direction: column;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #FFD5D5;
+}
+.lesson-parts>li{
+  border: 1px solid black;
+  padding: 5%;
 }
 
+.lesson-part{
+  display: block;
+  background-color: transparent;
+}
+
+.video-player{
+  position: relative;
+  margin: auto;
+  padding: 10px;
+  width:800px;
+  height:443px;
+}
