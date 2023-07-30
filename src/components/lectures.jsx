@@ -69,8 +69,8 @@ const Lectures = ()=>{
                 {branches.map(obj =>{
                         return (
                             <Grid xs={4} className='branch' key={obj.EngCode}>
-                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}  className='branch-name' value={obj.EngCode}>{obj.arbicCode}</Link>
-                                <img onClick={handleURLChange} className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/>
+                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</Link>
+                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}><img  className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/></Link>
                             </Grid>
                         )
                     })}

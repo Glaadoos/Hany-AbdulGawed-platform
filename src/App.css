@@ -172,6 +172,8 @@ button{
 .branch-name{
   margin: 0px;
   font-size: 35px;
+  text-decoration: none;
+  color: black;
   padding: 5px;
   border-bottom: 2.5px solid black;
   cursor: pointer;

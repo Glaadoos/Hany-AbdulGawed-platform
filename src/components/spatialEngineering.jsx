@@ -1,4 +1,5 @@
 import {useState} from 'react';
+import {Link} from "react-router-dom";
 import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
 
@@ -169,8 +170,8 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
                                             <li key={'partObject'+num}>
                                                 <ul className='lesson-part'>
                                                     <li key={'partName'+num}>
-                                                        <button onClick={() =>{addIdToOrigin(getIDfromURL(part.link))}}  className='lesson-btn'>{part.lessonName}</button>
-                                                        </li>
+                                                        <Link to={'/Hany-AbdulGawed-platform/lessonView'}><button className='lesson-btn'>{part.lessonName}</button></Link>
+                                                    </li>
                                                     <li key={videoDuration}>
                                                         {videoDuration.filter(video => video.id ===getIDfromURL(part.link)).map(video =>  video.duration)}
                                                     </li>
