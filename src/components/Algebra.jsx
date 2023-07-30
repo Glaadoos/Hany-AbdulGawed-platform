@@ -251,8 +251,9 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
         if(link !== 'soon'){
             let id = await getIDfromURL(link)
             getDuration(id)
+            console.log('fetchDuration, ',link, id)
         }
-        console.log('fetchDuration, ',link)
+        
     }
     
     if(user === null){
