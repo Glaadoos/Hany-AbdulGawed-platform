@@ -235,6 +235,10 @@ button{
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   background-color: #FFD5D5;
+  animation: fadeInAnimation ease .2s;
+  animation-iteration-count: 1;
+  animation-fill-mode: backwards;
+  
 }
 .lesson-parts>li{
   border: .5px solid black;

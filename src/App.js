@@ -1,6 +1,5 @@
-import {React, useState, useEffect, useRef} from 'react';
+import {React, useState, useEffect} from 'react';
 import {Route, Routes} from 'react-router-dom'
-import { BrowserRouter} from "react-router-dom";
 import './App.css';
 import Header from './components/header'
 import Main from './components/main'
@@ -60,7 +59,7 @@ function App() {
   }
   
   const getYoutubeVideoDuration = async(videoId)=>{
-    const key1 = 'AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg'
+    // const key1 = 'AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg'
     const key = 'AIzaSyAXPC5sP8ItkyMaVY5akzqqWvtjsYf1qfc'
     const id = videoId
     const url = `https://www.googleapis.com/youtube/v3/videos?key=${key}&part=contentDetails&id=${id}`
