@@ -208,7 +208,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
 
     ]
     const[videoDuration, setVideoDuration] = useState([])
-
+    let videoid ;
     
     const getIDfromURL = (url)=> {
         const videoID = url.split('v=')[1];
@@ -250,10 +250,11 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
     const fetchDuration = async(link)=> {
         if(link !== 'soon'){
             let id = await getIDfromURL(link)
+            videoid = id
             getDuration(id)
         }
     }
-
+    console.log(videoid)
     if(user === null){
         return (
             <h1 style={{textAlign:'center', marginTop:'200px'}}>
