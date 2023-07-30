@@ -1,6 +1,7 @@
 
 
 const LessonPlayer = ({videoId}) =>{
+    console.log(videoId)
     return(
         <div className='video-player'>
             <div className="player">
