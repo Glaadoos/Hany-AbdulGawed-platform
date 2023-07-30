@@ -1,5 +1,4 @@
 import * as React from 'react';
-import {useNavigate } from 'react-router-dom'
 import Grid from '@mui/material/Unstable_Grid2';
 
 
@@ -12,7 +11,7 @@ import Revisiones from './photos/branches-images/Revisiones.png'
 
 
 const Lectures = ()=>{
-    let history = useNavigate ()
+    
     const branches = [
     {
         'id' :0,
@@ -58,8 +57,7 @@ const Lectures = ()=>{
         let Url='';
         Url = ele.attributes.value.value
         // console.log(ele.attributes.value.value)
-        history(`/Hany-AbdulGawed-platform/${Url}`)
-        window.location.pathname ='/Hany-AbdulGawed-platform/'+Url
+        window.location.pathname ='/Hany-AbdulGawed-platform/Algebra'
         
     }
 
