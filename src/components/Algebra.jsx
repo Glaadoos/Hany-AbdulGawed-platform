@@ -251,11 +251,14 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
         if(link !== 'soon'){
             let id = await getIDfromURL(link)
             getDuration(id)
-            console.log('fetchDuration, ',link, id)
-        }
-        
+        }   
     }
-    
+    const handleVideoIDChange = (id)=>{
+        setVideoId(id)
+        localStorage.setItem("videoId", id)
+        console.log('video id stored in localStorage and in setVideoId')
+    }
+
     if(user === null){
         return (
             <h1 style={{textAlign:'center', marginTop:'200px'}}>
@@ -304,7 +307,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                             <li key={'partObject'+num}>
                                                 <ul className='lesson-part'>
                                                     <li key={'partName'+num}>
-                                                        <Link to={'/Hany-AbdulGawed-platform/lessonView'}><button className='lesson-btn'>{part.lessonName}</button></Link>
+                                                        <Link onClick={handleVideoIDChange(getIDfromURL(part.link))} to={'/Hany-AbdulGawed-platform/lessonView'}><button className='lesson-btn'>{part.lessonName}</button></Link>
                                                     </li>
                                                     <li key={videoDuration}>
                                                         {videoDuration.filter(video => video.id ===getIDfromURL(part.link)).map(video =>  video.duration)}
