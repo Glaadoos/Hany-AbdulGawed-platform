@@ -67,11 +67,17 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
         },
         {
             'id' :2,
-            'EngName' : '#help',
-            'arbicName' : 'مساعدة'
+            'EngName' : '#payingsystem',
+            'arbicName' : 'نظام اشتراكك'
         },
         {
             'id' :3,
+            'EngName' : '#help',
+            'arbicName' : 'مساعدة'
+        },
+        
+        {
+            'id' :4,
             'EngName' : '#account',
             'arbicName' : 'حسابي',
             'dropDown' : [
@@ -98,7 +104,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
             <img id='logo' src={logoCroped} alt='logo' />
             <ul className='navbar'>
                 {navber_name.map((obj) =>{
-                                if(obj.id ===3){
+                                if(obj.id ===4){
                                     if(currentUser.name !=='' || user){
                                         return(  
                                             <div>
@@ -129,7 +135,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                                     </MenuItem>
                                                     <MenuItem onClick={handleClose}>
                                                         <p className={'dropdonwitem'} key={'dropdonwitem'}>{
-                                                            userPayingSystem === undefined ?
+                                                            userPayingSystem === undefined ||  userPayingSystem ==='none' ?
                                                             'غير محدد'
                                                             :
                                                             userPayingSystem + ':نوع الاشتراك'
@@ -147,7 +153,14 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                             return(<li className={'item'+obj.id} key={'item'+obj.id}>
                                             <Link to={'/Hany-AbdulGawed-platform/'}>{obj.arbicName}</Link>
                                             </li>)
-                                        }else{
+                                        }
+                                        if(obj.EngName ==='#payingsystem'){
+                                            return(<li className={'item'+obj.id} key={'item'+obj.id}>
+                                            <Link to={'/Hany-AbdulGawed-platform/PayingSystem'}>{obj.arbicName}</Link>
+                                            </li>)
+                                        }
+                                        
+                                        else{
                                             return(
                                                 <li className={'item'+obj.id} key={'item'+obj.id}>
                                                     <Link to={'/Hany-AbdulGawed-platform'+obj.EngName}>{obj.arbicName}</Link>

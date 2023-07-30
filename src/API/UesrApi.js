@@ -1,4 +1,4 @@
-const api = 'http://localhost:5000/accounts/'
+const api = 'http://localhost:5000/accounts'
 
 
 
@@ -43,7 +43,7 @@ export const createUser= async(id,name,email,payingSystem)=>{
         "id": id,
         "name":name,
         "email": email,
-        "payingSystem": payingSystem
+        "payingSystem": payingSystem || 'none'
     }
     let optiones = {
         method: "POST",

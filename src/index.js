@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter, HashRouter} from "react-router-dom";
+import {HashRouter} from "react-router-dom";
 import './index.css';
 import { Auth0Provider } from '@auth0/auth0-react';
 import App from './App';
@@ -15,7 +15,7 @@ root.render(
         domain="dev-ygrskzanm044w3be.us.auth0.com"
         clientId="vpwQ42rBahM2eVuTCkNFscsYWfnf1Wzo"
         authorizationParams={{
-          redirect_uri: 'https://bahget.github.io/Hany-AbdulGawed-platform/#/Hany-AbdulGawed-platform/'
+          redirect_uri: 'http://localhost:3000/#/Hany-AbdulGawed-platform/'
         }}
         >
           <App />

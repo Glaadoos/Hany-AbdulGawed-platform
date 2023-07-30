@@ -259,11 +259,13 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
     }
 
     if(user === null){
-        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
-            يرجي تسجيل الدخول
-            <br />
-            <LoginBtn/>
-    </h1>)
+        return (
+            <h1 style={{textAlign:'center', marginTop:'200px'}}>
+                يرجي تسجيل الدخول
+                <br />
+                <LoginBtn/>
+            </h1>
+        )
     }
     if(userPayingSystem === null){
         return (<h1 style={{textAlign:'center', marginTop:'200px'}}>

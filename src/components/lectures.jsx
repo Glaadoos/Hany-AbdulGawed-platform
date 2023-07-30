@@ -52,16 +52,6 @@ const Lectures = ()=>{
         'imageSrc' : Statics
     }
     ]
-
-    const handleURLChange = (e) =>{
-        const ele = e.target
-        let Url='';
-        Url = ele.attributes.value.value
-        // console.log(ele.attributes.value.value)
-        window.location.pathname ='/Hany-AbdulGawed-platform/Algebra'
-        
-    }
-
     return(
         <div id='lectures' className='lectures'>
             <h1 className='title'>المحاضرات</h1>

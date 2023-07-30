@@ -12,6 +12,7 @@ import Revisiones from './components/Revisiones'
 import Dynamics from './components/Dynamics'
 import Statics from './components/Statics'
 import LessonPlayer from './components/lessonPlayer'
+import SetPayingSystem from './components/SetPayingSystem'
 import * as Api from './API/UesrApi'
 import {useAuth0} from "@auth0/auth0-react";
 
@@ -51,10 +52,10 @@ function App() {
       await Api.createUser(id,name,email,userPayingSystem)
     }  
   }
-  const handelUserUpdating = async () =>{
+  const handelUserUpdating = async (value) =>{
     if(userExist){
       // update user payingSystem
-      await Api.updateUser(email,'LPS')
+      await Api.updateUser(email,value)
     }
   }
   
@@ -99,10 +100,12 @@ function App() {
         })
 
         handleUserexist();
+        if(!userExist){
+          handelUserCreation();
+        }
     }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
-
 
 
   return(
@@ -141,6 +144,9 @@ function App() {
         }/>
         <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
           <LessonPlayer videoId={videoId} />
+        }/>
+        <Route path={`/Hany-AbdulGawed-platform/PayingSystem`} element={
+          <SetPayingSystem user={email} handelUserUpdating={handelUserUpdating}  userPayingSystem={userPayingSystem}/>
         }/>
       </Routes>
 

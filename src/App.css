@@ -174,14 +174,15 @@ button{
   font-size: 35px;
   text-decoration: none;
   color: black;
-  padding: 5px;
-  border-bottom: 2.5px solid black;
+  padding: 10px;
+  border-bottom: 2.5px solid black !important;
   cursor: pointer;
 }
 
 .branches-img{
   width: 100%;
   height: 82%;
+  padding: 5px;
   object-fit:contain;
   margin: auto;
   display: block;
@@ -285,4 +286,49 @@ button{
   font-size: 30px;
   font-family: 'Rubik', sans-serif ;
   padding: 10px;
+}
+
+/* PayingSystem Page */
+
+.radio-group{
+  margin: 5px auto;
+  width: fit-content;
+  background-color: #FFFFFF;
+  border-radius:20px;
+  padding: 20px;
+  border: .5px solid black;
+}
+
+.paragraph{
+  padding: 10px;
+  display: flex;
+  margin: auto;
+  flex-direction: column;
+  font-family: 'Rubik', sans-serif;
+  font-size: 30px;
+  text-align:right ;
+  
+}
+.paying-system-paragraph{
+  border-radius:50px;
+  position: relative;
+  background-color: #E5E5E5;
+  margin: 10px auto;
+  padding: 10px;
+  width: fit-content;
+}
+.eng{
+  font-family: 'Roboto Flex', sans-serif;
+  text-align: left;
+  padding: 5px;
+  margin: 0;
+}
+
+.paying-system{
+  position: relative;
+  margin: auto;
+  width: fit-content;
+  padding: 20px 60px;
+  background-color: #E5E5E5;
+  border-radius:50px;
 }

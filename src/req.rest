@@ -1,1 +1,1 @@
-GET https://www.googleapis.com/youtube/v3/videos?key=AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg&part=contentDetails&id=9OhPTtoYTFQ
+GET http://localhost:5000/accounts/
