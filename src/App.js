@@ -1,5 +1,6 @@
-import {React, useState, useEffect} from 'react';
+import {React, useState, useEffect, useRef} from 'react';
 import {Route, Routes} from 'react-router-dom'
+import { BrowserRouter} from "react-router-dom";
 import './App.css';
 import Header from './components/header'
 import Main from './components/main'
@@ -102,26 +103,25 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
 
-// console.log(videoId)
 
 
   return(
     <div>
-      <Header user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
+      <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
       <Routes>
-        <Route exac path='/' element={
+        <Route path='/Hany-AbdulGawed-platform' exact  element={
           <div>
             <Main />
             <Lectures  />
           </div>
         }/>
-        <Route path='/Hany-AbdulGawed-platform' element={
+        <Route path='/' element={
           <div>
             <Main />
             <Lectures />
           </div>
         }/>
-        <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
+        <Route path='spatialEngineering' element={
           <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Algebra' element={
