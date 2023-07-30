@@ -1,5 +1,5 @@
 import * as React from 'react';
-import {useNavigate } from 'react-router-dom'
+import {Link} from "react-router-dom";
 import Grid from '@mui/material/Unstable_Grid2';
 
 
@@ -12,7 +12,7 @@ import Revisiones from './photos/branches-images/Revisiones.png'
 
 
 const Lectures = ()=>{
-    let history = useNavigate ()
+    
     const branches = [
     {
         'id' :0,
@@ -58,8 +58,7 @@ const Lectures = ()=>{
         let Url='';
         Url = ele.attributes.value.value
         // console.log(ele.attributes.value.value)
-        history(`/Hany-AbdulGawed-platform/${Url}`)
-        window.location.pathname ='/Hany-AbdulGawed-platform/'+Url
+        window.location.pathname ='/Hany-AbdulGawed-platform/Algebra'
         
     }
 
@@ -70,7 +69,7 @@ const Lectures = ()=>{
                 {branches.map(obj =>{
                         return (
                             <Grid xs={4} className='branch' key={obj.EngCode}>
-                                <h2 onClick={handleURLChange} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</h2>
+                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}  className='branch-name' value={obj.EngCode}>{obj.arbicCode}</Link>
                                 <img onClick={handleURLChange} className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/>
                             </Grid>
                         )

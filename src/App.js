@@ -121,7 +121,7 @@ function App() {
             <Lectures />
           </div>
         }/>
-        <Route path='spatialEngineering' element={
+        <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
           <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Algebra' element={
