@@ -1,12 +1,10 @@
 
 
 const LessonPlayer = ({videoId}) =>{
-    
-
     return(
         <div className='video-player'>
             <div className="player">
-                <iframe title='video' width="800" height="443" type="text/html" src={`https://www.youtube.com/embed/${videoId}?autoplay=1&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0`} autoPlay></iframe>
+                <iframe allow="fullscreen;" title='video' width="800" height="443" type="text/html" src={`https://www.youtube.com/embed/${videoId}?autoplay=1&fs=1&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&`}></iframe>
             </div>
             <div className="attachments">
                 <h1 className="title"
@@ -25,3 +23,4 @@ const LessonPlayer = ({videoId}) =>{
 }
 
 export default LessonPlayer;
+

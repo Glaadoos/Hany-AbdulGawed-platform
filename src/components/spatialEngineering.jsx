@@ -1,40 +1,126 @@
+import {useState} from 'react';
 import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
 
-const SpatialEngineering = ({user, userPayingSystem}) =>{
+const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
     const SpatialEngineeringlessons = [
         {
             'name' : ':المحاضرة الأولي',
-            'parts' :['الجزء الاول:التمهيد','الجزء الثاني: معادلة الكرة في الفراغ'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول:التمهيد',
+                    'link':'soon',
+                },
+                {
+                    'lessonName':'الجزء الثاني: معادلة الكرة في الفراغ',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان المحاضرة الاولي'
         },
         {
             'name' : ':المحاضرة الثانية',
-            'parts' :['الجزء الاول: المتجهات في الفراغ'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول: المتجهات في الفراغ',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان المحاضرة الثانية'
         },
         {
             'name' : ':المحاضرة الثالثة',
-            'parts' :['الجزء الاول:الضرب القياسي'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول:الضرب القياسي',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان المحاضرة الثالثة'
         },
         {
             'name' : ':المحاضرة الرابعة',
-            'parts' :['الجزء الاول: الضرب الاتجاهي'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول: الضرب الاتجاهي',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان الهندسة الفراغية 1'
         },
         {
             'name' : ':المحاضرة الخامسة',
-            'parts' :['الجزء الاول: معادلة الخط المستقيم'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول: معادلة الخط المستقيم',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان المحاضرة الخامسة'
         },
         {
             'name' : ':المحاضرة السادسة',
-            'parts' :['الجزء الاول: معادلة المستوي'],
+            'parts' :[
+                {
+                    'lessonName':'الجزء الاول: معادلة المستوي',
+                    'link':'soon',
+                }
+            ],
             'exam' : 'امتحان الهندسة الفراغية 2 '
         }
     ]
     
+    const[videoDuration, setVideoDuration] = useState([])
+
+    const getIDfromURL = (url)=> {
+        const videoID = url.split('v=')[1];
+      
+        if (videoID !== undefined) {
+          return videoID.slice(0, 11);
+        }
+      
+        console.log('The supplied URL is not a valid youtube URL');
+        return '';
+    }
+    const getDuration = async(id)=>{
+        /* await durationFunction(id).then((res) => {
+             var match = res.items[0].contentDetails.duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+    
+            match = match.slice(1).map((x)=> {
+                if (x != null) {
+                    return x.replace(/\D/, '');
+                }
+                return x;
+            });
+             var hours = (parseInt(match[0]) || 0);
+            var minutes = (parseInt(match[1]) || 0);
+            var seconds = (parseInt(match[2]) || 0);
+            // console.log(videoDuration.filter(video => video.id=id))
+            return([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
+        }) */
+        
+        var hours = Math.floor(Math.random()* 10);
+        var minutes = Math.floor(Math.random()* 10);
+        var seconds = Math.floor(Math.random()* 10);
+        
+        const arr = videoDuration.filter(video =>video.id ===id).length >=1 ? false:true
+        if(arr){
+            setVideoDuration([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
+        }
+
+    }
+    const fetchDuration = async(link)=> {
+        if(link !== 'soon'){
+            let id = await getIDfromURL(link)
+            getDuration(id)
+        }
+    }
+    const addIdToOrigin = (id) =>{
+        localStorage.setItem("videoId", id)
+        setVideoId(id)
+        window.location.pathname = `/lessonView`
+    }
+
     if(user === null){
         return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
             يرجي تسجيل الدخول
@@ -64,25 +150,43 @@ const SpatialEngineering = ({user, userPayingSystem}) =>{
                                 <h1 className="lecture-name">{lesson.name}</h1>
                                 <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
                             </div>
-                            <ul>
+                            <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
+                                    fetchDuration(part.link) 
                                     return(
-                                        <li key={'partObject'+num}>
-                                            <ul>
-                                                <li key={'partName'+num}>{part}</li>
-                                            </ul>
-                                        </li>
-                                    )
+                                        part.link === 'soon' ?
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>{part.lessonName}</li>
+                                                    <li
+                                                        style={{color:'#64ec64',fontWeight:'bold'}}
+                                                        key={'duration'+num}>
+                                                        ستتوفر قريبا
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        :
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>
+                                                        <button onClick={() =>{addIdToOrigin(getIDfromURL(part.link))}}  className='lesson-btn'>{part.lessonName}</button>
+                                                        </li>
+                                                    <li key={videoDuration}>
+                                                        {videoDuration.filter(video => video.id ===getIDfromURL(part.link)).map(video =>  video.duration)}
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                    )   
                                 })}
                                 {<li key={'exam'+num}>
                                     {lesson.exam}
-                                    </li>}
+                                </li>}
                             </ul>
                         </div>
                     )
                 })}
             </div>
-        );
+        )
     }
 
     if(userPayingSystem === 'MPS'){

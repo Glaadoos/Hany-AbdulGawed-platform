@@ -81,18 +81,3 @@ const Lectures = ()=>{
 }
 
 export default Lectures;
-
-
-/* 
-<h1 className='title'>المحاضرات</h1>
-            <ul className='branches-list'>
-                {branches.map(obj =>{
-                    return (
-                        <li onClick={handleURLChange} className='branch' key={obj.EngCode} value={obj.EngCode}>
-                            <h2 onClick={handleURLChange} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</h2>
-                            <img onClick={handleURLChange} className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/>
-                        </li>)
-                })}
-            </ul>
-
-*/

@@ -2,16 +2,7 @@ import {useState} from 'react';
 import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
 const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
-    function getIDfromURL(url) {
-        const videoID = url.split('v=')[1];
-      
-        if (videoID !== undefined) {
-          return videoID.slice(0, 11);
-        }
-      
-        console.log('The supplied URL is not a valid youtube URL');
-        return '';
-      }
+    
     const Algebralessons = [
         {
             'name' : 'المحاضرة الاولي - ذات الحدين',
@@ -22,15 +13,11 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                 },
                 {
                     'lessonName':'الجزء الاول',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=x4hPH5Wreyk',
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثالث',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=E2MN8baiwOY&ab_channel=HanyAbdlgawad',
                 },
                 {
                     'lessonName':'أوبن بوك',
@@ -44,11 +31,11 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=p2aDs2ddmgE&ab_channel=HanyAbdlgawad',
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=q1Jcq314iFU&ab_channel=HanyAbdlgawad',
                 },
                 {
                     'lessonName':'أوبن بوك',
@@ -219,10 +206,20 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
         },
 
     ]
-    const[videoDuration, setVideoDuration] = useState(undefined)
-    
+    const[videoDuration, setVideoDuration] = useState([])
+
+    const getIDfromURL = (url)=> {
+        const videoID = url.split('v=')[1];
+      
+        if (videoID !== undefined) {
+          return videoID.slice(0, 11);
+        }
+      
+        console.log('The supplied URL is not a valid youtube URL');
+        return '';
+    }
     const getDuration = async(id)=>{
-        await durationFunction(id).then((res) => {
+        /* await durationFunction(id).then((res) => {
              var match = res.items[0].contentDetails.duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
     
             match = match.slice(1).map((x)=> {
@@ -231,17 +228,29 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                 }
                 return x;
             });
-    
-            var hours = (parseInt(match[0]) || 0);
+             var hours = (parseInt(match[0]) || 0);
             var minutes = (parseInt(match[1]) || 0);
             var seconds = (parseInt(match[2]) || 0);
-    
-            setVideoDuration(`${hours}:${minutes}:${seconds}`)
-        })
+            // console.log(videoDuration.filter(video => video.id=id))
+            return([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
+        }) */
         
-       
+        var hours = Math.floor(Math.random()* 10);
+        var minutes = Math.floor(Math.random()* 10);
+        var seconds = Math.floor(Math.random()* 10);
+        
+        const arr = videoDuration.filter(video =>video.id ===id).length >=1 ? false:true
+        if(arr){
+            setVideoDuration([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
+        }
+
     }
-    
+    const fetchDuration = async(link)=> {
+        if(link !== 'soon'){
+            let id = await getIDfromURL(link)
+            getDuration(id)
+        }
+    }
     const addIdToOrigin = (id) =>{
         localStorage.setItem("videoId", id)
         setVideoId(id)
@@ -277,20 +286,15 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    const fetchDuration = (link)=> {
-                                        if(link !== 'soon'){
-                                            let id = getIDfromURL(link)
-                                            // getDuration(id)
-                                        }
-                                    }
-                                    fetchDuration(part.link)
-
+                                    fetchDuration(part.link) 
                                     return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>
                                                 <ul className='lesson-part'>
                                                     <li key={'partName'+num}>{part.lessonName}</li>
-                                                    <li key={'duration'+num}>
+                                                    <li
+                                                        style={{color:'#64ec64',fontWeight:'bold'}}
+                                                        key={'duration'+num}>
                                                         ستتوفر قريبا
                                                     </li>
                                                 </ul>
@@ -302,7 +306,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                         <button onClick={() =>{addIdToOrigin(getIDfromURL(part.link))}}  className='lesson-btn'>{part.lessonName}</button>
                                                         </li>
                                                     <li key={videoDuration}>
-                                                        {videoDuration}
+                                                        {videoDuration.filter(video => video.id ===getIDfromURL(part.link)).map(video =>  video.duration)}
                                                     </li>
                                                 </ul>
                                             </li>
@@ -310,7 +314,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                 })}
                                 {<li key={'exam'+num}>
                                     {lesson.exam}
-                                    </li>}
+                                </li>}
                             </ul>
                         </div>
                     )

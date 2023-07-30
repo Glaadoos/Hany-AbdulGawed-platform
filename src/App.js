@@ -6,6 +6,10 @@ import Main from './components/main'
 import Lectures from './components/lectures'
 import SpatialEngineering from './components/spatialEngineering'
 import Algebra from './components/Algebra'
+import Calculus from './components/Calculus'
+import Revisiones from './components/Revisiones'
+import Dynamics from './components/Dynamics'
+import Statics from './components/Statics'
 import LessonPlayer from './components/lessonPlayer'
 import * as Api from './API/UesrApi'
 import {useAuth0} from "@auth0/auth0-react";
@@ -118,10 +122,22 @@ function App() {
           </div>
         }/>
         <Route path='/spatialEngineering' element={
-          <SpatialEngineering user={email} userPayingSystem={userPayingSystem} />
+          <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Algebra' element={
           <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
+        }/>
+        <Route path='/Calculus' element={
+          <Calculus  />
+        }/>
+        <Route path='/Dynamics' element={
+          <Dynamics  />
+        }/>
+        <Route path='/Statics' element={
+          <Statics  />
+        }/>
+        <Route path='/Revisiones' element={
+          <Revisiones  />
         }/>
         <Route path={`/lessonView`} element={
           <LessonPlayer videoId={videoId} />
