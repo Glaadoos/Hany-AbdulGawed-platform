@@ -23,7 +23,7 @@ function App() {
     'picture':'',
     'payingSystem':''
 });
-  const [userPayingSystem, setPayingSystem] = useState(null);
+  const [userPayingSystem, setPayingSystem] = useState('');
   const [videoId, setVideoId] = useState(localStorage.getItem("videoId"));
   const [userExist, setUserExist] = useState(false);
   const {user} = useAuth0();
