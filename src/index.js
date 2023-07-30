@@ -15,7 +15,7 @@ root.render(
         domain="dev-ygrskzanm044w3be.us.auth0.com"
         clientId="vpwQ42rBahM2eVuTCkNFscsYWfnf1Wzo"
         authorizationParams={{
-          redirect_uri: 'https://bahget.github.io/Hany-AbdulGawed-platform/#/Hany-AbdulGawed-platform/'
+          redirect_uri: 'https://hany-abdulgawed-platform.web.app/'
         }}
         >
           <App />

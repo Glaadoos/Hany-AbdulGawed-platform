@@ -5,7 +5,7 @@ const LogoutBtn =({show})=>{
     const { logout } =useAuth0();
 
     const hendleLogOut = () =>{
-        logout({ logoutParams: { returnTo: 'https://bahget.github.io/Hany-AbdulGawed-platform/#/Hany-AbdulGawed-platform/' } })
+        logout({ logoutParams: { returnTo: 'https://hany-abdulgawed-platform.web.app/' } })
         localStorage.removeItem("userEmail")
         localStorage.removeItem("userName")
         localStorage.removeItem("userPicture")
