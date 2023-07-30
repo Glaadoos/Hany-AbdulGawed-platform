@@ -97,7 +97,10 @@ function App() {
             'picture':localStorage.getItem("userPicture"),
             'payingSystem':localStorage.getItem("userPayingSystem")|| userPayingSystem
         })
-
+        alert(localStorage.getItem("userName"))
+        alert(localStorage.getItem("userEmail"))
+        alert(localStorage.getItem("userPicture"))
+        alert(localStorage.getItem("userPayingSystem"))
         handleUserexist();
         if(!userExist){
           handelUserCreation();
