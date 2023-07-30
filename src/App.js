@@ -82,7 +82,7 @@ function App() {
             'name':user.name,
             'email':user.email,
             'picture':user.picture,
-            'payingSystem':localStorage.getItem("userPayingSystem")|| userPayingSystem
+            'payingSystem':localStorage.getItem("userPayingSystem") || userPayingSystem
         })
 
         handleUserexist();
@@ -106,7 +106,7 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user])
 
-
+// console.log(userPayingSystem, currentUser)
   return(
     <div>
       <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
