@@ -56,9 +56,9 @@ const Lectures = ()=>{
         const ele = e.target
         let Url='';
         Url = ele.attributes.value.value
-        console.log(ele.attributes.value.value)
+        // console.log(ele.attributes.value.value)
     
-        window.location.pathname =Url
+        window.location.pathname ='/Hany-AbdulGawed-platform/'+Url
         
         
     }

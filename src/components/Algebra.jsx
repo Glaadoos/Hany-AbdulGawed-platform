@@ -254,7 +254,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
     const addIdToOrigin = (id) =>{
         localStorage.setItem("videoId", id)
         setVideoId(id)
-        window.location.pathname = `/lessonView`
+        window.location.pathname = `/Hany-AbdulGawed-platform/lessonView`
     }
 
     if(user === null){

@@ -56,17 +56,17 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
     const navber_name =[
         {
             'id' :0,
-            'EngName' : '#main',
+            'EngName' : '/Hany-AbdulGawed-platform#main',
             'arbicName' : 'الرئيسية'
         },
         {
             'id' :1,
-            'EngName' : '/#lectures',
+            'EngName' : '/Hany-AbdulGawed-platform#lectures',
             'arbicName' : 'المحاضرات'
         },
         {
             'id' :2,
-            'EngName' : '#help',
+            'EngName' : '/Hany-AbdulGawed-platform#help',
             'arbicName' : 'مساعدة'
         },
         {

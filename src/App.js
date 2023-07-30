@@ -121,25 +121,25 @@ function App() {
             <Lectures />
           </div>
         }/>
-        <Route path='/spatialEngineering' element={
+        <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
           <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
-        <Route path='/Algebra' element={
+        <Route path='/Hany-AbdulGawed-platform/Algebra' element={
           <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
         }/>
-        <Route path='/Calculus' element={
+        <Route path='/Hany-AbdulGawed-platform/Calculus' element={
           <Calculus  />
         }/>
-        <Route path='/Dynamics' element={
+        <Route path='/Hany-AbdulGawed-platform/Dynamics' element={
           <Dynamics  />
         }/>
-        <Route path='/Statics' element={
+        <Route path='/Hany-AbdulGawed-platform/Statics' element={
           <Statics  />
         }/>
-        <Route path='/Revisiones' element={
+        <Route path='/Hany-AbdulGawed-platform/Revisiones' element={
           <Revisiones  />
         }/>
-        <Route path={`/lessonView`} element={
+        <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
           <LessonPlayer videoId={videoId} />
         }/>
       </Routes>
