@@ -54,10 +54,16 @@ function App() {
     }
   }
   const handelUserCreation = async () =>{   
-    const checkUserExist = await Api.getSpecific(currentUser.email)
-    if(!(checkUserExist.message === undefined)){
-      // Create new user
-      await Api.createUser(id,name,email,userPayingSystem)
+    let checkUserExist;
+    if(currentUser.email.length > 0){
+      checkUserExist=await Api.getSpecific(currentUser.email)
+    }
+    
+    if(checkUserExist){
+      if(!(checkUserExist.message === undefined)){
+        // Create new user
+        await Api.createUser(id,name,email,userPayingSystem)
+      }
     }  
   }
   const handelUserUpdating = async (value) =>{
