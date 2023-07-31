@@ -4,6 +4,7 @@ import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
 
 const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
+    // State variable & dictionaries
     const SpatialEngineeringlessons = [
         {
             'name' : ':المحاضرة الأولي',
@@ -70,9 +71,9 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
             'exam' : 'امتحان الهندسة الفراغية 2 '
         }
     ]
-    
     const[videoDuration, setVideoDuration] = useState([])
-
+    
+    // essential functions
     const getIDfromURL = (url)=> {
         const videoID = url.split('v=')[1];
       
@@ -83,45 +84,8 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
         console.log('The supplied URL is not a valid youtube URL');
         return '';
     }
-    const getDuration = async(id)=>{
-        /* await durationFunction(id).then((res) => {
-             var match = res.items[0].contentDetails.duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
-    
-            match = match.slice(1).map((x)=> {
-                if (x != null) {
-                    return x.replace(/\D/, '');
-                }
-                return x;
-            });
-             var hours = (parseInt(match[0]) || 0);
-            var minutes = (parseInt(match[1]) || 0);
-            var seconds = (parseInt(match[2]) || 0);
-            // console.log(videoDuration.filter(video => video.id=id))
-            return([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
-        }) */
-        
-        var hours = Math.floor(Math.random()* 10);
-        var minutes = Math.floor(Math.random()* 10);
-        var seconds = Math.floor(Math.random()* 10);
-        
-        const arr = videoDuration.filter(video =>video.id ===id).length >=1 ? false:true
-        if(arr){
-            setVideoDuration([...videoDuration, {"id":id, "duration":`${hours}:${minutes}:${seconds}`}])
-        }
 
-    }
-    const fetchDuration = async(link)=> {
-        if(link !== 'soon'){
-            let id = await getIDfromURL(link)
-            getDuration(id)
-        }
-    }
-    const addIdToOrigin = (id) =>{
-        localStorage.setItem("videoId", id)
-        setVideoId(id)
-        window.location.pathname = `/Hany-AbdulGawed-platform/lessonView`
-    }
-
+    // renders
     if(user === null){
         return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
             يرجي تسجيل الدخول
@@ -129,7 +93,6 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
             <LoginBtn/>
     </h1>)
     }
-
     if(userPayingSystem === null){
         return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
             نظام الاشتراك غير محدد
@@ -137,7 +100,6 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
             يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
         </h1>)
     }
-
     if(userPayingSystem === 'LPS'){
         return(
             <div className="lessons-box">
@@ -153,7 +115,7 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    fetchDuration(part.link) 
+                                    
                                     return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>
@@ -189,16 +151,10 @@ const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
             </div>
         )
     }
-
     if(userPayingSystem === 'MPS'){
-        return(
-            <div className='video-player'>
-                <div>
-                    <iframe title='video' width="800" height="443" type="text/html" src="https://www.youtube.com/embed/9OhPTtoYTFQ?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0"></iframe>
-                </div>
-            </div>
-
-        );
+        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+            تحت الانشاء
+        </h1>);
     }
 }
 

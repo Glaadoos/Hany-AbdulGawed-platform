@@ -24,7 +24,7 @@ function App() {
     'payingSystem':''
 });
   const [userPayingSystem, setPayingSystem] = useState('');
-  const [videoId, setVideoId] = useState(localStorage.getItem("videoId"));
+  const [videoId, setVideoId] = useState('');
   const [userExist, setUserExist] = useState(false);
   const {user} = useAuth0();
 
@@ -70,7 +70,19 @@ function App() {
       console.log(err)
     }
     const data = await res
-    return(data);
+    // console.log(data);
+    var match = data.items[0].contentDetails.duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
+    match = match.slice(1).map((x)=> {
+          if (x != null) {
+              return x.replace(/\D/, '');
+          }
+          return x;
+        });
+      var hours = (parseInt(match[0]) || 0);
+      var minutes = (parseInt(match[1]) || 0);
+      var seconds = (parseInt(match[2]) || 0);
+      console.log(videoId, `${hours}:${minutes}:${seconds}`)
+    // console.log(data.items[0].contentDetails.duration);
   }
 
   useEffect(()=>{

@@ -10,6 +10,7 @@ const LogoutBtn =()=>{
         localStorage.removeItem("userName")
         localStorage.removeItem("userPicture")
         localStorage.removeItem("userPayingSystem")
+        localStorage.removeItem("videoId")
         
     }
     return(<button onClick={hendleLogOut}>Log Out</button>);
