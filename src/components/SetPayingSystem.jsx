@@ -53,10 +53,12 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
                             style={{color:'red'}}
                         >:ملحوظة </h3>
                         IT بعد اما تحط نظام الاشتراك مش هتقدر تغيره الا عن طريق انك ترجع لل <br/><br/>
-                        <button
-                        onClick={handleUpdata}
-                            style={{width:'fit-content', margin: 'auto'}}
-                        >تأكيد</button>
+                        <a href={window.location.origin}>
+                            <button
+                            onClick={handleUpdata}
+                                style={{width:'fit-content', margin: 'auto'}}
+                            >تأكيد</button>
+                        </a>
                     </pre>
 
                 </div>

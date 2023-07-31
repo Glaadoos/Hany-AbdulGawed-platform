@@ -94,7 +94,7 @@ function App() {
             'name':user.name,
             'email':user.email,
             'picture':user.picture,
-            'payingSystem':localStorage.getItem("userPayingSystem") || userPayingSystem
+            'payingSystem':userPayingSystem||localStorage.getItem("userPayingSystem") 
         })
 
         handleUserexist();
@@ -107,21 +107,18 @@ function App() {
             'name':localStorage.getItem("userName"),
             'email':localStorage.getItem("userEmail"),
             'picture':localStorage.getItem("userPicture"),
-            'payingSystem':localStorage.getItem("userPayingSystem")|| userPayingSystem
+            'payingSystem':userPayingSystem||localStorage.getItem("userPayingSystem") 
         })
-        /* alert(localStorage.getItem("userName"))
-        alert(localStorage.getItem("userEmail"))
-        alert(localStorage.getItem("userPicture"))
-        alert(localStorage.getItem("userPayingSystem")) */
         handleUserexist();
         if(!userExist){
           handelUserCreation();
         }
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[currentUser.email, user])
 
-// console.log(userPayingSystem, currentUser)
+  },[currentUser.email, user, userExist])
+
+console.log(`userPayingSystem: ${userPayingSystem}, userExist: ${userExist} , user: ${user}`, currentUser)
+
   return(
     <div>
       <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
