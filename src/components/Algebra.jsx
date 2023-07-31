@@ -413,6 +413,13 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             تحت الانشاء
         </h1>)
     }
+    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none'){
+        return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
+            نظام الاشتراك غير محدد
+            <br/>
+            يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
+        </h1>)
+    }
 }
 
 export default Algebra;

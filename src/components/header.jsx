@@ -131,7 +131,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                         </MenuItem>
                                         <MenuItem onClick={handleClose}>
                                             <p className={'dropdonwitem'} key={'dropdonwitem'}>{
-                                                userPayingSystem === undefined ||  userPayingSystem ==='none' ||  userPayingSystem ===null?
+                                                userPayingSystem === undefined ||  userPayingSystem ==='none' ||  userPayingSystem ===null || userPayingSystem.length === 0?
                                                 'غير محدد'
                                                 :
                                                 userPayingSystem + ':نوع الاشتراك'

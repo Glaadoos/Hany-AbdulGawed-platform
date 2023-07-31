@@ -35,13 +35,22 @@ function App() {
 
   const handleUserexist = async ()=>{
     // Check if the user on server side exist or not
-    const checkUserExist = await Api.getSpecific(currentUser.email)
-    if(checkUserExist.message === undefined){
-      setUserExist(true)
-      localStorage.setItem("userPayingSystem", checkUserExist.payingSystem)  
-      setPayingSystem(checkUserExist.payingSystem)
-    }else{
-      setUserExist(false)
+    let checkUserExist;
+    if(currentUser.email !== ''){
+      checkUserExist = await Api.getSpecific(currentUser.email)
+    }
+    // console.log(checkUserExist)
+    if(checkUserExist){
+      if(checkUserExist.message === undefined){
+        setUserExist(true)
+        localStorage.setItem("userPayingSystem", checkUserExist.payingSystem)
+        // console.log(checkUserExist.payingSystem)  
+        if(checkUserExist.payingSystem !=='none'){
+          setPayingSystem(checkUserExist.payingSystem)
+        }
+      }else{
+        setUserExist(false)
+      }
     }
   }
   const handelUserCreation = async () =>{   
@@ -117,7 +126,7 @@ function App() {
 
   },[currentUser.email, user, userExist])
 
-console.log(`userPayingSystem: ${userPayingSystem}, userExist: ${userExist} , user: ${user}`, currentUser)
+// console.log(userPayingSystem.length)
 
   return(
     <div>

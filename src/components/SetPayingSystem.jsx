@@ -13,13 +13,17 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
     setValue(event.target.attributes[3].nodeValue)
   };
   const handleUpdata = () => {
-    if(value !==''){
+    document.getElementById('wait').classList.add('open')
+    if(value ==='MPS' || value ==='LPS'){
         handelUserUpdating(value)
     }
+    setTimeout(()=>{
+        window.location.href = window.location.origin
+    }, 4000)
   };
 
-    // console.log(value)
-    if(userPayingSystem === undefined || userPayingSystem === 'none'){
+    // console.log(localStorage.getItem("userPayingSystem"))
+    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none'){
         return(
             <div>
                 <h1 className="title paying-system" style={{textAlign:'center', marginTop:'50px'}}
@@ -53,12 +57,12 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
                             style={{color:'red'}}
                         >:ملحوظة </h3>
                         IT بعد اما تحط نظام الاشتراك مش هتقدر تغيره الا عن طريق انك ترجع لل <br/><br/>
-                        <a href={window.location.origin}>
-                            <button
-                            onClick={handleUpdata}
-                                style={{width:'fit-content', margin: 'auto'}}
-                            >تأكيد</button>
-                        </a>
+                        <button
+                        onClick={handleUpdata}
+                            style={{width:'fit-content', margin: 'auto'}}
+                        >تأكيد
+                        </button>
+                        <p id='wait'  style={{margin: 'auto', display:'none'}}>wait</p>
                     </pre>
 
                 </div>
