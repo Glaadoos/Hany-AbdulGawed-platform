@@ -23,6 +23,7 @@ function App() {
     'picture':'',
     'payingSystem':''
 });
+  const [windowWidth, setWindowWidth] = useState(window.outerWidth);
   const [userPayingSystem, setPayingSystem] = useState('');
   const [videoId, setVideoId] = useState('');
   const [userExist, setUserExist] = useState(false);
@@ -129,55 +130,58 @@ function App() {
           handelUserCreation();
         }
     }
+    setWindowWidth(window.outerWidth)
+  },[currentUser.email, user, userExist, windowWidth])
 
-  },[currentUser.email, user, userExist])
+// console.log(window.outerWidth)
 
-// console.log(userPayingSystem.length)
+  if(windowWidth >= 720){
+    return(
+      <div>
+        <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
+        <Routes>
+          <Route path='/Hany-AbdulGawed-platform' exact  element={
+            <div>
+              <Main />
+              <Lectures  />
+            </div>
+          }/>
+          <Route path='/' element={
+            <div>
+              <Main />
+              <Lectures />
+            </div>
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
+            <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/Algebra' element={
+            <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/Calculus' element={
+            <Calculus  />
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/Dynamics' element={
+            <Dynamics  />
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/Statics' element={
+            <Statics  />
+          }/>
+          <Route path='/Hany-AbdulGawed-platform/Revisiones' element={
+            <Revisiones  />
+          }/>
+          <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
+            <LessonPlayer videoId={videoId} />
+          }/>
+          <Route path={`/Hany-AbdulGawed-platform/PayingSystem`} element={
+            <SetPayingSystem user={email} handelUserUpdating={handelUserUpdating}  userPayingSystem={userPayingSystem}/>
+          }/>
+        </Routes>
 
-  return(
-    <div>
-      <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
-      <Routes>
-        <Route path='/Hany-AbdulGawed-platform' exact  element={
-          <div>
-            <Main />
-            <Lectures  />
-          </div>
-        }/>
-        <Route path='/' element={
-          <div>
-            <Main />
-            <Lectures />
-          </div>
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
-          <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/Algebra' element={
-          <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/Calculus' element={
-          <Calculus  />
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/Dynamics' element={
-          <Dynamics  />
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/Statics' element={
-          <Statics  />
-        }/>
-        <Route path='/Hany-AbdulGawed-platform/Revisiones' element={
-          <Revisiones  />
-        }/>
-        <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
-          <LessonPlayer videoId={videoId} />
-        }/>
-        <Route path={`/Hany-AbdulGawed-platform/PayingSystem`} element={
-          <SetPayingSystem user={email} handelUserUpdating={handelUserUpdating}  userPayingSystem={userPayingSystem}/>
-        }/>
-      </Routes>
-
-    </div>
-  )
+      </div>
+    )
+  }
+  
 }
 
 export default App;
