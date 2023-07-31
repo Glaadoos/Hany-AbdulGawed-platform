@@ -1,0 +1,26 @@
+POST  http://localhost:5000/accounts/
+Content-Type: application/json
+
+{
+    "id": "yogeye2013@mliok.com",
+    "name":"yogeye2013@mliok.com",
+    "email": "yogeye2013@mliok.com",
+    "payingSystem": "LPS"
+}
+
+###
+GET http://localhost:5000/accounts/
+
+###
+GET http://localhost:5000/accounts/bahget@gmail.com
+
+###
+DELETE http://localhost:5000/accounts/bahget@gmail.com
+
+###
+PATCH http://localhost:5000/accounts/qweqwe@hotmail.com
+Content-Type: application/json
+
+{
+    "payingSystem":"mps"
+}
