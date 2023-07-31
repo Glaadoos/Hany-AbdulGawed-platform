@@ -330,6 +330,9 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
 
 export default Algebra;
 
+/*  */
+
+
 /* 
 code with fade in out
 
