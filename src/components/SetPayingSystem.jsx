@@ -18,7 +18,7 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
         handelUserUpdating(value)
     }
     setTimeout(()=>{
-        window.location.href = window.location.origin
+        window.location.href = 'https://bahget.github.io/Hany-AbdulGawed-platform/'
     }, 4000)
   };
 
