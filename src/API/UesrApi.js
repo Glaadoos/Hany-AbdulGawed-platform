@@ -1,4 +1,4 @@
-const api = 'http://localhost:5000/accounts'
+const api = 'http://192.168.1.10:5000/accounts'
 
 
 
