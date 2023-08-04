@@ -14,7 +14,7 @@ header{
   flex-direction: row-reverse;
   justify-content: space-between;
   list-style-type: none;
-  background-color: #F1F1F1;
+  background-color: #f2f2f2;
   font-family: 'Rubik', sans-serif !important;
 
 }
@@ -74,7 +74,7 @@ ul.navbar>li,ul.navbar>li>a{
 .master-name{
   font-family: 'Rubik', sans-serif;
   font-size: 5.5em;
-  color: #B20600;
+  color: #b20600;
 }
 
 .solgen{
@@ -259,7 +259,7 @@ button{
 
 .lesson-btn{
   background-color: transparent;
-  
+  margin: 0;
   color: black;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;

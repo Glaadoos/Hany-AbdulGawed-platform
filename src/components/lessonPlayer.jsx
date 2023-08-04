@@ -25,3 +25,7 @@ const LessonPlayer = ({videoId}) =>{
 
 export default LessonPlayer;
 
+/* 
+
+<iframe width="1663" height="770" src="https://www.youtube.com/embed/FLngWhKxdFM" title="الجبر التباديل والتوفيق الحصة الثانية" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+*/
