@@ -54,6 +54,20 @@ function App() {
       }
     }
   }
+  const generateCodes= ()=> {   
+    let pass = '';
+    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
+            'abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*(!+_=-{}[];:?/';
+    for (let i = 1; i <= 24; i++) {
+        var char = Math.floor(Math.random()
+                    * str.length + 1);
+          
+        pass += str.charAt(char)
+    }
+        
+    
+    return pass;
+  }
   const handelUserCreation = async () =>{   
     let checkUserExist;
     if(currentUser.email.length > 0){
@@ -73,7 +87,6 @@ function App() {
       await Api.updateUser(email,value)
     }
   }
-  
   const getYoutubeVideoDuration = async(videoId)=>{
     // const key1 = 'AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg'
     const key = 'AIzaSyAXPC5sP8ItkyMaVY5akzqqWvtjsYf1qfc'
@@ -133,7 +146,7 @@ function App() {
     setWindowWidth(window.outerWidth)
   },[currentUser.email, user, userExist, windowWidth])
 
-// console.log(window.outerWidth)
+// console.log(localStorage.getItem("userPayingSystem") !== 'MPS' && localStorage.getItem("userPayingSystem") !=='LPS')
 
   if(windowWidth >= 720){
     return(
