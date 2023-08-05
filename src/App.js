@@ -26,11 +26,10 @@ function App() {
   const [windowWidth, setWindowWidth] = useState(window.outerWidth);
   const [userPayingSystem, setPayingSystem] = useState('');
   const [videoId, setVideoId] = useState('');
-  const [checkUserExist, setCheckUserExist] = useState(false);
   const [userExist, setUserExist] = useState(false);
   const {user} = useAuth0();
 
-  
+  const id=localStorage.getItem("userEmail")
   const name=localStorage.getItem("userName")
   const email=localStorage.getItem("userEmail")
 
@@ -50,12 +49,15 @@ function App() {
         if(checkUserExist.payingSystem !=='none'){
           setPayingSystem(checkUserExist.payingSystem)
         }
+        if(checkUserExist.payingSystem !==''){
+          setPayingSystem(localStorage.getItem("userPayingSystem"))
+        }
       }else{
         setUserExist(false)
       }
     }
   }
-  const generateCodes= ()=> {   
+  /* const generateCodes= ()=> {   
     let pass = '';
     let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
             'abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*(!+_=-{}[];:?/';
@@ -68,17 +70,18 @@ function App() {
         
     
     return pass;
-  }
+  } */
   const handelUserCreation = async () =>{   
-    setCheckUserExist(await Api.getSpecific(currentUser.email))
-    console.log(checkUserExist, 'requset sended as getSpecific')  
+    let checkUserExist;
+    if(currentUser.email.length > 0){
+      checkUserExist=await Api.getSpecific(currentUser.email)
+    }
     
-    
-    if(localStorage.getItem("userPayingSystem") === 'MPS' || localStorage.getItem("userPayingSystem") ==='LPS'){
-      // Create new user
-      await Api.createUser(generateCodes(),name,email,userPayingSystem)
-      console.log(checkUserExist, 'requset sended as createUser')
-      setCheckUserExist(true);
+    if(checkUserExist){
+      if(!(checkUserExist.message === undefined)){
+        // Create new user
+        await Api.createUser(id,name,email,userPayingSystem)
+      }
     }  
   }
   const handelUserUpdating = async (value) =>{
@@ -144,9 +147,10 @@ function App() {
         }
     }
     setWindowWidth(window.outerWidth)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user, userExist, windowWidth])
 
-// console.log(localStorage.getItem("userPayingSystem") !== 'MPS' && localStorage.getItem("userPayingSystem") !=='LPS')
+// console.log(currentUser, userPayingSystem)
 
   if(windowWidth >= 720){
     return(
