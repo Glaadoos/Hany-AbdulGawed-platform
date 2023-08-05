@@ -24,6 +24,7 @@ ul{
   flex-direction: row-reverse;
   justify-content: space-between;
   /* border-radius: 20px; */
+  margin: 0;
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
   background-color: #F1F1F1;
@@ -290,6 +291,14 @@ button{
   background: url('https://cdn-icons-png.flaticon.com/512/0/375.png');
   background-size: 20px 20px;
   background-repeat: no-repeat;
+}
+.fullScreen {
+  width: 85vw;
+  height: 85vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: -300px;
 }
 
 /* Video Player Page */

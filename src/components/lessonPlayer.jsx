@@ -74,6 +74,7 @@ const LessonPlayer = ({videoId}) =>{
     rel:0,
     height: '400',
     width: '790',
+    fov:120,
     playerVars: { 
         height: '420',
         width: '700',
@@ -90,13 +91,20 @@ const LessonPlayer = ({videoId}) =>{
     const playbtn = ()=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.playVideo()
-        console.log(ele)
+        // console.log(ele)
     }
     }
     const pausebtn = ()=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.pauseVideo()
     }
+    }
+    const fullScreen = ()=>{
+        if(document.querySelector('.fullScreen')){
+            document.querySelector('.fullScreen').classList.remove("fullScreen");
+        }else{
+            document.getElementById("widget8").className = "fullScreen";
+        }
     }
     const setVolume = (e)=>{
     if(ele.h !== undefined && ele.h !== null){
@@ -137,6 +145,9 @@ const LessonPlayer = ({videoId}) =>{
                     </li>
                     <li>
                         <button onClick={pausebtn}>pause</button>
+                    </li>
+                    <li>
+                        <button onClick={fullScreen}>Full Screen</button>
                     </li>
                     <li>
                         <button onClick={playbtn}>play</button>
