@@ -336,7 +336,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             يرجي اعادة تحميل الصفحة او تحديد نظام الاشتراك
         </h1>)
     }
-    if(userPayingSystem === 'LPS'){
+    if(userPayingSystem === 'LPS' || localStorage.getItem("userPayingSystem") === 'LPS'){
         return(
             <div className="lessons-box">
                 <h1 className="title"
@@ -408,7 +408,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             </div>
         );
     }
-    if(userPayingSystem === 'MPS'){
+    if(userPayingSystem === 'MPS' || localStorage.getItem("userPayingSystem") === 'MPS'){
         return (<h1 style={{textAlign:'center', marginTop:'200px'}}>
             تحت الانشاء
         </h1>)

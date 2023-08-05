@@ -49,12 +49,15 @@ function App() {
         if(checkUserExist.payingSystem !=='none'){
           setPayingSystem(checkUserExist.payingSystem)
         }
+        if(checkUserExist.payingSystem !==''){
+          setPayingSystem(localStorage.getItem("userPayingSystem"))
+        }
       }else{
         setUserExist(false)
       }
     }
   }
-  const generateCodes= ()=> {   
+  /* const generateCodes= ()=> {   
     let pass = '';
     let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
             'abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*(!+_=-{}[];:?/';
@@ -67,7 +70,7 @@ function App() {
         
     
     return pass;
-  }
+  } */
   const handelUserCreation = async () =>{   
     let checkUserExist;
     if(currentUser.email.length > 0){
@@ -144,9 +147,10 @@ function App() {
         }
     }
     setWindowWidth(window.outerWidth)
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user, userExist, windowWidth])
 
-// console.log(localStorage.getItem("userPayingSystem") !== 'MPS' && localStorage.getItem("userPayingSystem") !=='LPS')
+// console.log(currentUser, userPayingSystem)
 
   if(windowWidth >= 720){
     return(
