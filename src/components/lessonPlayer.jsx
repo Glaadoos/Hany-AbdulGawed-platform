@@ -26,7 +26,6 @@ const LessonPlayer = ({videoId}) =>{
             setCurrentTime(`${Currenthours}:${Currentminutes}:${Currentseconds} / ${Durationhours}:${Durationminutes}:${Durationseconds}`)
             setDuration((time*100) / ele.getDuration())
         }
-        // console.log(time)
     }, [ele, time] )
 
     /*
@@ -62,9 +61,6 @@ const LessonPlayer = ({videoId}) =>{
     setInterval(()=>{
         if(ele){
             setTime(ele.getCurrentTime())
-                // console.log(ele.getCurrentTime() === time, time)
-            
-           
         }
     }, 1000)
     const onPlayerReady= (event) => {
@@ -104,7 +100,7 @@ const LessonPlayer = ({videoId}) =>{
         if(document.querySelector('.fullScreen')){
             document.querySelector('.fullScreen').classList.remove("fullScreen");
         }else{
-            document.getElementById("widget8").className = "fullScreen";
+            document.getElementsByTagName("iframe")[0].className = "fullScreen";
         }
     }
     const setVolume = (e)=>{
@@ -128,7 +124,6 @@ const LessonPlayer = ({videoId}) =>{
         setTime(e.target.getCurrentTime())
     }
 
-// console.log(speed)
 
     return(
         <div className='video-player'>
