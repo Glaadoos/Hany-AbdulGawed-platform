@@ -159,9 +159,23 @@ const LessonPlayer = ({videoId}) =>{
                 <h2 className="sub-attachments"
                 style={{textAlign:'right'}}
                 >:الملزمة</h2>
+
+                {
+                    id ==='x4hPH5Wreyk'?
+                        <iframe title='ذات الحدين 1' src="https://drive.google.com/file/d/1f-mr9jXcCjjJJwErEOtMUC-zq-PhFs85/preview" width="640" height="600" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+
                 <h2 className="sub-attachments"
                 style={{textAlign:'right'}}
                 >:الواجب</h2>
+                 {
+                    id ==='x4hPH5Wreyk'?
+                    <iframe title='ذات الحدين 1' src="https://drive.google.com/file/d/15F-wJ0DT2t14KMs5UgqIfvBcfUiBR1FL/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
             </div>
         </div>
 
