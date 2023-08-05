@@ -73,20 +73,20 @@ ul.navbar>li,ul.navbar>li>a{
 }
 
 .master-name{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   font-size: 5.5em;
   color: #B20600;
 }
 
 .solgen{
   margin-left: -5%;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   text-align: center;
   font-size: 2.5em;
 }
 
 .title{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   font-weight: bold;
   font-size: 4.5em;
 }
@@ -168,7 +168,7 @@ button{
   margin: auto;
   margin-bottom: 50px;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
 }
 
 .branch{
@@ -239,6 +239,7 @@ button{
   width: 70%;
   margin: auto;
   padding: 20px;
+
   flex-direction: column;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -256,6 +257,7 @@ button{
 .lesson-part{
   display: flex;
   background-color: transparent;
+  font-family: 'Cairo Play', sans-serif !important; 
 }
 
 .lesson-btn{
