@@ -295,23 +295,27 @@ button{
   background-repeat: no-repeat;
 }
 .fullScreen {
-  width: 85vw;
-  height: 85vh;
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: -300px;
+  width: 85vw !important;
+  height: 85vh !important;
+  position: absolute !important;
+  top: 10px!important;
+  left: 0 !important;
+  margin-left: -300px !important;
+}
+
+.fullScreen-margin{
+  margin-top: -70px;
 }
 
 /* Video Player Page */
 .video-player{
   position: relative;
   background-color: #E5E5E5;
-  margin: 50px auto;
+  margin: 70px auto;
   border-top-right-radius:20px;
   border-top-left-radius: 20px;
   width:850px;
-  height:500px;
+  height:550px;
 }
 
 .player{
@@ -324,7 +328,7 @@ button{
 .attachments{
   background-color: #E5E5E5;
   font-size: 10px;
-  margin: 45px auto;
+  margin: 100px auto;
   border-bottom-right-radius:20px;
   border-bottom-left-radius: 20px;
 }

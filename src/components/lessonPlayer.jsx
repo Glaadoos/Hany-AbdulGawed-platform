@@ -9,6 +9,7 @@ const LessonPlayer = ({videoId}) =>{
     const[duration, setDuration] = useState(0)
     const[speed, setSpeed] = useState(1)
     const[volume, setVideoVolume] = useState(50)
+
     const[currentTime, setCurrentTime] = useState(0)
     const[height, setHeight] = useState('')
     let videoplayer = document.querySelector('.player')
@@ -98,9 +99,14 @@ const LessonPlayer = ({videoId}) =>{
     }
     const fullScreen = ()=>{
         if(document.querySelector('.fullScreen')){
+            document.querySelector('.hidden-div').classList.remove("fullScreen");
             document.querySelector('.fullScreen').classList.remove("fullScreen");
+            document.querySelector('.controls').classList.remove("fullScreen-margin");
         }else{
+            document.querySelector('.hidden-div').classList.add("fullScreen");
             document.getElementsByTagName("iframe")[0].className = "fullScreen";
+            document.querySelector('.controls').classList.add("fullScreen-margin");
+            
         }
     }
     const setVolume = (e)=>{
@@ -119,24 +125,23 @@ const LessonPlayer = ({videoId}) =>{
         setDuration((time*100) / ele.getDuration())
     }
     }
-    
     const StateChange = (e) =>{
         setTime(e.target.getCurrentTime())
     }
-
 
     return(
         <div className='video-player'>
             <div className="player" style={{padding:'10px'}}>
                 <div
-                    style={{position: 'absolute',width: '100%', height: '100%', top: '0', left: '0', opacity: '0'}}
+                    className='hidden-div'
+                    style={{position: 'absolute',width: '100%', height: '100%', top: '0', left: '0', opacity: '0', zIndex:'99'}}
                 ></div>
+
                 <div id="player">
-                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} onStateChange={StateChange}  />
+                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} onStateChange={StateChange} />
                 </div>
 
-                <ul style={{backgroundColor: 'white'}}>
-                    
+                <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
                     <li>
                         <input type='range' min='0' max='100' onChange={setVolume} /><br/>
                         <label>Volume: {volume}</label>
@@ -147,7 +152,7 @@ const LessonPlayer = ({videoId}) =>{
                     </li>
                     <li>
                         <p>{currentTime}</p>
-                    </li>
+                    </li>             
                     <li>
                         <button onClick={pausebtn}>pause</button>
                     </li>
@@ -157,10 +162,9 @@ const LessonPlayer = ({videoId}) =>{
                     <li>
                         <button onClick={playbtn}>play</button>
                     </li>
-
                 </ul>
 
-                <ul style={{backgroundColor: 'white'}}>
+                <ul className='slider' style={{backgroundColor: 'white', flexDirection: 'column-reverse', zIndex:'199'}}>                  
                     <li>
                         <input style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
                         <label></label>
