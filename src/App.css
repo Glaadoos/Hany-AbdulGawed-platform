@@ -14,7 +14,7 @@ header{
   flex-direction: row-reverse;
   justify-content: space-between;
   list-style-type: none;
-  background-color: #f2f2f2;
+  background-color: #F1F1F1;
   font-family: 'Rubik', sans-serif !important;
 
 }
@@ -24,6 +24,7 @@ ul{
   flex-direction: row-reverse;
   justify-content: space-between;
   /* border-radius: 20px; */
+  margin: 0;
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
   background-color: #F1F1F1;
@@ -72,20 +73,20 @@ ul.navbar>li,ul.navbar>li>a{
 }
 
 .master-name{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   font-size: 5.5em;
-  color: #b20600;
+  color: #B20600;
 }
 
 .solgen{
   margin-left: -5%;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   text-align: center;
   font-size: 2.5em;
 }
 
 .title{
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
   font-weight: bold;
   font-size: 4.5em;
 }
@@ -167,7 +168,7 @@ button{
   margin: auto;
   margin-bottom: 50px;
   text-align: center;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Cairo Play', sans-serif;
 }
 
 .branch{
@@ -238,6 +239,7 @@ button{
   width: 70%;
   margin: auto;
   padding: 20px;
+
   flex-direction: column;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -255,11 +257,12 @@ button{
 .lesson-part{
   display: flex;
   background-color: transparent;
+  font-family: 'Cairo Play', sans-serif !important; 
 }
 
 .lesson-btn{
   background-color: transparent;
-  margin: 0;
+  
   color: black;
   font-family: 'Rubik', sans-serif;
   font-size: 20px;
@@ -291,16 +294,28 @@ button{
   background-size: 20px 20px;
   background-repeat: no-repeat;
 }
+.fullScreen {
+  width: 85vw !important;
+  height: 85vh !important;
+  position: absolute !important;
+  top: 10px!important;
+  left: 0 !important;
+  margin-left: -300px !important;
+}
+
+.fullScreen-margin{
+  margin-top: -70px;
+}
 
 /* Video Player Page */
 .video-player{
   position: relative;
   background-color: #E5E5E5;
-  margin: 50px auto;
+  margin: 70px auto;
   border-top-right-radius:20px;
   border-top-left-radius: 20px;
   width:850px;
-  height:500px;
+  height:550px;
 }
 
 .player{
@@ -313,7 +328,7 @@ button{
 .attachments{
   background-color: #E5E5E5;
   font-size: 10px;
-  margin: 45px auto;
+  margin: 100px auto;
   border-bottom-right-radius:20px;
   border-bottom-left-radius: 20px;
 }
