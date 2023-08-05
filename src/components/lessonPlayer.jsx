@@ -7,6 +7,8 @@ const LessonPlayer = ({videoId}) =>{
     const[ele, setEle] = useState('')
     const[time, setTime] = useState(0)
     const[duration, setDuration] = useState(0)
+    const[speed, setSpeed] = useState(1)
+    const[volume, setVideoVolume] = useState(50)
     const[currentTime, setCurrentTime] = useState(0)
     const[height, setHeight] = useState('')
     let videoplayer = document.querySelector('.player')
@@ -91,7 +93,6 @@ const LessonPlayer = ({videoId}) =>{
     const playbtn = ()=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.playVideo()
-        // console.log(ele)
     }
     }
     const pausebtn = ()=>{
@@ -109,7 +110,12 @@ const LessonPlayer = ({videoId}) =>{
     const setVolume = (e)=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.setVolume(e.target.value)
+        setVideoVolume(e.target.value)
     }
+    }
+    const setSpeedplayer = (e)=>{
+        ele.setPlaybackRate(Number(e.target.value))
+        setSpeed(e.target.value)
     }
     const setDurationtime = (e)=>{
     if(ele.h !== undefined && ele.h !== null){
@@ -122,7 +128,7 @@ const LessonPlayer = ({videoId}) =>{
         setTime(e.target.getCurrentTime())
     }
 
-// console.log(time)
+// console.log(speed)
 
     return(
         <div className='video-player'>
@@ -131,14 +137,18 @@ const LessonPlayer = ({videoId}) =>{
                     style={{position: 'absolute',width: '100%', height: '100%', top: '0', left: '0', opacity: '0'}}
                 ></div>
                 <div id="player">
-                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} onStateChange={StateChange} />
+                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} onStateChange={StateChange}  />
                 </div>
 
                 <ul style={{backgroundColor: 'white'}}>
                     
                     <li>
-                        <input type='range' min='0' max='100' onChange={setVolume} />
-                        <label>Volume</label>
+                        <input type='range' min='0' max='100' onChange={setVolume} /><br/>
+                        <label>Volume: {volume}</label>
+                    </li>
+                    <li>
+                        <input type='range' min='.25' max='2' step='.25' placeholder='speed' value={speed} onChange={setSpeedplayer} /><br/>
+                        <label id="speed">Speed: {speed+'x'}</label>
                     </li>
                     <li>
                         <p>{currentTime}</p>
@@ -157,7 +167,7 @@ const LessonPlayer = ({videoId}) =>{
 
                 <ul style={{backgroundColor: 'white'}}>
                     <li>
-                        <input style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' value={duration}  onChange={setDurationtime} />
+                        <input style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
                         <label></label>
                     </li>
                 </ul>
