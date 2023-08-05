@@ -18,7 +18,7 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
         handelUserUpdating(value)
     }
     setTimeout(()=>{
-        window.location.href = 'http://localhost:3000/'
+        window.location.href = window.location.origin
     }, 4000)
   };
 
