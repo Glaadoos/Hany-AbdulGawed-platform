@@ -461,9 +461,11 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'exam' : 'امتحان المحاضرة الثانية'
         }
     ]
+    
     const[refresh, setRefresh] = useState(true)
     const[show, setShow] = useState([])
     const[inputValue, setInputValue] = useState([])
+
     // essential functions
     const getIDfromURL = (url)=> {
         const videoID = url.split('v=')[1];
@@ -477,7 +479,6 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
         localStorage.setItem("videoId", e.target.id)
     }
     const checkCode = (code, id)=>{
-
         let arr;
         Algebralessons.map(obj =>{
                                 obj.parts.map(part =>{
@@ -521,8 +522,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
         
         
     }
-    // console.log(show)
-    // renders
+
     if(user === null){
         return (
             <h1 style={{textAlign:'center', marginTop:'200px'}}>

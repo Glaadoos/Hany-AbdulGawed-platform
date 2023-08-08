@@ -40,7 +40,6 @@ function App() {
     if(currentUser.email !== ''){
       checkUserExist = await Api.getSpecific(currentUser.email)
     }
-    // console.log(checkUserExist)
     if(checkUserExist){
       if(checkUserExist.message === undefined){
         setUserExist(true)
@@ -150,54 +149,50 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user, userExist, windowWidth])
 
-// console.log(currentUser, userPayingSystem)
+  return(
+    <div>
+      <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
+      <Routes>
+        <Route path='/Hany-AbdulGawed-platform' exact  element={
+          <div>
+            <Main />
+            <Lectures  />
+          </div>
+        }/>
+        <Route path='/' element={
+          <div>
+            <Main />
+            <Lectures />
+          </div>
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
+          <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/Algebra' element={
+          <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/Calculus' element={
+          <Calculus  />
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/Dynamics' element={
+          <Dynamics  />
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/Statics' element={
+          <Statics  />
+        }/>
+        <Route path='/Hany-AbdulGawed-platform/Revisiones' element={
+          <Revisiones  />
+        }/>
+        <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
+          <LessonPlayer videoId={videoId} />
+        }/>
+        <Route path={`/Hany-AbdulGawed-platform/PayingSystem`} element={
+          <SetPayingSystem user={email} handelUserUpdating={handelUserUpdating}  userPayingSystem={userPayingSystem}/>
+        }/>
+      </Routes>
 
-  if(windowWidth >= 720){
-    return(
-      <div>
-        <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
-        <Routes>
-          <Route path='/Hany-AbdulGawed-platform' exact  element={
-            <div>
-              <Main />
-              <Lectures  />
-            </div>
-          }/>
-          <Route path='/' element={
-            <div>
-              <Main />
-              <Lectures />
-            </div>
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/spatialEngineering' element={
-            <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/Algebra' element={
-            <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/Calculus' element={
-            <Calculus  />
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/Dynamics' element={
-            <Dynamics  />
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/Statics' element={
-            <Statics  />
-          }/>
-          <Route path='/Hany-AbdulGawed-platform/Revisiones' element={
-            <Revisiones  />
-          }/>
-          <Route path={`/Hany-AbdulGawed-platform/lessonView`} element={
-            <LessonPlayer videoId={videoId} />
-          }/>
-          <Route path={`/Hany-AbdulGawed-platform/PayingSystem`} element={
-            <SetPayingSystem user={email} handelUserUpdating={handelUserUpdating}  userPayingSystem={userPayingSystem}/>
-          }/>
-        </Routes>
-
-      </div>
-    )
-  }
+    </div>
+  )
   
 }
 

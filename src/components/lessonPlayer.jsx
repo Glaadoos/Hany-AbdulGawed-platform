@@ -4,22 +4,13 @@ import YouTube from 'react-youtube';
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
-    // console.log(id)
     const[ele, setEle] = useState('')
     const[time, setTime] = useState(0)
     const[duration, setDuration] = useState(0)
     const[speed, setSpeed] = useState(1)
-    const[size, setSize] = useState({
-        width:'',
-        height:''
-    })
     const[volume, setVideoVolume] = useState(50)
-
     const[currentTime, setCurrentTime] = useState(0)
 
-    
-
-    
     useEffect(()=>{
         if(ele){
             let Currenthours = Math.round(time/3600)
@@ -33,40 +24,9 @@ const LessonPlayer = ({videoId}) =>{
         }
     }, [ele, time] )
 
-    /*
-     const onPlayerStateChange = () =>{
-        console.log('player state change')
-
-    }
-
-
-    let playerexist = document.querySelector('#player')
-    let player;
-    if(playerexist !== null){
-         player = new YTPlayer('#player', {
-            videoId:id,
-            captions:false,
-            controls: false,
-            related:false,
-            modestBranding:false,
-            playerVars: { 
-                'autoplay': 1,
-                
-                'autohide': 1,
-                'wmode': 'opaque',
-                'origin': 'http://localhost:3000'
-            },
-        })
-
-        player.load(id)
-        player.setVolume(100)
-        
-    }
-*/
     setInterval(()=>{
         if(ele){
             setTime(ele.getCurrentTime())
-            setSize(ele.getSize())
         }
     }, 1000)
     const onPlayerReady= (event) => {
@@ -218,3 +178,34 @@ const LessonPlayer = ({videoId}) =>{
 }
 
 export default LessonPlayer;
+
+/*
+     const onPlayerStateChange = () =>{
+        console.log('player state change')
+
+    }
+
+
+    let playerexist = document.querySelector('#player')
+    let player;
+    if(playerexist !== null){
+         player = new YTPlayer('#player', {
+            videoId:id,
+            captions:false,
+            controls: false,
+            related:false,
+            modestBranding:false,
+            playerVars: { 
+                'autoplay': 1,
+                
+                'autohide': 1,
+                'wmode': 'opaque',
+                'origin': 'http://localhost:3000'
+            },
+        })
+
+        player.load(id)
+        player.setVolume(100)
+        
+    }
+*/
