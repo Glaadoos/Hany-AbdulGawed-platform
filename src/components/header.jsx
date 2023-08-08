@@ -156,12 +156,12 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                 </li>)
                             }
                             
-                            else{
+                            /* else{
                                 return(
                                     <li className={'item'+obj.id} key={'item'+obj.id}>
                                         <Link to={'/Hany-AbdulGawed-platform'+obj.EngName}>{obj.arbicName}</Link>
                                         </li>)
-                            }
+                            } */
                     }
                 })}
             </ul>

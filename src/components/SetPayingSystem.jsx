@@ -23,7 +23,7 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
   };
 
     // console.log(localStorage.getItem("userPayingSystem"))
-    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none'){
+    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none' ||userPayingSystem !== undefined){
         return(
             <div>
                 <h1 className="title paying-system" style={{textAlign:'center', marginTop:'50px'}}
@@ -70,7 +70,7 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
         );
     }
 
-    if(userPayingSystem !== undefined || userPayingSystem !== 'none'){
+    if( userPayingSystem !== 'none'){
         return(
             <h1 style={{textAlign:'center', marginTop:'200px'}}>
              لا يمكنك تغير  نظام الاشتراك بعد تعيينه

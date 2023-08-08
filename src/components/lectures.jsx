@@ -57,12 +57,35 @@ const Lectures = ()=>{
             <h1 className='title'>المحاضرات</h1>
             <Grid container spacing={2} columns={12}>
                 {branches.map(obj =>{
-                        return (
-                            <Grid xs={4} className='branch' key={obj.EngCode}>
-                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</Link>
-                                <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}><img  className='branches-img' src={obj.imageSrc} value={obj.EngCode} alt={obj.EngCode}/></Link>
-                            </Grid>
-                        )
+                    return (
+                        (obj.EngCode === 'Algebra') ?
+                        <Grid xs={4} className={(obj.EngCode + '-branch' )} key={obj.EngCode}>
+                            <Link 
+                                style={{marginBottom:'10px'}}  
+                                to={'/Hany-AbdulGawed-platform/'+obj.EngCode} className='branch-name' value={obj.EngCode}
+                             >{obj.arbicCode}</Link>
+                            <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}>
+                                <div
+                                    style={{backgroundImage: `url('${obj.imageSrc}')`}}  
+                                    className='branches-img' /* src={obj.imageSrc} */ 
+                                ></div>
+                             </Link>
+                        </Grid>
+                         :
+                        <Grid xs={4} className='branch' key={obj.EngCode}>
+                            <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode} className='branch-name' value={obj.EngCode}>{obj.arbicCode}</Link>
+                            <Link to={'/Hany-AbdulGawed-platform/'+obj.EngCode}>
+                                <div
+                                    style={{backgroundImage: `url('${obj.imageSrc}')`, height:'150px'}}  
+                                    className='branches-img' /* src={obj.imageSrc} */ 
+                                ></div>
+                             </Link>
+                        </Grid>
+
+
+                        
+                            
+                    )
                     })}
             </Grid>
         </div>
