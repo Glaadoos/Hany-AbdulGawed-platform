@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import {useState} from 'react';
 import {Link} from "react-router-dom";
 import arrowUp from './photos/arrow-up-filled.png'
@@ -500,7 +501,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             if(codeExist){
                 document.getElementById(`form${videoId}`).remove()
                 let wrong = document.querySelectorAll(`wrong${videoId}`)
-                console.log(wrong,`wrong${videoId}`)
+                // console.log(wrong,`wrong${videoId}`)
                 /* wrong.map(ele=>{
                     ele.remove()
                 }) */
@@ -651,6 +652,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                         </form>
                                                     </li>
                                                     {show.map(arr =>{
+                                                        // console.log(arr)
                                                             if(arr[0] === getIDfromURL(part.link)){
                                                                 if(arr[1]){
                                                                     return(
@@ -660,15 +662,18 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                                             </li>
                                                                         )
                                                                 }else{
-                                                                    return(
-                                                                        <li id={'wrong'+getIDfromURL(part.link)} key={'partState'+num} >
-                                                                            <h1 className='lesson-btn' style={{color:'#b80e08',fontWeight:'bold'}}>  كود غير صحيح</h1>
-                                                                        </li>
-                                                                    )
+                                                                    if(document.querySelectorAll(`#wrong${getIDfromURL(part.link)}`).length < 1){
+                                                                        return(
+                                                                            <li id={'wrong'+getIDfromURL(part.link)} key={'partState'+num} >
+                                                                                <h1 className='lesson-btn-wrong' style={{color:'#b80e08',fontWeight:'bold'}}>  كود غير صحيح</h1>
+                                                                            </li>
+                                                                        )
+                                                                    }
+                                                                    
                                                                 }
                                                                 
                                                             }
-                                                            console.log('wrong'+getIDfromURL(part.link))
+                                                            // console.log(`#wrong${getIDfromURL(part.link)}`)
                                                     })}
                                                     <li key={part.duration}>
                                                         {part.duration}

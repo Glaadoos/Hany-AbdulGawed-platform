@@ -5,7 +5,7 @@ const LogoutBtn =()=>{
     const { logout } =useAuth0();
 
     const hendleLogOut = () =>{
-        logout({ logoutParams: { returnTo: 'https://hany-abdulgawed-platform.web.app/' } })
+        logout({ logoutParams: { returnTo: 'http://localhost:3000/' } })
         localStorage.removeItem("userEmail")
         localStorage.removeItem("userName")
         localStorage.removeItem("userPicture")
