@@ -9,11 +9,14 @@ const LessonPlayer = ({videoId}) =>{
     const[time, setTime] = useState(0)
     const[duration, setDuration] = useState(0)
     const[speed, setSpeed] = useState(1)
+    const[size, setSize] = useState({
+        width:'',
+        height:''
+    })
     const[volume, setVideoVolume] = useState(50)
 
     const[currentTime, setCurrentTime] = useState(0)
-    const[height, setHeight] = useState('')
-    let videoplayer = document.querySelector('.player')
+
     
 
     
@@ -63,6 +66,7 @@ const LessonPlayer = ({videoId}) =>{
     setInterval(()=>{
         if(ele){
             setTime(ele.getCurrentTime())
+            setSize(ele.getSize())
         }
     }, 1000)
     const onPlayerReady= (event) => {
@@ -91,6 +95,7 @@ const LessonPlayer = ({videoId}) =>{
     const playbtn = ()=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.playVideo()
+        console.log(ele.getSize())
     }
     }
     const pausebtn = ()=>{
@@ -103,10 +108,12 @@ const LessonPlayer = ({videoId}) =>{
             document.querySelector('.hidden-div').classList.remove("fullScreen");
             document.querySelector('.fullScreen').classList.remove("fullScreen");
             document.querySelector('.controls').classList.remove("fullScreen-margin");
+            document.querySelector('.slider').classList.remove("fullScreen-margin");
         }else{
             document.querySelector('.hidden-div').classList.add("fullScreen");
             document.getElementsByTagName("iframe")[0].className = "fullScreen";
             document.querySelector('.controls').classList.add("fullScreen-margin");
+            document.querySelector('.slider').classList.add("fullScreen-margin");
             
         }
     }
@@ -132,42 +139,37 @@ const LessonPlayer = ({videoId}) =>{
 
     return(
         <div className='video-player'>
-            <div className="player" style={{padding:'10px'}}>
-                <div
-                    className='hidden-div'
-                    style={{position: 'absolute',width: '100%', height: '100%', top: '0', left: '0', opacity: '0', zIndex:'99'}}
-                ></div>
-
+            <div className="player">
                 <div id="player">
-                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} onStateChange={StateChange} />
+                    <div
+                        className='hidden-div'
+                    ></div>
+                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} iframeClassName='iframe-player' onStateChange={StateChange} />
                 </div>
 
                 <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
-                    <li>
-                        <input type='range' min='0' max='100' onChange={setVolume} /><br/>
-                        <label>Volume: {volume}</label>
+                    <li className='volume'>
+                        <input className='volume-range' type='range' min='0' max='100' onChange={setVolume} /><br/>
+                        <label className='volume-value'>Volume: {volume}</label>
+                    </li>
+                    <li className='speed'>
+                        <input className='speed-range' type='range' min='.25' max='2' step='.25' placeholder='speed' value={speed} onChange={setSpeedplayer} /><br/>
+                        <label className='speed-value' id="speed">Speed: {speed+'x'}</label>
                     </li>
                     <li>
-                        <input type='range' min='.25' max='2' step='.25' placeholder='speed' value={speed} onChange={setSpeedplayer} /><br/>
-                        <label id="speed">Speed: {speed+'x'}</label>
-                    </li>
-                    <li>
-                        <p>{currentTime}</p>
+                        <p className='speed-value'>{currentTime}</p>
                     </li>             
                     <li>
+                        <button onClick={playbtn}>play</button>
+                        <button onClick={fullScreen}>Full Screen</button>
                         <button onClick={pausebtn}>pause</button>
                     </li>
-                    <li>
-                        <button onClick={fullScreen}>Full Screen</button>
-                    </li>
-                    <li>
-                        <button onClick={playbtn}>play</button>
-                    </li>
+
                 </ul>
 
                 <ul className='slider' style={{backgroundColor: 'white', flexDirection: 'column-reverse', zIndex:'199'}}>                  
                     <li>
-                        <input style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
+                        <input className='video-slider' style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
                         <label></label>
                     </li>
                 </ul>

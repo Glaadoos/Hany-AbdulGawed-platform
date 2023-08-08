@@ -1,3 +1,4 @@
+/* eslint-disable array-callback-return */
 import {useState} from 'react';
 import {Link} from "react-router-dom";
 import arrowUp from './photos/arrow-up-filled.png'

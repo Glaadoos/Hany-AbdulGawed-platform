@@ -8,30 +8,35 @@
 html {
   scroll-behavior: smooth;
 }
+body {
+  width: 100vw;
+}
 header{
   position: relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  align-items: center;
   list-style-type: none;
-  background-color: #F1F1F1;
+  background-color:rgba(0, 0, 0, 0.068);
+  backdrop-filter:blur(40px);
   font-family: 'Rubik', sans-serif !important;
 
 }
 ul{
-  position: relative;
+  position:relative;
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
   /* border-radius: 20px; */
   margin: 0;
+  padding: 0;
   list-style-type: none;
   font-family: 'Rubik', sans-serif;
-  background-color: #F1F1F1;
 }
 #logo{
-  width: 120px;
-  height: 77px;
+  width: 10%;
+  height: 20%;
   padding-right: 20px;
 }
 ul.navbar>li,ul.navbar>li>a{
@@ -54,8 +59,8 @@ ul.navbar>li,ul.navbar>li>a{
 
 #master{
   margin-top: 6%;
-  width: 650px;
-  height: 650px;
+  width:40vw;
+  height: 70vh;
 }
 
 .main-text{
@@ -88,7 +93,7 @@ ul.navbar>li,ul.navbar>li>a{
 .title{
   font-family: 'Cairo Play', sans-serif;
   font-weight: bold;
-  font-size: 4.5em;
+  font-size: 3.5em;
 }
 
 .dropdown-span{
@@ -162,6 +167,156 @@ button{
   border-radius: 16px;
 }
 
+@media only screen and (max-width: 720px)  {
+  /* Main page */
+  header{
+    position: fixed;
+    top:0;
+    z-index: 999;
+    width: 100%;
+  }
+  .navbar{
+    font-size: 10px !important;
+    padding: 5px;
+  }
+  .dropdown-span{
+    font-size: 12px !important;
+    padding: 5px !important;
+  }
+  button{
+    font-size: 8px !important;
+    padding: 8px 9px;
+  }
+  .css-vvnn2g-MuiModal-root-MuiPopover-root-MuiMenu-root .css-1x7jfmm-MuiPaper-root-MuiPopover-paper-MuiMenu-paper{
+    width: 150px !important;
+  }
+  .dropdown-menu-info{
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .dropdownitem-user-name{
+    font-size: 11px !important;
+    font-weight: bold;
+    overflow:visible;
+  }
+  .dropdonwitem{
+    font-size: 14px !important;
+  }
+  #logo{
+    width: 18%;
+  }
+  .main{
+    flex-direction: column-reverse;
+    justify-content: flex-end;
+    align-items: center;
+    margin: 0 !important;
+  }
+  #master{
+    margin-top: 60px;
+    width:72vw !important;
+    height: 62vh !important;
+
+  }
+  .main-text{
+    margin: 0 !important;
+  }
+  .master-name{
+    font-size: 3.5em;
+    text-align: center;
+    
+  }
+  .solgen{
+    font-size: 2em;
+    margin: 0 !important;
+  }
+  .title{
+    margin: 0;
+    margin-bottom: 18px !important;
+    font-size: 3.5em;
+  }
+  .branch-name{
+    font-size: 1em !important;
+    display: inline-block;
+  }
+  .branches-img{
+    width: 90% !important;
+    height: 70%;
+    margin-right: 10px !important;
+  }
+  .css-x3vexg-MuiGrid2-root{
+    /* --Grid-columns: 7; */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  /* branch page */
+  .lessons-box{
+    margin-top: 42px;
+    font-size: 10px;
+  }
+  .lecture-name{
+    font-size: 20px;
+  }
+  .arrow-div{
+    width: 25px !important;
+    height: 25px !important;
+  }
+  .lesson{
+    font-size: 10px !important;
+  }
+  .input-field{
+    font-size: 10px !important;
+    width: 50px;
+  }
+  .lesson-btn-wrong{
+    font-size: 10px !important;
+    margin: 0 !important;
+  }
+  /* Video Player Page */
+  .player{
+    height: 57vw !important;
+  }
+  .volume-range,.speed-range{
+    width: 20px;
+    height: 60px;
+    -webkit-appearance: slider-vertical;
+    writing-mode: bt-lr
+  }
+  .volume,.speed{
+    display: flex;
+  }
+  .volume-value,.speed-value{
+    font-size: 12px;
+  }
+  div#player>div>iframe{
+    height: 47vw !important;
+  }
+  .fullScreen{
+    margin-top: 20px !important;
+  }
+  .slider.fullScreen-margin{
+    margin-top: 0 !important;
+  }
+  .fullScreen-margin{
+    margin-top: 68% !important;
+  }
+
+  .sub-attachments{
+    font-size: 20px !important;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
 /* lectures section */
 .lectures{
   width: 80%;
@@ -176,25 +331,33 @@ button{
   border-radius: 5px;
   background-color: white;
 }
+.Algebra-branch{
+  border: 1px solid black;
+  border-radius: 5px;
+  background-color: white;
+}
 
 .branch-name{
-  margin: 0px;
-  font-size: 35px;
+  /* margin: 0px; */
+  font-size: 25px;
   text-decoration: none;
   color: black;
-  padding: 10px;
-  border-bottom: 2.5px solid black !important;
+  padding: 20px 10px;
+  /* border-bottom: 2.5px solid black !important; */
   cursor: pointer;
 }
 
 .branches-img{
   width: 100%;
-  height: 82%;
+  height: 87%;
   padding: 5px;
   object-fit:contain;
+  /* background-image: url('./components/photos/branches-images/Algebra.png'); */
+  background-position: center;
   margin: auto;
   display: block;
   cursor: pointer;
+  border-top: 2.5px solid black !important;
 }
 
 .branches-img:hover{
@@ -256,6 +419,8 @@ button{
 
 .lesson-part{
   display: flex;
+  justify-content: space-between;
+  align-items: center;
   background-color: transparent;
   font-family: 'Cairo Play', sans-serif !important; 
 }
@@ -294,41 +459,46 @@ button{
   background-size: 20px 20px;
   background-repeat: no-repeat;
 }
-.fullScreen {
-  width: 85vw !important;
-  height: 85vh !important;
-  position: absolute !important;
-  top: 10px!important;
-  left: 0 !important;
-  margin-left: -300px !important;
-}
-
-.fullScreen-margin{
-  margin-top: -70px;
-}
 
 /* Video Player Page */
 .video-player{
   position: relative;
-  background-color: #E5E5E5;
-  margin: 70px auto;
-  border-top-right-radius:20px;
-  border-top-left-radius: 20px;
-  width:850px;
-  height:550px;
+  margin: 16% auto;
 }
 
 .player{
-  margin: auto;
-  padding-top:30px;
-  width:800px;
-  height:450px;
+  background-color: #E5E5E5;
+  padding:30px 10px;
+  margin: auto !important;
+  width:78vw;
+  height:57vh;
+  border-top-right-radius:20px;
+  border-top-left-radius: 20px;
+}
+
+.hidden-div{
+  position: absolute;
+  width:78vw;
+  height:51vh;
+  opacity: 0;
+  z-index: 99;
+}
+
+div#player>div>iframe{
+  width: 78vw;
+  height:51vh;
+}
+
+.video-slider{
+  width: 77vw !important;
 }
 
 .attachments{
   background-color: #E5E5E5;
   font-size: 10px;
-  margin: 100px auto;
+  width:78vw;
+  padding:10px 10px;
+  margin: 50px auto !important;
   border-bottom-right-radius:20px;
   border-bottom-left-radius: 20px;
 }
@@ -339,6 +509,22 @@ button{
   padding: 10px;
 }
 
+.fullScreen {
+  width: 96vw !important;
+  height: 48vw !important;
+  position: absolute !important;
+  /* top: 10px!important; */
+  /* left: 0 !important; */
+  margin: 0;
+  margin-left: -10% !important;
+}
+
+.fullScreen-margin{
+  margin-top: 62% ;
+}
+.slider.fullScreen-margin{
+  margin-top: 0;
+}
 /* PayingSystem Page */
 
 .radio-group{
