@@ -33,13 +33,16 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'codes':['ZRYR0skE', 'Jo5CC#il', '5mWX1lug', '$ufUve2', 'tPSncOnt', '$KvMyXjx', 'jDs1Mqz0', 'q28p$#aX', 'yV8EKT', 'ICeksS1c', 'ZqNLylB', '@yE9pLv', 'qM7olk8I', '7ypyuDDh', 'EXa29raq', '3wDQrtlL', 'MhvZZdHm', '6UFGgU$T', '26NwzOOl', 'weK$yGrk', 'ZUjJng#2', 'CXFoGNtY', '@LtDXVkE', 'IfriEvsN', 'UPolcsWy', 'YfcThaiu', 'X7LjSogT', 'pctgGvZh', 'N4J#Esta', 'sejw9BmV', 'ylbz$yYq', 'lR88Y5Up', 'KMr4Cv2', 'DqZcddv2', 'O6YSuqNq', '#bzI9MM', 'K2y3SLNb', 'BIPlrVG8', 'JBi2CZrh', 'QnrbWHco', 'Eifl@r7Q', 'bO5cYojV', '99S@J1uZ', 'Od$q1Tac', 'q@RspgWC', 'QWgoK92V', 'vJt@i5Hb', 'LTacVJae', 'Jw3s#3$T', 'KhQTJ5y2', 'esy6v0#8', 'pW9vmg0j', 'ZLZ6ptpc', 'K0e6q87h', 'ClFhftbX', 'qTZV2KYX', 'XhZVJFzx', 'tlJiomqd', 'QBZZ3d1g', 'Rh$#d#EB']
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUJV_-M7119zIydLre9e15F',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam': {
+                'name':'امتحان المحاضرة الاولي',
+                'link':'http://form-timer.com/start/c938161e'
+            }
         },
         {
             'name' : 'المحاضرة الثانية - ذات الحدين',
@@ -59,10 +62,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'codes':['KLiKnM4Z', 'UzXYnojX', 'mEXoDqZ', '77r1#e', 'vjiqv2g0', 'xhqvQNdZ', 'qOXhk1s', '76Z1HGd#', 'FNppY4Jn', 'FqjP3R7', 'hxhZ2XYJ', '1Y4w3Je', '$FaOyREz', 'CM5f1XFN', 'eNc0MXEP', '6Q2$ZZCb', 'mSCOLV9l', '4cxipwIw', 'H6bppf$', 'Jb9DRp1a', 'Sz1dy4gW', 'qN82r84G', 'F#Y7rTcc', 'wQDxwUT', 'QL54l9Pa', 'gwefXvyQ', 'BSSY1gV@', 'OVb2Zik5', 'S8uJ4pgr', 'rVVXhRd', '1s@Q#GlV', 'I3vj3#3u', 'F#j8nYp', '3YvHes23', '@EJ9WUE', 'YBftzcFD', 'voX4QLg@', 'mXoMI7pM', '59vO#4hX', '9y1GJb$u', 'hbPqdEtX', '$34kR1zz', '5587iVgx', '22#ugC', 'lFE152eZ', 'e5UpTqlJ', 'EFrcNW2P', '0zjnInTY', 'ssq208#9', 'wTOTkEsl', 'V5CQ5qnU', 'D7R2Sdfu', 'vEqjwojo', 'vwKaHr0$', 'T5prGlrK', 'h0o8WGwD', 'xSjY6USm', 'Eyf98Vgk', '4z4P9fT@', 'cbpV95y']
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
             ],
             'exam' : 'امتحان المحاضرة الثانية'
@@ -83,10 +86,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                 }
             ],
             'exam' : 'امتحان ذات الحدين'
@@ -107,7 +110,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -131,7 +134,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -155,7 +158,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -167,7 +170,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -179,7 +182,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -203,7 +206,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -215,7 +218,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -227,7 +230,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -239,7 +242,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثالثة - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -251,7 +254,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - المصفوفات',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -263,7 +266,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - المصفوفات',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -299,13 +302,16 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'codes':['ZRYR0skE', 'Jo5CC#il', '5mWX1lug', '$ufUve2', 'tPSncOnt', '$KvMyXjx', 'jDs1Mqz0', 'q28p$#aX', 'yV8EKT', 'ICeksS1c', 'ZqNLylB', '@yE9pLv', 'qM7olk8I', '7ypyuDDh', 'EXa29raq', '3wDQrtlL', 'MhvZZdHm', '6UFGgU$T', '26NwzOOl', 'weK$yGrk', 'ZUjJng#2', 'CXFoGNtY', '@LtDXVkE', 'IfriEvsN', 'UPolcsWy', 'YfcThaiu', 'X7LjSogT', 'pctgGvZh', 'N4J#Esta', 'sejw9BmV', 'ylbz$yYq', 'lR88Y5Up', 'KMr4Cv2', 'DqZcddv2', 'O6YSuqNq', '#bzI9MM', 'K2y3SLNb', 'BIPlrVG8', 'JBi2CZrh', 'QnrbWHco', 'Eifl@r7Q', 'bO5cYojV', '99S@J1uZ', 'Od$q1Tac', 'q@RspgWC', 'QWgoK92V', 'vJt@i5Hb', 'LTacVJae', 'Jw3s#3$T', 'KhQTJ5y2', 'esy6v0#8', 'pW9vmg0j', 'ZLZ6ptpc', 'K0e6q87h', 'ClFhftbX', 'qTZV2KYX', 'XhZVJFzx', 'tlJiomqd', 'QBZZ3d1g', 'Rh$#d#EB']
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUJV_-M7119zIydLre9e15F',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam': {
+                'name':'امتحان المحاضرة الاولي',
+                'link':'http://form-timer.com/start/c938161e'
+            }
         },
         {
             'name' : 'المحاضرة الثانية - ذات الحدين',
@@ -325,10 +331,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'codes':['KLiKnM4Z', 'UzXYnojX', 'mEXoDqZ', '77r1#e', 'vjiqv2g0', 'xhqvQNdZ', 'qOXhk1s', '76Z1HGd#', 'FNppY4Jn', 'FqjP3R7', 'hxhZ2XYJ', '1Y4w3Je', '$FaOyREz', 'CM5f1XFN', 'eNc0MXEP', '6Q2$ZZCb', 'mSCOLV9l', '4cxipwIw', 'H6bppf$', 'Jb9DRp1a', 'Sz1dy4gW', 'qN82r84G', 'F#Y7rTcc', 'wQDxwUT', 'QL54l9Pa', 'gwefXvyQ', 'BSSY1gV@', 'OVb2Zik5', 'S8uJ4pgr', 'rVVXhRd', '1s@Q#GlV', 'I3vj3#3u', 'F#j8nYp', '3YvHes23', '@EJ9WUE', 'YBftzcFD', 'voX4QLg@', 'mXoMI7pM', '59vO#4hX', '9y1GJb$u', 'hbPqdEtX', '$34kR1zz', '5587iVgx', '22#ugC', 'lFE152eZ', 'e5UpTqlJ', 'EFrcNW2P', '0zjnInTY', 'ssq208#9', 'wTOTkEsl', 'V5CQ5qnU', 'D7R2Sdfu', 'vEqjwojo', 'vwKaHr0$', 'T5prGlrK', 'h0o8WGwD', 'xSjY6USm', 'Eyf98Vgk', '4z4P9fT@', 'cbpV95y']
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
             ],
             'exam' : 'امتحان المحاضرة الثانية'
@@ -349,10 +355,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                 }
             ],
             'exam' : 'امتحان ذات الحدين'
@@ -373,7 +379,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -397,7 +403,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -421,7 +427,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -433,7 +439,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -445,7 +451,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -494,16 +500,20 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
     const handleSubmit = (e) =>{
         let videoId = e.target.id
         let codeExist = checkCode(inputValue, videoId)
-        
+        // console.log(codeExist)
             setShow([...show ,[videoId, codeExist]])
-
+            // console.log(show)
             if(codeExist){
                 document.getElementById(`form${videoId}`).remove()
+                document.getElementById(`wrong${videoId}`).remove()
                 let wrong = document.querySelectorAll(`wrong${videoId}`)
-                console.log(wrong,`wrong${videoId}`)
+                // console.log(wrong,`wrong${videoId}`)
                 /* wrong.map(ele=>{
                     ele.remove()
                 }) */
+            }
+            if(!codeExist){
+                
             }
             
             setRefresh(!refresh)
@@ -543,7 +553,8 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    return(
+                                    if(part.lessonName !== 'مسائل الملزمة'){
+                                        return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>
                                                 <ul className='lesson-part'>
@@ -575,11 +586,20 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                         </form>
                                                     </li>
                                                     {show.map(arr =>{
-                                                            if(arr[0] === getIDfromURL(part.link)){
+                                                            if(arr[0] === getIDfromURL(part.link) && arr[1] === true){
                                                                 return(
                                                                     <li key={'partState'+num} >
                                                                         <Link className='play-btn' id={getIDfromURL(part.link)} onClick={handleVideoIDChange} to={'/Hany-AbdulGawed-platform/lessonView'} >  مشاهدة    </Link>
                                                                         <button id={getIDfromURL(part.link)} className='lesson-btn' style={{color:'#4bd84b',fontWeight:'bold'}}>  مفتوحة</button>
+                                                                    </li>
+                                                                )
+                                                            }
+                                                            if(arr[0] === getIDfromURL(part.link) && arr[1] === false){
+                                                                return(
+                                                                    <li id={ 'wrong'+getIDfromURL(part.link)}
+                                                                        style={{color:'red',fontWeight:'bold'}}
+                                                                        key={'duration'+num}>
+                                                                        كود غير صحيح
                                                                     </li>
                                                                 )
                                                             }
@@ -589,11 +609,56 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                     </li>
                                                 </ul>
                                             </li>
-                                    )   
+                                        ); 
+                                    }else{
+                                        return(
+                                            part.link !== 'soon' ? 
+
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>
+                                                        {part.lessonName}
+                                                    </li>
+                                                    <li key={'partLink'+num}>
+                                                        <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
+                                                    </li>
+                                                    </ul>
+                                                </li>
+                                            :
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>{part.lessonName}</li>
+                                                    <li
+                                                        style={{color:'#64ec64',fontWeight:'bold'}}
+                                                        key={'duration'+num}>
+                                                        ستتوفر قريبا
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        );
+                                    }
+                                      
                                 })}
-                                {<li key={'exam'+num}>
-                                    {lesson.exam}
-                                </li>}
+                            
+                                {
+                                    lesson.exam.name ?
+                                        <li key={'partObject'+num}>
+                                            <ul className='lesson-part'>
+                                                <li key={'examName'+num}>
+                                                    {lesson.exam.name }
+                                                </li>
+                                                <li key={'examLink'+num}>
+                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                    :
+                                        <li key={'exam'+num}>
+                                            {lesson.exam}
+                                        </li>
+                                }
+                               
                             </ul>
                         </div>
                     )
@@ -619,7 +684,8 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    return(
+                                    if(part.lessonName !== 'مسائل الملزمة'){
+                                        return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>
                                                 <ul className='lesson-part'>
@@ -651,35 +717,79 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                                                         </form>
                                                     </li>
                                                     {show.map(arr =>{
-                                                            if(arr[0] === getIDfromURL(part.link)){
-                                                                if(arr[1]){
-                                                                    return(
-                                                                            <li key={'partState'+num} >
-                                                                                <Link className='play-btn' id={getIDfromURL(part.link)} onClick={handleVideoIDChange} to={'/Hany-AbdulGawed-platform/lessonView'} >  مشاهدة    </Link>
-                                                                                <button id={getIDfromURL(part.link)} className='lesson-btn' style={{color:'#4bd84b',fontWeight:'bold'}}>  مفتوحة</button>
-                                                                            </li>
-                                                                        )
-                                                                }else{
-                                                                    return(
-                                                                        <li id={'wrong'+getIDfromURL(part.link)} key={'partState'+num} >
-                                                                            <h1 className='lesson-btn' style={{color:'#b80e08',fontWeight:'bold'}}>  كود غير صحيح</h1>
-                                                                        </li>
-                                                                    )
-                                                                }
-                                                                
+                                                            if(arr[0] === getIDfromURL(part.link) && arr[1] === true){
+                                                                return(
+                                                                    <li key={'partState'+num} >
+                                                                        <Link className='play-btn' id={getIDfromURL(part.link)} onClick={handleVideoIDChange} to={'/Hany-AbdulGawed-platform/lessonView'} >  مشاهدة    </Link>
+                                                                        <button id={getIDfromURL(part.link)} className='lesson-btn' style={{color:'#4bd84b',fontWeight:'bold'}}>  مفتوحة</button>
+                                                                    </li>
+                                                                )
                                                             }
-                                                            console.log('wrong'+getIDfromURL(part.link))
+                                                            if(arr[0] === getIDfromURL(part.link) && arr[1] === false){
+                                                                return(
+                                                                    <li id={ 'wrong'+getIDfromURL(part.link)}
+                                                                        style={{color:'red',fontWeight:'bold'}}
+                                                                        key={'duration'+num}>
+                                                                        كود غير صحيح
+                                                                    </li>
+                                                                )
+                                                            }
                                                     })}
                                                     <li key={part.duration}>
                                                         {part.duration}
                                                     </li>
                                                 </ul>
                                             </li>
-                                    )   
+                                        ); 
+                                    }else{
+                                        return(
+                                            part.link !== 'soon' ? 
+
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>
+                                                        {part.lessonName}
+                                                    </li>
+                                                    <li key={'partLink'+num}>
+                                                        <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
+                                                    </li>
+                                                    </ul>
+                                                </li>
+                                            :
+                                            <li key={'partObject'+num}>
+                                                <ul className='lesson-part'>
+                                                    <li key={'partName'+num}>{part.lessonName}</li>
+                                                    <li
+                                                        style={{color:'#64ec64',fontWeight:'bold'}}
+                                                        key={'duration'+num}>
+                                                        ستتوفر قريبا
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                        );
+                                    }
+                                      
                                 })}
-                                {<li key={'exam'+num}>
-                                    {lesson.exam}
-                                </li>}
+                            
+                                {
+                                    lesson.exam.name ?
+                                        <li key={'partObject'+num}>
+                                            <ul className='lesson-part'>
+                                                <li key={'examName'+num}>
+                                                    {lesson.exam.name }
+                                                </li>
+                                                <li key={'examLink'+num}>
+                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                        
+                                    :
+                                        <li key={'exam'+num}>
+                                            {lesson.exam}
+                                        </li>
+                                }
+                               
                             </ul>
                         </div>
                     )
@@ -729,9 +839,6 @@ export default Algebra;
 
 
 */
-
-
-
 /* 
 useEffect(()=>{
         const generateCodes= (num)=> {
@@ -763,7 +870,6 @@ useEffect(()=>{
     }, [])
 
 */
-
 /* 
 const getDuration = async(id)=>{
          await durationFunction(id).then((res) => {
@@ -801,7 +907,6 @@ const getDuration = async(id)=>{
 
 
 */
-
 /* 
 code with fade in out
 
@@ -834,7 +939,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'https://www.youtube.com/watch?v=E2MN8baiwOY&ab_channel=HanyAbdlgawad',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -860,7 +965,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'https://www.youtube.com/watch?v=q1Jcq314iFU&ab_channel=HanyAbdlgawad',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -885,7 +990,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -910,7 +1015,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -935,7 +1040,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -960,7 +1065,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -973,7 +1078,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -986,7 +1091,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1011,7 +1116,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'soon',
                 },
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1024,7 +1129,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1037,7 +1142,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1050,7 +1155,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثالثة - المحدادت',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1063,7 +1168,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الاولي - المصفوفات',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
@@ -1076,7 +1181,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             'name' : 'المحاضرة الثانية - المصفوفات',
             'parts' :[
                 {
-                    'lessonName':'أوبن بوك',
+                    'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
                     'link':'soon',
