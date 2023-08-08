@@ -4,6 +4,7 @@ import YouTube from 'react-youtube';
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
+    // console.log(id)
     const[ele, setEle] = useState('')
     const[time, setTime] = useState(0)
     const[duration, setDuration] = useState(0)
@@ -186,6 +187,12 @@ const LessonPlayer = ({videoId}) =>{
                     :
                     ''
                 }
+                {
+                    id ==='p2aDs2ddmgE'?
+                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/113sHKV0n6NUG3-PFqN6SPkw2WsdXFBg2/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
 
                 <h2 className="sub-attachments"
                 style={{textAlign:'right'}}
@@ -196,6 +203,12 @@ const LessonPlayer = ({videoId}) =>{
                     :
                     ''
                 }
+                 {
+                    id ==='p2aDs2ddmgE'?
+                    <iframe title='ذات الحدين 2' src="https://drive.google.com/file/d/131t1bJDrpL4drkWIKIMCAhWxBlEAPey-/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
             </div>
         </div>
 
@@ -203,4 +216,3 @@ const LessonPlayer = ({videoId}) =>{
 }
 
 export default LessonPlayer;
-

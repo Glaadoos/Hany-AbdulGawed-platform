@@ -5,12 +5,12 @@ const LogoutBtn =()=>{
     const { logout } =useAuth0();
 
     const hendleLogOut = () =>{
-        logout({ logoutParams: { returnTo: 'https://bahget.github.io/Hany-AbdulGawed-platform/' } })
         localStorage.removeItem("userEmail")
         localStorage.removeItem("userName")
         localStorage.removeItem("userPicture")
         localStorage.removeItem("userPayingSystem")
         localStorage.removeItem("videoId")
+        logout({ logoutParams: { returnTo: 'https://hany-abdulgawed-platform.web.app/' } })
         
     }
     return(<button onClick={hendleLogOut}>Log Out</button>);

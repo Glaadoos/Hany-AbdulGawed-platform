@@ -31,7 +31,7 @@ export const getSpecific= async(email)=>{
     try{
         res = await fetch(`${api}/${email}`, optiones).then(res => res.json())
     } catch(err){
-        console.error(err)
+        res =false; 
     }
     const data = await res
     return(data);
