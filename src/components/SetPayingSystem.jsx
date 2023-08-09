@@ -46,17 +46,24 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
                         </FormControl>
                     </div>
     
-                    <pre className="paragraph ">
+                    <pre className="paragraph">
                         <h3 className="eng">Month Paying System(MPS): </h3>
-                        
-                        أنك تشترك في الحصص بالشهر بحيث ان كل اول شهر جديد تدفع حق حصص الشهر كله<br/><br/>
+                        <p className="paragraph-text">
+                            أنك تشترك في الحصص بالشهر بحيث ان كل اول شهر جديد تدفع حق حصص الشهر كله
+                        </p>
+
                         <h3 className="eng">Lecture Paying System(LPS):</h3>
+                        <p className="paragraph-text">
+                            أنك تشترك في الحصص بالحصة بحيث انك تدفع حق كل حصة لوحدها
+                        </p>
                         
-                        أنك تشترك في الحصص بالحصة بحيث انك تدفع حق كل حصة لوحدها<br/>
                         <h3
-                            style={{color:'red'}}
+                            style={{color:'red', margin: '0'}}
                         >:ملحوظة </h3>
-                        IT بعد اما تحط نظام الاشتراك مش هتقدر تغيره الا عن طريق انك ترجع لل <br/><br/>
+                        <p className="paragraph-text">
+                            IT بعد اما تحط نظام الاشتراك مش هتقدر تغيره الا عن طريق انك ترجع لل <br/><br/>
+                        </p>
+                        
                         <button
                         onClick={handleUpdata}
                             style={{width:'fit-content', margin: 'auto'}}

@@ -304,6 +304,15 @@ button{
   .sub-attachments{
     font-size: 20px !important;
   }
+
+  .paying-system{
+    margin-top: 16% !important;
+    padding: 4px !important;
+    font-size: 45px !important;
+  }
+  .eng{
+    font-size: 15px !important;
+  }
 }
 /* lectures section */
 .lectures{
@@ -524,12 +533,12 @@ div#player>div>iframe{
 }
 
 .paragraph{
-  padding: 10px;
+  padding: 5px;
   display: flex;
   margin: auto;
   flex-direction: column;
   font-family: 'Rubik', sans-serif;
-  font-size: 30px;
+  text-overflow:ellipsis !important;
   text-align:right ;
   
 }
@@ -539,13 +548,19 @@ div#player>div>iframe{
   background-color: #E5E5E5;
   margin: 10px auto;
   padding: 10px;
-  width: fit-content;
+  width: 65%;
+}
+.paragraph-text{
+  overflow: hidden;
+  white-space:wrap;
 }
 .eng{
   font-family: 'Roboto Flex', sans-serif;
+  font-size: 30px;
   text-align: left;
   padding: 5px;
   margin: 0;
+  white-space:wrap;
 }
 
 .paying-system{
