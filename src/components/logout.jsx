@@ -10,7 +10,7 @@ const LogoutBtn =()=>{
         localStorage.removeItem("userPicture")
         localStorage.removeItem("userPayingSystem")
         localStorage.removeItem("videoId")
-        logout({ logoutParams: { returnTo: 'https://hany-abdulgawed-platform.web.app/' } })
+        logout({ logoutParams: { returnTo: 'https://hanyabdlgawad.online/' } })
         
     }
     return(<button onClick={hendleLogOut}>Log Out</button>);
