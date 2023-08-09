@@ -5,10 +5,6 @@ const LogoutBtn =()=>{
     const { logout } =useAuth0();
 
     const hendleLogOut = () =>{
-<<<<<<< HEAD
-        logout({ logoutParams: { returnTo: 'http://localhost:3000/' } })
-=======
->>>>>>> 0eb3dd07b64e3d50732bbee464f9e7016f215c57
         localStorage.removeItem("userEmail")
         localStorage.removeItem("userName")
         localStorage.removeItem("userPicture")
