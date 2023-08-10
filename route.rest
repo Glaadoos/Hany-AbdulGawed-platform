@@ -1,24 +1,24 @@
-POST  http://localhost:5000/accounts/
+POST  http://localhost:8888/.netlify/functions/api/
 Content-Type: application/json
 
 {
-    "id": "yogeye2013@mliok.com",
-    "name":"yogeye2013@mliok.com",
-    "email": "yogeye2013@mliok.com",
+    "id": "sadf@mliok.com",
+    "name":"sadf@mliok.com",
+    "email": "sadf@mliok.com",
     "payingSystem": "LPS"
 }
 
 ###
-GET http://localhost:5000/accounts/
+GET https://hany-server.netlify.app/.netlify/functions/api/
 
 ###
-GET http://localhost:5000/accounts/bahget@gmail.com
+GET https://hany-server.netlify.app/.netlify/functions/api/yogeye2013@mliok.com
 
 ###
-DELETE http://localhost:5000/accounts/bahget@gmail.com
+DELETE https://hany-server.netlify.app/.netlify/functions/api/bahget@gmail.com
 
 ###
-PATCH http://localhost:5000/accounts/qweqwe@hotmail.com
+PATCH https://hany-server.netlify.app/.netlify/functions/api/qweqwe@hotmail.com
 Content-Type: application/json
 
 {
