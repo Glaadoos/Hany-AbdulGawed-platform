@@ -1,0 +1,26 @@
+POST  http://localhost:8888/.netlify/functions/api/
+Content-Type: application/json
+
+{
+    "id": "sadf@mliok.com",
+    "name":"sadf@mliok.com",
+    "email": "sadf@mliok.com",
+    "payingSystem": "LPS"
+}
+
+###
+GET https://hany-server.netlify.app/.netlify/functions/api/
+
+###
+GET https://hany-server.netlify.app/.netlify/functions/api/yogeye2013@mliok.com
+
+###
+DELETE https://hany-server.netlify.app/.netlify/functions/api/bahget@gmail.com
+
+###
+PATCH https://hany-server.netlify.app/.netlify/functions/api/qweqwe@hotmail.com
+Content-Type: application/json
+
+{
+    "payingSystem":"mps"
+}
