@@ -12,7 +12,7 @@ app.use(
 );
 
 mongoose.connect(
-  "mongodb+srv://abosama150:MSg6fl6TrYkUBc9e@hany-server.px9xs90.mongodb.net/tests"
+  "mongodb+srv://abosama150:MSg6fl6TrYkUBc9e@hany-server.px9xs90.mongodb.net/account"
 );
 const db = mongoose.connection;
 db.on("error", (error) => console.error(error));

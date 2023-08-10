@@ -85,9 +85,8 @@ router.patch("/:id", getAccount, async (req, res) => {
 		}) 
 	}else{
 		return res.json({ message:'code exist'});
-	}
-    // res.account.availableCodes = req.body.payingSystem;
   }
+}
 
   try {
     const updatedaccount = await res.account.save();
