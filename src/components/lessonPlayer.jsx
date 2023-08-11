@@ -151,7 +151,13 @@ const LessonPlayer = ({videoId}) =>{
                 }
                 {
                     id ==='p2aDs2ddmgE'?
-                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/113sHKV0n6NUG3-PFqN6SPkw2WsdXFBg2/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+                {
+                    id ==='CDm6yUoqDvk'?
+                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/preview" width="640" height="480" allow="autoplay"></iframe>
                     :
                     ''
                 }
@@ -165,9 +171,15 @@ const LessonPlayer = ({videoId}) =>{
                     :
                     ''
                 }
-                 {
+                {
                     id ==='p2aDs2ddmgE'?
                     <iframe title='ذات الحدين 2' src="https://drive.google.com/file/d/131t1bJDrpL4drkWIKIMCAhWxBlEAPey-/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+                {
+                    id ==='CDm6yUoqDvk'?
+                    <iframe title='ذات الحدين 2' src="https://drive.google.com/file/d/1ZlfcraUobJKutBf9FQUaGZxjhqNjxFR9/preview" width="640" height="480" allow="autoplay"></iframe>
                     :
                     ''
                 }

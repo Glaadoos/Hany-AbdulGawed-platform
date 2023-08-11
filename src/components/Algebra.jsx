@@ -60,7 +60,22 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'state':false,
                     'link':'https://www.youtube.com/watch?v=q1Jcq314iFU&ab_channel=HanyAbdlgawad',
                     'duration':'1:20:59',
-                    'codes':['KLiKnM4Z', 'UzXYnojX', 'mEXoDqZ', '77r1#e', 'vjiqv2g0', 'xhqvQNdZ', 'qOXhk1s', '76Z1HGd#', 'FNppY4Jn', 'FqjP3R7', 'hxhZ2XYJ', '1Y4w3Je', '$FaOyREz', 'CM5f1XFN', 'eNc0MXEP', '6Q2$ZZCb', 'mSCOLV9l', '4cxipwIw', 'H6bppf$', 'Jb9DRp1a', 'Sz1dy4gW', 'qN82r84G', 'F#Y7rTcc', 'wQDxwUT', 'QL54l9Pa', 'gwefXvyQ', 'BSSY1gV@', 'OVb2Zik5', 'S8uJ4pgr', 'rVVXhRd', '1s@Q#GlV', 'I3vj3#3u', 'F#j8nYp', '3YvHes23', '@EJ9WUE', 'YBftzcFD', 'voX4QLg@', 'mXoMI7pM', '59vO#4hX', '9y1GJb$u', 'hbPqdEtX', '$34kR1zz', '5587iVgx', '22#ugC', 'lFE152eZ', 'e5UpTqlJ', 'EFrcNW2P', '0zjnInTY', 'ssq208#9', 'wTOTkEsl', 'V5CQ5qnU', 'D7R2Sdfu', 'vEqjwojo', 'vwKaHr0$', 'T5prGlrK', 'h0o8WGwD', 'xSjY6USm', 'Eyf98Vgk', '4z4P9fT@', 'cbpV95y']
+                    'codes':[
+                        'KLiKnM4Z', 'UzXYnojX', 'mEXoDqZ', '77r1#e', 
+                        'vjiqv2g0', 'xhqvQNdZ', 'qOXhk1s', '76Z1HGd#',
+                        'FNppY4Jn', 'FqjP3R7', 'hxhZ2XYJ', '1Y4w3Je', 
+                        '$FaOyREz', 'CM5f1XFN', 'eNc0MXEP', '6Q2$ZZCb', 
+                        'mSCOLV9l', '4cxipwIw', 'H6bppf$', 'Jb9DRp1a', 
+                        'Sz1dy4gW', 'qN82r84G', 'F#Y7rTcc', 'wQDxwUT', 
+                        'QL54l9Pa', 'gwefXvyQ', 'BSSY1gV@', 'OVb2Zik5', 
+                        'S8uJ4pgr', 'rVVXhRd', '1s@Q#GlV', 'I3vj3#3u', 
+                        'F#j8nYp', '3YvHes23', '@EJ9WUE', 'YBftzcFD', 
+                        'voX4QLg@', 'mXoMI7pM', '59vO#4hX', '9y1GJb$u', 
+                        'hbPqdEtX', '$34kR1zz', '5587iVgx', '22#ugC', 
+                        'lFE152eZ', 'e5UpTqlJ', 'EFrcNW2P', '0zjnInTY', 
+                        'ssq208#9', 'wTOTkEsl', 'V5CQ5qnU', 'D7R2Sdfu', 
+                        'vEqjwojo', 'vwKaHr0$', 'T5prGlrK', 'h0o8WGwD', 
+                        'xSjY6USm', 'Eyf98Vgk', '4z4P9fT@', 'cbpV95y']
                 },
                 {
                     'lessonName':'مسائل الملزمة',
@@ -69,7 +84,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الثانية'
+            'exam': {
+                'name':'امتحان المحاضرة الثانية',
+                'link':'http://form-timer.com/start/35bbf612'
+            }
         },
         {
             'name' : 'المحاضرة الثالثة - ذات الحدين',
@@ -77,20 +95,31 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                 {
                     'lessonName':'الجزء الاول',
                     'state':false,
+                    'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
                     'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'codes':[
+                        'sTjL0R2H', 'm3bsbNzy', 'Lqtb1rqo', '7EFi0TyO',
+                        'vs1F$4OM', 'W57grDnf', 'Bu2UNEOd', 'e1pZmuqr',
+                        '@cYNLxvp', 'z9HhlzXE', 'x4ePT7Cu', 'r10DQNZn',
+                        'wk257$8I', 'H9tRhAOJ', 'Im0UgOJG', 'a#JCMjj4',
+                        'Sofe9fNW', '@PXxXkuZ', 'IUU32Pju', 'njovhWgw',
+                        'c1cNsNPT', 'aijO6pr@', 'rw9vCBxA', 'Fp1u5QCz',
+                        'cXrn92Qd', 'KFBnTgZp', 'a#uIkpw7', 'HLTr1rqq',
+                        'OrjpLmuB', 'jAtukiK@', 'As2pHlN3', 'MgBJQJOd',
+                        'uABjqQke', '4WCqCFZD', 'Tww$QSBc', 'rpWIsJ9N',
+                        'ojmvnTmA', 'BcKVI6py', 'Ydu309X3', 't8@KULQ$',
+                        'ObztRpVz', 'l6eWrWDA', 'hq4JDrO0', 'tvglK1P3',
+                        '4T6ZbCnM', 'tdSgv5fy', 'MXXISxTk', 'YeDXqZ14',
+                        'SJc3oFT@', 'n5nDQCOl', 'R9$vefox', '0QjW#IAT',
+                        '7F3XYVc3', 'nsVNQDxh', '7mAPSU2N', 'rgWhr@8K',
+                        'E36tXwGc', '2UAi7N$o', 'kDG4IdFf', 'iYehlk6T'
+                      ]
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'state':false,
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                     'duration':'',
-                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                 }
             ],
             'exam' : 'امتحان ذات الحدين'
@@ -338,7 +367,10 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الثانية'
+            'exam': {
+                'name':'امتحان المحاضرة الثانية',
+                'link':'http://form-timer.com/start/35bbf612'
+            }
         },
         {
             'name' : 'المحاضرة الثالثة - ذات الحدين',
@@ -347,22 +379,17 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'lessonName':'الجزء الاول',
                     'state':false,
                     'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'state':false,
                     'duration':'',
-                    'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                 }
             ],
-            'exam' : 'امتحان ذات الحدين'
+            'exam' : 'امتحان ذات الحدين',
+            
         },
         {
             'name' : 'المحاضرة الاولي - الاعداد المركبة',
