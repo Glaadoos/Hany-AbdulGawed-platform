@@ -96,7 +96,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                     'lessonName':'الجزء الاول',
                     'state':false,
                     'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
-                    'duration':'',
+                    'duration':'1:25:30',
                     'codes':[
                         'sTjL0R2H', 'm3bsbNzy', 'Lqtb1rqo', '7EFi0TyO',
                         'vs1F$4OM', 'W57grDnf', 'Bu2UNEOd', 'e1pZmuqr',
@@ -378,7 +378,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
                 {
                     'lessonName':'الجزء الاول',
                     'state':false,
-                    'duration':'',
+                    'duration':'1:25:30',
                     'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
                 },
                 {
