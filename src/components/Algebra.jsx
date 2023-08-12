@@ -29,7 +29,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                 {
                     'lessonName':'الجزء الثاني',
                     'state':false,
-                    'link':'https://www.youtube.com/watch?v=E2MN8baiwOY&ab_channel=HanyAbdlgawad',
+                    'link':'https://www.youtube.com/watch?v=_bw0kuOSdis&ab_channel=HanyAbdlgawad',
                     'duration':'0:51:56',
                     'codes':['ZRYR0skE', 'Jo5CC#il', '5mWX1lug', '$ufUve2', 'tPSncOnt', '$KvMyXjx', 'jDs1Mqz0', 'q28p$#aX', 'yV8EKT', 'ICeksS1c', 'ZqNLylB', '@yE9pLv', 'qM7olk8I', '7ypyuDDh', 'EXa29raq', '3wDQrtlL', 'MhvZZdHm', '6UFGgU$T', '26NwzOOl', 'weK$yGrk', 'ZUjJng#2', 'CXFoGNtY', '@LtDXVkE', 'IfriEvsN', 'UPolcsWy', 'YfcThaiu', 'X7LjSogT', 'pctgGvZh', 'N4J#Esta', 'sejw9BmV', 'ylbz$yYq', 'lR88Y5Up', 'KMr4Cv2', 'DqZcddv2', 'O6YSuqNq', '#bzI9MM', 'K2y3SLNb', 'BIPlrVG8', 'JBi2CZrh', 'QnrbWHco', 'Eifl@r7Q', 'bO5cYojV', '99S@J1uZ', 'Od$q1Tac', 'q@RspgWC', 'QWgoK92V', 'vJt@i5Hb', 'LTacVJae', 'Jw3s#3$T', 'KhQTJ5y2', 'esy6v0#8', 'pW9vmg0j', 'ZLZ6ptpc', 'K0e6q87h', 'ClFhftbX', 'qTZV2KYX', 'XhZVJFzx', 'tlJiomqd', 'QBZZ3d1g', 'Rh$#d#EB']
                 },
@@ -327,7 +327,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                 {
                     'lessonName':'الجزء الثاني',
                     'state':false,
-                    'link':'https://www.youtube.com/watch?v=E2MN8baiwOY&ab_channel=HanyAbdlgawad',
+                    'link':'https://www.youtube.com/watch?v=_bw0kuOSdis&ab_channel=HanyAbdlgawad',
                     'duration':'0:51:56',
                     'codes':['ZRYR0skE', 'Jo5CC#il', '5mWX1lug', '$ufUve2', 'tPSncOnt', '$KvMyXjx', 'jDs1Mqz0', 'q28p$#aX', 'yV8EKT', 'ICeksS1c', 'ZqNLylB', '@yE9pLv', 'qM7olk8I', '7ypyuDDh', 'EXa29raq', '3wDQrtlL', 'MhvZZdHm', '6UFGgU$T', '26NwzOOl', 'weK$yGrk', 'ZUjJng#2', 'CXFoGNtY', '@LtDXVkE', 'IfriEvsN', 'UPolcsWy', 'YfcThaiu', 'X7LjSogT', 'pctgGvZh', 'N4J#Esta', 'sejw9BmV', 'ylbz$yYq', 'lR88Y5Up', 'KMr4Cv2', 'DqZcddv2', 'O6YSuqNq', '#bzI9MM', 'K2y3SLNb', 'BIPlrVG8', 'JBi2CZrh', 'QnrbWHco', 'Eifl@r7Q', 'bO5cYojV', '99S@J1uZ', 'Od$q1Tac', 'q@RspgWC', 'QWgoK92V', 'vJt@i5Hb', 'LTacVJae', 'Jw3s#3$T', 'KhQTJ5y2', 'esy6v0#8', 'pW9vmg0j', 'ZLZ6ptpc', 'K0e6q87h', 'ClFhftbX', 'qTZV2KYX', 'XhZVJFzx', 'tlJiomqd', 'QBZZ3d1g', 'Rh$#d#EB']
                 },
