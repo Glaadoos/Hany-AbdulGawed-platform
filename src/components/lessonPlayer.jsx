@@ -38,7 +38,7 @@ const LessonPlayer = ({videoId}) =>{
         'wmode': 'opaque',
         'origin': 'http://localhost:3000',
         captions:false,
-        controls: 0,
+        controls: 1,
         rel:0,
         modestBranding:1,
     },
