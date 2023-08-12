@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
 
-const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
+const Algebra = ({setVideoId, user, userPayingSystem}) =>{
 
     // State variable & dictionaries
     const Algebralessons =[
@@ -86,7 +86,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             ],
             'exam': {
                 'name':'امتحان المحاضرة الثانية',
-                'link':'http://form-timer.com/start/35bbf612'
+                'link':'http://form-timer.com/start/4b81b3a3'
             }
         },
         {
@@ -369,7 +369,7 @@ const Algebra = ({setVideoId, durationFunction, user, userPayingSystem}) =>{
             ],
             'exam': {
                 'name':'امتحان المحاضرة الثانية',
-                'link':'http://form-timer.com/start/35bbf612'
+                'link':'http://form-timer.com/start/4b81b3a3'
             }
         },
         {

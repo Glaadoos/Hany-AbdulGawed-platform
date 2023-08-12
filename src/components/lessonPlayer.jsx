@@ -4,14 +4,14 @@ import YouTube from 'react-youtube';
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
-    const[ele, setEle] = useState('')
+    /* const[ele, setEle] = useState('')
     const[time, setTime] = useState(0)
     const[duration, setDuration] = useState(0)
     const[speed, setSpeed] = useState(1)
     const[volume, setVideoVolume] = useState(50)
-    const[currentTime, setCurrentTime] = useState(0)
+    const[currentTime, setCurrentTime] = useState(0) */
 
-    useEffect(()=>{
+ /*    useEffect(()=>{
         if(ele){
             let Currenthours = Math.round(time/3600)
             let Currentminutes = (time/60).toString().slice(0, (time/60).toString().indexOf('.')).slice(0, 2) || 0;
@@ -23,16 +23,7 @@ const LessonPlayer = ({videoId}) =>{
             setDuration((time*100) / ele.getDuration())
         }
     }, [ele, time] )
-
-    setInterval(()=>{
-        if(ele){
-            setTime(ele.getCurrentTime())
-        }
-    }, 1000)
-    const onPlayerReady= (event) => {
-        setEle(event.target)
-        setTime(event.target.getCurrentTime())
-    }
+ */
     const opts= {
     videoId:id,
     rel:0,
@@ -52,6 +43,17 @@ const LessonPlayer = ({videoId}) =>{
         modestBranding:1,
     },
     };
+    
+    /* setInterval(()=>{
+        if(ele){
+            setTime(ele.getCurrentTime())
+        }
+    }, 1000)
+    const onPlayerReady= (event) => {
+        setEle(event.target)
+        setTime(event.target.getCurrentTime())
+    }
+    
     const playbtn = ()=>{
     if(ele.h !== undefined && ele.h !== null){
         ele.playVideo()
@@ -95,19 +97,19 @@ const LessonPlayer = ({videoId}) =>{
     }
     const StateChange = (e) =>{
         setTime(e.target.getCurrentTime())
-    }
+    } */
 
     return(
         <div className='video-player'>
             <div className="player">
                 <div id="player">
-                    <div
+                    {/* <div
                         className='hidden-div'
-                    ></div>
-                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} iframeClassName='iframe-player' onStateChange={StateChange} />
+                    ></div> */}
+                    <YouTube videoId={id} opts={opts} /* onReady={onPlayerReady} */ iframeClassName='iframe-player' /* onStateChange={StateChange} */ />
                 </div>
 
-                <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
+                {/* <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
                     <li className='volume'>
                         <input className='volume-range' type='range' min='0' max='100' onChange={setVolume} /><br/>
                         <label className='volume-value'>Volume: {volume}</label>
@@ -132,7 +134,7 @@ const LessonPlayer = ({videoId}) =>{
                         <input className='video-slider' style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
                         <label></label>
                     </li>
-                </ul>
+                </ul> */}
 
             </div>
             <div className="attachments">
