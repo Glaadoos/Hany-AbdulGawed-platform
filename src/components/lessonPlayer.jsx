@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import YouTube from 'react-youtube';
-
+/* import YouTube from 'react-youtube';
+import ReactDRMPlayer from "../DRM player/index"
+import Player from './Player/player' */
+import ShakaPlayer from 'shaka-player-react';
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
@@ -144,10 +146,24 @@ const LessonPlayer = ({videoId}) =>{
                     <div
                         className='hidden-div'
                     ></div>
-                    <YouTube videoId={id} opts={opts} onReady={onPlayerReady} iframeClassName='iframe-player' onStateChange={StateChange} />
+                    {/* <YouTube videoId={id} opts={opts} onReady={onPlayerReady} iframeClassName='iframe-player' onStateChange={StateChange} /> */}
+                    {/* <ReactDRMPlayer 
+                        src={`https://www.youtube.com/watch?v=${id}`} 
+                        onPlayerError={(error) => {console.log(error)}}
+                        onPlaybackError={(error) => {console.log(error)}}
+                        widevineLicenseURI={`https://widevine.gumlet.com/licence/64d7440aaf86935081c6cd72`}
+                        width="640" 
+                        height="264" 
+                        controls 
+                        muted
+                        preload="none"
+                        autoPlay={false}
+                    /> */}
+                    {/* <Player /> */}
+                    <ShakaPlayer autoPlay src={`https://www.youtube.com/watch?v=${id}`} />
                 </div>
 
-                <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
+                {/* <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
                     <li className='volume'>
                         <input className='volume-range' type='range' min='0' max='100' onChange={setVolume} /><br/>
                         <label className='volume-value'>Volume: {volume}</label>
@@ -172,7 +188,7 @@ const LessonPlayer = ({videoId}) =>{
                         <input className='video-slider' style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
                         <label></label>
                     </li>
-                </ul>
+                </ul> */}
 
             </div>
             <div className="attachments">
