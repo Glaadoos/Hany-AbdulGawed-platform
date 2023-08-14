@@ -125,28 +125,68 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
             'exam' : 'امتحان ذات الحدين'
         },
         {
-            'name' : 'المحاضرة الاولي - الاعداد المركبة',
+            'name' : 'المحاضرة الرابعة',
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
+                    'lessonName':'ذات الحدين - أفكار منوعة',
                     'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=X7g6jBlM6Q8',
+                    'duration':'0:53:55',
+                    'codes':[
+                        '7Rqsj77q', 'V3CB6inX', 'fT88Y52h', 'oKz5QKkD',
+                        '1Ax6rj1y', '4a9Xoe3o', 'C8wJz1Mi', 'vw1m6kwv',
+                        'BPjLSxY9', 'yU9t7oqT', 'ZeyeLRT1', 'J67u6Pv3',
+                        'BmdeMqnH', '0SSK0iBv', 'Y4kfY0J4', 'Vz76JzM6',
+                        'i8X1AqvY', 'Ss1JtpfY', 'UU5v0W8B', 'eS7HDyJK',
+                        'PdfqbM8i', 'NU1KQLBS', '7XHQOZPF', 'h7J0oLKY',
+                        'x7wqcnAF', 'SrciFuSj', 'NySZJOeY', 'mGLRNYVV',
+                        'fcBjv7TU', 'p4sczvNm', 'j579mDNx', 'OCCJcTHB',
+                        'gDzizh0O', 'tTMCHnCz', 'eMPxGH3M', 'OvQ68MYX',
+                        '6bLmtvnA', 'gNu938Pq', 'X8mCLOEY', 'MJNYaA1i',
+                        'z2vHdUDU', 'GFdiMHjR', 'L8tKFgqa', 'bF6C66jR',
+                        'tNo7Gwmi', '6XgFrTVS', 'ymHhoFDJ', 'Ni3iJFoR',
+                        'NJ1gAKvY', 'eGKDDJTi', 'm5J935dG', 'kyh1KLMU',
+                        '5LVLURfb', 'b2eTqrpT', 'UJNsOcnU', 'UvajM76s',
+                        'iOLko4Bo', '7mMjfBez', 'OMm3jH6G', 'oE0ZJYbp'
+                      ]
                 },
                 {
-                    'lessonName':'الجزء الثاني',
+                    'lessonName':'الأعداد المركبة - الجزء الأول',
                     'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=6siAmS5y7fM',
+                    'duration':'1:31:22',
+                    'codes':[
+                        'r1DYVSsy', 'tuwy7LVW', 'J1bOPTf4', 'nubJ2Sfc',
+                        'joRmhV1U', 'OVU95iGK', 'aFhHnssh', 'rbpgLEyL',
+                        '4mPvf6Z8', 'GvuE8PGX', 'WaJXsviy', '4xUvtUVC',
+                        'ntUzJr5v', 'N8wPr0k4', 'ACKjCzZn', 'y2RUc4zp',
+                        '0s8gTAPu', '0sp9N07m', 'YoXpKdpE', '9HA5aNUP',
+                        'FGwO06of', 'zijWkYUG', 'Kd52NVzz', 'ZmUO79kS',
+                        'gLeekNCg', '6LSTu0LO', 'K6n2QMFp', 'JwsA1D11',
+                        'TSo3A4Yv', 'hdopcmnQ', 'iuJdHTw5', 'Ay1HEWpQ',
+                        'JQf86enO', 'oy9EZNkU', 'SZ3wP0k6', 'Gq2Ks3yG',
+                        '8yBsNFO4', 'rw5ZBTv0', 'pX6vU6hK', 'mc9idme2',
+                        '91NNdWy9', 'fRy0Ne1S', 'hJhgr8Wy', '2NnXtAUY',
+                        'RVBDwa7r', 'RsbmP9rP', '1ZUzLreB', 'zL6Xd2sg',
+                        'bk6Towpe', 'd6TFDZfs', 'becwLq2Y', 'TTTgPuHU',
+                        '22pnrtzR', '5bgwAFZL', '36y2tDAO', '6dwoui23',
+                        'OUqyYt2M', 'SDWCy57V', 'zQSxLzLw', '913R5A82'
+                      ]
                 },
                 {
-                    'lessonName':'مسائل الملزمة',
+                    'lessonName':'مسائل الملزمة - ذات الحدين',
                     'state':false,
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXeAyg2o473ddm5zh686okG',
                     'duration':'',
-                    'link':'soon',
+                },
+                {
+                    'lessonName':'مسائل الملزمة - الأعداد المركبة',
+                    'state':false,
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVDubz97QqhosX6loGoaHnf',
+                    'duration':'',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam' : 'امتحان المحاضرة الرابعة'
         },
         {
             'name' : 'المحاضرة الثانية - الاعداد المركبة',
@@ -392,28 +432,68 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
             
         },
         {
-            'name' : 'المحاضرة الاولي - الاعداد المركبة',
+            'name' : 'المحاضرة الرابعة',
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
+                    'lessonName':'ذات الحدين - أفكار منوعة',
                     'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=X7g6jBlM6Q8',
+                    'duration':'0:53:55',
+                    'codes':[
+                        '7Rqsj77q', 'V3CB6inX', 'fT88Y52h', 'oKz5QKkD',
+                        '1Ax6rj1y', '4a9Xoe3o', 'C8wJz1Mi', 'vw1m6kwv',
+                        'BPjLSxY9', 'yU9t7oqT', 'ZeyeLRT1', 'J67u6Pv3',
+                        'BmdeMqnH', '0SSK0iBv', 'Y4kfY0J4', 'Vz76JzM6',
+                        'i8X1AqvY', 'Ss1JtpfY', 'UU5v0W8B', 'eS7HDyJK',
+                        'PdfqbM8i', 'NU1KQLBS', '7XHQOZPF', 'h7J0oLKY',
+                        'x7wqcnAF', 'SrciFuSj', 'NySZJOeY', 'mGLRNYVV',
+                        'fcBjv7TU', 'p4sczvNm', 'j579mDNx', 'OCCJcTHB',
+                        'gDzizh0O', 'tTMCHnCz', 'eMPxGH3M', 'OvQ68MYX',
+                        '6bLmtvnA', 'gNu938Pq', 'X8mCLOEY', 'MJNYaA1i',
+                        'z2vHdUDU', 'GFdiMHjR', 'L8tKFgqa', 'bF6C66jR',
+                        'tNo7Gwmi', '6XgFrTVS', 'ymHhoFDJ', 'Ni3iJFoR',
+                        'NJ1gAKvY', 'eGKDDJTi', 'm5J935dG', 'kyh1KLMU',
+                        '5LVLURfb', 'b2eTqrpT', 'UJNsOcnU', 'UvajM76s',
+                        'iOLko4Bo', '7mMjfBez', 'OMm3jH6G', 'oE0ZJYbp'
+                      ]
                 },
                 {
-                    'lessonName':'الجزء الثاني',
+                    'lessonName':'الأعداد المركبة - الجزء الأول',
                     'state':false,
-                    'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/watch?v=6siAmS5y7fM',
+                    'duration':'1:31:22',
+                    'codes':[
+                        'r1DYVSsy', 'tuwy7LVW', 'J1bOPTf4', 'nubJ2Sfc',
+                        'joRmhV1U', 'OVU95iGK', 'aFhHnssh', 'rbpgLEyL',
+                        '4mPvf6Z8', 'GvuE8PGX', 'WaJXsviy', '4xUvtUVC',
+                        'ntUzJr5v', 'N8wPr0k4', 'ACKjCzZn', 'y2RUc4zp',
+                        '0s8gTAPu', '0sp9N07m', 'YoXpKdpE', '9HA5aNUP',
+                        'FGwO06of', 'zijWkYUG', 'Kd52NVzz', 'ZmUO79kS',
+                        'gLeekNCg', '6LSTu0LO', 'K6n2QMFp', 'JwsA1D11',
+                        'TSo3A4Yv', 'hdopcmnQ', 'iuJdHTw5', 'Ay1HEWpQ',
+                        'JQf86enO', 'oy9EZNkU', 'SZ3wP0k6', 'Gq2Ks3yG',
+                        '8yBsNFO4', 'rw5ZBTv0', 'pX6vU6hK', 'mc9idme2',
+                        '91NNdWy9', 'fRy0Ne1S', 'hJhgr8Wy', '2NnXtAUY',
+                        'RVBDwa7r', 'RsbmP9rP', '1ZUzLreB', 'zL6Xd2sg',
+                        'bk6Towpe', 'd6TFDZfs', 'becwLq2Y', 'TTTgPuHU',
+                        '22pnrtzR', '5bgwAFZL', '36y2tDAO', '6dwoui23',
+                        'OUqyYt2M', 'SDWCy57V', 'zQSxLzLw', '913R5A82'
+                      ]
                 },
                 {
-                    'lessonName':'مسائل الملزمة',
+                    'lessonName':'مسائل الملزمة - ذات الحدين',
                     'state':false,
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXeAyg2o473ddm5zh686okG',
                     'duration':'',
-                    'link':'soon',
+                },
+                {
+                    'lessonName':'مسائل الملزمة - الأعداد المركبة',
+                    'state':false,
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVDubz97QqhosX6loGoaHnf',
+                    'duration':'',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam' : 'امتحان المحاضرة الرابعة'
         },
         {
             'name' : 'المحاضرة الثانية - الاعداد المركبة',
@@ -534,12 +614,17 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
             // console.log(show)
             if(codeExist){
                 document.getElementById(`form${videoId}`).remove()
-                document.getElementById(`wrong${videoId}`).remove()
+                
                 let wrong = document.querySelectorAll(`wrong${videoId}`)
-                // console.log(wrong,`wrong${videoId}`)
-                /* wrong.map(ele=>{
-                    ele.remove()
-                }) */
+                console.log(wrong.length)
+                if(wrong !== undefined){
+                    if(wrong.length !==0){
+                        wrong.map(ele=>{
+                            ele.remove()
+                        }) 
+                    }
+                }
+               
             }
             if(!codeExist){
                 
@@ -581,7 +666,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    if(part.lessonName !== 'مسائل الملزمة'){
+                                    if(!(part.lessonName.includes('مسائل'))){
                                         return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>
@@ -694,7 +779,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
             </div>
         );
     }
-    if(userPayingSystem === 'MPS'){
+    if(userPayingSystem === 'MPS' || localStorage.getItem("userPayingSystem") === 'LPS'){
         return(
             <div className="lessons-box">
                 <h1 className="title"
@@ -712,7 +797,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                             </div>
                             <ul className='lesson-parts'>
                                 {lesson.parts.map((part,num)=>{
-                                    if(part.lessonName !== 'مسائل الملزمة'){
+                                    if(!(part.lessonName.includes('مسائل'))){
                                         return(
                                         part.link === 'soon' ?
                                             <li key={'partObject'+num}>

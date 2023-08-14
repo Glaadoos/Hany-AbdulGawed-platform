@@ -147,19 +147,32 @@ const LessonPlayer = ({videoId}) =>{
 
                 {
                     id ==='x4hPH5Wreyk'?
-                        <iframe title='ذات الحدين 1' src="https://drive.google.com/file/d/1f-mr9jXcCjjJJwErEOtMUC-zq-PhFs85/preview" width="640" height="600" allow="autoplay"></iframe>
+                    <h1 className='title'><a href='https://drive.google.com/file/d/1f-mr9jXcCjjJJwErEOtMUC-zq-PhFs85/view?usp=drive_link'>link</a></h1>
                     :
                     ''
                 }
                 {
                     id ==='p2aDs2ddmgE'?
-                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/preview" width="640" height="480" allow="autoplay"></iframe>
+
+                    <h1 className='title'><a href='https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/view?usp=drive_link'>link</a></h1>
                     :
                     ''
                 }
                 {
                     id ==='CDm6yUoqDvk'?
-                    <iframe title='ذات الحدين 2'  src="https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <h1 className='title'><a href='https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/view?usp=drive_link'>link</a></h1>
+                    :
+                    ''
+                }
+                {
+                    id ==='X7g6jBlM6Q8'?
+                    <h1 className='title'><a href='https://drive.google.com/file/d/1dCwUeWs82eTLWfVRFcz-Rl6vRGQGyhOP/view?usp=drive_link'>link</a></h1>
+                    :
+                    ''
+                }
+                {
+                    id ==='6siAmS5y7fM'?
+                    <h1 className='tilte'><a href='https://drive.google.com/file/d/14kg3xszMZzjorFkNf_wFLmkxXysLYPCr/view?usp=drive_link'>link</a></h1>
                     :
                     ''
                 }
@@ -167,7 +180,7 @@ const LessonPlayer = ({videoId}) =>{
                 <h2 className="sub-attachments"
                 style={{textAlign:'right'}}
                 >:الواجب</h2>
-                 {
+                {
                     id ==='x4hPH5Wreyk'?
                     <iframe title='ذات الحدين 1' src="https://drive.google.com/file/d/15F-wJ0DT2t14KMs5UgqIfvBcfUiBR1FL/preview" width="640" height="480" allow="autoplay"></iframe>
                     :
@@ -181,7 +194,19 @@ const LessonPlayer = ({videoId}) =>{
                 }
                 {
                     id ==='CDm6yUoqDvk'?
-                    <iframe title='ذات الحدين 2' src="https://drive.google.com/file/d/1ZlfcraUobJKutBf9FQUaGZxjhqNjxFR9/preview" width="640" height="480" allow="autoplay"></iframe>
+                    <iframe title='ذات الحدين 3' src="https://drive.google.com/file/d/1ZlfcraUobJKutBf9FQUaGZxjhqNjxFR9/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+                {
+                    id ==='X7g6jBlM6Q8'?
+                    <iframe title='ذات الحدين 4' src="https://drive.google.com/file/d/1lERGcFQ6WujClUb6U9RF_sWE5D2YM2B8/preview" width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+                {
+                    id ==='6siAmS5y7fM'?
+                    <iframe title='الاعداد المركبة 1' src="https://drive.google.com/file/d/1_JM23Kp927RghA-vLkhXO64EO68rbRis/preview" width="640" height="480" allow="autoplay"></iframe>
                     :
                     ''
                 }
