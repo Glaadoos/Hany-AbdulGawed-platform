@@ -102,12 +102,16 @@ function App() {
   // fetch user available codes
   useEffect(()=>{
     let payingSystem = localStorage.getItem("userPayingSystem");
-    if(payingSystem === "LPS" || payingSystem === "MPS"){
-        const fetchUserAvailableCodes = async() => {  
-            let res = await Api.getAvailableCodes(user).then(data => {return data})
-            setUserCodes(res)
-        }
-        fetchUserAvailableCodes()
+    if(currentUser){
+      if(currentUser.email){
+          if(payingSystem === "LPS" || payingSystem === "MPS"){
+            const fetchUserAvailableCodes = async() => {  
+                let res = await Api.getAvailableCodes((currentUser.email)).then(data => {return data})
+                setUserCodes(res)
+            }
+            fetchUserAvailableCodes()
+          }
+      }
     }
 },[user, userPayingSystem])
 
