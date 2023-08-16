@@ -22,7 +22,9 @@ function App() {
     'email':'',
     'picture':'',
     'payingSystem':''
-});
+  });
+  const[userCodes, setUserCodes] = useState()
+
   
   const [userPayingSystem, setPayingSystem] = useState('');
   const [videoId, setVideoId] = useState('');
@@ -97,6 +99,18 @@ function App() {
   // eslint-disable-next-line react-hooks/exhaustive-deps
   },[currentUser.email, user, userExist])
 
+  // fetch user available codes
+  useEffect(()=>{
+    let payingSystem = localStorage.getItem("userPayingSystem");
+    if(payingSystem === "LPS" || payingSystem === "MPS"){
+        const fetchUserAvailableCodes = async() => {  
+            let res = await Api.getAvailableCodes(user).then(data => {return data})
+            setUserCodes(res)
+        }
+        fetchUserAvailableCodes()
+    }
+},[user, userPayingSystem])
+
   return(
     <div>
       <Header  user={user}  currentUser={currentUser} userPayingSystem={userPayingSystem}/>
@@ -117,7 +131,7 @@ function App() {
           <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Algebra' element={
-          <Algebra setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
+          <Algebra setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} userCodes={userCodes} setUserCodes={setUserCodes} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Calculus' element={
           <Calculus  />

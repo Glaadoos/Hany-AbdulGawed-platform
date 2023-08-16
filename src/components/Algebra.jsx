@@ -10,7 +10,7 @@ var relativeTime = require('dayjs/plugin/relativeTime')
 dayjs.extend(relativeTime)
 
 
-const Algebra = ({setVideoId, user, userPayingSystem}) =>{
+const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) =>{
 
     // dictionaries & State variable
     const Algebralessons =[
@@ -613,7 +613,6 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
             'exam' : 'امتحان المحاضرة الثانية'
         }
     ]
-    const[userCodes, setUserCodes] = useState()
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
 
@@ -677,18 +676,6 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
         return [`${d} days`, `${pad(h)} hours`, `${pad(m)} minutes`].join(', ');
     }
     
-    // fetch user available codes
-    useEffect(()=>{
-        let payingSystem = localStorage.getItem("userPayingSystem");
-        if(payingSystem === "LPS" || payingSystem === "MPS"){
-            const fetchUserAvailableCodes = async() => {  
-                let res = await UserAPI.getAvailableCodes(user).then(data => {return data})
-                setUserCodes(res)
-            }
-            fetchUserAvailableCodes()
-        }
-    },[user])
-
     if(user === null){
         return (
             <h1 style={{textAlign:'center', marginTop:'200px'}}>
@@ -868,7 +855,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                 style={{textAlign:'right'}}
                 >الشهر الاول - أغسطس</h2>
                 {AlgebralessonsMPS.map((lesson,num) =>{
-                   if(userCodes.length === 0){
+                   if(userCodes.length !== 0){
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                             let date = dayjs(userCodes.filter(obj => obj.order === lesson.order)[0].date);
                             let dataOfClose = dayjs(date.add(40, 'm')) ;
