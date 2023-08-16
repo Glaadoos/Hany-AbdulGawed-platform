@@ -102,7 +102,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
         {
             'name' : 'المحاضرة الثالثة - ذات الحدين',
             'order':'algebra3',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
@@ -138,52 +137,20 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
         },
         {
             'name' : 'المحاضرة الرابعة',
+            'order':'algebra4',
             'parts' :[
                 {
                     'lessonName':'ذات الحدين - أفكار منوعة',
                     'state':false,
                     'link':'https://www.youtube.com/watch?v=X7g6jBlM6Q8',
                     'duration':'0:53:55',
-                    'codes':[
-                        '7Rqsj77q', 'V3CB6inX', 'fT88Y52h', 'oKz5QKkD',
-                        '1Ax6rj1y', '4a9Xoe3o', 'C8wJz1Mi', 'vw1m6kwv',
-                        'BPjLSxY9', 'yU9t7oqT', 'ZeyeLRT1', 'J67u6Pv3',
-                        'BmdeMqnH', '0SSK0iBv', 'Y4kfY0J4', 'Vz76JzM6',
-                        'i8X1AqvY', 'Ss1JtpfY', 'UU5v0W8B', 'eS7HDyJK',
-                        'PdfqbM8i', 'NU1KQLBS', '7XHQOZPF', 'h7J0oLKY',
-                        'x7wqcnAF', 'SrciFuSj', 'NySZJOeY', 'mGLRNYVV',
-                        'fcBjv7TU', 'p4sczvNm', 'j579mDNx', 'OCCJcTHB',
-                        'gDzizh0O', 'tTMCHnCz', 'eMPxGH3M', 'OvQ68MYX',
-                        '6bLmtvnA', 'gNu938Pq', 'X8mCLOEY', 'MJNYaA1i',
-                        'z2vHdUDU', 'GFdiMHjR', 'L8tKFgqa', 'bF6C66jR',
-                        'tNo7Gwmi', '6XgFrTVS', 'ymHhoFDJ', 'Ni3iJFoR',
-                        'NJ1gAKvY', 'eGKDDJTi', 'm5J935dG', 'kyh1KLMU',
-                        '5LVLURfb', 'b2eTqrpT', 'UJNsOcnU', 'UvajM76s',
-                        'iOLko4Bo', '7mMjfBez', 'OMm3jH6G', 'oE0ZJYbp'
-                      ]
+                    
                 },
                 {
                     'lessonName':'الأعداد المركبة - الجزء الأول',
                     'state':false,
                     'link':'https://www.youtube.com/watch?v=6siAmS5y7fM',
-                    'duration':'1:31:22',
-                    'codes':[
-                        'r1DYVSsy', 'tuwy7LVW', 'J1bOPTf4', 'nubJ2Sfc',
-                        'joRmhV1U', 'OVU95iGK', 'aFhHnssh', 'rbpgLEyL',
-                        '4mPvf6Z8', 'GvuE8PGX', 'WaJXsviy', '4xUvtUVC',
-                        'ntUzJr5v', 'N8wPr0k4', 'ACKjCzZn', 'y2RUc4zp',
-                        '0s8gTAPu', '0sp9N07m', 'YoXpKdpE', '9HA5aNUP',
-                        'FGwO06of', 'zijWkYUG', 'Kd52NVzz', 'ZmUO79kS',
-                        'gLeekNCg', '6LSTu0LO', 'K6n2QMFp', 'JwsA1D11',
-                        'TSo3A4Yv', 'hdopcmnQ', 'iuJdHTw5', 'Ay1HEWpQ',
-                        'JQf86enO', 'oy9EZNkU', 'SZ3wP0k6', 'Gq2Ks3yG',
-                        '8yBsNFO4', 'rw5ZBTv0', 'pX6vU6hK', 'mc9idme2',
-                        '91NNdWy9', 'fRy0Ne1S', 'hJhgr8Wy', '2NnXtAUY',
-                        'RVBDwa7r', 'RsbmP9rP', '1ZUzLreB', 'zL6Xd2sg',
-                        'bk6Towpe', 'd6TFDZfs', 'becwLq2Y', 'TTTgPuHU',
-                        '22pnrtzR', '5bgwAFZL', '36y2tDAO', '6dwoui23',
-                        'OUqyYt2M', 'SDWCy57V', 'zQSxLzLw', '913R5A82'
-                      ]
+                    'duration':'1:31:22'
                 },
                 {
                     'lessonName':'مسائل الملزمة - ذات الحدين',
@@ -470,6 +437,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
         },
         {
             'name' : 'المحاضرة الرابعة',
+            'order':'algebra4',
             'parts' :[
                 {
                     'lessonName':'ذات الحدين - أفكار منوعة',
