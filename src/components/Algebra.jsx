@@ -698,9 +698,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                 <h1 className="title"
                 style={{textAlign:'right'}}
                 >:الجبر</h1>
-                <h2 className="title"
-                style={{textAlign:'right'}}
-                >الشهر الاول - أغسطس</h2>
                 {Algebralessons.map((lesson,num) =>{
                     if(userCodes){
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
