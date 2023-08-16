@@ -705,7 +705,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                     if(userCodes){
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                             let date = dayjs(userCodes.filter(obj => obj.order === lesson.order)[0].date);
-                            let dataOfClose = dayjs(date.add(40, 'm')) ;
+                            let dataOfClose = dayjs(date.add(48, 'h')) ;
                             let diff = (dataOfClose).diff(dayjs().format())
                             let finalDate;
                             finalDate =  millisecondsToDays(diff);
@@ -858,7 +858,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                    if(userCodes){  
                     if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                         let date = dayjs(userCodes.filter(obj => obj.order === lesson.order)[0].date);
-                        let dataOfClose = dayjs(date.add(40, 'm')) ;
+                        let dataOfClose = dayjs(date.add(48, 'h')) ;
                         let diff = (dataOfClose).diff(dayjs().format())
                         let finalDate;
                         finalDate =  millisecondsToDays(diff);
