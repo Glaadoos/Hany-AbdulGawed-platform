@@ -868,7 +868,7 @@ const Algebra = ({setVideoId, user, userPayingSystem}) =>{
                 style={{textAlign:'right'}}
                 >الشهر الاول - أغسطس</h2>
                 {AlgebralessonsMPS.map((lesson,num) =>{
-                   if(userCodes){
+                   if(userCodes.length === 0){
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                             let date = dayjs(userCodes.filter(obj => obj.order === lesson.order)[0].date);
                             let dataOfClose = dayjs(date.add(40, 'm')) ;
