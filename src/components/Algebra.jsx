@@ -699,7 +699,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                 style={{textAlign:'right'}}
                 >:الجبر</h1>
                 {Algebralessons.map((lesson,num) =>{
-                    if(userCodes){
+                    if(userCodes){  
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                             let date = dayjs(userCodes.filter(obj => obj.order === lesson.order)[0].date);
                             let dataOfClose = dayjs(date.add(48, 'h')) ;
@@ -799,44 +799,44 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                                         </div>
                                     </div>
                             )
+                        }else{
+                                return(
+                                    <div key={'lesson'+num} className="lesson">
+                                        <div className='lesson-title'>
+                                            <h1 className="lecture-name">{lesson.name}</h1>
+                                            <li id={'form'+lesson.order} key={'partInput'+num}>
+                                                <form onSubmit={e => e.preventDefault}>
+                                                    <input
+                                                        id={lesson.order}
+                                                        className='input-field'
+                                                        type="text"
+                                                        placehorder="Input code(case sensitive!)"
+                                                        onChange={handleChange}
+                                                        max='10'
+                                                    />
+                                                    <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                </form>
+                                                
+                                            </li>
+                                            {exist.map((ele, num) =>{
+                                                    if(ele[0] === lesson.order){
+                                                        if(ele[1] === 0){
+                                                            return(
+                                                                <li id='wrong'
+                                                                    style={{color:'rgb(99, 2, 2)',fontWeight:'bold', listStyleType: 'none', marginRight:'8vw'}}
+                                                                    key={'duration'+num}>
+                                                                    كود غير صحيح
+                                                                </li>
+                                                        )
+                                                        }
+                                                    }
+                                                })}
+                                            <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
+                                        </div>
+                                    
+                                    </div>
+                                )
                         }
-                    }else{
-                        return(
-                            <div key={'lesson'+num} className="lesson">
-                                <div className='lesson-title'>
-                                    <h1 className="lecture-name">{lesson.name}</h1>
-                                    <li id={'form'+lesson.order} key={'partInput'+num}>
-                                        <form onSubmit={e => e.preventDefault}>
-                                            <input
-                                                id={lesson.order}
-                                                className='input-field'
-                                                type="text"
-                                                placehorder="Input code(case sensitive!)"
-                                                onChange={handleChange}
-                                                max='10'
-                                            />
-                                            <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
-                                        </form>
-                                        
-                                    </li>
-                                    {exist.map((ele, num) =>{
-                                            if(ele[0] === lesson.order){
-                                                if(ele[1] === 0){
-                                                    return(
-                                                        <li id='wrong'
-                                                            style={{color:'rgb(99, 2, 2)',fontWeight:'bold', listStyleType: 'none', marginRight:'8vw'}}
-                                                            key={'duration'+num}>
-                                                            كود غير صحيح
-                                                        </li>
-                                                )
-                                                }
-                                            }
-                                        })}
-                                    <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
-                                </div>
-                            
-                            </div>
-                        )
                     }
                 })}
             </div>
