@@ -1,8 +1,11 @@
 import { useEffect, useState } from 'react';
-/* import YouTube from 'react-youtube';
+// import YouTube from 'react-youtube';
 import ReactDRMPlayer from "../DRM player/index"
-import Player from './Player/player' */
-import ShakaPlayer from 'shaka-player-react';
+// import Player from './Player/player'
+// import ShakaPlayer from 'shaka-player-react';
+// import Plyr from 'plyr';
+const shaka = require('shaka-player');
+
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
@@ -18,8 +21,6 @@ const LessonPlayer = ({videoId}) =>{
     const[volume, setVideoVolume] = useState(50)
 
     const[currentTime, setCurrentTime] = useState(0)
-
-    
 
     
     useEffect(()=>{
@@ -139,16 +140,19 @@ const LessonPlayer = ({videoId}) =>{
         setTime(e.target.getCurrentTime())
     }
 
+    // const player = new Plyr((document.getElementById('player')));
+
+
     return(
         <div className='video-player'>
             <div className="player">
                 <div id="player">
-                    <div
+                    {/* <div
                         className='hidden-div'
-                    ></div>
+                    ></div> */}
                     {/* <YouTube videoId={id} opts={opts} onReady={onPlayerReady} iframeClassName='iframe-player' onStateChange={StateChange} /> */}
-                    {/* <ReactDRMPlayer 
-                        src={`https://www.youtube.com/watch?v=${id}`} 
+                    <ReactDRMPlayer 
+                        src={`https://www.youtube.com/embed/${id}`} 
                         onPlayerError={(error) => {console.log(error)}}
                         onPlaybackError={(error) => {console.log(error)}}
                         widevineLicenseURI={`https://widevine.gumlet.com/licence/64d7440aaf86935081c6cd72`}
@@ -158,9 +162,10 @@ const LessonPlayer = ({videoId}) =>{
                         muted
                         preload="none"
                         autoPlay={false}
-                    /> */}
+                    />
                     {/* <Player /> */}
-                    <ShakaPlayer autoPlay src={`https://www.youtube.com/watch?v=${id}`} />
+                    {/* <ShakaPlayer autoPlay src={`https://www.youtube.com/watch?v=${id}?origin=https://plyr.io`} /> */}
+                    {/* <div id="player" data-plyr-provider="youtube" controls={['play-large', 'play', 'current-time', 'mute', 'volume', 'settings', 'fullscreen']} data-plyr-embed-id={id}></div> */}
                 </div>
 
                 {/* <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
@@ -234,3 +239,10 @@ const LessonPlayer = ({videoId}) =>{
 }
 
 export default LessonPlayer;
+
+
+/* 
+
+<iframe width="1663" height="770" src="https://www.youtube.com/embed/bJFO1JTfohs" title="الحجرات وق لهبة الله الشيخ مصطفي اسماعيل" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+*/
