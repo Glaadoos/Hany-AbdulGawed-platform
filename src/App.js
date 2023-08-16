@@ -23,99 +23,53 @@ function App() {
     'picture':'',
     'payingSystem':''
 });
-  const [windowWidth, setWindowWidth] = useState(window.outerWidth);
+  
   const [userPayingSystem, setPayingSystem] = useState('');
   const [videoId, setVideoId] = useState('');
   const [userExist, setUserExist] = useState(false);
   const {user} = useAuth0();
 
-  const id=localStorage.getItem("userEmail")
   const name=localStorage.getItem("userName")
   const email=localStorage.getItem("userEmail")
 
 
-  const handleUserexist = async ()=>{
+  const handleUserexist = async (email)=>{
     // Check if the user on server side exist or not
     let checkUserExist;
-    if(currentUser.email !== ''){
-      checkUserExist = await Api.getSpecific(currentUser.email)
-    }
-    if(checkUserExist){
-      if(checkUserExist.message === undefined){
-        setUserExist(true)
-        localStorage.setItem("userPayingSystem", checkUserExist.payingSystem)
-        // console.log(checkUserExist.payingSystem)  
-        if(checkUserExist.payingSystem !=='none'){
+    checkUserExist = await Api.getSpecific(email)
+    
+    setTimeout(()=>{
+        if(checkUserExist.message !== "Account isn't exist"){
+          localStorage.setItem("ServerToken", 'exist')
+          setUserExist(true)
+          localStorage.setItem("userPayingSystem", checkUserExist.payingSystem)
+        
+        if(checkUserExist.payingSystem !==''){
           setPayingSystem(checkUserExist.payingSystem)
         }
-        if(checkUserExist.payingSystem !==''){
-          setPayingSystem(localStorage.getItem("userPayingSystem"))
+        }else{
+          localStorage.setItem("ServerToken", 'isn`t exist')
+          handelUserCreation()
         }
-      }else{
-        setUserExist(false)
-      }
-    }
+    }, 100)
+
   }
-  /* const generateCodes= ()=> {   
-    let pass = '';
-    let str = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' +
-            'abcdefghijklmnopqrstuvwxyz0123456789@#$%^&*(!+_=-{}[];:?/';
-    for (let i = 1; i <= 24; i++) {
-        var char = Math.floor(Math.random()
-                    * str.length + 1);
-          
-        pass += str.charAt(char)
-    }
-        
-    
-    return pass;
-  } */
+
   const handelUserCreation = async () =>{   
-    let checkUserExist;
-    if(currentUser.email.length > 0){
-      checkUserExist=await Api.getSpecific(currentUser.email)
-    }
-    
-    if(checkUserExist){
-      if(!(checkUserExist.message === undefined)){
-        // Create new user
-        await Api.createUser(id,name,email,userPayingSystem)
+    await Api.createUser(name,email,userPayingSystem)
+    .then(res => {
+      if(res.message === 'account created!'){
+        localStorage.setItem("ServerToken", 'exist')
       }
-    }  
+    })
+
   }
   const handelUserUpdating = async (value) =>{
     if(userExist){
-      // update user payingSystem
-      await Api.updateUser(email,value)
+      await Api.updateUserPayingsystem(email,value)
     }
   }
-  const getYoutubeVideoDuration = async(videoId)=>{
-    // const key1 = 'AIzaSyD8F0boLyJ33MtuH0V2f2t67Fip6QSZGFg'
-    const key = 'AIzaSyAXPC5sP8ItkyMaVY5akzqqWvtjsYf1qfc'
-    const id = videoId
-    const url = `https://www.googleapis.com/youtube/v3/videos?key=${key}&part=contentDetails&id=${id}`
-    let res;
-    try{
-      res = await fetch(url).then(res => res.json())
-    }catch(err){
-      console.log(err)
-    }
-    const data = await res
-    // console.log(data);
-    var match = data.items[0].contentDetails.duration.match(/PT(\d+H)?(\d+M)?(\d+S)?/);
-    match = match.slice(1).map((x)=> {
-          if (x != null) {
-              return x.replace(/\D/, '');
-          }
-          return x;
-        });
-      var hours = (parseInt(match[0]) || 0);
-      var minutes = (parseInt(match[1]) || 0);
-      var seconds = (parseInt(match[2]) || 0);
-      console.log(videoId, `${hours}:${minutes}:${seconds}`)
-    // console.log(data.items[0].contentDetails.duration);
-  }
-
+  
   useEffect(()=>{
     if(user){
         localStorage.setItem("userEmail", user.email)
@@ -127,27 +81,21 @@ function App() {
             'picture':user.picture,
             'payingSystem':userPayingSystem||localStorage.getItem("userPayingSystem") 
         })
-
-        handleUserexist();
-        if(!userExist){
-          handelUserCreation();
-        }
+        handleUserexist(user.email);   
     }
-    if(localStorage.getItem("userName")){
+    else{
+      if(localStorage.getItem("userName")){
         setCurrentUser({
             'name':localStorage.getItem("userName"),
             'email':localStorage.getItem("userEmail"),
             'picture':localStorage.getItem("userPicture"),
             'payingSystem':userPayingSystem||localStorage.getItem("userPayingSystem") 
         })
-        handleUserexist();
-        if(!userExist){
-          handelUserCreation();
-        }
+        handleUserexist(localStorage.getItem("userEmail"));
+      }
     }
-    setWindowWidth(window.outerWidth)
   // eslint-disable-next-line react-hooks/exhaustive-deps
-  },[currentUser.email, user, userExist, windowWidth])
+  },[currentUser.email, user, userExist])
 
   return(
     <div>
@@ -169,7 +117,7 @@ function App() {
           <SpatialEngineering setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Algebra' element={
-          <Algebra setVideoId={setVideoId} durationFunction={getYoutubeVideoDuration} user={email} userPayingSystem={userPayingSystem} />
+          <Algebra setVideoId={setVideoId} user={email} userPayingSystem={userPayingSystem} />
         }/>
         <Route path='/Hany-AbdulGawed-platform/Calculus' element={
           <Calculus  />

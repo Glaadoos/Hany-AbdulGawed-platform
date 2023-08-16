@@ -4,7 +4,9 @@
   --input-focus-s: 100%;
   --input-focus-l: 42%;
 }
-
+li{
+  list-style: none;
+}
 html {
   scroll-behavior: smooth;
 }

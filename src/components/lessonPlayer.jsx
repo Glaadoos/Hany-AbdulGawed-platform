@@ -99,10 +99,14 @@ const LessonPlayer = ({videoId}) =>{
         setTime(e.target.getCurrentTime())
     } */
 
+    // const player = new Plyr((document.getElementById('player')));
+
+
     return(
         <div className='video-player'>
             <div className="player">
                 <div id="player">
+                    {/* <div
                     {/* <div
                         className='hidden-div'
                     ></div> */}
@@ -135,6 +139,7 @@ const LessonPlayer = ({videoId}) =>{
                         <label></label>
                     </li>
                 </ul> */}
+               
 
             </div>
             <div className="attachments">
@@ -210,7 +215,7 @@ const LessonPlayer = ({videoId}) =>{
                     :
                     ''
                 }
-            </div>
+        </div>
         </div>
 
     );
