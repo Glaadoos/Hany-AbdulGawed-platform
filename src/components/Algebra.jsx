@@ -690,7 +690,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes,setUserCodes }) 
                                         </div>
                                         <ul className='lesson-parts'>
                                             {lesson.parts.map((part,num)=>{
-                                                if(part.lessonName.search('مسائل الملزمة') !== -1){
+                                                if(part.lessonName.search('مسائل الملزمة') === -1){
                                                     return(
                                                     <li key={'partObject'+num}>
                                                         <ul className='lesson-part'>
