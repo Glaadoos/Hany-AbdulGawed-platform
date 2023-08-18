@@ -421,6 +421,8 @@ button{
   align-items: center;
   background-color: transparent;
   font-family: 'Cairo Play', sans-serif !important; 
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .lesson-btn{

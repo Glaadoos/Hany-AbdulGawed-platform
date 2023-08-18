@@ -1,29 +1,11 @@
-import { useEffect, useState } from 'react';
+// import { useEffect, useState } from 'react';
 import YouTube from 'react-youtube';
 
 
 const LessonPlayer = ({videoId}) =>{
     let id =localStorage.getItem("videoId");
-    /* const[ele, setEle] = useState('')
-    const[time, setTime] = useState(0)
-    const[duration, setDuration] = useState(0)
-    const[speed, setSpeed] = useState(1)
-    const[volume, setVideoVolume] = useState(50)
-    const[currentTime, setCurrentTime] = useState(0) */
-
- /*    useEffect(()=>{
-        if(ele){
-            let Currenthours = Math.round(time/3600)
-            let Currentminutes = (time/60).toString().slice(0, (time/60).toString().indexOf('.')).slice(0, 2) || 0;
-            let Currentseconds = (time).toString().slice(0, (time).toString().indexOf('.')).slice(0, 2) || 0;
-            let Durationhours = Math.round(ele.getDuration()/3600)
-            let Durationminutes = (ele.getDuration()/60).toString().slice(0, (ele.getDuration()/60).toString().indexOf('.')).slice(0, 2) || 0;
-            let Durationseconds = (ele.getDuration()).toString().slice(0, (ele.getDuration()).toString().indexOf('.')).slice(0, 2) || 0;
-            setCurrentTime(`${Currenthours}:${Currentminutes}:${Currentseconds} / ${Durationhours}:${Durationminutes}:${Durationseconds}`)
-            setDuration((time*100) / ele.getDuration())
-        }
-    }, [ele, time] )
- */
+    let notebook =localStorage.getItem("notebook");
+    let homework =localStorage.getItem("homework");
     const opts= {
     videoId:id,
     rel:0,
@@ -44,7 +26,104 @@ const LessonPlayer = ({videoId}) =>{
     },
     };
     
-    /* setInterval(()=>{
+    return(
+        <div className='video-player'>
+            <div className="player">
+                <div id="player">
+                    {/* <div
+                    {/* <div
+                        className='hidden-div'
+                    ></div> */}
+                    <YouTube videoId={id} opts={opts} /* onReady={onPlayerReady} */ iframeClassName='iframe-player' /* onStateChange={StateChange} */ />
+                </div>
+
+                {
+                /* 
+                    <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
+                        <li className='volume'>
+                            <input className='volume-range' type='range' min='0' max='100' onChange={setVolume} /><br/>
+                            <label className='volume-value'>Volume: {volume}</label>
+                        </li>
+                        <li className='speed'>
+                            <input className='speed-range' type='range' min='.25' max='2' step='.25' placeholder='speed' value={speed} onChange={setSpeedplayer} /><br/>
+                            <label className='speed-value' id="speed">Speed: {speed+'x'}</label>
+                        </li>
+                        <li>
+                            <p className='speed-value'>{currentTime}</p>
+                        </li>             
+                        <li>
+                            <button onClick={playbtn}>play</button>
+                            <button onClick={fullScreen}>Full Screen</button>
+                            <button onClick={pausebtn}>pause</button>
+                        </li>
+
+                    </ul>
+
+                    <ul className='slider' style={{backgroundColor: 'white', flexDirection: 'column-reverse', zIndex:'199'}}>                  
+                        <li>
+                            <input className='video-slider' style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
+                            <label></label>
+                        </li>
+                    </ul>
+                */
+                }
+               
+
+            </div>
+            <div className="attachments">
+                <h1 className="title"
+                style={{textAlign:'center',padding:'16px'}}
+                >المرفقات</h1>
+                <h2 className="sub-attachments"
+                style={{textAlign:'right'}}
+                >:الملزمة</h2>
+                {
+                    notebook !== 'null'?
+                    <h1 className='tilte'><a href={`https://drive.google.com/file/d/${notebook}/view?usp=drive_link`}>link</a></h1>
+                    :
+                    ''
+                }
+
+                <h2 className="sub-attachments"
+                style={{textAlign:'right'}}
+                >:الواجب</h2>
+                {
+                    homework !== 'null'?
+                    <iframe title='homework' src={`https://drive.google.com/file/d/${homework}/preview`} width="640" height="480" allow="autoplay"></iframe>
+                    :
+                    ''
+                }
+                
+        </div>
+        </div>
+
+    );
+}
+
+export default LessonPlayer;
+
+/* const[ele, setEle] = useState('')
+    const[time, setTime] = useState(0)
+    const[duration, setDuration] = useState(0)
+    const[speed, setSpeed] = useState(1)
+    const[volume, setVideoVolume] = useState(50)
+    const[currentTime, setCurrentTime] = useState(0) */
+
+/*    useEffect(()=>{
+        if(ele){
+            let Currenthours = Math.round(time/3600)
+            let Currentminutes = (time/60).toString().slice(0, (time/60).toString().indexOf('.')).slice(0, 2) || 0;
+            let Currentseconds = (time).toString().slice(0, (time).toString().indexOf('.')).slice(0, 2) || 0;
+            let Durationhours = Math.round(ele.getDuration()/3600)
+            let Durationminutes = (ele.getDuration()/60).toString().slice(0, (ele.getDuration()/60).toString().indexOf('.')).slice(0, 2) || 0;
+            let Durationseconds = (ele.getDuration()).toString().slice(0, (ele.getDuration()).toString().indexOf('.')).slice(0, 2) || 0;
+            setCurrentTime(`${Currenthours}:${Currentminutes}:${Currentseconds} / ${Durationhours}:${Durationminutes}:${Durationseconds}`)
+            setDuration((time*100) / ele.getDuration())
+        }
+    }, [ele, time] )
+ */
+
+/* setInterval(()=>{
         if(ele){
             setTime(ele.getCurrentTime())
         }
@@ -99,129 +178,9 @@ const LessonPlayer = ({videoId}) =>{
         setTime(e.target.getCurrentTime())
     } */
 
-    // const player = new Plyr((document.getElementById('player')));
+// const player = new Plyr((document.getElementById('player')));
 
 
-    return(
-        <div className='video-player'>
-            <div className="player">
-                <div id="player">
-                    {/* <div
-                    {/* <div
-                        className='hidden-div'
-                    ></div> */}
-                    <YouTube videoId={id} opts={opts} /* onReady={onPlayerReady} */ iframeClassName='iframe-player' /* onStateChange={StateChange} */ />
-                </div>
-
-                {/* <ul className='controls' style={{backgroundColor: 'white', zIndex:'199'}}>
-                    <li className='volume'>
-                        <input className='volume-range' type='range' min='0' max='100' onChange={setVolume} /><br/>
-                        <label className='volume-value'>Volume: {volume}</label>
-                    </li>
-                    <li className='speed'>
-                        <input className='speed-range' type='range' min='.25' max='2' step='.25' placeholder='speed' value={speed} onChange={setSpeedplayer} /><br/>
-                        <label className='speed-value' id="speed">Speed: {speed+'x'}</label>
-                    </li>
-                    <li>
-                        <p className='speed-value'>{currentTime}</p>
-                    </li>             
-                    <li>
-                        <button onClick={playbtn}>play</button>
-                        <button onClick={fullScreen}>Full Screen</button>
-                        <button onClick={pausebtn}>pause</button>
-                    </li>
-
-                </ul>
-
-                <ul className='slider' style={{backgroundColor: 'white', flexDirection: 'column-reverse', zIndex:'199'}}>                  
-                    <li>
-                        <input className='video-slider' style={{width: '730px', margin:'auto'}} type='range' min='0' max='100' step='1' value={duration}  onChange={setDurationtime} />
-                        <label></label>
-                    </li>
-                </ul> */}
-               
-
-            </div>
-            <div className="attachments">
-                <h1 className="title"
-                style={{textAlign:'center',padding:'16px'}}
-                >المرفقات</h1>
-                <h2 className="sub-attachments"
-                style={{textAlign:'right'}}
-                >:الملزمة</h2>
-
-                {
-                    id ==='x4hPH5Wreyk'?
-                    <h1 className='title'><a href='https://drive.google.com/file/d/1f-mr9jXcCjjJJwErEOtMUC-zq-PhFs85/view?usp=drive_link'>link</a></h1>
-                    :
-                    ''
-                }
-                {
-                    id ==='p2aDs2ddmgE'?
-
-                    <h1 className='title'><a href='https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/view?usp=drive_link'>link</a></h1>
-                    :
-                    ''
-                }
-                {
-                    id ==='CDm6yUoqDvk'?
-                    <h1 className='title'><a href='https://drive.google.com/file/d/1GffPwtpFKN6IYzr9lbOe3f7JsXTQATZJ/view?usp=drive_link'>link</a></h1>
-                    :
-                    ''
-                }
-                {
-                    id ==='X7g6jBlM6Q8'?
-                    <h1 className='title'><a href='https://drive.google.com/file/d/1dCwUeWs82eTLWfVRFcz-Rl6vRGQGyhOP/view?usp=drive_link'>link</a></h1>
-                    :
-                    ''
-                }
-                {
-                    id ==='6siAmS5y7fM'?
-                    <h1 className='tilte'><a href='https://drive.google.com/file/d/14kg3xszMZzjorFkNf_wFLmkxXysLYPCr/view?usp=drive_link'>link</a></h1>
-                    :
-                    ''
-                }
-
-                <h2 className="sub-attachments"
-                style={{textAlign:'right'}}
-                >:الواجب</h2>
-                {
-                    id ==='x4hPH5Wreyk'?
-                    <iframe title='ذات الحدين 1' src="https://drive.google.com/file/d/15F-wJ0DT2t14KMs5UgqIfvBcfUiBR1FL/preview" width="640" height="480" allow="autoplay"></iframe>
-                    :
-                    ''
-                }
-                {
-                    id ==='p2aDs2ddmgE'?
-                    <iframe title='ذات الحدين 2' src="https://drive.google.com/file/d/131t1bJDrpL4drkWIKIMCAhWxBlEAPey-/preview" width="640" height="480" allow="autoplay"></iframe>
-                    :
-                    ''
-                }
-                {
-                    id ==='CDm6yUoqDvk'?
-                    <iframe title='ذات الحدين 3' src="https://drive.google.com/file/d/1ZlfcraUobJKutBf9FQUaGZxjhqNjxFR9/preview" width="640" height="480" allow="autoplay"></iframe>
-                    :
-                    ''
-                }
-                {
-                    id ==='X7g6jBlM6Q8'?
-                    <iframe title='ذات الحدين 4' src="https://drive.google.com/file/d/1lERGcFQ6WujClUb6U9RF_sWE5D2YM2B8/preview" width="640" height="480" allow="autoplay"></iframe>
-                    :
-                    ''
-                }
-                {
-                    id ==='6siAmS5y7fM'?
-                    <iframe title='الاعداد المركبة 1' src="https://drive.google.com/file/d/1_JM23Kp927RghA-vLkhXO64EO68rbRis/preview" width="640" height="480" allow="autoplay"></iframe>
-                    :
-                    ''
-                }
-        </div>
-        </div>
-
-    );
-}
-
-export default LessonPlayer;
 
 /*
      const onPlayerStateChange = () =>{

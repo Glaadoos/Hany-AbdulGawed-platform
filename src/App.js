@@ -113,7 +113,7 @@ function App() {
           }
       }
     }
-},[user, userPayingSystem])
+},[currentUser, user, userPayingSystem])
 
   return(
     <div>
