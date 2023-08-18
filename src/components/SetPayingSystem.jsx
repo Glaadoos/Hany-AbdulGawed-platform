@@ -23,7 +23,7 @@ const SetPayingSystem = ({user, handelUserUpdating, userPayingSystem}) =>{
   };
 
     // console.log(localStorage.getItem("userPayingSystem"))
-    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none' ||userPayingSystem !== undefined){
+    if(localStorage.getItem("userPayingSystem") === 'null' || localStorage.getItem("userPayingSystem") === 'none' || localStorage.getItem("userPayingSystem") === ''){
         return(
             <div>
                 <h1 className="title paying-system" style={{textAlign:'center', marginTop:'50px'}}

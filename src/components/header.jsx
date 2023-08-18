@@ -95,6 +95,7 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
             ]
         }
     ]
+    
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />

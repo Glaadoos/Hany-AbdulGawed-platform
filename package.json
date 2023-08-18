@@ -1,5 +1,5 @@
 {
-  "homepage": "./",
+  "homepage": "https://hanyabdlgawad.online/",
   "name": "hany-platform",
   "version": "0.1.0",
   "private": true,
@@ -7,24 +7,33 @@
     "@auth0/auth0-react": "^2.2.0",
     "@emotion/react": "^11.11.1",
     "@emotion/styled": "^11.11.0",
+    "@gumlet/react-drm-player": "^1.0.2",
+    "@limeplay/core": "^1.0.0",
+    "@limeplay/shaka-player": "^1.0.0",
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "dayjs": "^1.11.9",
     "firebase": "^10.1.0",
     "fs": "^0.0.1-security",
     "gh-pages": "^5.0.0",
+    "moment": "^2.29.4",
     "path-browserify": "^1.0.1",
+    "plyr": "^3.7.8",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
     "react-scripts": "5.0.1",
+    "react-youtube": "^10.1.0",
     "reactstrap": "^9.2.0",
+    "shaka-player-react": "^1.1.5",
     "sqlite3": "^5.1.6",
     "twilio": "^4.14.0",
     "util": "^0.12.5",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "yt-player": "^3.6.1"
   },
   "scripts": {
     "predeploy": "npm run build",
@@ -32,7 +41,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "golive":"git push && npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [

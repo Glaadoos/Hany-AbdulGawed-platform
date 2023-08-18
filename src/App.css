@@ -4,7 +4,9 @@
   --input-focus-s: 100%;
   --input-focus-l: 42%;
 }
-
+li{
+  list-style: none;
+}
 html {
   scroll-behavior: smooth;
 }
@@ -166,7 +168,7 @@ button{
   cursor:pointer;
   border-radius: 16px;
 }
-
+/* Mobile Media query */
 @media only screen and (max-width: 720px)  {
   /* Main page */
   header{
@@ -314,18 +316,6 @@ button{
     font-size: 15px !important;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
 /* lectures section */
 .lectures{
   width: 80%;
@@ -368,7 +358,6 @@ button{
   cursor: pointer;
   border-top: 2.5px solid black !important;
 }
-
 .branches-img:hover{
   filter: blur(3px);
   transition: all .5s;
@@ -432,6 +421,8 @@ button{
   align-items: center;
   background-color: transparent;
   font-family: 'Cairo Play', sans-serif !important; 
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .lesson-btn{
