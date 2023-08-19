@@ -1,5 +1,5 @@
 import React from 'react';
-import masterPhoto from './photos/master SVG.png'
+import masterPhoto from '../photos/master SVG.png'
 
 
 const Main = () =>{

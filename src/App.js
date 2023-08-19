@@ -1,11 +1,11 @@
 import { React, useState, useEffect } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
-import Header from "./components/Main/Main/header";
+import Header from "./components/Main/header";
 import Main from "./components/Main/main";
 import Lectures from "./components/Main/lectures";
 import SpatialEngineering from "./components/Branches/spatialEngineering";
-import Algebra from "./components/Branches/Branches/Algebra";
+import Algebra from "./components/Branches/Algebra";
 import Calculus from "./components/Branches/Calculus";
 import Revisiones from "./components/Branches/Revisiones";
 import Dynamics from "./components/Branches/Dynamics";
