@@ -1,8 +1,8 @@
 /* eslint-disable array-callback-return */
 import {useState, Fragment} from 'react';
 import {Link} from "react-router-dom";
-import arrowUp from './photos/arrow-up-filled.png'
-import LoginBtn from './login'
+import arrowUp from '../photos/arrow-up-filled.png'
+import LoginBtn from '../Essential/login'
 import * as CodeAPI from '../../API/CodeAPI'
 import * as UserAPI from '../../API/UesrApi'
 const dayjs  = require('dayjs')

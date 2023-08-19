@@ -4,8 +4,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 import { styled } from '@mui/material/styles';
-import logoCroped from './photos/logo croped.png'
-import LoginBtn from './login'
+import logoCroped from '../photos/logo croped.png'
+import LoginBtn from '../Essential/login'
 import LogoutBtn from '../Essential/logout'
 
 

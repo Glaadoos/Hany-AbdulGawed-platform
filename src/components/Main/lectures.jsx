@@ -3,12 +3,12 @@ import {Link} from "react-router-dom";
 import Grid from '@mui/material/Unstable_Grid2';
 
 
-import Algebra from './photos/branches-images/Algebra.png'
-import spatialEngineering from './photos/branches-images/spatialEngineering.jpg'
-import Calculus from './photos/branches-images/Calculus.jpg'
-import Statics from './photos/branches-images/Statics.jpg'
-import Dynamics from './photos/branches-images/Dynamics.jpg'
-import Revisiones from './photos/branches-images/Revisiones.png'
+import Algebra from '../photos/branches-images/Algebra.png'
+import spatialEngineering from '../photos/branches-images/spatialEngineering.jpg'
+import Calculus from '../photos/branches-images/Calculus.jpg'
+import Statics from '../photos/branches-images/Statics.jpg'
+import Dynamics from '../photos/branches-images/Dynamics.jpg'
+import Revisiones from '../photos/branches-images/Revisiones.png'
 
 
 const Lectures = ()=>{
