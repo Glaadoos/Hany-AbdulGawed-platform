@@ -758,7 +758,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
                                             <li id={'form'+lesson.order} key={'partInput'+num}>
-                                                <form onSubmit={e => e.preventDefault}>
+                                                <form  onSubmit={e => e.preventDefault()}>
                                                     <input
                                                         id={lesson.order}
                                                         className='input-field'
@@ -767,7 +767,10 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         onChange={handleChange}
                                                         max='10'
                                                     />
-                                                    <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                {inputValue.length !== 0 ?
+                                                <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                :
+                                                ''}
                                                 </form>
                                                 
                                             </li>
@@ -941,7 +944,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
                                             <li id={'form'+lesson.order} key={'partInput'+num}>
-                                                <form onSubmit={e => e.preventDefault}>
+                                                <form  onSubmit={e => e.preventDefault()}>
                                                     <input
                                                         id={lesson.order}
                                                         className='input-field'
@@ -950,7 +953,10 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         onChange={handleChange}
                                                         max='10'
                                                     />
-                                                    <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                {inputValue.length !== 0 ?
+                                                <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                :
+                                                ''}
                                                 </form>
                                                 
                                             </li>
