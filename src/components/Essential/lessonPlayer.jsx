@@ -2,7 +2,7 @@
 import YouTube from 'react-youtube';
 
 
-const LessonPlayer = ({videoId}) =>{
+const LessonPlayer = () =>{
     let id =localStorage.getItem("videoId");
     let notebook =localStorage.getItem("notebook");
     let homework =localStorage.getItem("homework");

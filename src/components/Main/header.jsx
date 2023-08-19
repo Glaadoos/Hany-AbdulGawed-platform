@@ -6,7 +6,7 @@ import MenuItem from '@mui/material/MenuItem';
 import { styled } from '@mui/material/styles';
 import logoCroped from './photos/logo croped.png'
 import LoginBtn from './login'
-import LogoutBtn from './logout'
+import LogoutBtn from '../Essential/logout'
 
 
 
