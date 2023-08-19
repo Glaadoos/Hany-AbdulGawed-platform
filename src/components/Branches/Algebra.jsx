@@ -3,8 +3,8 @@ import {useState, Fragment} from 'react';
 import {Link} from "react-router-dom";
 import arrowUp from './photos/arrow-up-filled.png'
 import LoginBtn from './login'
-import * as CodeAPI from '../API/CodeAPI'
-import * as UserAPI from '../API/UesrApi'
+import * as CodeAPI from '../../API/CodeAPI'
+import * as UserAPI from '../../API/UesrApi'
 const dayjs  = require('dayjs')
 var relativeTime = require('dayjs/plugin/relativeTime')
 dayjs.extend(relativeTime)
