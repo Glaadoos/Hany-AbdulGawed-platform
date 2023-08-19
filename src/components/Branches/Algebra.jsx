@@ -20,7 +20,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'تمهيد',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=9UBMAJl3zwc&ab_channel=HanyAbdlgawad',
                     'duration':'0:12:47',
                     'attachments':{
@@ -30,7 +29,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=x4hPH5Wreyk',
                     'duration':'1:23:5',
                     'attachments':{
@@ -40,7 +38,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=_bw0kuOSdis&ab_channel=HanyAbdlgawad',
                     'duration':'0:51:56',
                     'attachments':{
@@ -50,7 +47,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUJV_-M7119zIydLre9e15F',
                 }
@@ -66,7 +62,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=p2aDs2ddmgE&ab_channel=HanyAbdlgawad',
                     'duration':'0:15:22',
                     'attachments':{
@@ -76,7 +71,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=q1Jcq314iFU&ab_channel=HanyAbdlgawad',
                     'duration':'1:20:59',
                     'attachments':{
@@ -86,7 +80,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
@@ -102,7 +95,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
                     'duration':'1:25:30',
                     'attachments':{
@@ -112,7 +104,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                     'duration':'',
                 }
@@ -125,7 +116,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'ذات الحدين - أفكار منوعة',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=X7g6jBlM6Q8',
                     'duration':'0:53:55',
                     'attachments':{
@@ -136,7 +126,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الأعداد المركبة - الجزء الأول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=6siAmS5y7fM',
                     'duration':'1:31:22',
                     'attachments':{
@@ -146,7 +135,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة - ذات الحدين',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXeAyg2o473ddm5zh686okG',
                     'duration':'',
                     'attachments':{
@@ -156,7 +144,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة - الأعداد المركبة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVDubz97QqhosX6loGoaHnf',
                     'duration':'',
                 }
@@ -172,9 +159,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزاء الاول - ديموافر',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=4UwJ63AC2-8',
-                    'duration':'',
+                    'duration':'0:51:48',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -182,9 +168,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'تمهيد - حساب المثلثات',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=K-Aft0XWYSA',
-                    'duration':'',
+                    'duration':'0:9:13',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -192,9 +177,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني - الصور المزيفة',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=T55NrKHVP3U',
-                    'duration':'',
+                    'duration':'0:51:41',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -202,7 +186,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVao18tpRANyiJhhOb71wOf',
                     'duration':'',
                 }
@@ -216,19 +199,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -242,7 +222,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -256,7 +235,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -270,19 +248,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -296,7 +271,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -310,7 +284,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -324,7 +297,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -338,7 +310,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -352,7 +323,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -367,7 +337,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'تمهيد',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=9UBMAJl3zwc&ab_channel=HanyAbdlgawad',
                     'duration':'0:12:47',
                     'attachments':{
@@ -377,7 +346,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=x4hPH5Wreyk',
                     'duration':'1:23:5',
                     'attachments':{
@@ -387,7 +355,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=_bw0kuOSdis&ab_channel=HanyAbdlgawad',
                     'duration':'0:51:56',
                     'attachments':{
@@ -397,7 +364,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiUJV_-M7119zIydLre9e15F',
                 }
@@ -413,7 +379,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=p2aDs2ddmgE&ab_channel=HanyAbdlgawad',
                     'duration':'0:15:22',
                     'attachments':{
@@ -423,7 +388,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=q1Jcq314iFU&ab_channel=HanyAbdlgawad',
                     'duration':'1:20:59',
                     'attachments':{
@@ -433,7 +397,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'https://youtube.com/playlist?list=PLzuKs18sUQiVn0qSngxfhvN1r29ce49-F',
                 }
@@ -449,7 +412,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=CDm6yUoqDvk',
                     'duration':'1:25:30',
                     'attachments':{
@@ -459,7 +421,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUfoRzOTl8EK2rBqrKufCau',
                     'duration':'',
                 }
@@ -472,7 +433,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'ذات الحدين - أفكار منوعة',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=X7g6jBlM6Q8',
                     'duration':'0:53:55',
                     'attachments':{
@@ -483,7 +443,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الأعداد المركبة - الجزء الأول',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=6siAmS5y7fM',
                     'duration':'1:31:22',
                     'attachments':{
@@ -493,7 +452,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة - ذات الحدين',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXeAyg2o473ddm5zh686okG',
                     'duration':'',
                     'attachments':{
@@ -503,7 +461,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة - الأعداد المركبة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVDubz97QqhosX6loGoaHnf',
                     'duration':'',
                 }
@@ -519,7 +476,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزاء الاول - ديموافر',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=4UwJ63AC2-8',
                     'duration':'',
                     'attachments':{
@@ -529,7 +485,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'تمهيد - حساب المثلثات',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=K-Aft0XWYSA',
                     'duration':'',
                     'attachments':{
@@ -539,7 +494,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'الجزء الثاني - الصور المزيفة',
-                    'state':false,
                     'link':'https://www.youtube.com/watch?v=T55NrKHVP3U',
                     'duration':'',
                     'attachments':{
@@ -549,7 +503,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVao18tpRANyiJhhOb71wOf',
                     'duration':'',
                 }
@@ -563,19 +516,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'الجزء الثاني',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 },
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -589,7 +539,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
@@ -603,7 +552,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
-                    'state':false,
                     'duration':'',
                     'link':'soon',
                 }
