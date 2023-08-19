@@ -713,7 +713,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             let diff = handleDateChange(userCodes, lesson.order)[0]
                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
                             return(
-                                diff < 259200000  && diff > 0 ? 
+                                diff < 345600000  && diff > 0 ? 
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
@@ -896,7 +896,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             let diff = handleDateChange(userCodes, lesson.order)[0]
                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
                             return(
-                                diff < 259200000  && diff > 0 ? 
+                                diff < 345600000  && diff > 0 ? 
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
