@@ -190,27 +190,28 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'duration':'',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الثانية'
+            'exam': {
+                'name':'امتحان المحاضرة الثانية',
+                'link':'https://form-timer.com/start/be96a2ce'
+            }
         },
         {
             'name' : 'المحاضرة الثالثة - الاعداد المركبة',
             'order':'algebra6',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجذور التكعيبية للواحد الصحيح',
+                    'duration':'2:0:2',
+                    'link':'https://www.youtube.com/watch?v=j5vVG7RR6aE',
+                    'attachments':{
+                        'notebook':'10kcTo87_eThu8I-EvjJi9kayj2wV-WR6',
+                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt/',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUPoa7rb7b2uPb42W1zI5tT',
                 }
             ],
             'exam' : 'امتحان الاعداد المركبة'
@@ -477,7 +478,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'الجزاء الاول - ديموافر',
                     'link':'https://www.youtube.com/watch?v=4UwJ63AC2-8',
-                    'duration':'',
+                    'duration':'0:51:48',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -486,7 +487,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'تمهيد - حساب المثلثات',
                     'link':'https://www.youtube.com/watch?v=K-Aft0XWYSA',
-                    'duration':'',
+                    'duration':'0:9:13',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -495,7 +496,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'الجزء الثاني - الصور المزيفة',
                     'link':'https://www.youtube.com/watch?v=T55NrKHVP3U',
-                    'duration':'',
+                    'duration':'0:51:41',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -507,27 +508,28 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'duration':'',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الثانية'
+            'exam': {
+                'name':'امتحان المحاضرة الثانية',
+                'link':'https://form-timer.com/start/be96a2ce'
+            }
         },
         {
             'name' : 'المحاضرة الثالثة - الاعداد المركبة',
             'order':'algebra6',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجذور التكعيبية للواحد الصحيح',
+                    'duration':'2:0:2',
+                    'link':'https://www.youtube.com/watch?v=j5vVG7RR6aE',
+                    'attachments':{
+                        'notebook':'10kcTo87_eThu8I-EvjJi9kayj2wV-WR6',
+                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt/',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUPoa7rb7b2uPb42W1zI5tT',
                 }
             ],
             'exam' : 'امتحان الاعداد المركبة'
