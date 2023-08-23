@@ -523,7 +523,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'link':'https://www.youtube.com/watch?v=j5vVG7RR6aE',
                     'attachments':{
                         'notebook':'10kcTo87_eThu8I-EvjJi9kayj2wV-WR6',
-                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt/',
+                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt',
                     }
                 },
                 {
