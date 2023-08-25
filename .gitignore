@@ -25,3 +25,6 @@ yarn-error.log*
 /src/components/player
 /src/components/playerOverlay
 /src/DRM player
+/.github
+/.firebase
+/src/future features
