@@ -799,6 +799,40 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                 {'المحاضرة مغلقة'}
                                             </h4>
                                         </div>
+                                        <ul className='lesson-parts'>
+                                            {lesson.parts.map((part,num)=>{
+                                                if(part.lessonName.search('مسائل الملزمة') !== -1){
+                                                    return(
+                                                        <li key={'partObject'+num}>
+                                                            <ul className='lesson-part'>
+                                                                <li key={'partName'+num}>
+                                                                    {part.lessonName}
+                                                                </li>
+                                                                <li key={'partLink'+num}>
+                                                                    <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    )
+                                                }
+                                                
+                                            })}
+                                            
+                                            {lesson.exam.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
+                                            }
+                                        </ul>
                                     </div>
                             )
                         }else{
