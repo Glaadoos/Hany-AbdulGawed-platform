@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7e2d172.css",
+    "main.js": "/static/js/main.6917dc08.js",
+    "static/media/master SVG.png": "/static/media/master SVG.1ad50c2086aa4a52d1d2.png",
+    "static/media/Algebra.png": "/static/media/Algebra.a76153e46041c904bb00.png",
+    "static/media/Revisiones.png": "/static/media/Revisiones.725aae3be1996c75d902.png",
+    "static/media/Calculus.jpg": "/static/media/Calculus.3925c6570cfeb1cfb210.jpg",
+    "static/media/spatialEngineering.jpg": "/static/media/spatialEngineering.7f6598289948610985e5.jpg",
+    "static/media/Dynamics.jpg": "/static/media/Dynamics.9ff0865c0d6f44918742.jpg",
+    "static/media/Statics.jpg": "/static/media/Statics.ab46cac427e6f29f7ce7.jpg",
+    "index.html": "/index.html",
+    "main.b7e2d172.css.map": "/static/css/main.b7e2d172.css.map",
+    "main.6917dc08.js.map": "/static/js/main.6917dc08.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7e2d172.css",
+    "static/js/main.6917dc08.js"
+  ]
+}
