@@ -1,7 +1,7 @@
 /* eslint-disable array-callback-return */
 import {useState, Fragment} from 'react';
 import {Link} from "react-router-dom";
-import arrowUp from '../photos/arrow-up-filled.png'
+import arrowUp from '.././photos/arrow-up-filled.png'
 import LoginBtn from '../Essential/login'
 import * as CodeAPI from '../../API/CodeAPI'
 import * as UserAPI from '../../API/UesrApi'
@@ -195,30 +195,60 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         {
             'name' : 'المحاضرة الثالثة - الاعداد المركبة',
             'order':'algebra6',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجذور التكعيبية للواحد الصحيح',
+                    'duration':'2:0:2',
+                    'link':'https://www.youtube.com/watch?v=j5vVG7RR6aE',
+                    'attachments':{
+                        'notebook':'10kcTo87_eThu8I-EvjJi9kayj2wV-WR6',
+                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUPoa7rb7b2uPb42W1zI5tT',
                 }
             ],
-            'exam' : 'امتحان الاعداد المركبة'
+            'exam': {
+                'name':'امتحان الاعداد المركبة',
+                'link':'https://extendedforms.io/form/99f970fa-3dc9-4248-92d9-1b3b5d77ce2b/login'
+            }
+        },
+        {
+            'name' : 'المحاضرة الرابعة - الاعداد المركبة',
+            'order':'algebra7',
+            'parts' :[
+                {
+                    'lessonName':'خواص المقياس والمرافق',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=qSq0tAqD7lo',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'أفكار منوعة على الأعداد المركبة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=9Aemw_MbfDI',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'مسائل الملزمة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXE9l37xW1Ccgr6B3XYCfbA',
+                }
+            ],
+            'exam' : 'امتحان المحاضرة الرابعة'
         },
         {
             'name' : 'المحاضرة الاولي - التباديل والتوافيق',
-            'order':'algebra7',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra8',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -230,8 +260,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
-            'order':'algebra8',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra9',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -243,8 +272,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثالثة - التباديل والتوافيق',
-            'order':'algebra9',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra10',
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
@@ -266,8 +294,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الاولي - المحدادت',
-            'order':'algebra10',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra11',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -279,8 +306,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثانية - المحدادت',
-            'order':'algebra11',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra12',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -292,8 +318,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثالثة - المحدادت',
-            'order':'algebra12',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra13',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -305,8 +330,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الاولي - المصفوفات',
-            'order':'algebra13',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra14',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -318,8 +342,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثانية - المصفوفات',
-            'order':'algebra14',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra15',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -512,7 +535,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         {
             'name' : 'المحاضرة الثالثة - الاعداد المركبة',
             'order':'algebra6',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
             'parts' :[
                 {
                     'lessonName':'الجزء الاول',
@@ -533,9 +555,38 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'exam' : 'امتحان الاعداد المركبة'
         },
         {
-            'name' : 'المحاضرة الاولي - التباديل والتوافيق',
+            'name' : 'المحاضرة الرابعة - الاعداد المركبة',
             'order':'algebra7',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'parts' :[
+                {
+                    'lessonName':'خواص المقياس والمرافق',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=qSq0tAqD7lo',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'أفكار منوعة على الأعداد المركبة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=9Aemw_MbfDI',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'مسائل الملزمة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXE9l37xW1Ccgr6B3XYCfbA',
+                }
+            ],
+            'exam' : 'امتحان المحاضرة الرابعة'
+        },
+        {
+            'name' : 'المحاضرة الاولي - التباديل والتوافيق',
+            'order':'algebra8',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -547,8 +598,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
-            'order':'algebra8',
-            'codes': ['ImOvuuod', '8McVJnj', 'Ja8Km6XR', 'flmYRBbC', 'dDRz1ekp', 'EBRD@lXS', '$WsHSNf', 'HRmIb$K1', '3MjRHRxb', 'DBhIMFX4', '4zP5XNwR', 'stuZZYrx', '@nTfK1R', 'R4fOE#9j', 'XduvVk9J', 'SLJFIxrQ', 'MIihCt18', 'EbuxZ0dI', 'QOq#3p9#', '58oWrGy2', 'p4lCl0DH', 'tMq8EuaK', 'KJM9VNTa', 'IUC@Uftr', 'DOsRmli2', 'al4hN@3', 'cKRar8f1', 'jpVOHpkO', 'GbfEzgmJ', 'dw2x#JUF', '6TtLNur', 'pEJeqCH0', 'nHH6#n1h', 'hox9tOP', 'cpcy0l@c', 'K7uE0evt', 'B@GtC472', 'gUGpEVPP', 'UkNUteE8', 'ligLV5hb', 'jpzF@jEJ', 'izK3l3xZ', 'gZZln2Zv', 'gfsTQL', 'fQ5OkQR3', 'uNDzenyZ', 'yQwpXFsp', '03I2EE02', 'QuC0jjTP', 'T@fmETd#', 'ZI#rjN0m', 'ymx8Rjjk', 'WBhy@m62', '@TtyavBq', 'SttEOZxT', 'FE1yteD', 'zuwSMzak', 'qNx3OkJ', 'V2X3NaX9', 'Fc3olDIo'],
+            'order':'algebra9',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -557,7 +607,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             'exam' : 'امتحان المحاضرة الثانية'
-        }
+        },
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
@@ -758,7 +808,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
                                             <li id={'form'+lesson.order} key={'partInput'+num}>
-                                                <form onSubmit={e => e.preventDefault}>
+                                                <form  onSubmit={e => e.preventDefault()}>
                                                     <input
                                                         id={lesson.order}
                                                         className='input-field'
@@ -767,7 +817,10 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         onChange={handleChange}
                                                         max='10'
                                                     />
-                                                    <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                {inputValue.length !== 0 ?
+                                                <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                :
+                                                ''}
                                                 </form>
                                                 
                                             </li>
@@ -932,6 +985,40 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                 {'المحاضرة مغلقة'}
                                             </h4>
                                         </div>
+                                        <ul className='lesson-parts'>
+                                            {lesson.parts.map((part,num)=>{
+                                                if(part.lessonName.search('مسائل الملزمة') !== -1){
+                                                    return(
+                                                        <li key={'partObject'+num}>
+                                                            <ul className='lesson-part'>
+                                                                <li key={'partName'+num}>
+                                                                    {part.lessonName}
+                                                                </li>
+                                                                <li key={'partLink'+num}>
+                                                                    <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>
+                                                    )
+                                                }
+                                                
+                                            })}
+                                            
+                                            {lesson.exam.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
+                                            }
+                                        </ul>
                                     </div>
                             )
                         }else{
@@ -941,7 +1028,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
                                             <li id={'form'+lesson.order} key={'partInput'+num}>
-                                                <form onSubmit={e => e.preventDefault}>
+                                                <form  onSubmit={e => e.preventDefault()}>
                                                     <input
                                                         id={lesson.order}
                                                         className='input-field'
@@ -950,7 +1037,10 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         onChange={handleChange}
                                                         max='10'
                                                     />
-                                                    <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                {inputValue.length !== 0 ?
+                                                <button id={lesson.order} onClick={handleSubmit} style={{backgroundColor:'white',color:'black',fontWeight:'bold'}} >Check</button>
+                                                :
+                                                ''}
                                                 </form>
                                                 
                                             </li>

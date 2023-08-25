@@ -1,7 +1,7 @@
 import {useState} from 'react';
 import {Link} from "react-router-dom";
-import arrowUp from './photos/arrow-up-filled.png'
-import LoginBtn from './login'
+import arrowUp from '.././photos/arrow-up-filled.png'
+import LoginBtn from '../Essential/login'
 
 const SpatialEngineering = ({setVideoId, user, userPayingSystem}) =>{
     // State variable & dictionaries
