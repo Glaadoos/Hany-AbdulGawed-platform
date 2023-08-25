@@ -1,17 +1,9 @@
-POST  http://localhost:8888/.netlify/functions/api/
+POST  http://localhost:8888/.netlify/functions/api/accounts
 Content-Type: application/json
 
 {
-    "name":"hanka",
-    "email": "hanka@gmail.com",
-    "payingSystem": "MPS",
-    "availableCodes":[
-          {
-            "videoID" : "videotwo",
-            "code":"dsdabdosdds"
-            }
-        ]
-        
+    "name":"hankabdoa",
+    "email": "sads@gmail.com"
 }
 
 ###

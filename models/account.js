@@ -14,12 +14,11 @@ const accountSchema = new mongoose.Schema({
     required: true,
   },
   payingSystem: {
-    type: String,
-    required: true,
+    type: String
   },
   availableCodes: {
     type: Array,
   },
 });
 
-module.exports = mongoose.model("testchannelOne", accountSchema);
+module.exports = mongoose.model("accounts", accountSchema);
