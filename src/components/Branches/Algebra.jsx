@@ -225,7 +225,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'خواص المقياس والمرافق',
-                    'duration':'',
+                    'duration':'0:58:10',
                     'link':'https://www.youtube.com/watch?v=qSq0tAqD7lo',
                     'attachments':{
                         'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
@@ -234,8 +234,17 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'أفكار منوعة على الأعداد المركبة',
-                    'duration':'',
+                    'duration':'1:29:27',
                     'link':'https://www.youtube.com/watch?v=9Aemw_MbfDI',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'حل الأعداد المركبة بالآلة الحاسبة',
+                    'duration':'0:15:22',
+                    'link':'https://www.youtube.com/watch?v=Ca9MBvtIjr0',
                     'attachments':{
                         'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
                         'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
@@ -543,22 +552,24 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra6',
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجذور التكعيبية للواحد الصحيح',
+                    'duration':'2:0:2',
+                    'link':'https://www.youtube.com/watch?v=j5vVG7RR6aE',
+                    'attachments':{
+                        'notebook':'10kcTo87_eThu8I-EvjJi9kayj2wV-WR6',
+                        'homework':'1605Z4GAthosmG5VdVxwWoD1LqpGJ7fIt',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUPoa7rb7b2uPb42W1zI5tT',
                 }
             ],
-            'exam' : 'امتحان المحاضرة الرابعة'
+            'exam': {
+                'name':'امتحان الاعداد المركبة',
+                'link':'https://extendedforms.io/form/99f970fa-3dc9-4248-92d9-1b3b5d77ce2b/login'
+            }
         },
         {
             'name' : 'المحاضرة الرابعة - الاعداد المركبة',
@@ -566,7 +577,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'خواص المقياس والمرافق',
-                    'duration':'',
+                    'duration':'0:58:10',
                     'link':'https://www.youtube.com/watch?v=qSq0tAqD7lo',
                     'attachments':{
                         'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
@@ -575,8 +586,17 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'أفكار منوعة على الأعداد المركبة',
-                    'duration':'',
+                    'duration':'1:29:27',
                     'link':'https://www.youtube.com/watch?v=9Aemw_MbfDI',
+                    'attachments':{
+                        'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
+                        'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
+                    }
+                },
+                {
+                    'lessonName':'حل الأعداد المركبة بالآلة الحاسبة',
+                    'duration':'0:15:22',
+                    'link':'https://www.youtube.com/watch?v=Ca9MBvtIjr0',
                     'attachments':{
                         'notebook':'14Gmlj9MRLsOTNqWwQ_aNyfWJLmqc3nFt',
                         'homework':'1tnL6esuG_awo5OJLJfc6ySeNU_d0vZkE',
