@@ -477,7 +477,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'الجزاء الاول - ديموافر',
                     'link':'https://www.youtube.com/watch?v=4UwJ63AC2-8',
-                    'duration':'',
+                    'duration':'0:51:48',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -486,7 +486,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'تمهيد - حساب المثلثات',
                     'link':'https://www.youtube.com/watch?v=K-Aft0XWYSA',
-                    'duration':'',
+                    'duration':'0:9:13',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
@@ -495,7 +495,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'الجزء الثاني - الصور المزيفة',
                     'link':'https://www.youtube.com/watch?v=T55NrKHVP3U',
-                    'duration':'',
+                    'duration':'0:51:41',
                     'attachments':{
                         'notebook':'185o2RNhCWV1lwZ-dxHZPQW81Xk2t6Jsy',
                         'homework':'1-3S9QO5Fzk4CFJD5MC2_VJzlQuSpsNAt',
