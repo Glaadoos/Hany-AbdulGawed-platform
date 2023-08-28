@@ -263,10 +263,28 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra8',
             'parts' :[
                 {
+                    'lessonName':'التباديل',
+                    'duration':'1:57:31',
+                    'link':'https://www.youtube.com/watch?v=wFSO5u2l3KQ',
+                    'attachments':{
+                        'notebook':'1dZoq9i2nbX_m04T_WUzq42mEkMJlVDQD',
+                        'homework':'1f5SYxuuNyYENO2ucfkl0ups1ft_2rBU1',
+                    }
+                },
+                {
+                    'lessonName':'الجزء الثاني',
+                    'duration':'0:17:8',
+                    'link':'https://www.youtube.com/watch?v=uhh5QO7XkTg',
+                    'attachments':{
+                        'notebook':'1dZoq9i2nbX_m04T_WUzq42mEkMJlVDQD',
+                        'homework':'1f5SYxuuNyYENO2ucfkl0ups1ft_2rBU1',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUWXV6bjufAjSglL3E1X6u9',
+                },
             ],
             'exam' : 'امتحان المحاضرة الاولي'
         },
@@ -615,10 +633,28 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra8',
             'parts' :[
                 {
+                    'lessonName':'التباديل',
+                    'duration':'1:57:31',
+                    'link':'https://www.youtube.com/watch?v=wFSO5u2l3KQ',
+                    'attachments':{
+                        'notebook':'1dZoq9i2nbX_m04T_WUzq42mEkMJlVDQD',
+                        'homework':'1f5SYxuuNyYENO2ucfkl0ups1ft_2rBU1',
+                    }
+                },
+                {
+                    'lessonName':'الجزء الثاني',
+                    'duration':'0:17:8',
+                    'link':'https://www.youtube.com/watch?v=uhh5QO7XkTg',
+                    'attachments':{
+                        'notebook':'1dZoq9i2nbX_m04T_WUzq42mEkMJlVDQD',
+                        'homework':'1f5SYxuuNyYENO2ucfkl0ups1ft_2rBU1',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUWXV6bjufAjSglL3E1X6u9',
+                },
             ],
             'exam' : 'امتحان المحاضرة الاولي'
         },
