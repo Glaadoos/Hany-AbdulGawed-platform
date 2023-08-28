@@ -1119,7 +1119,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             )
                         }else{
                             return(
-                                <Fragment>
+                                <Fragment key={'lesson-fragment'+num}>
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
@@ -1156,7 +1156,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
                                         </div>
                                     </div>
-                                    <ul className='lesson-parts'>
+                                    <ul key={'lesson-parts'+num} className='lesson-parts'>
                                         {lesson.parts.map((part,num)=>{
                                             if(part.lessonName.search('مسائل الملزمة') !== -1){
                                                 return(
