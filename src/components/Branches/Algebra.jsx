@@ -286,17 +286,33 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUWXV6bjufAjSglL3E1X6u9',
                 },
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam': {
+                'name':'امتحان التباديل 1',
+                'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'
+            },
+            'exam2': {
+                'name':'امتحان التباديل والتوافيق 2',
+                'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'
+            }
         },
         {
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
             'order':'algebra9',
             'parts' :[
                 {
+                    'lessonName':'التباديل',
+                    'duration':'1:57:31',
+                    'link':'https://www.youtube.com/watch?v=b8AJwq_yJXc',
+                    'attachments':{
+                        'notebook':'1HEwfIA4gzAASGnFqg2A2311eHctGxl4E',
+                        'homework':'1DrevoTpRLnfRWeL6Vw84SM8tcn0aPtcv',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVSxrN_N5zjVdG6U59xE30w',
+                },
             ],
             'exam' : 'امتحان المحاضرة الثانية'
         },
@@ -656,17 +672,33 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUWXV6bjufAjSglL3E1X6u9',
                 },
             ],
-            'exam' : 'امتحان المحاضرة الاولي'
+            'exam': {
+                'name':'امتحان التباديل 1',
+                'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'
+            },
+            'exam2': {
+                'name':'امتحان التباديل والتوافيق 2',
+                'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'
+            }
         },
         {
             'name' : 'المحاضرة الثانية - التباديل والتوافيق',
             'order':'algebra9',
             'parts' :[
                 {
+                    'lessonName':'التباديل',
+                    'duration':'1:57:31',
+                    'link':'https://www.youtube.com/watch?v=b8AJwq_yJXc',
+                    'attachments':{
+                        'notebook':'1HEwfIA4gzAASGnFqg2A2311eHctGxl4E',
+                        'homework':'1DrevoTpRLnfRWeL6Vw84SM8tcn0aPtcv',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVSxrN_N5zjVdG6U59xE30w',
+                },
             ],
             'exam' : 'امتحان المحاضرة الثانية'
         },
@@ -678,9 +710,9 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     // essential functions
     const getIDfromURL = (url)=> {
         const videoID = url.split('v=')[1];
-      
+        
         if (videoID !== undefined) {
-          return videoID.slice(0, 11);
+            return videoID.slice(0, 11);
         }
     }
     const handleVideoIDChange = (e)=>{
@@ -848,6 +880,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                 <li key={'exam'+num}>
                                                     {lesson.exam}
                                                 </li>}
+                                            {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                <li key={'exam'+num}>
+                                                    {lesson.exam2}
+                                                </li>}
                                         </ul>
                                     </div>
                                 :
@@ -888,6 +935,20 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         </li>
                                                         <li key={'examLink'+num}>
                                                             <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
+                                            }
+                                            {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
                                                         </li>
                                                     </ul>
                                                 </li>     
@@ -969,6 +1030,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         :
                                             ''
                                         }
+                                        {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
+                                        }
+                                            
                                     </ul>
                                 </Fragment>
                             )
@@ -1068,6 +1144,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                 <li key={'exam'+num}>
                                                     {lesson.exam}
                                                 </li>}
+                                                {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                <li key={'exam'+num}>
+                                                    {lesson.exam2}
+                                                </li>}
                                         </ul>
                                     </div>
                                 :
@@ -1108,6 +1199,20 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         </li>
                                                         <li key={'examLink'+num}>
                                                             <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
+                                            }
+                                            {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
                                                         </li>
                                                     </ul>
                                                 </li>     
@@ -1188,6 +1293,20 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             </li>     
                                         :
                                             ''
+                                        }
+                                        {lesson.exam2.name ?
+                                                <li key={'partObject'+num}>
+                                                    <ul className='lesson-part'>
+                                                        <li key={'examName'+num}>
+                                                            {lesson.exam2.name }
+                                                        </li>
+                                                        <li key={'examLink'+num}>
+                                                            <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam2.link}>الاختبار</a>
+                                                        </li>
+                                                    </ul>
+                                                </li>     
+                                            :
+                                                ''
                                         }
                                     </ul>
                                 </Fragment>
