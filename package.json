@@ -9,14 +9,13 @@
     "@emotion/styled": "^11.11.0",
     "@gumlet/react-drm-player": "^1.0.2",
     "@limeplay/core": "^1.0.0",
-    "@limeplay/shaka-player": "^1.0.0",
     "@mui/icons-material": "^5.14.1",
     "@mui/material": "^5.14.2",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "dayjs": "^1.11.9",
-    "firebase": "^10.1.0",
+    "firebase": "^10.3.1",
     "fs": "^0.0.1-security",
     "gh-pages": "^5.0.0",
     "moment": "^2.29.4",
@@ -25,6 +24,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.14.2",
+    "react-script": "^2.0.5",
     "react-scripts": "5.0.1",
     "react-youtube": "^10.1.0",
     "reactstrap": "^9.2.0",
@@ -42,7 +42,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "golive":"git push && npm run build && firebase deploy"
+    "golive": "git push && npm run build && firebase deploy"
   },
   "eslintConfig": {
     "extends": [
