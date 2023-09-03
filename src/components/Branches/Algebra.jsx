@@ -305,7 +305,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra9',
             'parts' :[
                 {
-                    'lessonName':'المحاضرة الثانية - التباديل والتوافيق',
+                    'lessonName':'المحاضرة الثانية',
                     'duration':'',
                     'link':'https://www.youtube.com/watch?v=b8AJwq_yJXc',
                     'attachments':{
@@ -720,6 +720,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
+    
     // time for lectuer to close
     let hours=96;
 
@@ -880,27 +881,27 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                 }
                                             })}
                                         
-                                            {
-                                                lesson.exam.map(Exam =>{
-                                                    return(
-                                                        Exam.link ?
-                                                            <li key={'partObject'+num}>
-                                                                <ul className='lesson-part'>
-                                                                    <li key={'examName'+num}>
-                                                                        {lesson.exam.name }
-                                                                    </li>
-                                                                    <li key={'examLink'+num}>
-                                                                        <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
-                                                                    </li>
-                                                                </ul>
-                                                            </li>     
-                                                            :
-                                                            <li key={'exam'+num}>
-                                                                {Exam.name}
-                                                            </li>
-                                                    )
-                                                })
-                                            }
+                                        {
+                                            lesson.exam.map(Exam =>{
+                                                return(
+                                                    Exam.link ?
+                                                        <li key={'examObject'+num}>
+                                                            <ul className='lesson-part'>
+                                                                <li key={'examName'+num}>
+                                                                    {Exam.name }
+                                                                </li>
+                                                                <li key={'examLink'+num}>
+                                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={Exam.link}>الاختبار</a>
+                                                                </li>
+                                                            </ul>
+                                                        </li>     
+                                                        :
+                                                        <li key={'exam'+num}>
+                                                            {Exam.name}
+                                                        </li>
+                                                )
+                                            })
+                                        }
                                         </ul>
                                     </div>
                                 :
@@ -934,20 +935,20 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             })}
                                             
                                             {
-                                                lesson.exam.map((Exam,num) =>{
+                                                lesson.exam.map(Exam =>{
                                                     return(
                                                         Exam.link ?
-                                                            <li key={'partObject'+num}>
+                                                            <li key={'examObject'+num}>
                                                                 <ul className='lesson-part'>
                                                                     <li key={'examName'+num}>
-                                                                        {lesson.exam.name }
+                                                                        {Exam.name }
                                                                     </li>
                                                                     <li key={'examLink'+num}>
-                                                                        <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                                        <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={Exam.link}>الاختبار</a>
                                                                     </li>
                                                                 </ul>
                                                             </li>     
-                                                        :
+                                                            :
                                                             ''
                                                     )
                                                 })
@@ -957,7 +958,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             )
                         }else{
                             return(
-                                <Fragment>
+                                <Fragment key={'lesson-fragment'+num}>
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
@@ -994,7 +995,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
                                         </div>
                                     </div>
-                                    <ul className='lesson-parts'>
+                                    <ul key={'lesson-parts'+num} className='lesson-parts'>
                                         {lesson.parts.map((part,num)=>{
                                             if(part.lessonName.search('مسائل الملزمة') !== -1){
                                                 return(
@@ -1017,13 +1018,13 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             lesson.exam.map(Exam =>{
                                                 return(
                                                     Exam.link ?
-                                                        <li key={'partObject'+num}>
+                                                        <li key={'examObject'+num}>
                                                             <ul className='lesson-part'>
                                                                 <li key={'examName'+num}>
-                                                                    {lesson.exam.name }
+                                                                    {Exam.name }
                                                                 </li>
                                                                 <li key={'examLink'+num}>
-                                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={lesson.exam.link}>الاختبار</a>
+                                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={Exam.link}>الاختبار</a>
                                                                 </li>
                                                             </ul>
                                                         </li>     
@@ -1277,7 +1278,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             )
                                         }
                                     }
-                                
                                 })}
                             </Fragment>
                         );
