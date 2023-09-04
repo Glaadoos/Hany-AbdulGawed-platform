@@ -300,8 +300,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra9',
             'parts' :[
                 {
-                    'lessonName':'التباديل',
-                    'duration':'1:57:31',
+                    'lessonName':'الجزء الأول',
+                    'duration':'2:29:7',
                     'link':'https://www.youtube.com/watch?v=b8AJwq_yJXc',
                     'attachments':{
                         'notebook':'1HEwfIA4gzAASGnFqg2A2311eHctGxl4E',
@@ -321,19 +321,18 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra10',
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجزء الأول',
+                    'duration':'2:29:7',
+                    'link':'https://www.youtube.com/watch?v=xA_ZqWLjF-M',
+                    'attachments':{
+                        'notebook':'19fjqmVYygvdpUj8vGJ72aORkNwmwk59B',
+                        'homework':'1xYDD4ly3o7Q1blGoSlpC8fPH1pao137B',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXZ852GfzFRA7zQdrBEVpsA',
                 }
             ],
             'exam' : 'امتحان التباديل والتوافيق'
