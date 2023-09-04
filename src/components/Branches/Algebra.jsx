@@ -296,8 +296,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
             ],
             'exam' : [
-                {'name':'امتحان التباديل 1', 'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'},
-                {'name':'امتحان التباديل والتوافيق 2', 'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'}
+                {'name':'امتحان التباديل 1', 'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'}
             ]
         },
         {
@@ -319,29 +318,30 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVSxrN_N5zjVdG6U59xE30w'
                 }
             ],
-            'exam': [{'name':'امتحان المحاضرة الثانية'}]
+            'exam': [
+                {'name':'امتحان التباديل والتوافيق 2', 'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'}
+            ]
         },
         {
             'name' : 'المحاضرة الثالثة - التباديل والتوافيق',
             'order':'algebra10',
             'parts' :[
                 {
-                    'lessonName':'الجزء الاول',
-                    'duration':'',
-                    'link':'soon',
-                },
-                {
-                    'lessonName':'الجزء الثاني',
-                    'duration':'',
-                    'link':'soon',
+                    'lessonName':'الجزء الأول',
+                    'duration':'2:29:7',
+                    'link':'https://www.youtube.com/watch?v=xA_ZqWLjF-M',
+                    'attachments':{
+                        'notebook':'19fjqmVYygvdpUj8vGJ72aORkNwmwk59B',
+                        'homework':'1xYDD4ly3o7Q1blGoSlpC8fPH1pao137B',
+                    }
                 },
                 {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXZ852GfzFRA7zQdrBEVpsA',
                 }
             ],
-            'exam': [{'name':'امتحان التباديل والتوافيق'}]
+            'exam' : [{'name':'امتحان التباديل والتوافيق'}]
         },
         {
             'name' : 'المحاضرة الاولي - المحدادت',
@@ -716,6 +716,31 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         'exam': [{'name':'امتحان المحاضرة الثانية'}]
                     },
                 ]
+        },{
+            'name':'الشهر الثان - سبتمبر',
+            'data':[
+                {
+                    'name' : 'المحاضرة الثالثة - التباديل والتوافيق',
+                    'order':'algebra10',
+                    'parts' :[
+                        {
+                            'lessonName':'الجزء الأول',
+                            'duration':'2:29:7',
+                            'link':'https://www.youtube.com/watch?v=xA_ZqWLjF-M',
+                            'attachments':{
+                                'notebook':'19fjqmVYygvdpUj8vGJ72aORkNwmwk59B',
+                                'homework':'1xYDD4ly3o7Q1blGoSlpC8fPH1pao137B',
+                            }
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXZ852GfzFRA7zQdrBEVpsA',
+                        }
+                    ],
+                    'exam' : [{'name':'امتحان التباديل والتوافيق'}]
+                },
+                ]
         },
     ]
     const[exist, setExist] = useState([])
@@ -813,7 +838,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         return(
             <div className="lessons-box">
                 <h1 className="title"
-                style={{textAlign:'right'}}
+                style={{textAlign:'right', marginRight: '2%'}}
                 >:الجبر</h1>
                 {Algebralessons.map((lesson,num) =>{
                     if(userCodes){  
@@ -1046,14 +1071,14 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         return(
             <div className="lessons-box">
                 <h1 className="title"
-                style={{textAlign:'right'}}
+                style={{textAlign:'right', marginRight: '2%'}}
                 >:الجبر</h1>
                 
                 {AlgebralessonsMPS.map((month) =>{
                         return(
                             <Fragment>
                                 <h2 className="title"
-                                style={{textAlign:'right'}}
+                                style={{textAlign:'right', marginRight: '2%'}}
                                 >{month.name}</h2>
                                 {month.data.map((lesson,num)=>{
                                     if(userCodes){  
