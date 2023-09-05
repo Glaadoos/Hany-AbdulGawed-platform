@@ -296,7 +296,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
             ],
             'exam' : [
-                {'name':'امتحان التباديل 1', 'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'}
+                {'name':'امتحان التباديل 1', 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfxe01nzyoekz5MbTKRvwFA0j-xEmdHoyNYBBZe08Dp9OHdyw/viewform?usp=sf_link'}
             ]
         },
         {
@@ -319,7 +319,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             'exam': [
-                {'name':'امتحان التباديل والتوافيق 2', 'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'}
+                {'name':'امتحان التوافيق 2', 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfR8UNzwSRo9Nxt8MXlQZcDIosT3bJftRn4E2fEooYvrToIBw/viewform?usp=sf_link'}
             ]
         },
         {
@@ -690,8 +690,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             },
                         ],
                         'exam' : [
-                            {'name':'امتحان التباديل 1', 'link':'https://fill.boloforms.com/proctor/1AT69qIwiwWEHVUB5Qv3cpm0JHjp2Tu5A4hsT4NJ_zrs?p=view'},
-                            {'name':'امتحان التباديل والتوافيق 2', 'link':'https://fill.boloforms.com/proctor/1AGZIsCf1YMD28Z5HKpCPJMcLCnaAGCWYF5Iq5TxJ4rE?p=view'}
+                            {'name':'امتحان التباديل 1', 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfxe01nzyoekz5MbTKRvwFA0j-xEmdHoyNYBBZe08Dp9OHdyw/viewform?usp=sf_link'},
+                            {'name':'امتحان التباديل والتوافيق 2', 'link':'https://docs.google.com/forms/d/e/1FAIpQLSfR8UNzwSRo9Nxt8MXlQZcDIosT3bJftRn4E2fEooYvrToIBw/viewform?usp=sf_link'}
                         ]
                     },
                     {
