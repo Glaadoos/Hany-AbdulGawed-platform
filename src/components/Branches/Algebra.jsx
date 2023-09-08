@@ -328,8 +328,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'الجزء الأول',
-                    'duration':'2:29:7',
-                    'link':'https://www.youtube.com/watch?v=xA_ZqWLjF-M',
+                    'duration':'2:18:55',
+                    'link':'https://www.youtube.com/watch?v=    ',
                     'attachments':{
                         'notebook':'19fjqmVYygvdpUj8vGJ72aORkNwmwk59B',
                         'homework':'1xYDD4ly3o7Q1blGoSlpC8fPH1pao137B',
@@ -348,12 +348,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra11',
             'parts' :[
                 {
+                    'lessonName':'المحدات',
+                    'duration':'2:12:41',
+                    'link':'https://www.youtube.com/watch?v=l7LGOmdwsWU',
+                    'attachments':{
+                        'notebook':'1jRykcxR21l-5liO5WhGEW-McxdnG53_W',
+                        'homework':'1Bq5p0SEHtJG4LnSfEceXFY5i56UWYAIf',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVFDGPZ0fzQqsqJLJdAn-CB',
+                },
             ],
-            'exam': [{'name':'امتحان المحاضرة الاولي'}]
+            'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/1nEuV61BUc1N5J_KTJGPWSrKHqNpPeNX_k0tVTI5r3pI/edit'}]
         },
         {
             'name' : 'المحاضرة الثانية - المحدادت',
@@ -716,7 +725,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         'exam': [{'name':'امتحان المحاضرة الثانية'}]
                     },
                 ]
-        },{
+        },
+        {
             'name':'الشهر الثان - سبتمبر',
             'data':[
                 {
@@ -725,7 +735,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'parts' :[
                         {
                             'lessonName':'الجزء الأول',
-                            'duration':'2:29:7',
+                            'duration':'2:18:55',
                             'link':'https://www.youtube.com/watch?v=xA_ZqWLjF-M',
                             'attachments':{
                                 'notebook':'19fjqmVYygvdpUj8vGJ72aORkNwmwk59B',
@@ -739,6 +749,27 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     'exam' : [{'name':'امتحان التباديل والتوافيق'}]
+                },
+                {
+                    'name' : 'المحاضرة الاولي - المحدادت',
+                    'order':'algebra11',
+                    'parts' :[
+                        {
+                            'lessonName':'المحدات',
+                            'duration':'2:12:41',
+                            'link':'https://www.youtube.com/watch?v=l7LGOmdwsWU',
+                            'attachments':{
+                                'notebook':'1jRykcxR21l-5liO5WhGEW-McxdnG53_W',
+                                'homework':'1Bq5p0SEHtJG4LnSfEceXFY5i56UWYAIf',
+                            }
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiVFDGPZ0fzQqsqJLJdAn-CB',
+                        },
+                    ],
+                    'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/1nEuV61BUc1N5J_KTJGPWSrKHqNpPeNX_k0tVTI5r3pI/edit'}]
                 },
                 ]
         },
