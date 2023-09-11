@@ -369,12 +369,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra12',
             'parts' :[
                 {
+                    'lessonName':'المحاضرة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=PhvYufJNshg',
+                    'attachments':{
+                        'notebook':'1sTKDuUoEpYt5mWnkbfWS7bRZRz_PaZef',
+                        'homework':'1Fef5Hq7AzLroJDDzHEEqM1p-A9I61EBd',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWy6wdVLItBHZahfxCfHeNS',
                 }
             ],
-            'exam': [{'name':'امتحان المحاضرة الثانية'}]
+            'exam': [{'name':'امتحان المحاضرة الثانية', 'link':'https://docs.google.com/forms/d/1T_1xk9AY8vBNKwFFny7sl0DKZYouSQOGvhNR4qdOmQ4/edit'}]
         },
         {
             'name' : 'المحاضرة الثالثة - المحدادت',
@@ -771,6 +780,27 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     ],
                     'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/1nEuV61BUc1N5J_KTJGPWSrKHqNpPeNX_k0tVTI5r3pI/edit'}]
                 },
+                {
+                    'name' : 'المحاضرة الثانية - المحدادت',
+                    'order':'algebra12',
+                    'parts' :[
+                        {
+                            'lessonName':'المحاضرة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/watch?v=PhvYufJNshg',
+                            'attachments':{
+                                'notebook':'1sTKDuUoEpYt5mWnkbfWS7bRZRz_PaZef',
+                                'homework':'1Fef5Hq7AzLroJDDzHEEqM1p-A9I61EBd',
+                            }
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWy6wdVLItBHZahfxCfHeNS',
+                        }
+                    ],
+                    'exam': [{'name':'امتحان المحاضرة الثانية', 'link':'https://docs.google.com/forms/d/1T_1xk9AY8vBNKwFFny7sl0DKZYouSQOGvhNR4qdOmQ4/edit'}]
+                }
                 ]
         },
     ]
