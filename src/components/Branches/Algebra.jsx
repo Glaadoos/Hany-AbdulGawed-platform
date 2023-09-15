@@ -390,10 +390,28 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra13',
             'parts' :[
                 {
+                    'lessonName':'المحاضرة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=RVnlGaXaIa',
+                    'attachments':{
+                        'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
+                        'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
+                    }
+                },
+                {
+                    'lessonName':'أفكار منوعة علي المسائل اللفظية - من المؤجل',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=p4df7iMLzPk',
+                    'attachments':{
+                        'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
+                        'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUVJ2GgehRdTO3njGApiVS0',
+                },
             ],
             'exam': [{'name':'امتحان المحدادت'}]
         },
@@ -800,7 +818,37 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     'exam': [{'name':'امتحان المحاضرة الثانية', 'link':'https://docs.google.com/forms/d/1T_1xk9AY8vBNKwFFny7sl0DKZYouSQOGvhNR4qdOmQ4/edit'}]
-                }
+                },
+                {
+                    'name' : 'المحاضرة الثالثة - المحدادت',
+                    'order':'algebra13',
+                    'parts' :[
+                        {
+                            'lessonName':'المحاضرة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/watch?v=RVnlGaXaIa',
+                            'attachments':{
+                                'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
+                                'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
+                            }
+                        },
+                        {
+                            'lessonName':'أفكار منوعة علي المسائل اللفظية - من المؤجل',
+                            'duration':'',
+                            'link':'https://www.youtube.com/watch?v=p4df7iMLzPk',
+                            'attachments':{
+                                'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
+                                'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
+                            }
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiUVJ2GgehRdTO3njGApiVS0',
+                        },
+                    ],
+                    'exam': [{'name':'امتحان المحدادت'}]
+                },
                 ]
         },
     ]
