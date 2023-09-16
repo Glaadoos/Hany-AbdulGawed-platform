@@ -392,7 +392,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     'lessonName':'المحاضرة',
                     'duration':'',
-                    'link':'https://www.youtube.com/watch?v=RVnlGaXaIa',
+                    'link':'https://www.youtube.com/watch?v=RVnlGaXaIa4',
                     'attachments':{
                         'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
                         'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
@@ -826,7 +826,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             'lessonName':'المحاضرة',
                             'duration':'',
-                            'link':'https://www.youtube.com/watch?v=RVnlGaXaIa',
+                            'link':'https://www.youtube.com/watch?v=RVnlGaXaIa4',
                             'attachments':{
                                 'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
                                 'homework':'14TgLLbEyZhZRynXCeuCQ-v2EOLNjkOHH',
