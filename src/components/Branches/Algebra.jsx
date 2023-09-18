@@ -370,7 +370,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'المحاضرة',
-                    'duration':'',
+                    'duration':'2:14:44',
                     'link':'https://www.youtube.com/watch?v=PhvYufJNshg',
                     'attachments':{
                         'notebook':'1sTKDuUoEpYt5mWnkbfWS7bRZRz_PaZef',
@@ -391,7 +391,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'parts' :[
                 {
                     'lessonName':'المحاضرة',
-                    'duration':'',
+                    'duration':'1:58:56',
                     'link':'https://www.youtube.com/watch?v=RVnlGaXaIa4',
                     'attachments':{
                         'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
@@ -400,7 +400,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     'lessonName':'أفكار منوعة علي المسائل اللفظية - من المؤجل',
-                    'duration':'',
+                    'duration':'0:12:38',
                     'link':'https://www.youtube.com/watch?v=p4df7iMLzPk',
                     'attachments':{
                         'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
@@ -420,12 +420,21 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra14',
             'parts' :[
                 {
+                    'lessonName':'المحاضرة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/watch?v=eBTsNAnPbxI',
+                    'attachments':{
+                        'notebook':'1sG4zYjaysTwsuuT1v9mkhBfkngRG4lmO',
+                        'homework':'1UH4Pw0tPkR6hy9nWX3YsW7ho1Jemdnmp',
+                    }
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
-                }
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWUuJrM_vcanxko0jvcHvRW',
+                },
             ],
-            'exam': [{'name':'امتحان المحاضرة الاولي'}]
+            'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/e/1FAIpQLScBEfB38x6MFWFM1oyY5dP9GngZ5ZNgeV1xPxq9t1_H2HUwxw/viewform?usp=sf_link'}]
         },
         {
             'name' : 'المحاضرة الثانية - المصفوفات',
@@ -804,7 +813,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'parts' :[
                         {
                             'lessonName':'المحاضرة',
-                            'duration':'',
+                            'duration':'2:14:44',
                             'link':'https://www.youtube.com/watch?v=PhvYufJNshg',
                             'attachments':{
                                 'notebook':'1sTKDuUoEpYt5mWnkbfWS7bRZRz_PaZef',
@@ -825,7 +834,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     'parts' :[
                         {
                             'lessonName':'المحاضرة',
-                            'duration':'',
+                            'duration':'1:58:56',
                             'link':'https://www.youtube.com/watch?v=RVnlGaXaIa4',
                             'attachments':{
                                 'notebook':'1YWVcV-n9ASgLPSN3sqwXMuQDXJI6EYSw',
@@ -848,6 +857,27 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         },
                     ],
                     'exam': [{'name':'امتحان المحدادت'}]
+                },
+                {
+                    'name' : 'المحاضرة الاولي - المصفوفات',
+                    'order':'algebra14',
+                    'parts' :[
+                        {
+                            'lessonName':'المحاضرة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/watch?v=eBTsNAnPbxI',
+                            'attachments':{
+                                'notebook':'1sG4zYjaysTwsuuT1v9mkhBfkngRG4lmO',
+                                'homework':'1UH4Pw0tPkR6hy9nWX3YsW7ho1Jemdnmp',
+                            }
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWUuJrM_vcanxko0jvcHvRW',
+                        },
+                    ],
+                    'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/e/1FAIpQLScBEfB38x6MFWFM1oyY5dP9GngZ5ZNgeV1xPxq9t1_H2HUwxw/viewform?usp=sf_link'}]
                 },
                 ]
         },
