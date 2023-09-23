@@ -74,23 +74,28 @@ const LessonPlayer = () =>{
                 <h1 className="title"
                 style={{textAlign:'center',padding:'16px'}}
                 >المرفقات</h1>
-                <h2 className="sub-attachments"
-                style={{textAlign:'right'}}
-                >:الملزمة</h2>
                 {
                     notebook !== 'null'?
-                    <h1 className='tilte'><a href={`https://drive.google.com/file/d/${notebook}/view?usp=drive_link`}>link</a></h1>
+                        <>
+                            <h2 className="sub-attachments"
+                            style={{textAlign:'right'}}
+                            >:الملزمة</h2>
+                            <h1 className='tilte'><a href={`https://drive.google.com/file/d/${notebook}/view?usp=drive_link`}>link</a></h1>
+                        </>
                     :
                     ''
                 }
 
-                <h2 className="sub-attachments"
-                style={{textAlign:'right'}}
-                >:الواجب</h2>
                 {
                     homework !== 'null'?
-                    <iframe title='homework' src={`https://drive.google.com/file/d/${homework}/preview`} width="640" height="480" allow="autoplay"></iframe>
+                        <>
+                            <h2 className="sub-attachments"
+                            style={{textAlign:'right'}}
+                            >:الواجب</h2>
+                            <iframe title='homework' src={`https://drive.google.com/file/d/${homework}/preview`} width="640" height="480" allow="autoplay"></iframe>
+                        </>   
                     :
+                    
                     ''
                 }
                 

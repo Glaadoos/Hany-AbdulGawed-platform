@@ -441,12 +441,36 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             'order':'algebra15',
             'parts' :[
                 {
+                    'lessonName':'الجزء الاول',
+                    'duration':'2:11:30',
+                    'link':'https://www.youtube.com/watch?v=wccBTE-MVkk',
+                    'attachments':{
+                        'notebook':'1Tjqrqvv_FeSmthjDp11xMm8U4FJqZMwZ',
+                        'homework':'13ZC5pJqukMo8jPZ2Y5Eokm_IZwf5si8m',
+                    }
+                },
+                {
+                    'lessonName':'الجزء الثان',
+                    'duration':'0:29:29',
+                    'link':'https://www.youtube.com/watch?v=zQHRKQs4lzo',
+                    'attachments':{
+                        'notebook':'1Tjqrqvv_FeSmthjDp11xMm8U4FJqZMwZ',
+                        'homework':'13ZC5pJqukMo8jPZ2Y5Eokm_IZwf5si8m',
+                    }
+                },
+                {
+                    'lessonName':'حل المصفوفات بالالة الحاسبة',
+                    'duration':'0:12:3',
+                    'link':'https://www.youtube.com/watch?v=PJSUqiRs-Pc',
+                    'attachments':'',
+                },
+                {
                     'lessonName':'مسائل الملزمة',
                     'duration':'',
-                    'link':'soon',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXa6fyGjTDBkNyxni69Gg5B',
                 }
             ],
-            'exam': [{'name':'امتحان المصفوفات'}]
+            'exam': [{'name':'امتحان المصفوفات', 'link':'https://addonforge.com/timer/1FAIpQLSfvuQsJEfauRQq9xHbkgKJRPD0qk2alU0ZpRqcbF7kEf451FA'}]
         },
     ]
     const AlgebralessonsMPS = [
@@ -878,6 +902,42 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         },
                     ],
                     'exam': [{'name':'امتحان المحاضرة الاولي', 'link':'https://docs.google.com/forms/d/e/1FAIpQLScBEfB38x6MFWFM1oyY5dP9GngZ5ZNgeV1xPxq9t1_H2HUwxw/viewform?usp=sf_link'}]
+                },
+                {
+                    'name' : 'المحاضرة الثانية - المصفوفات',
+                    'order':'algebra15',
+                    'parts' :[
+                        {
+                            'lessonName':'الجزء الاول',
+                            'duration':'2:11:30',
+                            'link':'https://www.youtube.com/watch?v=wccBTE-MVkk',
+                            'attachments':{
+                                'notebook':'1Tjqrqvv_FeSmthjDp11xMm8U4FJqZMwZ',
+                                'homework':'13ZC5pJqukMo8jPZ2Y5Eokm_IZwf5si8m',
+                            }
+                        },
+                        {
+                            'lessonName':'الجزء الثان',
+                            'duration':'0:29:29',
+                            'link':'https://www.youtube.com/watch?v=zQHRKQs4lzo',
+                            'attachments':{
+                                'notebook':'1Tjqrqvv_FeSmthjDp11xMm8U4FJqZMwZ',
+                                'homework':'13ZC5pJqukMo8jPZ2Y5Eokm_IZwf5si8m',
+                            }
+                        },
+                        {
+                            'lessonName':'حل المصفوفات بالالة الحاسبة',
+                            'duration':'0:12:3',
+                            'link':'https://www.youtube.com/watch?v=PJSUqiRs-Pc',
+                            'attachments':'',
+                        },
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiXa6fyGjTDBkNyxni69Gg5B',
+                        }
+                    ],
+                    'exam': [{'name':'امتحان المصفوفات', 'link':'https://addonforge.com/timer/1FAIpQLSfvuQsJEfauRQq9xHbkgKJRPD0qk2alU0ZpRqcbF7kEf451FA'}]
                 },
                 ]
         },
