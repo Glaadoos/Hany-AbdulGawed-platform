@@ -71,9 +71,13 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
             'EngName' : '#help',
             'arbicName' : 'مساعدة'
         },
-        
         {
             'id' :4,
+            'EngName' : '#admin',
+            'arbicName' : 'admin'
+        },
+        {
+            'id' :5,
             'EngName' : '#account',
             'arbicName' : 'حسابي',
             'dropDown' : [
