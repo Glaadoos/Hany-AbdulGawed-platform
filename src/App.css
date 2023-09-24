@@ -42,7 +42,7 @@ ul{
   height: 20%;
   padding-right: 20px;
 }
-ul.navbar>li,ul.navbar>li>a{
+ul.nav-bar>li,ul.nav-bar>li>a{
   padding: 10px;
   margin: 5px;
   text-decoration: none !important;
@@ -69,6 +69,7 @@ ul.navbar>li,ul.navbar>li>a{
 .main-text{
   margin-left: 5%;
   margin-top: 10%;
+  overflow:visible !important;
 }
 
 @keyframes fadeInAnimation {
@@ -178,7 +179,7 @@ button{
     z-index: 999;
     width: 100%;
   }
-  .navbar{
+  .nav-bar{
     font-size: 10px !important;
     padding: 5px;
   }

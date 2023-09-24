@@ -10,7 +10,8 @@ import LogoutBtn from '../Essential/logout'
 
 
 
-const Header = ({user,show,currentUser,userPayingSystem}) =>{
+const Header = ({user,show,currentUser,userPayingSystem,isAdmin}) =>{
+    
     
     const [anchorEl, setAnchorEl] = React.useState(null);
     const open = Boolean(anchorEl);
@@ -103,9 +104,10 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />
-            <ul className='navbar'>
+            <h1>change redirect url</h1>
+            <ul className='nav-bar'>
                 {navber_name.map((obj) =>{
-                    if(obj.id ===4){
+                    if(obj.id ===5){
                         if(currentUser.name !=='' || user){
                             return(  
                                 <div>
@@ -160,13 +162,16 @@ const Header = ({user,show,currentUser,userPayingSystem}) =>{
                                 <Link to={'/Hany-AbdulGawed-platform/PayingSystem'}>{obj.arbicName}</Link>
                                 </li>)
                             }
-                            
-                            /* else{
+                            if(obj.EngName ==='#admin'){
                                 return(
-                                    <li className={'item'+obj.id} key={'item'+obj.id}>
-                                        <Link to={'/Hany-AbdulGawed-platform'+obj.EngName}>{obj.arbicName}</Link>
-                                        </li>)
-                            } */
+                                    isAdmin ?
+                                        <li className={'item'+obj.id} key={'item'+obj.id}>
+                                        <Link to={'/dashboard'}>{obj.arbicName}</Link>
+                                        </li>
+                                    :
+                                        ''
+                                )
+                            }
                     }
                 })}
             </ul>

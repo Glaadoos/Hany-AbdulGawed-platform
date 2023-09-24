@@ -14,6 +14,7 @@ import LessonPlayer from "./components/Essential/lessonPlayer";
 import SetPayingSystem from "./components/Essential/SetPayingSystem";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
+import DashBoard from "./components/Main/adminDashboard";
 
 function App() {
   const [currentUser, setCurrentUser] = useState({
@@ -23,7 +24,7 @@ function App() {
     payingSystem: "",
   });
   const [userCodes, setUserCodes] = useState();
-
+  const [isAdmin, setIsAdmin] = useState(localStorage.getItem('admin'))
   const [userPayingSystem, setPayingSystem] = useState("");
   const [videoId, setVideoId] = useState("");
   const [userExist, setUserExist] = useState(false);
@@ -36,6 +37,11 @@ function App() {
     // Check if the user on server side exist or not
     let checkUserExist;
     checkUserExist = await Api.getSpecific(email);
+    if(checkUserExist.admin){
+      setIsAdmin(true)
+    }else{
+      setIsAdmin(false)
+    }
 
     setTimeout(() => {
       if (checkUserExist.message !== "Account isn't exist") {
@@ -120,6 +126,7 @@ function App() {
         user={user}
         currentUser={currentUser}
         userPayingSystem={userPayingSystem}
+        isAdmin={isAdmin}
       />
       <Routes>
         <Route
@@ -187,6 +194,14 @@ function App() {
               user={email}
               handelUserUpdating={handelUserUpdating}
               userPayingSystem={userPayingSystem}
+            />
+          }
+        />
+        <Route
+          path="/dashboard"
+          element={
+            <DashBoard
+            currentUser={currentUser}
             />
           }
         />
