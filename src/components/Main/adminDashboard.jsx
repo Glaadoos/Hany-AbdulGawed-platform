@@ -1,8 +1,15 @@
-import { Image, Card ,Row ,Col,Container  } from 'react-bootstrap';
+import { Table, Card ,Row ,Col  } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {  useEffect, useState } from 'react';
 
 
 const DashBoard = ({currentUser}) =>  {
+    const [users, setUsers] = useState([])
+    
+    useEffect(() =>{
+        
+    },)
+
     return (
         <>
             <Card style={{ width: '18rem' }} className='p-0'>
@@ -22,6 +29,40 @@ const DashBoard = ({currentUser}) =>  {
                     </Col>
                 </Row>
             </Card>
+            <Table>
+                <thead>
+                    <tr>
+                    <th>#</th>
+                    <th>Name</th>
+                    <th>Email</th>
+                    <th>Payinig system</th>
+                    <th>Codes</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Abdo</td>
+                        <td>@</td>
+                        <td>MPS</td>
+                        <td>[]</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>mo</td>
+                        <td>@</td>
+                        <td>LPS</td>
+                        <td>[]</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>ah</td>
+                        <td>@</td>
+                        <td>MPS</td>
+                        <td>[]</td>
+                    </tr>
+                </tbody>
+            </Table>
         </>
     );
 }
