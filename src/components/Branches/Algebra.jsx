@@ -1122,7 +1122,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
                             
                             return(
-                                (diff < 345600000  && diff > 0) || finalDate !== 'Open' ? 
+                                (diff < 345600000  && diff > 0) || finalDate === 'Open' ? 
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
