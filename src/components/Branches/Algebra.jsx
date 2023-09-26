@@ -472,6 +472,38 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             'exam': [{'name':'امتحان المصفوفات', 'link':'https://addonforge.com/timer/1FAIpQLSfvuQsJEfauRQq9xHbkgKJRPD0qk2alU0ZpRqcbF7kEf451FA'}]
         },
+        {
+            'name' : 'مراجعة الجبر - الجزاء الاول',
+            'order':'revision01',
+            'parts' :[
+                {
+                    'lessonName':'ذات الحدين والاعداد المركبة',
+                    'duration':'2:43:55',
+                    'link':'https://www.youtube.com/watch?v=a_Mdd54sR3c',
+                    'attachments':{
+                        'notebook':'1IbgK9QFbq2ZZ366NSe8OoReaId7HyDPD',
+                        'homework':'1sQNzABd2zNOakdgz1XI5GECa3Xc1_mvD',
+                    }
+                }
+            ],
+            'exam': [{'name':''}]
+        },
+        {
+            'name' : 'مراجعة الجبر - الجزاء الثاني',
+            'order':'revision02',
+            'parts' :[
+                {
+                    'lessonName':'التباديل والتوافيق - المحددات - المصفوفات',
+                    'duration':'2:54:1',
+                    'link':'https://www.youtube.com/watch?v=iRBb9JO5-AM',
+                    'attachments':{
+                        'notebook':'1IbgK9QFbq2ZZ366NSe8OoReaId7HyDPD',
+                        'homework':'1sQNzABd2zNOakdgz1XI5GECa3Xc1_mvD',
+                    }
+                }
+            ],
+            'exam': [{'name':''}]
+        },
     ]
     const AlgebralessonsMPS = [
         {
@@ -939,7 +971,39 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     ],
                     'exam': [{'name':'امتحان المصفوفات', 'link':'https://addonforge.com/timer/1FAIpQLSfvuQsJEfauRQq9xHbkgKJRPD0qk2alU0ZpRqcbF7kEf451FA'}]
                 },
-                ]
+                {
+                    'name' : 'مراجعة الجبر - الجزاء الاول',
+                    'order':'revision01',
+                    'parts' :[
+                        {
+                            'lessonName':'ذات الحدين والاعداد المركبة',
+                            'duration':'2:43:55',
+                            'link':'https://www.youtube.com/watch?v=a_Mdd54sR3c',
+                            'attachments':{
+                                'notebook':'1IbgK9QFbq2ZZ366NSe8OoReaId7HyDPD',
+                                'homework':'1sQNzABd2zNOakdgz1XI5GECa3Xc1_mvD',
+                            }
+                        }
+                    ],
+                    'exam': [{'name':''}]
+                },
+                {
+                    'name' : 'مراجعة الجبر - الجزاء الثاني',
+                    'order':'revision02',
+                    'parts' :[
+                        {
+                            'lessonName':'التباديل والتوافيق - المحددات - المصفوفات',
+                            'duration':'2:54:1',
+                            'link':'https://www.youtube.com/watch?v=iRBb9JO5-AM',
+                            'attachments':{
+                                'notebook':'1IbgK9QFbq2ZZ366NSe8OoReaId7HyDPD',
+                                'homework':'1sQNzABd2zNOakdgz1XI5GECa3Xc1_mvD',
+                            }
+                        }
+                    ],
+                    'exam': [{'name':''}]
+                },
+            ]
         },
     ]
     const[exist, setExist] = useState([])
@@ -966,20 +1030,26 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     const checkCode = async(code, order)=>{
         let codeexist;
         await Algebralessons.map(async(obj) =>{
-                                if(obj.order ===order){
+                                if(obj.order ===order ){
                                     codeexist = await CodeAPI.getSpecific('Algebra', order, code).then(data => {return(data.codeExist)})
                                     const newArray = exist.filter(arr => arr[0] !== order)
                                     newArray.push([order, codeexist])
                                     setExist(newArray)
-                                    console.log(userCodes, exist)
-                                    if(codeexist === 1){
+                                    if(codeexist === 1 && order.indexOf('revision') === -1){
                                         const deleted = await CodeAPI.UpdataOrderCodes('Algebra', order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
                                             await UserAPI.updateAvailableCodes(localStorage.getItem("userEmail"), [order, code])
                                             alert(`تم أضافة الكود بنجاح في : ${dayjs().format('D')}/${dayjs().format('MM')} الوقت ${dayjs().format('hh:mm:ss')} \n الكود متاح لثلاث ايام من هذا التاريخ`)
                                             window.location.reload();
                                         }
-                                    }  
+                                    }else{
+                                        const deleted = await CodeAPI.UpdataOrderCodes('Algebra', order, code).then(data => {return(data)});
+                                        if(!(deleted.message)){
+                                            await UserAPI.updateAvailableCodes(localStorage.getItem("userEmail"), [order, code])
+                                            alert(` تمت اضافة المرجعة  \n  المراجعة مفتوحة دائما`)
+                                            window.location.reload();
+                                        }
+                                    }
                                 }
                             })
 
@@ -1011,10 +1081,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         return [`${d} days`, `${pad(h)} hours`, `${pad(m)} minutes`].join(', ');
     }
     const handleDateChange = (userCodes, order) => {
-        let date = dayjs(userCodes.filter(obj => obj.order === order)[0].date);
-        let dataOfClose = dayjs(date.add(hours, 'h')) ;
-        let diff = (dataOfClose).diff(dayjs().format())
-        return [diff, millisecondsToDays(diff)];
+        
+        if(userCodes.filter(obj => obj.order === order)[0].date !== 'Open'){
+            let date = dayjs(userCodes.filter(obj => obj.order === order)[0].date);
+            let dataOfClose = dayjs(date.add(hours, 'h')) ;
+            let diff = (dataOfClose).diff(dayjs().format())
+            return [diff, millisecondsToDays(diff)];
+        }else{
+            return['Open', 'Open']
+        }
+            
     }
     
     if(user === null){
@@ -1044,8 +1120,9 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                             let diff = handleDateChange(userCodes, lesson.order)[0]
                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
+                            
                             return(
-                                diff < 345600000  && diff > 0 ? 
+                                (diff < 345600000  && diff > 0) || finalDate === 'Open' ? 
                                     <div key={'lesson'+num} className="lesson">
                                         <div className='lesson-title'>
                                             <h1 className="lecture-name">{lesson.name}</h1>
@@ -1053,8 +1130,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             <h4 
                                                 style={{margin:'0 0 0 3%', textAlign:'left', width: 'fit-content'}}
                                             >
-                                                {':الوقت المتبقي للمحاضر'}<br/>
-                                                {finalDate}
+                                                {finalDate !== 'Open' ? 
+                                                    
+                                                    <>
+                                                        :الوقت المتبقي للمحاضر<br/>
+                                                        {finalDate}
+                                                    </>
+                                                
+                                                :
+                                                    ('Always Open')
+                                            }
                                             </h4>
                                         </div>
                                         <ul className='lesson-parts'>
@@ -1284,8 +1369,9 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                                             let diff = handleDateChange(userCodes, lesson.order)[0]
                                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
+                                            
                                             return(
-                                                diff < 345600000  && diff > 0 ? 
+                                                (diff < 345600000  && diff > 0) || finalDate === 'Open' ? 
                                                     <div key={'lesson'+num} className="lesson">
                                                         <div className='lesson-title'>
                                                             <h1 className="lecture-name">{lesson.name}</h1>
@@ -1293,8 +1379,16 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                             <h4 
                                                                 style={{margin:'0 0 0 3%', textAlign:'left', width: 'fit-content'}}
                                                             >
-                                                                {':الوقت المتبقي للمحاضر'}<br/>
-                                                                {finalDate}
+                                                                {finalDate !== 'Open' ? 
+                                                                    
+                                                                    <>
+                                                                        :الوقت المتبقي للمحاضر<br/>
+                                                                        {finalDate}
+                                                                    </>
+                                                                
+                                                                :
+                                                                    ('Always Open')
+                                                            }
                                                             </h4>
                                                         </div>
                                                         <ul className='lesson-parts'>
@@ -1348,7 +1442,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         {
                                                             lesson.exam.map(Exam =>{
                                                                 return(
-                                                                    Exam.link ?
+                                                                    Exam.link && Exam.name !== ''?
                                                                         <li key={'examObject'+Exam.name}>
                                                                             <ul className='lesson-part'>
                                                                                 <li key={'examName'+num}>

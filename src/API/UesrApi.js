@@ -14,7 +14,7 @@ export const getAll= async()=>{
     try{
         res = await fetch(accountsapi, optiones).then(res => res.json())
     } catch(err){
-        console.error(err)
+        console.error(err, 'catch in UserAPI>getAll')
     }
     const data = await res
     return(data);
@@ -32,6 +32,7 @@ export const getSpecific= async(email)=>{
         res = await fetch(`${accountsapi}/account/${email}`, optiones).then(res => res.json())
     } catch(err){
         res =false; 
+        console.error(err, 'catch in UserAPI>getSpecific')
     }
     const data = await res
     return(data);
@@ -54,7 +55,7 @@ export const createUser= async(name,email,payingSystem)=>{
     try{
         res = await fetch(`${accountsapi}`, optiones).then(res => res.json())
     } catch(err){
-        console.error(err)
+        console.error(err, 'catch in UserAPI>createUser')
     }
     const data = await res
     return(data);
@@ -75,7 +76,7 @@ export const updateUserPayingsystem= async(email, changableValue)=>{
         await fetch(`${accountsapi}/${email}`, optiones).then(res => res.json())
         console.log("Updated")
     } catch(err){
-        console.error(err)
+        console.error(err, 'catch in UserAPI>updateUserPayingsystem')
     }
 
 }
@@ -91,7 +92,7 @@ export const getAvailableCodes= async(email)=>{
     try{
         res = await fetch(`${accountsapi}/availablecodes?user=${email}`, optiones).then(res => res.json())
     } catch(err){
-        console.error(err)
+        console.error(err, 'catch in UserAPI>getAvailableCodes')
     }
     const data = await res
     return(data);
@@ -102,7 +103,7 @@ export const updateAvailableCodes= async(email, changableValue)=>{
             'branch':'Algebra',
             'order':changableValue[0],
             'code':changableValue[1],
-            'date': dayjs().format(),
+            'date': changableValue[0].indexOf('revision') !== -1 ? 'Open':dayjs().format(),
         }
     }
     let optiones = {
@@ -116,7 +117,7 @@ export const updateAvailableCodes= async(email, changableValue)=>{
         await fetch(`${accountsapi}/${email}`, optiones).then(res => res.json())
         console.log("Updated")
     } catch(err){
-        console.error(err)
+        console.error(err, 'catch in UserAPI>updateAvailableCodes')
     }
 
 }
