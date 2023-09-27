@@ -287,7 +287,6 @@ button{
   .volume-range,.speed-range{
     width: 20px;
     height: 60px;
-    -webkit-appearance: slider-vertical;
     writing-mode: bt-lr
   }
   .volume,.speed{
@@ -594,11 +593,16 @@ div#player>div>iframe{
 .not-checked{
   opacity: .3!important;
 }
+.hidden{
+  opacity: 0 !important;
+}
 
 /* loading screen */
 
 .center {
-  height: 100vh;
+  position: fixed;
+  top:50%;
+  left:40%;
   display: flex;
   justify-content: center;
   align-items: center;
