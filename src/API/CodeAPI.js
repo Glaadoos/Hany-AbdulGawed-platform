@@ -9,7 +9,7 @@ export const getAll= async(branch, order, code)=>{
         }
     }
     try{
-        res = await fetch(`${codesapi}/${branch}/code?order=${order}&code=${code}`, optiones).then(res => res.json())
+        res = await fetch(`${codesapi}/${branch}/getAll`, optiones).then(res => res.json())
     } catch(err){
         res =false; 
         console.error(err, 'catch in CodeAPI>getAll') 
