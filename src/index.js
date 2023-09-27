@@ -8,7 +8,6 @@ import App from './App';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <React.StrictMode>
     <HashRouter >
         <Auth0Provider
         domain="dev-ygrskzanm044w3be.us.auth0.com"
@@ -20,5 +19,4 @@ root.render(
           <App />
         </Auth0Provider>
     </HashRouter>
-  </React.StrictMode>
 );

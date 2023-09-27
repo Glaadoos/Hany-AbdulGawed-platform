@@ -12,9 +12,9 @@ import Dynamics from "./components/Branches/Dynamics";
 import Statics from "./components/Branches/Statics";
 import LessonPlayer from "./components/Essential/lessonPlayer";
 import SetPayingSystem from "./components/Essential/SetPayingSystem";
+import DashBoard from "./components/Main/Admin/adminDashboard";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
-import DashBoard from "./components/Main/adminDashboard";
 
 function App() {
   const [currentUser, setCurrentUser] = useState({
