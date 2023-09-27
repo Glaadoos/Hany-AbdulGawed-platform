@@ -1,6 +1,6 @@
 const codesapi = 'https://hany-server.netlify.app/.netlify/functions/api'
 
-export const getAll= async(branch, order, code)=>{
+export const getAll= async(branch)=>{
     let res;
     let optiones = {
         method: "GET",
