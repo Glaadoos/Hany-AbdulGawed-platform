@@ -597,6 +597,13 @@ div#player>div>iframe{
   opacity: 0 !important;
 }
 
+table{
+  overflow-x: visible !important;
+}
+
+tr{
+
+}
 /* loading screen */
 
 .center {

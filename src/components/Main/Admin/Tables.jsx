@@ -3,10 +3,10 @@ import { useState } from 'react';
 
 export const TableHead = ({args}) =>{
     return (
-        <thead>
+        <thead style={{overflowX:'scroll'}}>
             <tr>
                 {args.map((arg,num) =>{
-                    return(<td key={num}>{arg}</td>)
+                    return(<td key={num}><h4>{arg}</h4></td>)
                 })}
             </tr>
         </thead>
@@ -15,7 +15,7 @@ export const TableHead = ({args}) =>{
 
 export const Col = ({role ,data, index}) =>{
     const [hidden, setHidden] = useState(true);
-    if(role === 'codes'){
+    if(role === 'codes' || role === 'id'){
         const handleChange = (e) =>{
             let target = e.target.nextSibling
             setHidden(!hidden);
