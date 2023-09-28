@@ -9,7 +9,7 @@ export const TableHead = ({args}) =>{
         <thead>
             <tr>
                 {args.map((arg,num) =>{
-                    return(<th key={num}>{arg}</th>)
+                    return(<th scope="col" key={num}>{arg}</th>)
                 })}
             </tr>
         </thead>
@@ -29,8 +29,7 @@ export const Col = ({role ,data, index}) =>{
         setTools(true)   
     }
     const mouseOut = () =>{
-        setTools(false) 
-        setEditView(false)    
+        setTools(false);   
     }
     
     if(role === 'codes'){
@@ -61,7 +60,7 @@ export const Col = ({role ,data, index}) =>{
                 {tools && role!== 'rank' ? 
                     <h5 className={!editView ?  'editable' : 'editable flex-col'} >
                         {data}
-                        <Ui editView={editView} setEditView={setEditView} />
+                        <Ui editView={editView} setEditView={setEditView} role={role} />
                     </h5>
                     :   <h5>{data}</h5>
                 }

@@ -70,9 +70,9 @@ const DashBoard = ({currentUser}) =>  {
                                                 return(
                                                     <tr key={num}>
                                                         <Col role={'rank'} data={num+1} index={num}/>
-                                                        <Col data={user.name} index={num}/>
-                                                        <Col data={user.email} index={num}/>
-                                                        <Col data={user.payingSystem} index={num}/>
+                                                        <Col role={'name'} data={user.name} index={num}/>
+                                                        <Col role={'email'} data={user.email} index={num}/>
+                                                        <Col role={'payingSystem'} data={user.payingSystem} index={num}/>
                                                         <Col role={'rank'} data={user.availableCodes.length} index={num}/>
                                                     </tr>
                                                 );
