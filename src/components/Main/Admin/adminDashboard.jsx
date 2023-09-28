@@ -73,7 +73,7 @@ const DashBoard = ({currentUser}) =>  {
                                                         <Col data={user.name} index={num}/>
                                                         <Col data={user.email} index={num}/>
                                                         <Col data={user.payingSystem} index={num}/>
-                                                        <Col data={user.availableCodes.length} index={num}/>
+                                                        <Col role={'rank'} data={user.availableCodes.length} index={num}/>
                                                     </tr>
                                                 );
                                             })}
