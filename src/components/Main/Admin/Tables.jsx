@@ -25,11 +25,12 @@ export const Col = ({role ,data, index}) =>{
     const [editView, setEditView] = useState(false);
 
     // Mouse Over & Out On Edit aria Event Handler Functions
-    const mouseOver = (e) =>{
+    const mouseOver = () =>{
         setTools(true)   
     }
-    const mouseOut = (e) =>{
-        setTools(false)     
+    const mouseOut = () =>{
+        setTools(false) 
+        setEditView(false)    
     }
     
     if(role === 'codes'){
