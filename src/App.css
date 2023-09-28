@@ -161,7 +161,7 @@ ul.nav-bar>li,ul.nav-bar>li>a{
 .dropdownitem-user-name{
   font-size: 15px;
 }
-button{
+button:not(.editable){
   background-color: #B20600; /* Green */
   border: none;
   color: white;
@@ -595,6 +595,44 @@ div#player>div>iframe{
 }
 .hidden{
   opacity: 0 !important;
+}
+.editable:not(input, button){
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0;
+}
+.flex-col{
+  flex-direction: column !important;
+  align-items:flex-start !important;
+}
+td>h5{
+  text-overflow:ellipsis;
+  text-wrap:balance;
+}
+#edit-btn{
+  width: 27px;
+  height: 27px;
+  background-color: transparent !important;
+  background-image: url('https://thenounproject.com/api/private/icons/6140976/edit/?backgroundShape=SQUARE&backgroundShapeColor=%23000000&backgroundShapeOpacity=0&exportSize=752&flipX=false&flipY=false&foregroundColor=%23000000&foregroundOpacity=1&imageFormat=png&rotation=0');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+input.editable{
+  border-radius: 10px;
+  border: solid 1px;
+  font-size: small;
+  font-weight: bold;
+  padding: 3px;
+  margin-right: 7px;
+}
+button.editable{
+  border-radius: 10px;
+  font-size: small;
+  font-weight: bold;
+  margin-right: 7px;
 }
 
 /* loading screen */

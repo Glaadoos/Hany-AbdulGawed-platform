@@ -59,44 +59,46 @@ const DashBoard = ({currentUser}) =>  {
             { loading?
                 <LoadingScreen />
             :
-                <Table style={{overflowX:'scroll'}}>
-                    {view === 'accounts' ?
-                            <>
-                                <TableHead args={['#','Name','Email','Payinig system', 'Codes']}/>
-                                <tbody>
-                                    {users.sort((a, b) => a.name.localeCompare(b.name))
-                                        .map((user, num) => {
+                <div className='table-responsive' style={{overflowX:'auto'}}>
+                    <Table>
+                        {view === 'accounts' ?
+                                <>
+                                    <TableHead args={['#','Name','Email','Payinig system', 'Codes']}/>
+                                    <tbody>
+                                        {users.sort((a, b) => a.name.localeCompare(b.name))
+                                            .map((user, num) => {
+                                                return(
+                                                    <tr key={num}>
+                                                        <Col role={'rank'} data={num+1} index={num}/>
+                                                        <Col data={user.name} index={num}/>
+                                                        <Col data={user.email} index={num}/>
+                                                        <Col data={user.payingSystem} index={num}/>
+                                                        <Col data={user.availableCodes.length} index={num}/>
+                                                    </tr>
+                                                );
+                                            })}
+                                    </tbody>
+                                </>
+                                
+                                :
+                                <>
+                                    <TableHead args={['#','Order','Codes']}/>
+                                    <tbody>
+                                        {codes.map(ele => ele.sort((a, b) => a.order.localeCompare(b.order)).map((code, num) => {
                                             return(
                                                 <tr key={num}>
                                                     <Col data={num+1} index={num}/>
-                                                    <Col data={user.name} index={num}/>
-                                                    <Col data={user.email} index={num}/>
-                                                    <Col data={user.payingSystem} index={num}/>
-                                                    <Col data={user.availableCodes.length} index={num}/>
+                                                    <Col data={code.order} index={num}/>
+                                                    <Col role={'codes'} data={code.code.join(', ')} index={num}/>
                                                 </tr>
                                             );
-                                        })}
-                                </tbody>
-                            </>
-                            
-                            :
-                           <>
-                                <TableHead args={['#','Order','Codes']}/>
-                                <tbody>
-                                    {codes.map(ele => ele.sort((a, b) => a.order.localeCompare(b.order)).map((code, num) => {
-                                        return(
-                                            <tr key={num}>
-                                                <Col data={num+1} index={num}/>
-                                                <Col data={code.order} index={num}/>
-                                                <Col role={'codes'} data={code.code.join(', ')} index={num}/>
-                                            </tr>
-                                        );
-                                    }))}
-                                </tbody>
-                            </>
-                        }
-                    
-                </Table>
+                                        }))}
+                                    </tbody>
+                                </>
+                            }
+                        
+                    </Table>
+                </div>
             }
         </>
     );
