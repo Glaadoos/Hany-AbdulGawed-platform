@@ -1,9 +1,13 @@
 const express = require("express");
 const router = express.Router();
 const Code = require("../models/algebraCodes");
+/* const spawn = require('child_process').spawn;
+const ls = spawn('python', ['upload.py', 'arg1']); */
 
 // get all codes for algebra
 router.get("/getAll", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   try {
     const branch = await Code.find();
     res.status(200).json(branch);
@@ -14,6 +18,8 @@ router.get("/getAll", async (req, res) => {
 
 // get specific codes for algebra
 router.get("/code", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   let ele;
   try {
     ele = await Code.findOne({ order: req.query.order });
@@ -33,6 +39,8 @@ router.get("/code", async (req, res) => {
 
 // Add code
 router.post("/", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   const code = new Code({
     order: req.body.order,
     code: req.body.code,
@@ -58,6 +66,8 @@ router.post("/", async (req, res) => {
 
 // Delete code & Updata algebra Codes
 router.get("/delete", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   try {
     let order = await Code.findOne({ order: req.query.order });
     

@@ -1,14 +1,16 @@
-POST http://localhost:8888/.netlify/functions/api/codes/Algebra
+POST https://hany-server.netlify.app/.netlify/functions/api/codes/Algebra/
 Content-Type: application/json
 
 {
-    "order": "fsto",
-    "code": ["dsfsdfsd"]
+    "order": "algebra15",
+    "code": [
+        
+    ]
 }
 
 
 ###
 
-GET http://localhost:8888/.netlify/functions/api/codes/Algebra
+GET https://hany-server.netlify.app/.netlify/functions/api/Algebra/getAll
 
 ###

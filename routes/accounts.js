@@ -16,7 +16,9 @@ const generateCodes = () => {
 };
 
 //Getting all accounts
-router.get("/", async (req, res) => {
+router.get("/", getAccount, async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   try {
     const account = await Account.find();
     res.status(200).json(account);
@@ -27,6 +29,8 @@ router.get("/", async (req, res) => {
 
 //Getting specific account
 router.get("/account/:id", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   let account;
   try {
     account = await Account.findOne({ email: req.params.id });
@@ -42,8 +46,32 @@ router.get("/account/:id", async (req, res) => {
   }
 });
 
+// test chanel
+router.get("/test", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
+  let accounts;
+  try {
+    accounts = await Account.find({ payingSystem: '' });
+    // console.log(accounts)
+    accounts.map((obj) => console.log(`'${obj.id}',`))
+    res.sendStatus(200)
+    /* if (account == null) {
+      return res.status(404).json({ message: "Account isn't exist" });
+    } else {
+      return res.status(200).json(account);
+    } */
+  } catch (err) {
+    res
+      .status(400)
+      .json({ message: err.message, src: "catch in get specific" });
+  }
+});
+
 //Get user's availableCodes
 router.get("/availablecodes", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   let account;
   try {
     account = await Account.findOne({ email: req.query.user });
@@ -61,6 +89,8 @@ router.get("/availablecodes", async (req, res) => {
 
 //Creating one account
 router.post("/", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   const account = new Account({
     id: generateCodes(),
     name: req.body.name,
@@ -84,6 +114,8 @@ router.post("/", async (req, res) => {
 
 //Updating one account
 router.patch("/:id", getAccount, async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
   if (req.body.name != null) {
     res.account.name = req.body.name;
   }
@@ -119,12 +151,19 @@ router.patch("/:id", getAccount, async (req, res) => {
 });
 
 //Deleting one account
-router.delete("/:id", getAccount, async (req, res) => {
+router.delete("/delete", async (req, res) => {
+  console.log(req.apiGateway.event.rawUrl)
+  console.log(req.headers['x-nf-request-id'])
+  let Id = req.query.id
   try {
-    await res.account.remove();
+    let account = await Account.findOneAndRemove({ id: Id });
+    // let deleted = await account.deleteOne();
+    console.log("deleted")
     res.json({ message: "account deleted" });
   } catch (err) {
-    res.status(500).json({ message: err.message });
+  console.log(Id)
+
+    res.status(500).json({ message: err.message, path:'accounts/delete' , id:Id});
   }
 });
 
@@ -137,7 +176,7 @@ async function getAccount(req, res, next) {
         .status(404)
         .json({
           message: "cannont find this account",
-          src: "try=>null-cond in getAccount",
+          src: "try=>null-cond in getAccount middleware",
         });
     }
   } catch (err) {
