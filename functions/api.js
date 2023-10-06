@@ -1,8 +1,6 @@
 const express = require("express");
 const serverless = require("serverless-http");
-
 const app = express();
-
 const mongoose = require("mongoose");
 const cors = require("cors");
 
@@ -13,7 +11,6 @@ const db = mongoose.connection;
 db.on("error", (error) => console.error(error));
 db.once("open", () => console.log("Connected to Database"));
 
-
 app.use(express.json());
 
 app.use(
@@ -22,18 +19,20 @@ app.use(
   })
 );
 
-const accountsRouter = require("../routes/accounts");
-const AlgebraRouter = require("../routes/algebra");
 const route = express.Router();
-
 route.get("/", (req, res) => {
   res.json({
     hello: "hi!",
   });
 });
-mongoose.pluralize(null);
-app.use("/.netlify/functions/api/accounts", accountsRouter);
 
+mongoose.pluralize(null);
+
+const accountsRouter = require("../routes/accounts");
+const AlgebraRouter = require("../routes/algebra");
+const CalculusRouter = require("../routes/calculus");
+app.use("/.netlify/functions/api/accounts", accountsRouter);
 app.use("/.netlify/functions/api/Algebra", AlgebraRouter);
+app.use("/.netlify/functions/api/Calculus", CalculusRouter);
 
 module.exports.handler = serverless(app);
