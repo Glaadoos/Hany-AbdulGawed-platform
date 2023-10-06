@@ -1012,6 +1012,9 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     // time for lectuer to close
     let hours=96;
 
+    // Branch Name
+    let branch = branch
+
     // essential functions
     const getIDfromURL = (url)=> {
         const videoID = url.split('v=')[1];
@@ -1031,19 +1034,19 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         let codeexist;
         await Algebralessons.map(async(obj) =>{
                                 if(obj.order ===order ){
-                                    codeexist = await CodeAPI.getSpecific('Algebra', order, code).then(data => {return(data.codeExist)})
+                                    codeexist = await CodeAPI.getSpecific(branch, order, code).then(data => {return(data.codeExist)})
                                     const newArray = exist.filter(arr => arr[0] !== order)
                                     newArray.push([order, codeexist])
                                     setExist(newArray)
                                     if(codeexist === 1 && order.indexOf('revision') === -1){
-                                        const deleted = await CodeAPI.UpdataOrderCodes('Algebra', order, code).then(data => {return(data)});
+                                        const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
                                             await UserAPI.updateAvailableCodes(localStorage.getItem("userEmail"), [order, code])
                                             alert(`تم أضافة الكود بنجاح في : ${dayjs().format('D')}/${dayjs().format('MM')} الوقت ${dayjs().format('hh:mm:ss')} \n الكود متاح لثلاث ايام من هذا التاريخ`)
                                             window.location.reload();
                                         }
                                     }else{
-                                        const deleted = await CodeAPI.UpdataOrderCodes('Algebra', order, code).then(data => {return(data)});
+                                        const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
                                             await UserAPI.updateAvailableCodes(localStorage.getItem("userEmail"), [order, code])
                                             alert(` تمت اضافة المرجعة  \n  المراجعة مفتوحة دائما`)
