@@ -1013,7 +1013,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     let hours=96;
 
     // Branch Name
-    let branch = branch
+    let branch = 'Algebra'
 
     // essential functions
     const getIDfromURL = (url)=> {
