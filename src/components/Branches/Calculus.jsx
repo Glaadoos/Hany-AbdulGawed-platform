@@ -43,6 +43,36 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             "exam":[{"name":"امتحان المحاضرة الاولي", "link":"https://docs.google.com/forms/d/1Pmms4AcDmvBELPYR_Rw_gVPXN5um1-W4C9mQhXDIFPc"}]
         },
+        {
+            "name":"المحاضرة الثانية",
+            "order":"calculus02",
+            "parts":[
+                {
+                    "lessonName":"الأشتقاق الضمني والبارامتري",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=uNzva1zrGmQ",
+                    "attachments":{
+                        "notebook":"1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3",
+                        "homework":"1UgF2VVPgbmNEgCgDNl48jfGSeBK7ueNQ"
+                    }
+                },  
+                {
+                    "lessonName":"المشتقات العليا",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=6n8pnOLUED0",
+                    "attachments":{
+                        "notebook":"1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3",
+                        "homework":"1UgF2VVPgbmNEgCgDNl48jfGSeBK7ueNQ"
+                    }
+                },   
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://drive.google.com/file/d/1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3/view?usp=drive_link"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الثانية", "link":"https://docs.google.com/forms/d/e/1FAIpQLSecGXKQheFWvacfg_S-2RLc_pMpbmrUc_1-o3IcoG3noLFXlg/viewform?usp=sf_link"}]
+        },
     ]
     const CalculusMPS = [
         {
@@ -77,6 +107,36 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"امتحان المحاضرة الاولي", "link":"https://docs.google.com/forms/d/1Pmms4AcDmvBELPYR_Rw_gVPXN5um1-W4C9mQhXDIFPc"}]
+                },
+                {
+                    "name":"المحاضرة الثانية",
+                    "order":"calculus02",
+                    "parts":[
+                        {
+                            "lessonName":"الأشتقاق الضمني والبارامتري",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=uNzva1zrGmQ",
+                            "attachments":{
+                                "notebook":"1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3",
+                                "homework":"1UgF2VVPgbmNEgCgDNl48jfGSeBK7ueNQ"
+                            }
+                        },  
+                        {
+                            "lessonName":"المشتقات العليا",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=6n8pnOLUED0",
+                            "attachments":{
+                                "notebook":"1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3",
+                                "homework":"1UgF2VVPgbmNEgCgDNl48jfGSeBK7ueNQ"
+                            }
+                        },   
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://drive.google.com/file/d/1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3/view?usp=drive_link"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الثانية", "link":"https://docs.google.com/forms/d/e/1FAIpQLSecGXKQheFWvacfg_S-2RLc_pMpbmrUc_1-o3IcoG3noLFXlg/viewform?usp=sf_link"}]
                 },
             ]
         },
