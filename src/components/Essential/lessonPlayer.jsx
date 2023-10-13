@@ -75,7 +75,7 @@ const LessonPlayer = () =>{
                 style={{textAlign:'center',padding:'16px'}}
                 >المرفقات</h1>
                 {
-                    notebook !== 'null'?
+                    notebook !== 'null' ||  notebook.length ===0?
                         <>
                             <h2 className="sub-attachments"
                             style={{textAlign:'right'}}
@@ -87,7 +87,7 @@ const LessonPlayer = () =>{
                 }
 
                 {
-                    homework !== 'null'?
+                    homework !== 'null' || homework.length ===0?
                         <>
                             <h2 className="sub-attachments"
                             style={{textAlign:'right'}}

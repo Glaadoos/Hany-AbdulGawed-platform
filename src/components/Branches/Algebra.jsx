@@ -1208,9 +1208,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                             </ul>
                                                         </li>     
                                                         :
-                                                        <li key={'exam'+num}>
-                                                            {Exam.name}
-                                                        </li>
+                                                        ''
                                                 )
                                             })
                                         }

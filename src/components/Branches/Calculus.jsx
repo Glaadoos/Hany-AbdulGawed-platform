@@ -73,6 +73,36 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             "exam":[{"name":"أمتحان المحاضرة الثانية", "link":"https://docs.google.com/forms/d/e/1FAIpQLSecGXKQheFWvacfg_S-2RLc_pMpbmrUc_1-o3IcoG3noLFXlg/viewform?usp=sf_link"}]
         },
+        {
+            "name":"المحاضرة الثالثة",
+            "order":"calculus03",
+            "parts":[
+                {
+                    "lessonName":"أثباتات المشتقات العليا - الجزء الاول ",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=Vklg2dwcm7k",
+                    "attachments":{
+                        "notebook":"13cknKGHms5w2nIQt9Z4CtPKVuYtmcSCQ",
+                        "homework":""
+                    }
+                },
+                {
+                    "lessonName":"أثباتات المشتقات العليا - الجزء الثاني",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=SaFFJIPJqPY",
+                    "attachments":{
+                        "notebook":"",
+                        "homework":"1ADsunQEo5-WXvp05zOjDE4T9b8CzTg8n"
+                    }
+                },       
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUw-UcrG1mPkVKNdW0bnP18"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الثالثة", "link":"undefined"}]
+        }
     ]
     const CalculusMPS = [
         {
@@ -138,6 +168,36 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثانية", "link":"https://docs.google.com/forms/d/e/1FAIpQLSecGXKQheFWvacfg_S-2RLc_pMpbmrUc_1-o3IcoG3noLFXlg/viewform?usp=sf_link"}]
                 },
+                {
+                    "name":"المحاضرة الثالثة",
+                    "order":"calculus03",
+                    "parts":[
+                        {
+                            "lessonName":"أثباتات المشتقات العليا - الجزء الاول ",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=Vklg2dwcm7k",
+                            "attachments":{
+                                "notebook":"13cknKGHms5w2nIQt9Z4CtPKVuYtmcSCQ",
+                                "homework":""
+                            }
+                        },
+                        {
+                            "lessonName":"أثباتات المشتقات العليا - الجزء الثاني",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=SaFFJIPJqPY",
+                            "attachments":{
+                                "notebook":"",
+                                "homework":"1ADsunQEo5-WXvp05zOjDE4T9b8CzTg8n"
+                            }
+                        },       
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUw-UcrG1mPkVKNdW0bnP18"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
+                }
             ]
         },
     ]
@@ -165,6 +225,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         localStorage.setItem("videoId", e.target.id)
         localStorage.setItem("homework", homework)
         localStorage.setItem("notebook", notebook)
+        console.log(e)
     }
     const checkCode = async(code, order)=>{
         let codeexist;
@@ -342,9 +403,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                             </ul>
                                                         </li>     
                                                         :
-                                                        <li key={'exam'+num}>
-                                                            {Exam.name}
-                                                        </li>
+                                                        ''
                                                 )
                                             })
                                         }
@@ -591,9 +650,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                                             </ul>
                                                                         </li>     
                                                                         :
-                                                                        <li key={'exam'+Exam.name}>
-                                                                            {Exam.name}
-                                                                        </li>
+                                                                        ''
                                                                 )
                                                             })
                                                         }
