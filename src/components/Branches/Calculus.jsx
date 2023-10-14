@@ -163,7 +163,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"مسائل الملزمة",
                             "duration":"",
-                            "link":"https://drive.google.com/file/d/1xjqLlAz94MROWcqVakEgYjjhsZV-RZC3/view?usp=drive_link"
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiUJ5YoXYQSnXNdIFKNCIOUV"
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثانية", "link":"https://docs.google.com/forms/d/e/1FAIpQLSecGXKQheFWvacfg_S-2RLc_pMpbmrUc_1-o3IcoG3noLFXlg/viewform?usp=sf_link"}]
