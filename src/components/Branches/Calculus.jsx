@@ -102,6 +102,45 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الثالثة", "link":"undefined"}]
+        },
+        {
+            "name":"المحاضرة الرابعة",
+            "order":"calculus04",
+            "parts":[
+                {
+                    "lessonName":"مقدمة إيجاد الميل",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=aTH-OPFjork",
+                    "attachments":{
+                        "notebook":"",
+                        "homework":""
+                    }
+                },
+                {
+                    "lessonName":"معادلتي المماس والعمودي - الجزء الأول",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=S6b5jtqSaqY",
+                    "attachments":{
+                        "notebook":"1ONZy5iTvSocBnZv6u7NS3cMFQQNPiUx-",
+                        "homework":""
+                    }
+                },
+                {
+                    "lessonName":"معادلتي المماس والعمودي - الجزء الثاني",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=38DiQT_uhVw",
+                    "attachments":{
+                        "notebook":"",
+                        "homework":"18AsWe6LtwxtOvD9WV5bqQLHfmGOWFwSb"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWpEYseAUK9n8XY9E3uf7J8"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSdi8HgwHFDClJcqjvnwms7Ax64J9WODlWT-rKs3-q8zOqxTxQ/viewform?usp=sharing"}]
         }
     ]
     const CalculusMPS = [
@@ -197,6 +236,45 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
+                },
+                {
+                    "name":"المحاضرة الرابعة",
+                    "order":"calculus04",
+                    "parts":[
+                        {
+                            "lessonName":"مقدمة إيجاد الميل",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=aTH-OPFjork",
+                            "attachments":{
+                                "notebook":"",
+                                "homework":""
+                            }
+                        },
+                        {
+                            "lessonName":"معادلتي المماس والعمودي - الجزء الأول",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=S6b5jtqSaqY",
+                            "attachments":{
+                                "notebook":"1ONZy5iTvSocBnZv6u7NS3cMFQQNPiUx-",
+                                "homework":""
+                            }
+                        },
+                        {
+                            "lessonName":"معادلتي المماس والعمودي - الجزء الثاني",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=38DiQT_uhVw",
+                            "attachments":{
+                                "notebook":"",
+                                "homework":"18AsWe6LtwxtOvD9WV5bqQLHfmGOWFwSb"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWpEYseAUK9n8XY9E3uf7J8"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSdi8HgwHFDClJcqjvnwms7Ax64J9WODlWT-rKs3-q8zOqxTxQ/viewform?usp=sharing"}]
                 }
             ]
         },
