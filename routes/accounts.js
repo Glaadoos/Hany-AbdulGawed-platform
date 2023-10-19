@@ -16,7 +16,7 @@ const generateCodes = () => {
 };
 
 //Getting all accounts
-router.get("/", getAccount, async (req, res) => {
+router.get("/", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)
   console.log(req.headers['x-nf-request-id'])
   try {
