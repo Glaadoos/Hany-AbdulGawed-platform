@@ -16,7 +16,7 @@ import DashBoard from "./components/Main/Admin/adminDashboard";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
 
-function App() {
+function App({redirect_url}) {
   const [currentUser, setCurrentUser] = useState({
     name: "",
     email: "",
@@ -58,7 +58,6 @@ function App() {
       }
     }, 100);
   };
-
   const handelUserCreation = async () => {
     await Api.createUser(name, email, userPayingSystem).then((res) => {
       if (res.message === "account created!") {
@@ -120,6 +119,7 @@ function App() {
     }
   }, [currentUser, user, userPayingSystem]);
 
+
   return (
     <div>
       <Header
@@ -127,6 +127,7 @@ function App() {
         currentUser={currentUser}
         userPayingSystem={userPayingSystem}
         isAdmin={isAdmin}
+        redirect_url={redirect_url}
       />
       <Routes>
         <Route

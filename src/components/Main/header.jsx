@@ -10,7 +10,7 @@ import LogoutBtn from '../Essential/logout'
 
 
 
-const Header = ({user,show,currentUser,userPayingSystem,isAdmin}) =>{
+const Header = ({user,show,currentUser,userPayingSystem,isAdmin, redirect_url}) =>{
     
     
     const [anchorEl, setAnchorEl] = React.useState(null);
@@ -100,11 +100,16 @@ const Header = ({user,show,currentUser,userPayingSystem,isAdmin}) =>{
             ]
         }
     ]
-    
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />
-            <h1>change redirect url</h1>
+            {
+                redirect_url === 'http://localhost:3000/' ?
+                    <h1>change redirect url</h1>
+                :
+                    ''
+            }
+            
             <ul className='nav-bar'>
                 {navber_name.map((obj) =>{
                     if(obj.id ===5){
@@ -144,12 +149,12 @@ const Header = ({user,show,currentUser,userPayingSystem,isAdmin}) =>{
                                                 userPayingSystem + ':نوع الاشتراك'
                                                 }</p>
                                         </MenuItem>
-                                        <MenuItem onClick={handleClose}><LogoutBtn show={show}/></MenuItem>
+                                        <MenuItem onClick={handleClose}><LogoutBtn redirect_url={redirect_url}/></MenuItem>
                                     </StyledMenu>
                                 </div> 
                             )
                         }else{
-                            return(<LoginBtn/>)   
+                            return(<LoginBtn />)   
                         }
                     }else{
                             if(obj.EngName ==='#main'){

@@ -7,16 +7,17 @@ import App from './App';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
+const redirect_url= 'https://hanyabdlgawad.online/'
 root.render(
     <HashRouter >
         <Auth0Provider
         domain="dev-ygrskzanm044w3be.us.auth0.com"
         clientId="vpwQ42rBahM2eVuTCkNFscsYWfnf1Wzo"
         authorizationParams={{
-          redirect_uri:  'http://localhost:3000/'
+          redirect_uri:  redirect_url
         }}
         >
-          <App />
+          <App redirect_url={redirect_url} />
         </Auth0Provider>
     </HashRouter>
 );

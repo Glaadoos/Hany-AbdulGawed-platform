@@ -1,5 +1,7 @@
 import Switch from '@mui/material/Switch';
 
+// component render a div that used to switch between accounts & codes 
+
 const SwitchDiv = ({setView}) =>{
     const h1_accounts = document.querySelector('#accounts')
     const h1_codes = document.querySelector('#codes')

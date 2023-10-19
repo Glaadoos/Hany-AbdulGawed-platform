@@ -1,5 +1,7 @@
 import { useState } from "react";
 
+// component for handleing the edit box, will be in next deploy
+
 export const Ui = ({editView, setEditView, role}) =>{
     
     const [input, setInput] = useState('');

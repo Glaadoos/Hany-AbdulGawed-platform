@@ -1,4 +1,6 @@
-import {Card ,Row ,Col  } from 'react-bootstrap';
+import {Card ,Row ,Col} from 'react-bootstrap';
+
+//  Obviously, render a card with name & photo of user
 
 const UserCard = ({currentUser}) =>{
     return(

@@ -3,7 +3,7 @@ import { useState } from 'react';
 import { Ui } from './EditTools';
 
 
-
+// return one table header that represented with {args} props
 export const TableHead = ({args}) =>{
     return (
         <thead>
@@ -16,6 +16,12 @@ export const TableHead = ({args}) =>{
     );
 }
 
+// return one table column
+/* 
+    role => for differentiate between Branch codes & accounts
+    data => the data will be show in column
+    index => special key for object returned
+*/
 export const Col = ({role ,data, index}) =>{
     // Hide The Codes State
     const [hidden, setHidden] = useState(true);
@@ -33,6 +39,7 @@ export const Col = ({role ,data, index}) =>{
     }
     
     if(role === 'codes'){
+        // return special table column for codes 
         const handleChange = (e) =>{
             let target = e.target.nextSibling
             setHidden(!hidden);
@@ -51,12 +58,14 @@ export const Col = ({role ,data, index}) =>{
                 >
                     Show
                 </Button>
-                <p className='hidden' onMouseOver={!hidden ? hidden : null} id='codes-data'>{data}</p>
+                <p className='hidden'  id='codes-data'>{data}</p>
             </td>
         );
     }else{
+        // return table column
         return (
-            <td onMouseOver={mouseOver} onMouseOut={mouseOut} key={index}>
+            // <td onMouseOver={mouseOver} onMouseOut={mouseOut} key={index}>
+            <td key={index}>
                 {tools && role!== 'rank' ? 
                     <h5 className={!editView ?  'editable' : 'editable flex-col'} >
                         {data}
