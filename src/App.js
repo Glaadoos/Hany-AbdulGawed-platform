@@ -172,7 +172,15 @@ function App() {
         />
         <Route
           path="/Hany-AbdulGawed-platform/Calculus"
-          element={<Calculus />}
+          element={
+            <Calculus
+              setVideoId={setVideoId}
+              user={email}
+              userPayingSystem={userPayingSystem}
+              userCodes={userCodes}
+              setUserCodes={setUserCodes} 
+            />
+          }
         />
         <Route
           path="/Hany-AbdulGawed-platform/Dynamics"
