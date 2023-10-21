@@ -141,6 +141,37 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSdi8HgwHFDClJcqjvnwms7Ax64J9WODlWT-rKs3-q8zOqxTxQ/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة الخامسة",
+            "order":"calculus05",
+            "parts":[
+                
+                {
+                    "lessonName":"تابع معادلتي المماس والعمودي  الجزء الأول",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=nxH823PmHX8",
+                    "attachments":{
+                        "notebook":"1nXDHCmhkjMFotp8lnyXHtsEI89Wpo1M0",
+                        "homework":"1abULMnl86bNCACEQx3ccBPm7EJnqRMC2"
+                    }
+                },
+                {
+                    "lessonName":"تابع معادلتي المماس والعمودي  الجزء الثاني",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=lP43oSddprU",
+                    "attachments":{
+                        "notebook":"1nXDHCmhkjMFotp8lnyXHtsEI89Wpo1M0",
+                        "homework":"1abULMnl86bNCACEQx3ccBPm7EJnqRMC2"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
         }
     ]
     const CalculusMPS = [
@@ -275,6 +306,37 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSdi8HgwHFDClJcqjvnwms7Ax64J9WODlWT-rKs3-q8zOqxTxQ/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة الخامسة",
+                    "order":"calculus05",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"تابع معادلتي المماس والعمودي  الجزء الأول",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=nxH823PmHX8",
+                            "attachments":{
+                                "notebook":"1nXDHCmhkjMFotp8lnyXHtsEI89Wpo1M0",
+                                "homework":"1abULMnl86bNCACEQx3ccBPm7EJnqRMC2"
+                            }
+                        },
+                        {
+                            "lessonName":"تابع معادلتي المماس والعمودي  الجزء الثاني",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=lP43oSddprU",
+                            "attachments":{
+                                "notebook":"1nXDHCmhkjMFotp8lnyXHtsEI89Wpo1M0",
+                                "homework":"1abULMnl86bNCACEQx3ccBPm7EJnqRMC2"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
                 }
             ]
         },
