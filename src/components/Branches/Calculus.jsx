@@ -172,6 +172,37 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
+        },
+        {
+            "name":"المحاضرة السادسة",
+            "order":"calculus06",
+            "parts":[
+                
+                {
+                    "lessonName":"المعدلات الزمنية المحاضرة الأولى الجزء الأول",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=CVH9bP1qgqw",
+                    "attachments":{
+                        "notebook":"1k3rhJpOkpLYycgXHXhuDVx-RTMo5svBO",
+                        "homework":"1Ft3_sn6HLrIoJ26U6LPuOisNnzK_NkbC"
+                    }
+                },
+                {
+                    "lessonName":"المعدلات الزمنية المحاضرة الأولى الجزء الثاني",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=V9600l_9bhk",
+                    "attachments":{
+                        "notebook":"1k3rhJpOkpLYycgXHXhuDVx-RTMo5svBO",
+                        "homework":"1Ft3_sn6HLrIoJ26U6LPuOisNnzK_NkbC"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
         }
     ]
     const CalculusMPS = [
@@ -337,6 +368,37 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
+                },
+                {
+                    "name":"المحاضرة السادسة",
+                    "order":"calculus06",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"المعدلات الزمنية المحاضرة الأولى الجزء الأول",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=CVH9bP1qgqw",
+                            "attachments":{
+                                "notebook":"1k3rhJpOkpLYycgXHXhuDVx-RTMo5svBO",
+                                "homework":"1Ft3_sn6HLrIoJ26U6LPuOisNnzK_NkbC"
+                            }
+                        },
+                        {
+                            "lessonName":"المعدلات الزمنية المحاضرة الأولى الجزء الثاني",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=V9600l_9bhk",
+                            "attachments":{
+                                "notebook":"1k3rhJpOkpLYycgXHXhuDVx-RTMo5svBO",
+                                "homework":"1Ft3_sn6HLrIoJ26U6LPuOisNnzK_NkbC"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
                 }
             ]
         },
