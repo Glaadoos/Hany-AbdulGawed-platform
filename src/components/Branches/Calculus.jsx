@@ -168,7 +168,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "lessonName":"مسائل الملزمة",
                     "duration":"",
-                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUubfv7CpC2zSu4s_8csnjf"
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
@@ -199,7 +199,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "lessonName":"مسائل الملزمة",
                     "duration":"",
-                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUubfv7CpC2zSu4s_8csnjf"
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
@@ -364,7 +364,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"مسائل الملزمة",
                             "duration":"",
-                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUubfv7CpC2zSu4s_8csnjf"
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الخامسة"}]
@@ -395,7 +395,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"مسائل الملزمة",
                             "duration":"",
-                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU5Wk6UvVNprfHQwUvbMXjj"
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUubfv7CpC2zSu4s_8csnjf"
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
