@@ -203,6 +203,28 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة السايعة",
+            "order":"calculus07",
+            "parts":[
+                
+                {
+                    "lessonName":"المعدلات الزمنية المحاضرة الثانية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=0fzzANNaQio",
+                    "attachments":{
+                        "notebook":"1w09CVTLKLaAolrMZXRrua-Gfqn8zYOaV",
+                        "homework":"10VtUgnDcKQDt-7G2FZXD2p7ocSwkMnce"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiXCT6aIT57n13g2jrt5tj5q"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeQMosz68LN251yp9sZ6QC1Rj1AaP_GEsriRZJPTZAACHi_7A/viewform?usp=sharing"}]
         }
     ]
     const CalculusMPS = [
@@ -399,6 +421,28 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة السايعة",
+                    "order":"calculus07",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"المعدلات الزمنية المحاضرة الثانية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=0fzzANNaQio",
+                            "attachments":{
+                                "notebook":"1w09CVTLKLaAolrMZXRrua-Gfqn8zYOaV",
+                                "homework":"10VtUgnDcKQDt-7G2FZXD2p7ocSwkMnce"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiXCT6aIT57n13g2jrt5tj5q"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeQMosz68LN251yp9sZ6QC1Rj1AaP_GEsriRZJPTZAACHi_7A/viewform?usp=sharing"}]
                 }
             ]
         },
