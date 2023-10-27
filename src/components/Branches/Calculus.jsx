@@ -205,7 +205,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
         },
         {
-            "name":"المحاضرة السايعة",
+            "name":"المحاضرة السابعة",
             "order":"calculus07",
             "parts":[
                 
@@ -423,7 +423,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "exam":[{"name":"أمتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeBftgA-vmVuCxx-hwLbsVgqqg-MN7i2dE_0NojjyA7226NoA/viewform?usp=sharing"}]
                 },
                 {
-                    "name":"المحاضرة السايعة",
+                    "name":"المحاضرة السابعة",
                     "order":"calculus07",
                     "parts":[
                         
