@@ -225,6 +225,42 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeQMosz68LN251yp9sZ6QC1Rj1AaP_GEsriRZJPTZAACHi_7A/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة الثامنةوالتاسعة",
+            "order":"calculus08",
+            "parts":[
+                
+                {
+                    "lessonName":"المعدلات الزمنية المحاضرة الثالثة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=HPraGx41Qb4",
+                    "attachments":{
+                        "notebook":"1XdSFEdpzNiy_xuqcGcTv3YnRMPuYb-cz",
+                        "homework":"1BeXHisHEcK256b96vmBxK4eNPdejoDef"
+                    }
+                },
+                {
+                    "lessonName":"مقدمة الأسس واللوغاريتمات والنهايات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=VQ5brdssQjU",
+                    "attachments":{
+                        "notebook":"19litg3eSYtT39KvA7qTnPAdGgs4IyuY8",
+                        "homework":"1RyVcZmpzkkXVqG4wAHaXGImUpSOdz3Zc"
+                    }
+                },
+                {
+                    "lessonName":"1 مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiXCT6aIT57n13g2jrt5tj5q"
+                },
+                {
+                    "lessonName":"2 مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiWZcWCBjJ3a1ymxCJs9-9LV"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الثامنةوالتاسعة"}]
         }
     ]
     const CalculusMPS = [
@@ -443,6 +479,42 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeQMosz68LN251yp9sZ6QC1Rj1AaP_GEsriRZJPTZAACHi_7A/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة الثامنةوالتاسعة",
+                    "order":"calculus08",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"المعدلات الزمنية المحاضرة الثالثة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=HPraGx41Qb4",
+                            "attachments":{
+                                "notebook":"1XdSFEdpzNiy_xuqcGcTv3YnRMPuYb-cz",
+                                "homework":"1BeXHisHEcK256b96vmBxK4eNPdejoDef"
+                            }
+                        },
+                        {
+                            "lessonName":"مقدمة الأسس واللوغاريتمات والنهايات",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=VQ5brdssQjU",
+                            "attachments":{
+                                "notebook":"19litg3eSYtT39KvA7qTnPAdGgs4IyuY8",
+                                "homework":"1RyVcZmpzkkXVqG4wAHaXGImUpSOdz3Zc"
+                            }
+                        },
+                        {
+                            "lessonName":"1 مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiXCT6aIT57n13g2jrt5tj5q"
+                        },
+                        {
+                            "lessonName":"2 مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiWZcWCBjJ3a1ymxCJs9-9LV"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الثامنةوالتاسعة"}]
                 }
             ]
         },
