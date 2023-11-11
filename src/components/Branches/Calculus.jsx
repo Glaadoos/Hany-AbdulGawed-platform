@@ -261,6 +261,129 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الثامنةوالتاسعة"}]
+        },
+        {
+            "name":"المحاضرة العاشرة",
+            "order":"calculus10",
+            "parts":[
+                {
+                    "lessonName":"مشتقة الدوال الأسية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=x6lMLbCkt8I",
+                    "attachments":{
+                        "notebook":"1frJg_rIWZnaSvdonE__zRLi7-EQmeB00",
+                        "homework":"1gHAqx4CCH0eQxP8I8ufbNEypZx6RM-ZH"
+                    }
+                },
+                {
+                    "lessonName":"مشتقة الدوال اللوغاريتمية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=7ohBWMJnZgU",
+                    "attachments":{
+                        "notebook":"1frJg_rIWZnaSvdonE__zRLi7-EQmeB00",
+                        "homework":"1gHAqx4CCH0eQxP8I8ufbNEypZx6RM-ZH"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiV9u8yoPHxDfa-lKqknsiVE"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة العاشرة", "link":'https://docs.google.com/forms/d/e/1FAIpQLSf8u8hPNFAET6AGZn697oyEbc0Pl4yQhZlFIdLtwIwqJdBJbg/viewform?usp=sharing'}]
+        },
+        {
+            "name":"المحاضرة الحادية عشر",
+            "order":"calculus11",
+            "parts":[
+                {
+                    "lessonName":"مقدمة وتأسيس التكامل (هــام جدا)",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=1ck3OXvYL8M",
+                    "attachments":{
+                        "notebook":"1b0x3rCl12ZXpzqY26tbVNdYSq-6EUR-j",
+                        "homework":"1luN-4vvAWs8m4LMlvRHq7_UfalODSpA7"
+                    }
+                },
+                {
+                    "lessonName":"تكامل الدوال الأسية واللوغاريتمية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=5pGROC1z6_w",
+                    "attachments":{
+                        "notebook":"1b0x3rCl12ZXpzqY26tbVNdYSq-6EUR-j",
+                        "homework":"1luN-4vvAWs8m4LMlvRHq7_UfalODSpA7"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiUnR4zQa5Fyg5RK4tCHOpAJ"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الحادية عشر", "link":'https://docs.google.com/forms/d/e/1FAIpQLSeHlp0PvdNVobbnODbsBhRpD0lbt8otcKrHjDZhGvnj2jW8zw/viewform?usp=sharing'}]
+        },
+        {
+            "name":"المحاضرة الثانية عشر",
+            "order":"calculus12",
+            "parts":[
+                
+                {
+                    "lessonName":"تطبيقات التكامل",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=mMZ1gYi0AO0",
+                    "attachments":{
+                        "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                        "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                    }
+                },
+                {
+                    "lessonName":"أفكار منوعة على الوحدة الثانية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=FNqZ_rVtP_Y",
+                    "attachments":{
+                        "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                        "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                    }
+                },
+                {
+                    "lessonName":"حل النهايات بالآلة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=xitXCumZ1Kg",
+                    "attachments":{
+                        "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                        "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiWgXM_MrzRbXT_oA8B9gKS4"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الثانية عشر"}]
+        }
+        ,
+        {
+            "name":"المحاضرة الثالثة عشر",
+            "order":"calculus13",
+            "parts":[
+                
+                {
+                    "lessonName":"سلوك الدالة المحاضرة الأولى",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=olv08dBmraI",
+                    "attachments":{
+                        "notebook":"1fbVfW6NJyyC24s72oienUvPB3Dtm3zXf",
+                        "homework":"1mzoDx8uLbuPZJQC-KYUXHVTWLkN8lumj"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVEbG9UopR18gS8tcdifqfe"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الثالثة عشر","link":'https://docs.google.com/forms/d/e/1FAIpQLSeiP6t3mgCc-k0lt1JKpr8aHRWq3uEo30tU2UG5rYT4xgkqBw/viewform?usp=sharing'}]
         }
     ]
     const CalculusMPS = [
@@ -518,6 +641,134 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ]
         },
+        {
+            'name':':الشهر الثاني',
+            'data':[
+                {
+                    "name":"المحاضرة العاشرة",
+                    "order":"calculus10",
+                    "parts":[
+                        {
+                            "lessonName":"مشتقة الدوال الأسية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=x6lMLbCkt8I",
+                            "attachments":{
+                                "notebook":"1frJg_rIWZnaSvdonE__zRLi7-EQmeB00",
+                                "homework":"1gHAqx4CCH0eQxP8I8ufbNEypZx6RM-ZH"
+                            }
+                        },
+                        {
+                            "lessonName":"مشتقة الدوال اللوغاريتمية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=7ohBWMJnZgU",
+                            "attachments":{
+                                "notebook":"1frJg_rIWZnaSvdonE__zRLi7-EQmeB00",
+                                "homework":"1gHAqx4CCH0eQxP8I8ufbNEypZx6RM-ZH"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiV9u8yoPHxDfa-lKqknsiVE"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة العاشرة", "link":'https://docs.google.com/forms/d/e/1FAIpQLSf8u8hPNFAET6AGZn697oyEbc0Pl4yQhZlFIdLtwIwqJdBJbg/viewform?usp=sharing'}]
+                },
+                {
+                    "name":"المحاضرة الحادية عشر",
+                    "order":"calculus11",
+                    "parts":[
+                        {
+                            "lessonName":"مقدمة وتأسيس التكامل (هــام جدا)",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=1ck3OXvYL8M",
+                            "attachments":{
+                                "notebook":"1b0x3rCl12ZXpzqY26tbVNdYSq-6EUR-j",
+                                "homework":"1luN-4vvAWs8m4LMlvRHq7_UfalODSpA7"
+                            }
+                        },
+                        {
+                            "lessonName":"تكامل الدوال الأسية واللوغاريتمية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=5pGROC1z6_w",
+                            "attachments":{
+                                "notebook":"1b0x3rCl12ZXpzqY26tbVNdYSq-6EUR-j",
+                                "homework":"1luN-4vvAWs8m4LMlvRHq7_UfalODSpA7"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiUnR4zQa5Fyg5RK4tCHOpAJ"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الحادية عشر", "link":'https://docs.google.com/forms/d/e/1FAIpQLSeHlp0PvdNVobbnODbsBhRpD0lbt8otcKrHjDZhGvnj2jW8zw/viewform?usp=sharing'}]
+                },
+                {
+                    "name":"المحاضرة الثانية عشر",
+                    "order":"calculus12",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"تطبيقات التكامل",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=mMZ1gYi0AO0",
+                            "attachments":{
+                                "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                                "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                            }
+                        },
+                        {
+                            "lessonName":"أفكار منوعة على الوحدة الثانية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=FNqZ_rVtP_Y",
+                            "attachments":{
+                                "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                                "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                            }
+                        },
+                        {
+                            "lessonName":"حل النهايات بالآلة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=xitXCumZ1Kg",
+                            "attachments":{
+                                "notebook":"1TqxvIC1FX7U8Vsw2NbcWCPPo8vCoYOd7",
+                                "homework":"11GcrPYonE6ZQj69SXNzHtuXjScgFCKtj"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://m.youtube.com/playlist?list=PLzuKs18sUQiWgXM_MrzRbXT_oA8B9gKS4"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الثانية عشر"}]
+                }
+                ,
+                {
+                    "name":"المحاضرة الثالثة عشر",
+                    "order":"calculus13",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"سلوك الدالة المحاضرة الأولى",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=olv08dBmraI",
+                            "attachments":{
+                                "notebook":"1fbVfW6NJyyC24s72oienUvPB3Dtm3zXf",
+                                "homework":"1mzoDx8uLbuPZJQC-KYUXHVTWLkN8lumj"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVEbG9UopR18gS8tcdifqfe"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الثالثة عشر","link":'https://docs.google.com/forms/d/e/1FAIpQLSeiP6t3mgCc-k0lt1JKpr8aHRWq3uEo30tU2UG5rYT4xgkqBw/viewform?usp=sharing'}]
+                }
+            ]
+        }
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
