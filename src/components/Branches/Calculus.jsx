@@ -378,6 +378,15 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     }
                 },
                 {
+                    "lessonName":"مراجعة الاشتقاق",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=naUddM3ixOk",
+                    "attachments":{
+                        "notebook":"1fbVfW6NJyyC24s72oienUvPB3Dtm3zXf",
+                        "homework":"1mzoDx8uLbuPZJQC-KYUXHVTWLkN8lumj"
+                    }
+                },
+                {
                     "lessonName":"مسائل الملزمة",
                     "duration":"",
                     "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVEbG9UopR18gS8tcdifqfe"
@@ -754,6 +763,15 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "lessonName":"سلوك الدالة المحاضرة الأولى",
                             "duration":"",
                             "link":"https://www.youtube.com/watch?v=olv08dBmraI",
+                            "attachments":{
+                                "notebook":"1fbVfW6NJyyC24s72oienUvPB3Dtm3zXf",
+                                "homework":"1mzoDx8uLbuPZJQC-KYUXHVTWLkN8lumj"
+                            }
+                        },
+                        {
+                            "lessonName":"مراجعة الاشتقاق",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=naUddM3ixOk",
                             "attachments":{
                                 "notebook":"1fbVfW6NJyyC24s72oienUvPB3Dtm3zXf",
                                 "homework":"1mzoDx8uLbuPZJQC-KYUXHVTWLkN8lumj"
