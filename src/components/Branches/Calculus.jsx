@@ -361,8 +361,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الثانية عشر"}]
-        }
-        ,
+        },
         {
             "name":"المحاضرة الثالثة عشر",
             "order":"calculus13",
@@ -393,6 +392,68 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الثالثة عشر","link":'https://docs.google.com/forms/d/e/1FAIpQLSeiP6t3mgCc-k0lt1JKpr8aHRWq3uEo30tU2UG5rYT4xgkqBw/viewform?usp=sharing'}]
+        },
+        {
+            "name":"المحاضرة الرابعة عشر",
+            "order":"calculus14",
+            "parts":[
+                
+                {
+                    "lessonName":"سلوك الدالة المحاضرة الثانية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=LxVnECa2hwc",
+                    "attachments":{
+                        "notebook":"1iTGrfdCo1RwuYztzgbnQ2HEzhY6MPFSE",
+                        "homework":"1G0b5EGgDfN9NCZfZ6l5frVXeaBE1jB4b"
+                    }
+                },
+                {
+                    "lessonName":"مراجعة المماس والعمودي",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=AkrbLxsK8LU",
+                    "attachments":{
+                        "notebook":"1iTGrfdCo1RwuYztzgbnQ2HEzhY6MPFSE",
+                        "homework":"1G0b5EGgDfN9NCZfZ6l5frVXeaBE1jB4b"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUSn1gzf8JBYcVm9aYdzihK"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeH7v5Oj_RUIHd4KN0xMZZUuOo3R3vHOWj0PVj88q1Lim3Rzg/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة الخامسة عشر",
+            "order":"calculus15",
+            "parts":[
+                
+                {
+                    "lessonName":"سلوك الدالة المحاضرة الثالثة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=H-OS40nSUPs",
+                    "attachments":{
+                        "notebook":"1CnUAHIzxCAcr_3ksL88ZAc2tH7b3DTM4",
+                        "homework":"16tt0e8wkfFFfICHM8AFZfjyga9HIrMYz"
+                    }
+                },
+                {
+                    "lessonName":"مراجعة المعدلات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=oHROVGmCu_0",
+                    "attachments":{
+                        "notebook":"1CnUAHIzxCAcr_3ksL88ZAc2tH7b3DTM4",
+                        "homework":"16tt0e8wkfFFfICHM8AFZfjyga9HIrMYz"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVJXkrrNlvZxul4hJLaNkPx"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
         }
     ]
     const CalculusMPS = [
@@ -784,6 +845,68 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثالثة عشر","link":'https://docs.google.com/forms/d/e/1FAIpQLSeiP6t3mgCc-k0lt1JKpr8aHRWq3uEo30tU2UG5rYT4xgkqBw/viewform?usp=sharing'}]
+                },
+                {
+                    "name":"المحاضرة الرابعة عشر",
+                    "order":"calculus14",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"سلوك الدالة المحاضرة الثانية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=LxVnECa2hwc",
+                            "attachments":{
+                                "notebook":"1iTGrfdCo1RwuYztzgbnQ2HEzhY6MPFSE",
+                                "homework":"1G0b5EGgDfN9NCZfZ6l5frVXeaBE1jB4b"
+                            }
+                        },
+                        {
+                            "lessonName":"مراجعة المماس والعمودي",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=AkrbLxsK8LU",
+                            "attachments":{
+                                "notebook":"1iTGrfdCo1RwuYztzgbnQ2HEzhY6MPFSE",
+                                "homework":"1G0b5EGgDfN9NCZfZ6l5frVXeaBE1jB4b"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUSn1gzf8JBYcVm9aYdzihK"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/e/1FAIpQLSeH7v5Oj_RUIHd4KN0xMZZUuOo3R3vHOWj0PVj88q1Lim3Rzg/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة الخامسة عشر",
+                    "order":"calculus15",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"سلوك الدالة المحاضرة الثالثة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=H-OS40nSUPs",
+                            "attachments":{
+                                "notebook":"1CnUAHIzxCAcr_3ksL88ZAc2tH7b3DTM4",
+                                "homework":"16tt0e8wkfFFfICHM8AFZfjyga9HIrMYz"
+                            }
+                        },
+                        {
+                            "lessonName":"مراجعة المعدلات",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=oHROVGmCu_0",
+                            "attachments":{
+                                "notebook":"1CnUAHIzxCAcr_3ksL88ZAc2tH7b3DTM4",
+                                "homework":"16tt0e8wkfFFfICHM8AFZfjyga9HIrMYz"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVJXkrrNlvZxul4hJLaNkPx"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
                 }
             ]
         }
