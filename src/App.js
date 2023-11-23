@@ -10,6 +10,7 @@ import Calculus from "./components/Branches/Calculus";
 import Revisiones from "./components/Branches/Revisiones";
 import Dynamics from "./components/Branches/Dynamics";
 import Statics from "./components/Branches/Statics";
+import Footer from "./components/Main/footer";
 import LessonPlayer from "./components/Essential/lessonPlayer";
 import SetPayingSystem from "./components/Essential/SetPayingSystem";
 import DashBoard from "./components/Main/Admin/adminDashboard";
@@ -215,6 +216,7 @@ function App({redirect_url}) {
           }
         />
       </Routes>
+      <Footer/>
     </div>
   );
 }
