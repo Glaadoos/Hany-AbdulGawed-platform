@@ -454,6 +454,54 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
+        },
+        {
+            "name":"المحاضرة السادسة عشر",
+            "order":"calculus16",
+            "parts":[
+                
+                {
+                    "lessonName":"تطبيقات سلوك الدالة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=PfYLK58nrR8",
+                    "attachments":{
+                        "notebook":"1M5GLnkrA4G8g4Nrg78en1PMoqeW9b1dY",
+                        "homework":"1F-0GX5vDtjpJEz1FNrN4npuCaZ9cU6XR"
+                    }
+                },
+                {
+                    "lessonName":"مراجعة الأسس واللوغاريتمات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVE85q_BHwE-zEF1QUdz-5f"
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiViMyaHLEwXLxnbPt6sKPmH"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/e/1FAIpQLScA5463Ell9Lku_guHpsbW_IKmkxCJSkA2QvqV3NGuuaavqxA/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة السابعة عشر",
+            "order":"calculus17",
+            "parts":[
+                {
+                    "lessonName":"تطبيقات على القيم العظمى والصغرى المحاضرة الثانية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=C2I4qIPvpC8",
+                    "attachments":{
+                        "notebook":"1Qfx_f6LGqSDlvss8LU2Zadgaqwxz2fJH",
+                        "homework":"1WuHn0R0uWJyybXq4ujNnC96GqMuWHvXY"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWxkwfHlm_SGiegmm0OI1PV"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
         }
     ]
     const CalculusMPS = [
@@ -904,6 +952,54 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "lessonName":"مسائل الملزمة",
                             "duration":"",
                             "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVJXkrrNlvZxul4hJLaNkPx"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
+                },
+                {
+                    "name":"المحاضرة السادسة عشر",
+                    "order":"calculus16",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"تطبيقات سلوك الدالة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=PfYLK58nrR8",
+                            "attachments":{
+                                "notebook":"1M5GLnkrA4G8g4Nrg78en1PMoqeW9b1dY",
+                                "homework":"1F-0GX5vDtjpJEz1FNrN4npuCaZ9cU6XR"
+                            }
+                        },
+                        {
+                            "lessonName":"مراجعة الأسس واللوغاريتمات",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVE85q_BHwE-zEF1QUdz-5f"
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiViMyaHLEwXLxnbPt6sKPmH"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/e/1FAIpQLScA5463Ell9Lku_guHpsbW_IKmkxCJSkA2QvqV3NGuuaavqxA/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة السابعة عشر",
+                    "order":"calculus17",
+                    "parts":[
+                        {
+                            "lessonName":"تطبيقات على القيم العظمى والصغرى المحاضرة الثانية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=C2I4qIPvpC8",
+                            "attachments":{
+                                "notebook":"1Qfx_f6LGqSDlvss8LU2Zadgaqwxz2fJH",
+                                "homework":"1WuHn0R0uWJyybXq4ujNnC96GqMuWHvXY"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWxkwfHlm_SGiegmm0OI1PV"
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
