@@ -181,8 +181,9 @@ footer{
   padding: 10px;
 }
 #Flag{
-  width: 18vw;
-  height:calc( (9/16)*(18vw));
+  width: 13vw;
+  height: calc((8/16)*(14vw));
+  max-height: inherit;
   align-self: center;
 }
 .social-media-icon{
@@ -202,7 +203,7 @@ ul.social-media-icons{
   flex-wrap: wrap !important;
 }
 .social-media-icon-title{
-  margin-top: 12px;
+  margin-top: 5px;
   padding: 0;
   color: #FFFFFF;
   cursor: pointer;
@@ -305,6 +306,15 @@ ul.social-media-icons{
   }
   .social-media-icon-title{
     font-size: 13px;
+  }
+  #Flag{
+    width: 37vw;
+    height:calc( (9/16)*(39vw));
+  }
+  #monochrome{
+    width: 44vw;
+    height:calc( (9/16)*(40vw));
+    align-self: center;
   }
   /* branch page */
   .lessons-box{
