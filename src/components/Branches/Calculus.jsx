@@ -470,7 +470,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     }
                 },
                 {
-                    "lessonName":"مراجعة الأسس واللوغاريتمات",
+                    "lessonName":"مسائل الملزمة - مراجعة الأسس واللوغاريتمات",
                     "duration":"",
                     "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVE85q_BHwE-zEF1QUdz-5f"
                 },
@@ -861,8 +861,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثانية عشر"}]
-                }
-                ,
+                },
                 {
                     "name":"المحاضرة الثالثة عشر",
                     "order":"calculus13",
@@ -971,7 +970,7 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             }
                         },
                         {
-                            "lessonName":"مراجعة الأسس واللوغاريتمات",
+                            "lessonName":"مسائل الملزمة - مراجعة الأسس واللوغاريتمات",
                             "duration":"",
                             "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVE85q_BHwE-zEF1QUdz-5f"
                         },
@@ -1371,7 +1370,6 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                                             let diff = handleDateChange(userCodes, lesson.order)[0]
                                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];
-                                            
                                             return(
                                                 (diff < 345600000  && diff > 0) || finalDate === 'Open' ? 
                                                     <div key={'lesson'+num} className="lesson">
