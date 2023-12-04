@@ -502,6 +502,66 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
+        },
+        {
+            "name":"المحاضرة التاسعة عشرة",
+            "order":"calculus19",
+            "parts":[
+                {
+                    "lessonName":"التكامل 1 ",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=kqlPKKWFSQM",
+                    "attachments":{
+                        "notebook":"15tRS1dEYwrS27vgxDh0VyuaRj_4N7m4S",
+                        "homework":"1Ff--F6ODDr924an54iydI8BzYI0oUTMk"
+                    }
+                },
+                {
+                    "lessonName":"سؤالين تطبيقات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=EKyCn4G7FQM",
+                    "attachments":{
+                        "notebook":"15tRS1dEYwrS27vgxDh0VyuaRj_4N7m4S",
+                        "homework":"1Ff--F6ODDr924an54iydI8BzYI0oUTMk"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVcaVdypiLiYyExZU49saNt"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرة التاسعة عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLScTBxWfzqtJJg_dhZRShWPkNPToj0UUwsHJrrzlAFkfDau3hQ/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة العشرون",
+            "order":"calculus20",
+            "parts":[
+                {
+                    "lessonName":"التكامل 2 ",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=TuIPRGtPFis",
+                    "attachments":{
+                        "notebook":"1A_DYJ1MZR04lu404OJYpXb3pF8qMjrgW",
+                        "homework":"1r-RQamfkaEha0vhusKHl0sdZua9HtwHy"
+                    }
+                },
+                {
+                    "lessonName":"سؤالين تطبيقات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=0SowDwdaYx4",
+                    "attachments":{
+                        "notebook":"1A_DYJ1MZR04lu404OJYpXb3pF8qMjrgW",
+                        "homework":"1r-RQamfkaEha0vhusKHl0sdZua9HtwHy"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiUpOrylDsv9rW0ZoFlBiYre"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاصرة العشرون ", "link":"https://docs.google.com/forms/d/e/1FAIpQLScr5o_aVyb64-0PHdEmVKUjDOO4gybs6__GWa5GmzXxzDyn7Q/viewform?usp=sharing"}]
         }
     ]
     const CalculusMPS = [
@@ -1004,6 +1064,71 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "exam":[{"name":"أمتحان المحاضرة الخامسة عشر"}]
                 }
             ]
+        },
+        {
+            'name':':الشهر الثالث',
+            'data':[
+                {
+                    "name":"المحاضرة التاسعة عشرة",
+                    "order":"calculus19",
+                    "parts":[
+                        {
+                            "lessonName":"التكامل 1 ",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=kqlPKKWFSQM",
+                            "attachments":{
+                                "notebook":"15tRS1dEYwrS27vgxDh0VyuaRj_4N7m4S",
+                                "homework":"1Ff--F6ODDr924an54iydI8BzYI0oUTMk"
+                            }
+                        },
+                        {
+                            "lessonName":"سؤالين تطبيقات",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=EKyCn4G7FQM",
+                            "attachments":{
+                                "notebook":"15tRS1dEYwrS27vgxDh0VyuaRj_4N7m4S",
+                                "homework":"1Ff--F6ODDr924an54iydI8BzYI0oUTMk"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiVcaVdypiLiYyExZU49saNt"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرة التاسعة عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLScTBxWfzqtJJg_dhZRShWPkNPToj0UUwsHJrrzlAFkfDau3hQ/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة العشرون",
+                    "order":"calculus20",
+                    "parts":[
+                        {
+                            "lessonName":"التكامل 2 ",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=TuIPRGtPFis",
+                            "attachments":{
+                                "notebook":"1A_DYJ1MZR04lu404OJYpXb3pF8qMjrgW",
+                                "homework":"1r-RQamfkaEha0vhusKHl0sdZua9HtwHy"
+                            }
+                        },
+                        {
+                            "lessonName":"سؤالين تطبيقات",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=0SowDwdaYx4",
+                            "attachments":{
+                                "notebook":"1A_DYJ1MZR04lu404OJYpXb3pF8qMjrgW",
+                                "homework":"1r-RQamfkaEha0vhusKHl0sdZua9HtwHy"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiUpOrylDsv9rW0ZoFlBiYre"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاصرة العشرون ", "link":"https://docs.google.com/forms/d/e/1FAIpQLScr5o_aVyb64-0PHdEmVKUjDOO4gybs6__GWa5GmzXxzDyn7Q/viewform?usp=sharing"}]
+                }
+            ]
         }
     ]
     const[exist, setExist] = useState([])
@@ -1095,7 +1220,27 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             return['Open', 'Open']
         }  
     }
-    
+    // function handles print differentiation or integration
+    const handleDiffOrIntge = (arg) =>{
+        let out ;
+        switch (arg) {
+            case ':الشهر الاول':
+                out = ':التفاضل';
+                break;
+        
+            case ':الشهر الثالث' :
+                out = ':التكامل';
+                break;
+            default :
+                break;
+        }
+        return (
+            <h1 className="title"
+                style={{textAlign:'right', marginRight: '2%'}}
+                >{out}</h1>
+        );
+    }
+
     if(user === null){
         return (
             <h1 style={{textAlign:'center', marginTop:'200px'}}>
@@ -1355,13 +1500,12 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     if(userPayingSystem === 'MPS' || localStorage.getItem("userPayingSystem") === 'LPS'){
         return(
             <div className="lessons-box">
-                <h1 className="title"
-                style={{textAlign:'right', marginRight: '2%'}}
-                >:التفاضل</h1>
+                
                 
                 {CalculusMPS.map((month) =>{
                         return(
                             <Fragment>
+                                {handleDiffOrIntge(month.name)}
                                 <h2 className="title"
                                 style={{textAlign:'right', marginRight: '2%'}}
                                 >{month.name}</h2>
