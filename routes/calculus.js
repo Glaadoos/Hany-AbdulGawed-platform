@@ -65,44 +65,24 @@ router.post("/", async (req, res) => {
 });
 
 // Delete code & Updata calculus Codes
-router.get("/delete", async (req, res) => {
+// /calculus/?order=~
+router.delete("/", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)
   console.log(req.headers['x-nf-request-id'])
   try {
     let order = await Code.findOne({ order: req.query.order });
-    
+    console.log(order ? "founded" : "not found")
     if (order === null) {
-      return res.status(404).json({ message: "order isn't exist" });
+      return res.status(404).json({ message: "There's not any order provided " });
     } else {
-      let arrayOfCodes = order.code;
-
-      let codeExist =
-        order.code.filter((code) => code === req.query.code).length === 1
-          ? true
-          : false;
-      if (codeExist) {
-        const code = new Code({
-          order: req.query.order,
-          code: await arrayOfCodes.filter((ele) => ele !== req.query.code)
-        });
-        
         await Code.deleteOne({ order: req.query.order });
-        await code.save();
 
         return res
           .status(201)
           .json({
-            codeExist: codeExist,
-            codeDeleted: "yes",
-            newOrederSaved: "yes",
+            codeDeleted: "yes"
           });
-      }else{
-        return res
-          .status(201)
-          .json({
-            message:"Code isn't exist"
-          });
-      }
+      
     }
   } catch (err) {
     console.log(err.message);
