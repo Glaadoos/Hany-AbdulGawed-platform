@@ -562,6 +562,27 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاصرة العشرون ", "link":"https://docs.google.com/forms/d/e/1FAIpQLScr5o_aVyb64-0PHdEmVKUjDOO4gybs6__GWa5GmzXxzDyn7Q/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة الحادية والعشرون ",
+            "order":"calculus21",
+            "parts":[
+                {
+                    "lessonName":"التكامل 3 ",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=YOplZLmZyRc",
+                    "attachments":{
+                        "notebook":"13xWyoFTcFomXRjbNOC10DeTHid7txRPs",
+                        "homework":"1g1Om7DRdBprETLv_6uqY1GVfPrZVNrpY"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiWGUAWoGPZMqh-5K1QB4OSk"
+                }
+            ],
+            "exam":[{"name":"أمتحان المحاضرةالحادية والعشرون"}]
         }
     ]
     const CalculusMPS = [
@@ -1127,6 +1148,27 @@ const Calculus = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاصرة العشرون ", "link":"https://docs.google.com/forms/d/e/1FAIpQLScr5o_aVyb64-0PHdEmVKUjDOO4gybs6__GWa5GmzXxzDyn7Q/viewform?usp=sharing"}]
+                },
+                {
+                    "name":"المحاضرة الحادية والعشرون ",
+                    "order":"calculus21",
+                    "parts":[
+                        {
+                            "lessonName":"التكامل 3 ",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=YOplZLmZyRc",
+                            "attachments":{
+                                "notebook":"13xWyoFTcFomXRjbNOC10DeTHid7txRPs",
+                                "homework":"1g1Om7DRdBprETLv_6uqY1GVfPrZVNrpY"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiWGUAWoGPZMqh-5K1QB4OSk"
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان المحاضرةالحادية والعشرون"}]
                 }
             ]
         }
