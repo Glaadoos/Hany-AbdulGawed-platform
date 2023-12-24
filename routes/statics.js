@@ -1,9 +1,9 @@
 const express = require("express");
 const router = express.Router();
-const Code = require("../models/algebraCodes");
+const Code = require("../models/staticsCodes");
 
 
-// get all codes for algebra
+// get all codes for statics
 router.get("/getAll", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)
   console.log(req.headers['x-nf-request-id'])
@@ -15,7 +15,7 @@ router.get("/getAll", async (req, res) => {
   }
 });
 
-// get specific codes for algebra
+// get specific codes for statics
 router.get("/code", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)
   console.log(req.headers['x-nf-request-id'])
@@ -63,8 +63,8 @@ router.post("/", async (req, res) => {
   }
 });
 
-// Delete code & Updata calculus Codes
-// /algebra/?order=~
+// Delete code & Updata statics Codes
+// /statics/?order=~
 router.delete("/", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)
   console.log(req.headers['x-nf-request-id'])
