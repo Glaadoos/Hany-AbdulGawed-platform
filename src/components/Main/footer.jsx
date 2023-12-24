@@ -27,7 +27,6 @@ const Footer = () =>{
             {
                 width>=800 ? 
                     <ul className="social-media-icons">
-                        {console.log('min')}
                         <li>
                             <a href="https://www.facebook.com/Mr.HanyAbdelgwad">
                                 <img id='Facebook' className="social-media-icon" src={Facebook} alt='Facebook'/>    

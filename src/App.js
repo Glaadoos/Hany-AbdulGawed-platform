@@ -188,7 +188,18 @@ function App({redirect_url}) {
           path="/Hany-AbdulGawed-platform/Dynamics"
           element={<Dynamics />}
         />
-        <Route path="/Hany-AbdulGawed-platform/Statics" element={<Statics />} />
+        <Route
+          path="/Hany-AbdulGawed-platform/Statics"
+          element={
+            <Statics
+              setVideoId={setVideoId}
+              user={email}
+              userPayingSystem={userPayingSystem}
+              userCodes={userCodes}
+              setUserCodes={setUserCodes} 
+            />
+          }
+        />
         <Route
           path="/Hany-AbdulGawed-platform/Revisiones"
           element={<Revisiones />}

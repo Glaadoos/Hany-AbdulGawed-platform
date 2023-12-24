@@ -1352,7 +1352,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             </div>
         );
     }
-    if(userPayingSystem === 'MPS' || localStorage.getItem("userPayingSystem") === 'LPS'){
+    if(userPayingSystem === 'MPS' || localStorage.getItem("userPayingSystem") === 'MPS'){
         return(
             <div className="lessons-box">
                 <h1 className="title"

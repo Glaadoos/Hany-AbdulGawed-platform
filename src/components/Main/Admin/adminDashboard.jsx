@@ -16,7 +16,7 @@ const DashBoard = ({currentUser}) =>  {
     const [codes, setCodes] = useState([])
     const [loading, setLoading] = useState(true)
     const [view, setView] = useState('accounts')
-    const Branches =['Algebra', 'Calculus']
+    const Branches =['Algebra', 'Calculus', 'Statics']
 // essential functions
     //names sorter function 
     const sorter = (a, b) => {
