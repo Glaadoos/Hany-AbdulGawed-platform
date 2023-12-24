@@ -1,4 +1,4 @@
-const codesapi = 'http://localhost:8888/.netlify/functions/api'
+const codesapi = 'https://hany-server.netlify.app/.netlify/functions/api'
 
 export const getAll= async(branch)=>{
     let res;
