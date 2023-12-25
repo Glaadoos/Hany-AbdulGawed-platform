@@ -39,13 +39,13 @@ export const getSpecific= async(branch, order, code)=>{
 export const UpdataOrderCodes= async(branch, order, code)=>{
     let res;
     let optiones = {
-        method: "DELETE",
+        method: "GET",
         headers:{
             "Content-Type": "application/json"
         }
     }
     try{
-        res = await fetch(`${codesapi}/${branch}/?order=${order}&code=${code}`, optiones).then(res => res.json())
+        res = await fetch(`${codesapi}/${branch}/delete?order=${order}&code=${code}`, optiones).then(res => res.json())
     } catch(err){
         console.error(err, 'catch in CodeAPI>UpdataOrderCodes'); 
     }
