@@ -1,6 +1,7 @@
 const partCreation = () =>{
 
 
+// eslint-disable-next-line no-use-before-define
 let arr =arr.map((lesson, num) =>{
             return(
             `

@@ -94,6 +94,72 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
+        },
+        {
+            "name":"المحاضرة الثانية والعشرون  ",
+            "order":"Statics04",
+            "parts":[
+                
+                {
+                    "lessonName":"العزوم 1",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=",
+                    "attachments":{
+                        "notebook":"1ogb1kT7oIuKMc79LpZ5BD_9WDFCJ8Qq3",
+                        "homework":"1pQAw9FRhSg_Cu1Klk5eM0ESCJ_vI2k7g"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWRGhK5XySzZokN9yeBbBhT"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+        },
+        {
+            "name":"المحاضرة الخامسة  ",
+            "order":"Statics05",
+            "parts":[
+                
+                {
+                    "lessonName":"العزوم 2",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=QcoEipY5te0",
+                    "attachments":{
+                        "notebook":"1gADTGxTZyQ26JAjcxuVNeh7X_u4WOMQN",
+                        "homework":"1istXXUREy_0-NxRpdYXk1TKselvtQmIX"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXCS4M9fk8jA5Mj8tpbY8oe"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+        },
+        {
+            "name":"المحاضرة الثانية والعشرون  ",
+            "order":"Statics06",
+            "parts":[
+                
+                {
+                    "lessonName":"العزوم 3",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=UUu7f2ofBVk",
+                    "attachments":{
+                        "notebook":"1zbVqhFm-OMDKHgyJcPURvl5yZ77xpoQK",
+                        "homework":"1smorqIh-ltQO790z7JhnBJFISGhR4D7h"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoBasTbWBnqo_lmSbJQTUT&feature=shared"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون"}]
         }
     ]
     const StaticsMPS = [
@@ -181,6 +247,72 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
+                },
+                {
+                    "name":"المحاضرة الثانية والعشرون  ",
+                    "order":"Statics04",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"العزوم 1",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=",
+                            "attachments":{
+                                "notebook":"1ogb1kT7oIuKMc79LpZ5BD_9WDFCJ8Qq3",
+                                "homework":"1pQAw9FRhSg_Cu1Klk5eM0ESCJ_vI2k7g"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWRGhK5XySzZokN9yeBbBhT"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+                },
+                {
+                    "name":"المحاضرة الخامسة  ",
+                    "order":"Statics05",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"العزوم 2",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=QcoEipY5te0",
+                            "attachments":{
+                                "notebook":"1gADTGxTZyQ26JAjcxuVNeh7X_u4WOMQN",
+                                "homework":"1istXXUREy_0-NxRpdYXk1TKselvtQmIX"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXCS4M9fk8jA5Mj8tpbY8oe"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+                },
+                {
+                    "name":"المحاضرة الثانية والعشرون  ",
+                    "order":"Statics06",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"العزوم 3",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=UUu7f2ofBVk",
+                            "attachments":{
+                                "notebook":"1zbVqhFm-OMDKHgyJcPURvl5yZ77xpoQK",
+                                "homework":"1smorqIh-ltQO790z7JhnBJFISGhR4D7h"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoBasTbWBnqo_lmSbJQTUT&feature=shared"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون"}]
                 }
             ]
         },
