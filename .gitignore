@@ -4,3 +4,4 @@
 /Essential
 .firebase
 build
+/.env
