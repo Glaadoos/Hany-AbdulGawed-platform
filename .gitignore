@@ -1,7 +1,8 @@
 
 # dependencies
 /node_modules
-
+/src/lessonCreation.js
+/src/req.js
 
 .firebase
 build

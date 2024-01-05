@@ -44,31 +44,15 @@ const partCreation = () =>{
     
 /* 
 
-1-8zV9wSVQ308
-
-2-KBBfhtht70M
-
-3-Iw_mudNrYxk
+1-
 
 notebook:
     1:
-    1uKYrbKeQyR3yxCYLs0Hvgi6l-0mt3KTk
-
-    2:
-    1GzLYG9NkO8OG9UOYR_xgmBopjvTdosDK
-
-    3:
-    1z22l0fKg2lQ-sXLlVVYCXZy52IewMD3z
+    
 
 homework:
     1:
-    1LDCI5gpCXpQw9_qWcPvmQTvorNYdPOD2
-
-    2:
-    1hf2Vpw7Ad7Ni3tNcX1mDzN_WbFx4IS15
-
-    3:
-    1VDD9H5YpHx-WSfH-hW_63-KOoDfhI7B7
+    
 
 1.https://www.youtube.com/playlist?list=PLzuKs18sUQiUfr-EB3ZN4F-ViNk-bZ0R4
 
