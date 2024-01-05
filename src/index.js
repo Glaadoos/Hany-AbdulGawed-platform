@@ -11,7 +11,8 @@ const redirect_url= 'https://hanyabdlgawad.online/'
 root.render(
     <HashRouter >
         <Auth0Provider
-        
+        domain="dev-ygrskzanm044w3be.us.auth0.com"
+        clientId="vpwQ42rBahM2eVuTCkNFscsYWfnf1Wzo"
         authorizationParams={{
           redirect_uri:  redirect_url
         }}
