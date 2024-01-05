@@ -1,4 +1,7 @@
 # Local Netlify folder
 .netlify
+.env
 
 node_modules
+/account.rest
+/code.rest
