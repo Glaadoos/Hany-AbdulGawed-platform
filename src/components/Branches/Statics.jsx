@@ -97,7 +97,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             "name":"المحاضرة الثانية والعشرون  ",
-            "order":"Statics04",
+            "order":"statics04",
             "parts":[
                 
                 {
@@ -119,7 +119,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             "name":"المحاضرة الخامسة  ",
-            "order":"Statics05",
+            "order":"statics05",
             "parts":[
                 
                 {
@@ -141,7 +141,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             "name":"المحاضرة الثانية والعشرون  ",
-            "order":"Statics06",
+            "order":"statics06",
             "parts":[
                 
                 {
@@ -250,7 +250,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     "name":"المحاضرة الثانية والعشرون  ",
-                    "order":"Statics04",
+                    "order":"statics04",
                     "parts":[
                         
                         {
@@ -272,7 +272,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     "name":"المحاضرة الخامسة  ",
-                    "order":"Statics05",
+                    "order":"statics05",
                     "parts":[
                         
                         {
@@ -294,7 +294,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     "name":"المحاضرة الثانية والعشرون  ",
-                    "order":"Statics06",
+                    "order":"statics06",
                     "parts":[
                         
                         {
