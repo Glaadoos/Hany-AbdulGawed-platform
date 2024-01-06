@@ -103,7 +103,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "lessonName":"العزوم 1",
                     "duration":"",
-                    "link":"https://www.youtube.com/watch?v=",
+                    "link":"https://www.youtube.com/watch?v=_tz4EfHGMJU",
                     "attachments":{
                         "notebook":"1ogb1kT7oIuKMc79LpZ5BD_9WDFCJ8Qq3",
                         "homework":"1pQAw9FRhSg_Cu1Klk5eM0ESCJ_vI2k7g"
@@ -256,7 +256,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"العزوم 1",
                             "duration":"",
-                            "link":"https://www.youtube.com/watch?v=",
+                            "link":"https://www.youtube.com/watch?v=_tz4EfHGMJU",
                             "attachments":{
                                 "notebook":"1ogb1kT7oIuKMc79LpZ5BD_9WDFCJ8Qq3",
                                 "homework":"1pQAw9FRhSg_Cu1Klk5eM0ESCJ_vI2k7g"
