@@ -96,7 +96,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
         },
         {
-            "name":"المحاضرة الثانية والعشرون  ",
+            "name":"المحاضرة الرابعة  ",
             "order":"statics04",
             "parts":[
                 
@@ -137,10 +137,10 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXCS4M9fk8jA5Mj8tpbY8oe"
                 }
             ],
-            "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+            "exam":[{"name":" أمتحان المحاضرة الخامسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
         },
         {
-            "name":"المحاضرة الثانية والعشرون  ",
+            "name":"المحاضرة السادسة  ",
             "order":"statics06",
             "parts":[
                 
@@ -159,7 +159,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoBasTbWBnqo_lmSbJQTUT&feature=shared"
                 }
             ],
-            "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون"}]
+            "exam":[{"name":" أمتحان المحاضرة السادسة"}]
         }
     ]
     const StaticsMPS = [
@@ -249,7 +249,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "exam":[{"name":"أمتحان المحاضرة الثالثة"}]
                 },
                 {
-                    "name":"المحاضرة الثانية والعشرون  ",
+                    "name":"المحاضرة الرابعة  ",
                     "order":"statics04",
                     "parts":[
                         
@@ -290,10 +290,10 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXCS4M9fk8jA5Mj8tpbY8oe"
                         }
                     ],
-                    "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
+                    "exam":[{"name":" أمتحان المحاضرة الخامسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
                 },
                 {
-                    "name":"المحاضرة الثانية والعشرون  ",
+                    "name":"المحاضرة السادسة  ",
                     "order":"statics06",
                     "parts":[
                         
@@ -312,7 +312,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoBasTbWBnqo_lmSbJQTUT&feature=shared"
                         }
                     ],
-                    "exam":[{"name":" أمتحان المحاضرة الثانية والعشرون"}]
+                    "exam":[{"name":" أمتحان المحاضرة السادسة"}]
                 }
             ]
         },
