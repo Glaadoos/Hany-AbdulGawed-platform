@@ -97,10 +97,10 @@ export const getAvailableCodes= async(email)=>{
     const data = await res
     return(data);
 }
-export const updateAvailableCodes= async(email, changableValue)=>{
+export const updateAvailableCodes= async(branch, email, changableValue)=>{
     const bodyValue ={
         "availableCodes":{
-            'branch':'Algebra',
+            'branch':`${branch}`,
             'order':changableValue[0],
             'code':changableValue[1],
             'date': changableValue[0].indexOf('revision') !== -1 ? 'Open':dayjs().format(),

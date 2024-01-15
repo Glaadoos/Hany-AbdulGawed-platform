@@ -103,6 +103,7 @@ const Header = ({user,show,currentUser,userPayingSystem,isAdmin, redirect_url}) 
     return(
         <header>
             <img id='logo' src={logoCroped} alt='logo' />
+            {/* <h1>essential change</h1> */}
             {
                 redirect_url === 'http://localhost:3000/' ?
                     <h1>change redirect url</h1>

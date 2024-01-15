@@ -45,8 +45,9 @@ export const UpdataOrderCodes= async(branch, order, code)=>{
         }
     }
     try{
-        res = await fetch(`${codesapi}/${branch}/delete?order=${order}&code=${code}`, optiones).then(res => res.json())
+        res = await fetch(`${codesapi}/${branch}/delete?order=${order}&code=${code}`, optiones).then(res => res.json());
     } catch(err){
+        alert(err, 'ScreenShot and send it to Abdullah kamel');
         console.error(err, 'catch in CodeAPI>UpdataOrderCodes'); 
     }
     const data = await res
