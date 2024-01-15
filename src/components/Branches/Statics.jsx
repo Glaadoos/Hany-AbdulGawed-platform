@@ -346,7 +346,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 },
                 {
                     "name":"المحاضرة السابعة",
-                    "order":"Statics07",
+                    "order":"statics07",
                     "parts":[
                         {
                             "lessonName":"القوي المتوازية 1",
