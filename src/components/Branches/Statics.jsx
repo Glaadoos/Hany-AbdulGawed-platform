@@ -160,6 +160,36 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":" أمتحان المحاضرة السادسة"}]
+        },
+        {
+            "name":"المحاضرة السابعة",
+            "order":"Statics07",
+            "parts":[
+                {
+                    "lessonName":"القوي المتوازية 1",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=1WT1HXPu3WY",
+                    "attachments":{
+                        "notebook":"1keJTnDQ0lrkD-iSjmjwWbVaBYaHoqpAx",
+                        "homework":"1cYtmny4wXNEv3v5YRD35Ut9287TxQLfw"
+                    }
+                },
+                {
+                    "lessonName":"القوي المتوازية 2",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=Pd56b52dT8g",
+                    "attachments":{
+                        "notebook":"1keJTnDQ0lrkD-iSjmjwWbVaBYaHoqpAx",
+                        "homework":"1cYtmny4wXNEv3v5YRD35Ut9287TxQLfw"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXFuGet0lGuFrMtfceynhX6"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/1rWpGdMvM75Q4_WtoABQlzW7hOKHAiLU0-5ucph_Q1XA/edit?usp=forms_home"}]
         }
     ]
     const StaticsMPS = [
@@ -313,6 +343,36 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":" أمتحان المحاضرة السادسة"}]
+                },
+                {
+                    "name":"المحاضرة السابعة",
+                    "order":"Statics07",
+                    "parts":[
+                        {
+                            "lessonName":"القوي المتوازية 1",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=1WT1HXPu3WY",
+                            "attachments":{
+                                "notebook":"1keJTnDQ0lrkD-iSjmjwWbVaBYaHoqpAx",
+                                "homework":"1cYtmny4wXNEv3v5YRD35Ut9287TxQLfw"
+                            }
+                        },
+                        {
+                            "lessonName":"القوي المتوازية 2",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=Pd56b52dT8g",
+                            "attachments":{
+                                "notebook":"1keJTnDQ0lrkD-iSjmjwWbVaBYaHoqpAx",
+                                "homework":"1cYtmny4wXNEv3v5YRD35Ut9287TxQLfw"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXFuGet0lGuFrMtfceynhX6"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/1rWpGdMvM75Q4_WtoABQlzW7hOKHAiLU0-5ucph_Q1XA/edit?usp=forms_home"}]
                 }
             ]
         },
