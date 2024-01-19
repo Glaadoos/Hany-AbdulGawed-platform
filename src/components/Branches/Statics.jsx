@@ -190,6 +190,27 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":" أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/1rWpGdMvM75Q4_WtoABQlzW7hOKHAiLU0-5ucph_Q1XA/edit?usp=forms_home"}]
+        },
+        {
+            "name":"المحاضرة الثامنة",
+            "order":"statics08",
+            "parts":[
+                {
+                    "lessonName":"القوي المتوازية 3",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=-850dK8L7XQ",
+                    "attachments":{
+                        "notebook":"1T2oql79kQMGlhEJZQSPvxaooRkIhCtRg",
+                        "homework":"1s__t_KO8JJnifRA-50bbKEiiGf3Q_lmi"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU0LbruTCvMysTw7FLmSO43"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الثامنة", "link":"https://docs.google.com/forms/d/1vUFgWV0i4gYFy6Zdjxp9OcMN5t0NDyegp0kjnGGHDDk/edit"}]
         }
     ]
     const StaticsMPS = [
@@ -323,7 +344,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "exam":[{"name":" أمتحان المحاضرة الخامسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfNl7GFBvqlP3fD-FWIHasnc4AGqxFkdcTGPb1ZmeMxBGM0zg/viewform?usp=sf_link"}]
                 },
                 {
-                    "name":"المحاضرة السادسة  ",
+                    "name":"المحاضرة السادسة",
                     "order":"statics06",
                     "parts":[
                         
@@ -373,6 +394,27 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         }
                     ],
                     "exam":[{"name":" أمتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/1rWpGdMvM75Q4_WtoABQlzW7hOKHAiLU0-5ucph_Q1XA/edit?usp=forms_home"}]
+                },
+                {
+                    "name":"المحاضرة الثامنة",
+                    "order":"statics08",
+                    "parts":[
+                        {
+                            "lessonName":"القوي المتوازية 3",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=-850dK8L7XQ",
+                            "attachments":{
+                                "notebook":"1T2oql79kQMGlhEJZQSPvxaooRkIhCtRg",
+                                "homework":"1s__t_KO8JJnifRA-50bbKEiiGf3Q_lmi"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU0LbruTCvMysTw7FLmSO43"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الثامنة", "link":"https://docs.google.com/forms/d/1vUFgWV0i4gYFy6Zdjxp9OcMN5t0NDyegp0kjnGGHDDk/edit"}]
                 }
             ]
         },
