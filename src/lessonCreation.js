@@ -1,8 +1,168 @@
+const prePartCreation = () =>{
+    let order=[];
+    let titles=[
+        'تابع الوحدة الثانية والثالثة',
+    ];
+    let parts = [
+        {
+            "order":0,
+            "titles":[
+                'أفكار منوعة على القوى المتوازية',
+                'العزوم ثلاثي البعد - هام جدا'
+            ]
+        },
+        
+    ]
+    let linkArr=[
+        {"order":1,"links":['']},
+    ];
+    let playlists=[
+        '',
+            
+    ];
+    let notebooks=[
+        {"order":0,"link":['']},
+    ];
+    let homeworks=[
+        {"order":0,"link":['']}
+    ];
+    let exams=[
+        [1,2,4,6],
+        {
+            "order":1,
+            "name":'امتحان المحاضرة ',
+            "link":""
+        },
+        
+    ];
+
+    order.map((order, rank) =>{
+        let title = titles[rank];
+        let partsOf=parts[rank].titles;
+        let links=linkArr[rank].links;
+        let playlist=playlists[rank];
+        let notebook=notebooks[rank].link;
+        let homework=homeworks[rank].link;
+        
+        // console.log(partsOf);
+        let obj = `
+        {
+            "title":"${title}",
+            "order":"${order}",
+            "parts":[
+                ${partsOf.map((part,r) =>{
+                    return(`{"name":"${part}", "link":"${links[r]}","notebook":"${notebook}","homework":"${homework}"}\n`)
+                })}
+            ],
+            "playlist":"${playlist}"
+        },
+        `
+
+    // console.log(obj);
+
+    })
+
+}
+
 const partCreation = () =>{
 
+/* 
+    {
+        "title":"المحاضرة ",
+        "order":"statics",
+        "parts":[
+            {"name":"", "link":"","notebook":'',"homework":''}
+        ],
+        "playlist":'',
+        'exam':{
+            "examName":' أمتحان المحاضرة',
+            "link":''
+        }
+    }
 
-// eslint-disable-next-line no-use-before-define
-let arr =arr.map((lesson, num) =>{
+*/
+
+
+let array= [
+    
+]
+
+    /* 
+
+1-
+2-
+3-
+4-
+5-
+6-
+7-
+
+
+notebook:
+    1:
+
+    2:
+
+    3:
+    
+    4:
+    
+    5:
+    
+    6:
+    
+    7:
+
+    
+
+homework:
+    1:
+
+    2:
+
+    3:
+    
+    4:
+    
+    5:
+    
+    6:
+    
+    7:
+
+1.
+
+2.
+
+3.
+
+4.
+
+5.
+
+6.
+
+7.
+
+
+exam
+1*
+
+2*
+
+3*
+
+4*
+
+5*
+
+6*
+
+7*
+
+*/
+
+let arr =array.map((lesson, num) =>{
             return(
             `
             {
@@ -29,17 +189,19 @@ let arr =arr.map((lesson, num) =>{
                 ],
                 ${
                     lesson.exam.link ? 
-                    `"exam":[{"name":"${lesson.exam.examName}", "link":"${lesson.exam.link}"}]`
+                    `'exam':{
+            "examName":"${lesson.exam.examName}", "link":"${lesson.exam.link}"}]`
                     :
-                    `"exam":[{"name":"${lesson.exam.examName}"}]`
+                    `'exam':{
+            "examName":"${lesson.exam.examName}"}]`
                 }
             }
             `
         )})
 
 return (
-    String(arr)
+    console.log(String(arr))
 )
 }
 
-console.log(partCreation())
+partCreation()

@@ -211,7 +211,203 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             "exam":[{"name":" أمتحان المحاضرة الثامنة", "link":"https://docs.google.com/forms/d/1vUFgWV0i4gYFy6Zdjxp9OcMN5t0NDyegp0kjnGGHDDk/edit"}]
+        },
+        {
+            "name":"تابع الوحدة الثانية والثالثة",
+            "order":"statics_09",
+            "parts":[
+                
+                {
+                    "lessonName":"أفكار منوعة على القوى المتوازية",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=m8Iy7dseAao",
+                    "attachments":{
+                        "notebook":"11UlmP56flSmTveNOhQNOhRyZ7bJjDXVA",
+                        "homework":"1ZXKdx57x8NKFFtGIyBOL9CN8PnLWP4M7"
+                    }
+                },
+                {
+                    "lessonName":"العزوم ثلاثي البعد - هام جدا",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=iZHzvDxDEAs",
+                    "attachments":{
+                        "notebook":"11UlmP56flSmTveNOhQNOhRyZ7bJjDXVA",
+                        "homework":"1ZXKdx57x8NKFFtGIyBOL9CN8PnLWP4M7"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":""
+                }
+            ],
+            "exam":[{"name":"أمتحان"}]
+        },
+        {
+            "name":"المحاضرة التاسعة",
+            "order":"statics09",
+            "parts":[
+                {
+                    "lessonName":"الازدواج - المحاضرة الأولى",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=YuzZkjfM2WU",
+                    "attachments":{
+                        "notebook":"1lXB0-7fgrTvqSimlOwJJZ3mV1HKoErS8",
+                        "homework":"1rz1KzJIthIjSyevfyS-MhKEXDZWSmAaN "
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUEV8nmmVFAQcIv8rYO7fJD"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة التاسعة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+        },
+        {
+            "name":"المحاضرة العاشرة",
+            "order":"statics10",
+            "parts":[
+                {
+                    "lessonName":"الازدواج 2",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=9bfYKnYUBfk",
+                    "attachments":{
+                        "notebook":"18wAhA0tZmIBX3DjhHlDw-Pupx-y6WjnX",
+                        "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN "
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiV89j9JxTfN8pqf5bPiMaWn"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة العاشرة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+        },
+        {
+            "name":"المحاضرة الحادية عشرة",
+            "order":"statics11",
+            "parts":[
+                
+                {
+                    "lessonName":"الازدواج 3",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=427G7jPmVbQ",
+                    "attachments":{
+                        "notebook":"14qylanAJQoZ6IztbsPVk77OMAJ4u7TkA",
+                        "homework":"1q4aUg3MeEk2YV2TsddVgIUQwJt8WI_bs"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiX0R6HnAxk832RdC-aNS4nJ"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الحادية عشرة"}]
+        },
+        {
+            "name":"المحاضرة الثانية عشرة",
+            "order":"statics12",
+            "parts":[
+                
+                {
+                    "lessonName":"مركز الثقل 1 ",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=PtJGwxt2BRo",
+                    "attachments":{
+                        "notebook":"12YXW8RFjHrCCt-7NbPHd0OdN1jeOH2Tk",
+                        "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM "
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoyZlnITgZAFS-gmpxqacG"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الثانية عشرة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+        },
+        {
+            "name":"المحاضرة الثالثة عشر",
+            "order":"statics13",
+            "parts":[
+                
+                {
+                    "lessonName":"مركز الثقل 2",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=xG6JE94Uenc",
+                    "attachments":{
+                        "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
+                        "homework":"12O9SS4rGkT3o_RyA1bR0iZMDzdOFluoV"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUuCtOGLh7W8f3IKnHRFpnv"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الثالثة عشر"}]
+        },
+        {
+            "name":"المحاضرة الرابعة عشر",
+            "order":"statics14",
+            "parts":[
+                
+                {
+                    "lessonName":"الاتزان العام 1",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=RwFJ3F38K_I",
+                    "attachments":{
+                        "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
+                        "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt "
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiVcFUt41Esa4L4kB4eHxoBr"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+        },
+        {
+            "name":"المحاضرة الخامسة عشر",
+            "order":"statics15",
+            "parts":[
+                
+                {
+                    "lessonName":"الاتزان العام 2",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=KNrbPIcCPS4",
+                    "attachments":{
+                        "notebook":"1bwTc23MCEc8lccuYV-lGSSqeJebilg1D",
+                        "homework":"19lGyPnKCed8nlAvXuIEQvMsvekCAHf0X"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiUFUcraMEFXj19U_uJvSxuQ"
+                }
+            ],
+            "exam":[{"name":" أمتحان المحاضرة الخامسة عشر"}]
+        },
+        {
+            'name' : 'مراجعة الاستاتيكا',
+            'order':'algebra10',
+            'parts' :[
+                {
+                    'lessonName':'مسائل الملزمة',
+                    'duration':'',
+                    'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWL5MAiFyCk6bASZLakVCMz',
+                }
+            ],
+            'exam' : [{'name':'امتحان التباديل والتوافيق'}]
         }
+        
     ]
     const StaticsMPS = [
         {
@@ -418,6 +614,208 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ]
         },
+        {
+            'name':':الشهر الثاني',
+            'data':[
+                {
+                    "name":"تابع الوحدة الثانية والثالثة",
+                    "order":"statics_09",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"أفكار منوعة على القوى المتوازية",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=m8Iy7dseAao",
+                            "attachments":{
+                                "notebook":"11UlmP56flSmTveNOhQNOhRyZ7bJjDXVA",
+                                "homework":"1ZXKdx57x8NKFFtGIyBOL9CN8PnLWP4M7"
+                            }
+                        },
+                        {
+                            "lessonName":"العزوم ثلاثي البعد - هام جدا",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=iZHzvDxDEAs",
+                            "attachments":{
+                                "notebook":"11UlmP56flSmTveNOhQNOhRyZ7bJjDXVA",
+                                "homework":"1ZXKdx57x8NKFFtGIyBOL9CN8PnLWP4M7"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":""
+                        }
+                    ],
+                    "exam":[{"name":"أمتحان"}]
+                },
+                {
+                    "name":"المحاضرة التاسعة",
+                    "order":"statics09",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"الازدواج - المحاضرة الأولى",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=YuzZkjfM2WU",
+                            "attachments":{
+                                "notebook":"1lXB0-7fgrTvqSimlOwJJZ3mV1HKoErS8",
+                                "homework":"1rz1KzJIthIjSyevfyS-MhKEXDZWSmAaN "
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUEV8nmmVFAQcIv8rYO7fJD"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة التاسعة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+                },
+                {
+                    "name":"المحاضرة العاشرة",
+                    "order":"statics10",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"الازدواج 2",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=9bfYKnYUBfk",
+                            "attachments":{
+                                "notebook":"18wAhA0tZmIBX3DjhHlDw-Pupx-y6WjnX",
+                                "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN "
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiV89j9JxTfN8pqf5bPiMaWn"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة العاشرة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+                },
+                {
+                    "name":"المحاضرة الحادية عشرة",
+                    "order":"statics11",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"الازدواج 3",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=427G7jPmVbQ",
+                            "attachments":{
+                                "notebook":"14qylanAJQoZ6IztbsPVk77OMAJ4u7TkA",
+                                "homework":"1q4aUg3MeEk2YV2TsddVgIUQwJt8WI_bs"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiX0R6HnAxk832RdC-aNS4nJ"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الحادية عشرة"}]
+                },
+                {
+                    "name":"المحاضرة الثانية عشرة",
+                    "order":"statics12",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"مركز الثقل 1 ",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=PtJGwxt2BRo",
+                            "attachments":{
+                                "notebook":"12YXW8RFjHrCCt-7NbPHd0OdN1jeOH2Tk",
+                                "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM "
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUoyZlnITgZAFS-gmpxqacG"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الثانية عشرة", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+                },
+                {
+                    "name":"المحاضرة الثالثة عشر",
+                    "order":"statics13",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"مركز الثقل 2",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=xG6JE94Uenc",
+                            "attachments":{
+                                "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
+                                "homework":"12O9SS4rGkT3o_RyA1bR0iZMDzdOFluoV"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUuCtOGLh7W8f3IKnHRFpnv"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الثالثة عشر"}]
+                },
+                {
+                    "name":"المحاضرة الرابعة عشر",
+                    "order":"statics14",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"الاتزان العام 1",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=RwFJ3F38K_I",
+                            "attachments":{
+                                "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
+                                "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt "
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://youtube.com/playlist?list=PLzuKs18sUQiVcFUt41Esa4L4kB4eHxoBr"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الرابعة عشر", "link":"https://docs.google.com/forms/d/1k6AsxiJ5-8IaJnEZi7bIPhMsvnKFUzOBrXt9qP3zgXI/edit?usp=forms_home"}]
+                },
+                {
+                    "name":"المحاضرة الخامسة عشر",
+                    "order":"statics15",
+                    "parts":[
+                        
+                        {
+                            "lessonName":"الاتزان العام 2",
+                            "duration":"",
+                            "link":"https://www.youtube.com/watch?v=KNrbPIcCPS4",
+                            "attachments":{
+                                "notebook":"1bwTc23MCEc8lccuYV-lGSSqeJebilg1D",
+                                "homework":"19lGyPnKCed8nlAvXuIEQvMsvekCAHf0X"
+                            }
+                        },
+                        {
+                            "lessonName":"مسائل الملزمة",
+                            "duration":"",
+                            "link":"https://www.youtube.com/playlist?list=PLzuKs18sUQiUFUcraMEFXj19U_uJvSxuQ"
+                        }
+                    ],
+                    "exam":[{"name":" أمتحان المحاضرة الخامسة عشر"}]
+                },
+                {
+                    'name' : 'مراجعة الاستاتيكا',
+                    'order':'revision01',
+                    'parts' :[
+                        {
+                            'lessonName':'مسائل الملزمة',
+                            'duration':'',
+                            'link':'https://www.youtube.com/playlist?list=PLzuKs18sUQiWL5MAiFyCk6bASZLakVCMz',
+                        }
+                    ],
+                    'exam' : [{'name':'امتحان التباديل والتوافيق'}]
+                }
+            ]
+        },
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
@@ -613,7 +1011,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                     Exam.link ?
                                                         <li key={'examObject'+num}>
                                                             <ul className='lesson-part'>
-                                                                <li key={'examName'+num}>
+                                                                <li key={'name'+num}>
                                                                     {Exam.name }
                                                                 </li>
                                                                 <li key={'examLink'+num}>
@@ -664,7 +1062,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                         Exam.link ?
                                                             <li key={'examObject'+num}>
                                                                 <ul className='lesson-part'>
-                                                                    <li key={'examName'+num}>
+                                                                    <li key={'name'+num}>
                                                                         {Exam.name }
                                                                     </li>
                                                                     <li key={'examLink'+num}>
@@ -744,7 +1142,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                     Exam.link ?
                                                         <li key={'examObject'+num}>
                                                             <ul className='lesson-part'>
-                                                                <li key={'examName'+num}>
+                                                                <li key={'name'+num}>
                                                                     {Exam.name }
                                                                 </li>
                                                                 <li key={'examLink'+num}>
@@ -857,7 +1255,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                                     Exam.link && Exam.name !== ''?
                                                                         <li key={'examObject'+Exam.name}>
                                                                             <ul className='lesson-part'>
-                                                                                <li key={'examName'+num}>
+                                                                                <li key={'name'+num}>
                                                                                     {Exam.name }
                                                                                 </li>
                                                                                 <li key={'examLink'+Exam.name}>
@@ -908,7 +1306,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                                         Exam.link ?
                                                                             <li key={'examObject'+Exam.name}>
                                                                                 <ul className='lesson-part'>
-                                                                                    <li key={'examName'+Exam.name}>
+                                                                                    <li key={'name'+Exam.name}>
                                                                                         {Exam.name }
                                                                                     </li>
                                                                                     <li key={'examLink'+Exam.name}>
@@ -987,7 +1385,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                                         Exam.link ?
                                                                             <li key={'examObject'+Exam.name}>
                                                                                 <ul className='lesson-part'>
-                                                                                    <li key={'examName'+Exam.name}>
+                                                                                    <li key={'name'+Exam.name}>
                                                                                         {Exam.name}
                                                                                     </li>
                                                                                     <li key={'examLink'+Exam.name}>
