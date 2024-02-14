@@ -659,7 +659,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://www.youtube.com/watch?v=YuzZkjfM2WU",
                             "attachments":{
                                 "notebook":"1lXB0-7fgrTvqSimlOwJJZ3mV1HKoErS8",
-                                "homework":"1rz1KzJIthIjSyevfyS-MhKEXDZWSmAaN "
+                                "homework":"1rz1KzJIthIjSyevfyS-MhKEXDZWSmAaN"
                             }
                         },
                         {
@@ -681,7 +681,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://www.youtube.com/watch?v=9bfYKnYUBfk",
                             "attachments":{
                                 "notebook":"18wAhA0tZmIBX3DjhHlDw-Pupx-y6WjnX",
-                                "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN "
+                                "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN"
                             }
                         },
                         {
