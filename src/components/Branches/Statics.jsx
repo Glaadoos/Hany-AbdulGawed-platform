@@ -274,7 +274,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "link":"https://www.youtube.com/watch?v=9bfYKnYUBfk",
                     "attachments":{
                         "notebook":"18wAhA0tZmIBX3DjhHlDw-Pupx-y6WjnX",
-                        "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN "
+                        "homework":"1ql7q3xiULory5RW10g3RwF6T3LmQI_cN"
                     }
                 },
                 {
@@ -318,7 +318,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "link":"https://www.youtube.com/watch?v=PtJGwxt2BRo",
                     "attachments":{
                         "notebook":"12YXW8RFjHrCCt-7NbPHd0OdN1jeOH2Tk",
-                        "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM "
+                        "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM"
                     }
                 },
                 {
@@ -362,7 +362,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "link":"https://www.youtube.com/watch?v=RwFJ3F38K_I",
                     "attachments":{
                         "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
-                        "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt "
+                        "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt"
                     }
                 },
                 {
@@ -397,7 +397,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         },
         {
             'name' : 'مراجعة الاستاتيكا',
-            'order':'algebra10',
+            'order':'revision01',
             'parts' :[
                 {
                     'lessonName':'مسائل الملزمة',
@@ -725,7 +725,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://www.youtube.com/watch?v=PtJGwxt2BRo",
                             "attachments":{
                                 "notebook":"12YXW8RFjHrCCt-7NbPHd0OdN1jeOH2Tk",
-                                "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM "
+                                "homework":"1Bhz8veipKJ4PzwT-_l7a8Azsiv_dfKEM"
                             }
                         },
                         {
@@ -769,7 +769,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                             "link":"https://www.youtube.com/watch?v=RwFJ3F38K_I",
                             "attachments":{
                                 "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
-                                "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt "
+                                "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt"
                             }
                         },
                         {
