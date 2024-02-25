@@ -355,13 +355,12 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "name":"المحاضرة الرابعة عشر",
             "order":"statics14",
             "parts":[
-                
                 {
                     "lessonName":"الاتزان العام 1",
                     "duration":"",
                     "link":"https://www.youtube.com/watch?v=RwFJ3F38K_I",
                     "attachments":{
-                        "notebook":"1d7brPJWIrP1fSAC8D1osNCi2Bf0f93Fr",
+                        "notebook":"1bwTc23MCEc8lccuYV-lGSSqeJebilg1D",
                         "homework":"1zYDdE15bo5MA_uJNZHghNTgXSDsvkfBt"
                     }
                 },
@@ -383,7 +382,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "duration":"",
                     "link":"https://www.youtube.com/watch?v=KNrbPIcCPS4",
                     "attachments":{
-                        "notebook":"1bwTc23MCEc8lccuYV-lGSSqeJebilg1D",
+                        "notebook":"1H8k6Hry9jn1zvgxrKtzyJW6DkSFm5zS9",
                         "homework":"19lGyPnKCed8nlAvXuIEQvMsvekCAHf0X"
                     }
                 },
