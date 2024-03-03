@@ -186,7 +186,13 @@ function App({redirect_url}) {
         />
         <Route
           path="/Hany-AbdulGawed-platform/Dynamics"
-          element={<Dynamics />}
+          element={<Dynamics
+              setVideoId={setVideoId}
+              user={email}
+              userPayingSystem={userPayingSystem}
+              userCodes={userCodes}
+              setUserCodes={setUserCodes} 
+            />}
         />
         <Route
           path="/Hany-AbdulGawed-platform/Statics"

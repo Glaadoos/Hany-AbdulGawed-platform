@@ -1175,7 +1175,7 @@ const Statics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                 style={{textAlign:'right', marginRight: '2%'}}
                                 >{month.name}</h2>
                                 {month.data.map((lesson,num)=>{
-                                   if(userCodes){  
+                                    if(userCodes){  
                                         if(userCodes.filter(obj => obj.order === lesson.order).length === 1){
                                             let diff = handleDateChange(userCodes, lesson.order)[0]
                                             let finalDate =  handleDateChange(userCodes, lesson.order)[1];

@@ -87,7 +87,6 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     "name":"المحاضرة الأولي",
                     "order":"dynamics01",
                     "parts":[
-                        
                         {
                             "lessonName":"تفاضل الدوال المتجهة",
                             "duration":"",
