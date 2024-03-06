@@ -16,7 +16,6 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "name":"المحاضرة الأولي",
             "order":"dynamics01",
             "parts":[
-                
                 {
                     "lessonName":"تفاضل الدوال المتجهة",
                     "duration":"",
@@ -38,7 +37,6 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "name":"المحاضرة الثانية",
             "order":"dynamics02",
             "parts":[
-                
                 {
                     "lessonName":"تكامل الدوال المتجهة",
                     "duration":"",
@@ -60,7 +58,6 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             "name":"المحاضرة الثالثة",
             "order":"dynamics03",
             "parts":[
-                
                 {
                     "lessonName":"كمية الحركة – نيوتن الاول ",
                     "duration":"",
@@ -77,6 +74,225 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 }
             ],
             'exam':[{"name":" أمتحان المحاضرة الثالثة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSdbxZKX6Nu3Ay3OWzxDKmmCkztcDG8qd4E59OSWb90j1HqW3w/viewform?usp=sf_link"}]
+        },
+        {
+            "name":"المحاضرة الرابعة",
+            "order":"dynamics04",
+            "parts":[
+                {
+                    "lessonName":"نيوتن الثاني",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=Z1qWAcNvct4",
+                    "attachments":{
+                        "notebook":"1lB4h4dggB1TejPhL6EFJLuDdjaQ3bXEI",
+                        "homework":"1XXD7L7MWkud6r3zj_J1ljxjjDrak6rn_"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWoA0zJ3_Y_MmvfY__4VXmZ"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة الرابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSezMjWtA5LsZ6zD_kW6b9ejdHHm6ud_D6kALl6GyG1XcnRIvQ/viewform?usp=sf_link"}]
+        } ,
+        {
+            "name":"المحاضرة الخامسة",
+            "order":"dynamics05",
+            "parts":[
+                {
+                    "lessonName":"نيوتن الثالث",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=5XCNJA7zr3Q",
+                    "attachments":{
+                        "notebook":"1UoSa8SHhK_JL22eHdPbHNJdxzI4HHk03",
+                        "homework":"14pBZ7-lD8SEGHqxC8xwurKIhykWqSdRp"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWuuB9JmYZ7fUK-2Y6SNI4z"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة الخامسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSc3Qcf4p9XPunvEbUcoHAzILmOpNtX02_nR2ydLCSGqTlPoIA/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة السادسة",
+            "order":"dynamics06",
+            "parts":[
+                {
+                    "lessonName":"البكرات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=1TjIitNe2bM",
+                    "attachments":{
+                        "notebook":"1PoCiTpwnsdBGBicMTi5yzW4b6mI8PNqw",
+                        "homework":"1JkLWkaWPFSAsWP_QTe03xk64uw3MuB0f"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiWSpHhuGfiZ8iTo7xLiGlP5"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة السادسة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfWviIDfpITCFQ2-ZzLGM3mLFofZ9p3x4s8R9lDqCehmxDhVw/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة السابعة",
+            "order":"dynamics07",
+            "parts":[
+                {
+                    "lessonName":"تابع البكرات",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=.",
+                    "attachments":{
+                        "notebook":"16QKQ_pvYOpotymR3SlJ62gyERwpHZj-a",
+                        "homework":"1Dp4nCdwtV3yqd3J3ycZ1ZyUoD0sIpxEK"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiVnlbbfmZsgtreGwWSSGJKO"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfaMS19dCnBSz5FESMKH5Oe3gjZeLC8dgjDqYnk-V0hIC1ynw/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة الثامنة",
+            "order":"dynamics08",
+            "parts":[
+                {
+                    "lessonName":"الدفع",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=X32yExKAiN4",
+                    "attachments":{
+                        "notebook":"1HUdJQGjwWiuDAC9EsJzeRysHvUfJf3kY",
+                        "homework":"1d3EuqaCukpWBrjj4VB3C0ZM9zp8lvUtR"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiXSEFUds1HLyD9ino4IIif5"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة الثامنة", "link":"https://docs.google.com/forms/d/e/1FAIpQLScka4jayAfr5rpkKScX4VUzbgqrclPrYnxWZZ6iMy50a_XXnQ/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة التاسعة",
+            "order":"dynamics09",
+            "parts":[
+                {
+                    "lessonName":"التصادم",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=.",
+                    "attachments":{
+                        "notebook":"1yrLUGkB7lGmnUBuWOcMm59SE37w2annJ",
+                        "homework":"12JDT2NPYsCK3IMM9JrwOBYkNkriJja8Y"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU3k_4AYOYMKj2N9n9Ndd_s"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة التاسعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة العاشرة",
+            "order":"dynamics10",
+            "parts":[
+                {
+                    "lessonName":"الشغل",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=Ugwf-jjnoQs",
+                    "attachments":{
+                        "notebook":"14yw8Gxt0aIP12BgTmTf5gL_sGRPVchAx",
+                        "homework":"1iwoOG3m3ElmPRvA6pAzD48dWj3QNlm-o"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU3k_4AYOYMKj2N9n9Ndd_s"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة العاشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfor7wZbOb6wNIKsIvzwFOcTvOZELVbkMexoSgGOVRGt0qxOA/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة الحادية عشرة",
+            "order":"dynamics11",
+            "parts":[
+                {
+                    "lessonName":"مبدأ الشغل – طاقة الوضع",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=UdkOI9wFPxM",
+                    "attachments":{
+                        "notebook":"1b4HmYRsz3gExf6I06ELjeu-a3_xHQ0Kh",
+                        "homework":"1RUOgkqrnGWHrz2MBpspuFtknlBO6Bvzs"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUeAS6JB9v9oY7NdqLO8zL7"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة الحادية عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
+        } ,
+        {
+            "name":"المحاضرة الثانية عشرة ",
+            "order":"dynamics12",
+            "parts":[
+                {
+                    "lessonName":"تابع طاقة الوضع",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=cvc_Zihh0ks",
+                    "attachments":{
+                        "notebook":"1j38ObAvkpMQidKdOYgJebYmUR9QITM0T",
+                        "homework":"1huxZx3d_hzFthcepZEylDNvqHhc3HAAH"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiUeAS6JB9v9oY7NdqLO8zL7"
+                }
+            ],
+            'exam':[{"name":"امتحان المحاضرة الثانية عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
+        },
+        {
+            "name":"المحاضرة الثالثة عشرة",
+            "order":"dynamics13",
+            "parts":[
+                {
+                    "lessonName":"القدرة",
+                    "duration":"",
+                    "link":"https://www.youtube.com/watch?v=SSMScAOZu-A",
+                    "attachments":{
+                        "notebook":"14yw8Gxt0aIP12BgTmTf5gL_sGRPVchAx",
+                        "homework":"1iwoOG3m3ElmPRvA6pAzD48dWj3QNlm-o"
+                    }
+                },
+                {
+                    "lessonName":"مسائل الملزمة",
+                    "duration":"",
+                    "link":"https://youtube.com/playlist?list=PLzuKs18sUQiU3_x54k_JztpV1sbPrhWU"
+                }
+            ],
+            'exam':[{
+        "name":"امتحان المحاضرة الثالثة عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
         }
     ]
     const DynamicsMPS = [
@@ -86,7 +302,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "name":"المحاضرة الأولي",
                     "order":"dynamics01",
-                    "parts":[
+                "parts":[
                         {
                             "lessonName":"تفاضل الدوال المتجهة",
                             "duration":"",
@@ -107,7 +323,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "name":"المحاضرة الثانية",
                     "order":"dynamics02",
-                    "parts":[
+                "parts":[
                         
                         {
                             "lessonName":"تكامل الدوال المتجهة",
@@ -129,7 +345,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "name":"المحاضرة الثالثة",
                     "order":"dynamics03",
-                    "parts":[
+                "parts":[
                         
                         {
                             "lessonName":"كمية الحركة – نيوتن الاول ",
