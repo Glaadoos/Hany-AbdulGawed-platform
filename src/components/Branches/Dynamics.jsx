@@ -148,7 +148,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "lessonName":"تابع البكرات",
                     "duration":"",
-                    "link":"https://www.youtube.com/watch?v=.",
+                    "link":"https://www.youtube.com/watch?v=yaN-RENj9d4",
                     "attachments":{
                         "notebook":"16QKQ_pvYOpotymR3SlJ62gyERwpHZj-a",
                         "homework":"1Dp4nCdwtV3yqd3J3ycZ1ZyUoD0sIpxEK"
@@ -192,7 +192,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                 {
                     "lessonName":"التصادم",
                     "duration":"",
-                    "link":"https://www.youtube.com/watch?v=.",
+                    "link":"https://www.youtube.com/watch?v=2TVizUgB0L0",
                     "attachments":{
                         "notebook":"1yrLUGkB7lGmnUBuWOcMm59SE37w2annJ",
                         "homework":"12JDT2NPYsCK3IMM9JrwOBYkNkriJja8Y"
@@ -206,7 +206,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             'exam':[{
         "name":"امتحان المحاضرة التاسعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
-        } ,
+        },
         {
             "name":"المحاضرة العاشرة",
             "order":"dynamics10",
@@ -228,7 +228,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             'exam':[{
         "name":"امتحان المحاضرة العاشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfor7wZbOb6wNIKsIvzwFOcTvOZELVbkMexoSgGOVRGt0qxOA/viewform?usp=sharing"}]
-        } ,
+        },
         {
             "name":"المحاضرة الحادية عشرة",
             "order":"dynamics11",
@@ -250,7 +250,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
             ],
             'exam':[{
         "name":"امتحان المحاضرة الحادية عشرة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSf6Ksu0uRobpSKqFH2HqbgLMjMEk_Srber5B9ekTNnuayiehQ/viewform?usp=sharing"}]
-        } ,
+        },
         {
             "name":"المحاضرة الثانية عشرة ",
             "order":"dynamics12",
@@ -435,7 +435,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"تابع البكرات",
                             "duration":"",
-                            "link":"https://www.youtube.com/watch?v=.",
+                            "link":"https://www.youtube.com/watch?v=yaN-RENj9d4",
                             "attachments":{
                                 "notebook":"16QKQ_pvYOpotymR3SlJ62gyERwpHZj-a",
                                 "homework":"1Dp4nCdwtV3yqd3J3ycZ1ZyUoD0sIpxEK"
@@ -449,7 +449,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     ],
                     'exam':[{
                 "name":"امتحان المحاضرة السابعة", "link":"https://docs.google.com/forms/d/e/1FAIpQLSfaMS19dCnBSz5FESMKH5Oe3gjZeLC8dgjDqYnk-V0hIC1ynw/viewform?usp=sharing"}]
-                } ,
+                },
                 {
                     "name":"المحاضرة الثامنة",
                     "order":"dynamics08",
@@ -471,7 +471,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                     ],
                     'exam':[{
                 "name":"امتحان المحاضرة الثامنة", "link":"https://docs.google.com/forms/d/e/1FAIpQLScka4jayAfr5rpkKScX4VUzbgqrclPrYnxWZZ6iMy50a_XXnQ/viewform?usp=sharing"}]
-                } ,
+                },
             ]
         },
         {
@@ -484,7 +484,7 @@ const Dynamics = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                         {
                             "lessonName":"التصادم",
                             "duration":"",
-                            "link":"https://www.youtube.com/watch?v=.",
+                            "link":"https://www.youtube.com/watch?v=2TVizUgB0L0",
                             "attachments":{
                                 "notebook":"1yrLUGkB7lGmnUBuWOcMm59SE37w2annJ",
                                 "homework":"12JDT2NPYsCK3IMM9JrwOBYkNkriJja8Y"
