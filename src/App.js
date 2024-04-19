@@ -4,7 +4,7 @@ import "./App.css";
 import Header from "./components/Main/header";
 import Main from "./components/Main/main";
 import Lectures from "./components/Main/lectures";
-import SpatialEngineering from "./components/Branches/spatialEngineering";
+import SpatialGeomatry from "./components/Branches/SpatialGeomatry";
 import Algebra from "./components/Branches/Algebra";
 import Calculus from "./components/Branches/Calculus";
 import Revisiones from "./components/Branches/Revisiones";
@@ -153,10 +153,12 @@ function App({redirect_url}) {
         <Route
           path="/Hany-AbdulGawed-platform/spatialEngineering"
           element={
-            <SpatialEngineering
-              setVideoId={setVideoId}
-              user={email}
-              userPayingSystem={userPayingSystem}
+            <SpatialGeomatry
+            setVideoId={setVideoId}
+            user={email}
+            userPayingSystem={userPayingSystem}
+            userCodes={userCodes}
+            setUserCodes={setUserCodes} 
             />
           }
         />
