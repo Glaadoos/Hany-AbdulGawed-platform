@@ -46,27 +46,6 @@ router.get("/account/:id", async (req, res) => {
   }
 });
 
-// test chanel
-router.get("/test", async (req, res) => {
-  console.log(req.apiGateway.event.rawUrl)
-  console.log(req.headers['x-nf-request-id'])
-  let accounts;
-  try {
-    accounts = await Account.find({ payingSystem: '' });
-    // console.log(accounts)
-    accounts.map((obj) => console.log(`'${obj.id}',`))
-    res.sendStatus(200)
-    /* if (account == null) {
-      return res.status(404).json({ message: "Account isn't exist" });
-    } else {
-      return res.status(200).json(account);
-    } */
-  } catch (err) {
-    res
-      .status(400)
-      .json({ message: err.message, src: "catch in get specific" });
-  }
-});
 
 //Get user's availableCodes
 router.get("/availablecodes", async (req, res) => {
@@ -164,6 +143,16 @@ router.delete("/delete", async (req, res) => {
   console.log(Id)
 
     res.status(500).json({ message: err.message, path:'accounts/delete' , id:Id});
+  }
+});
+
+// Delete All Accounts
+router.delete("/deleteAll", async (req, res) => {
+  try {
+    await Account.deleteMany();
+    res.json({ message: "accounts deleted" });
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 
