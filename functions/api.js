@@ -4,7 +4,6 @@ const serverless = require("serverless-http");
 const app = express();
 const mongoose = require("mongoose");
 const cors = require("cors");
-
 mongoose.connect(
   `mongodb+srv://${process.env.DATABASE_USER}:${process.env.DATABASE_PASSWORD}@hany-server.px9xs90.mongodb.net/account`
 );
@@ -35,11 +34,13 @@ const CalculusRouter = require("../routes/calculus");
 const StaticsRouter = require("../routes/statics");
 const DynamicsRouter = require("../routes/dynamics");
 const SpatialGeomatryRouter = require("../routes/SpatialGeomatry");
+const HandelOldAccounts = require("../routes/handelOldAccounts");
 app.use("/.netlify/functions/api/accounts", accountsRouter);
 app.use("/.netlify/functions/api/Algebra", AlgebraRouter);
 app.use("/.netlify/functions/api/Calculus", CalculusRouter);
 app.use("/.netlify/functions/api/Statics", StaticsRouter);
 app.use("/.netlify/functions/api/Dynamics", DynamicsRouter);
 app.use("/.netlify/functions/api/SpatialGeomatry", SpatialGeomatryRouter);
+app.use("/.netlify/functions/api/handelOldAccounts", HandelOldAccounts);
 
 module.exports.handler = serverless(app);
