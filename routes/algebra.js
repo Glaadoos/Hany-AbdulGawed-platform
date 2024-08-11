@@ -38,8 +38,6 @@ router.get("/code", async (req, res) => {
 
 // Add code
 router.post("/", async (req, res) => {
-  console.log(req.apiGateway.event.rawUrl)
-  console.log(req.headers['x-nf-request-id'])
   const code = new Code({
     order: req.body.order,
     code: req.body.code,
@@ -129,6 +127,21 @@ router.delete("/", async (req, res) => {
           });
       
     }
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json({ message: err.message });
+  }
+});
+
+// delete all
+router.delete("/deleteAll", async (req, res) => {
+  try {
+    await Code.deleteMany();  
+    return res
+      .status(201)
+      .json({
+        message: "All codes deleted"
+      });
   } catch (err) {
     console.log(err.message);
     res.status(400).json({ message: err.message });
