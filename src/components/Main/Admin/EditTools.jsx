@@ -1,8 +1,9 @@
 import { useState } from "react";
+import { updateAccount } from "../../../API/UesrApi";
 
 // component for handleing the edit box, will be in next deploy
 
-export const Ui = ({editView, setEditView, role}) =>{
+export const Ui = ({id, editView, setEditView, role}) =>{
     
     const [input, setInput] = useState('');
 
@@ -12,11 +13,23 @@ export const Ui = ({editView, setEditView, role}) =>{
     }
     // Form input Handler Functions
     const handleInput = (e) =>{
-        // setInput(e.target.value);
-        // console.log(e)
+        setInput(e.target.value);
     }
-    const handleSubmit = (e) =>{
-        console.log(e.target.dataset.role);
+    const handleSubmit = async(e) =>{
+        if(input){
+            console.log(e.target.dataset.role);
+            if(await updateAccount(id, {
+                [e.target.dataset.role]: input
+            })){
+                setEditView(false);
+                setInput('');
+                window.location.reload()
+            }else{
+                alert('something went wrong')
+                setEditView(false);
+                setInput('');
+            }
+        }
     }
 
     return(
