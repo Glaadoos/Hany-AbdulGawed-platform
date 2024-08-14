@@ -696,9 +696,9 @@ button.editable{
 /* loading screen */
 
 .center {
-  position: fixed;
+  position: relative;
+  height: 50vh;
   top:50%;
-  left:40%;
   display: flex;
   justify-content: center;
   align-items: center;
