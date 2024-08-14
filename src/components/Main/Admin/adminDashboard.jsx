@@ -80,9 +80,9 @@ const DashBoard = ({currentUser}) =>  {
                                                 return(
                                                     <tr key={num}>
                                                         <Col role={'rank'} data={num+1} index={num}/>
-                                                        <Col role={'name'} data={user.name} index={num}/>
-                                                        <Col role={'email'} data={user.email} index={num}/>
-                                                        <Col role={'payingSystem'} data={user.payingSystem} index={num}/>
+                                                        <Col id={user.id} role={'name'} data={user.name} index={num}/>
+                                                        <Col id={user.id} role={'email'} data={user.email} index={num}/>
+                                                        <Col id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
                                                         <Col role={'rank'} data={user.availableCodes.length} index={num}/>
                                                     </tr>
                                                 );
