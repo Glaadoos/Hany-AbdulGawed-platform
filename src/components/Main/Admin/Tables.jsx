@@ -22,7 +22,7 @@ export const TableHead = ({args}) =>{
     data => the data will be show in column
     index => special key for object returned
 */
-export const Col = ({role ,data, index}) =>{
+export const Col = ({id, role ,data, index}) =>{
     // Hide The Codes State
     const [hidden, setHidden] = useState(true);
     // Show Edit btn State
@@ -32,10 +32,12 @@ export const Col = ({role ,data, index}) =>{
 
     // Mouse Over & Out On Edit aria Event Handler Functions
     const mouseOver = () =>{
-        setTools(true)   
+        setTools(true)
     }
     const mouseOut = () =>{
-        setTools(false);   
+        if(!editView){
+            setTools(false)
+        }
     }
     
     if(role === 'codes'){
@@ -64,12 +66,11 @@ export const Col = ({role ,data, index}) =>{
     }else{
         // return table column
         return (
-            // <td onMouseOver={mouseOver} onMouseOut={mouseOut} key={index}>
-            <td key={index}>
+            <td onMouseOver={mouseOver} onMouseOut={mouseOut} key={index}>
                 {tools && role!== 'rank' ? 
                     <h5 className={!editView ?  'editable' : 'editable flex-col'} >
                         {data}
-                        <Ui editView={editView} setEditView={setEditView} role={role} />
+                        <Ui id={id} editView={editView} setEditView={setEditView} role={role} />
                     </h5>
                     :   <h5>{data}</h5>
                 }
