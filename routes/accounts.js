@@ -159,13 +159,14 @@ router.delete("/deleteAll", async (req, res) => {
 async function getAccount(req, res, next) {
   let account;
   try {
-    account = await Account.findOne({ email: req.params.id });
+    account = await Account.findOne({ id: req.params.id });
     if (account == null) {
       return res
         .status(404)
         .json({
           message: "cannont find this account",
           src: "try=>null-cond in getAccount middleware",
+          params: req.params,
         });
     }
   } catch (err) {
