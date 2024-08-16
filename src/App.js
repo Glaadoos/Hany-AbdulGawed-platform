@@ -46,6 +46,7 @@ function App({redirect_url}) {
 
     setTimeout(() => {
       if (checkUserExist.message !== "Account isn't exist") {
+        localStorage.setItem("id", checkUserExist.id);
         localStorage.setItem("ServerToken", "exist");
         setUserExist(true);
         localStorage.setItem("userPayingSystem", checkUserExist.payingSystem);

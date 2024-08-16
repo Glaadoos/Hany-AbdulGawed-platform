@@ -1008,7 +1008,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
-
+console.log(user)
     // time for lectuer to close
     let hours=96;
 
@@ -1041,14 +1041,14 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                     if(codeexist === 1 && order.indexOf('revision') === -1){
                                         const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
-                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("userEmail"), [order, code])
+                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("id"), [order, code])
                                             alert(`تم أضافة الكود بنجاح في : ${dayjs().format('D')}/${dayjs().format('MM')} الوقت ${dayjs().format('hh:mm:ss')} \n الكود متاح لثلاث ايام من هذا التاريخ`)
                                             window.location.reload();
                                         }
                                     }else{
                                         const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
-                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("userEmail"), [order, code])
+                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("id"), [order, code])
                                             alert(` تمت اضافة المرجعة  \n  المراجعة مفتوحة دائما`)
                                             window.location.reload();
                                         }
