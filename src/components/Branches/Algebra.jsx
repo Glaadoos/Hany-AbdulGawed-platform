@@ -14,10 +14,10 @@ dayjs.extend(relativeTime)
 const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
 
     // dictionaries & State variable & variables
-    const Algebralessons = useLessonsAPI('Algebra') || []
+    const Algebralessons = useLessonsAPI('algebra') || []
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
-
+    console.log(Algebralessons[0])
     // time for lectuer to close
     let hours=96;
 
@@ -195,7 +195,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                     );
                                                 }
                                             })}
-                                        
+                
                                         {
                                             lesson.exam.map(Exam =>{
                                                 return(
