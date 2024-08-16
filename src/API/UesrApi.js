@@ -1,7 +1,6 @@
 const dayjs  = require('dayjs')
 
-const accountsapi = 'http://localhost:8888/.netlify/functions/api/accounts' // check before production
-
+const accountsapi = 'https://hany-server.netlify.app/.netlify/functions/api/accounts' // check before production
 
 export const getAll= async()=>{
     let res;
