@@ -673,7 +673,7 @@ td>h5{
   width: 27px;
   height: 27px;
   background-color: transparent !important;
-  background-image: url('C:/Users/abosa/Desktop/Hany-AbdulGawed-platform/src/components/photos/edit-btn.png');
+  background-image: url('./components/photos/edit-btn.png');
   background-position: center;
   background-size: contain;
   background-repeat: no-repeat;
