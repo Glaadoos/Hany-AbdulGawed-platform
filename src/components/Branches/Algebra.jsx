@@ -17,7 +17,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     const Algebralessons = useLessonsAPI('algebra') || []
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
-    console.log(Algebralessons[0])
+    
     // time for lectuer to close
     let hours=96;
 
@@ -197,7 +197,8 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             })}
                 
                                         {
-                                            lesson.exam.map(Exam =>{
+
+                                            lesson.exams.map(Exam =>{
                                                 return(
                                                     Exam.link ?
                                                         <li key={'examObject'+num}>
@@ -248,8 +249,7 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                                     
                                                 })
                                                 &&
-                                                lesson.exam.map(Exam =>{
-                                                    console.log(Exam)
+                                                lesson.exams.map(Exam =>{
                                                     return(
                                                         Exam.link ?
                                                             <li key={'examObject'+num}>
