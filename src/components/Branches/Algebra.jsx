@@ -1,5 +1,6 @@
 /* eslint-disable array-callback-return */
 import {useState, Fragment} from 'react';
+import queryString from 'query-string';
 import {Link} from "react-router-dom";
 import arrowUp from '.././photos/arrow-up-filled.png'
 import LoginBtn from '../Essential/login'
@@ -1008,7 +1009,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
     ]
     const[exist, setExist] = useState([])
     const[inputValue, setInputValue] = useState([])
-console.log(user)
     // time for lectuer to close
     let hours=96;
 
@@ -1040,15 +1040,16 @@ console.log(user)
                                     setExist(newArray)
                                     if(codeexist === 1 && order.indexOf('revision') === -1){
                                         const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
+
                                         if(!(deleted.message)){
-                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("id"), [order, code])
+                                            await UserAPI.updateAvailableCodes(branch, encodeURIComponent(localStorage.getItem('id')), [order, code])
                                             alert(`تم أضافة الكود بنجاح في : ${dayjs().format('D')}/${dayjs().format('MM')} الوقت ${dayjs().format('hh:mm:ss')} \n الكود متاح لثلاث ايام من هذا التاريخ`)
                                             window.location.reload();
                                         }
                                     }else{
                                         const deleted = await CodeAPI.UpdataOrderCodes(branch, order, code).then(data => {return(data)});
                                         if(!(deleted.message)){
-                                            await UserAPI.updateAvailableCodes(branch, localStorage.getItem("id"), [order, code])
+                                            await UserAPI.updateAvailableCodes(branch, encodeURIComponent(localStorage.getItem('id')), [order, code])
                                             alert(` تمت اضافة المرجعة  \n  المراجعة مفتوحة دائما`)
                                             window.location.reload();
                                         }
