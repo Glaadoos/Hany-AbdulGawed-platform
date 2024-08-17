@@ -4,10 +4,9 @@ const LessonContainer = require("../models/lesson");
 
 router.get("/:branchname", async (req, res) => {
   try {
-    const lessons = await LessonContainer.find({
-      BranchName: req.params.branchname,
-    });
-    res.status(200).json(lessons[0].lessons);
+    const lessons = await LessonContainer.find();
+    const neededLessons = lessons.filter(container => container.BranchName === req.params.branchname)
+    res.status(200).json(neededLessons);
   } catch (err) {
     res.status(400).json({ message: err.message });
   }
