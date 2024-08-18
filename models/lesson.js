@@ -47,18 +47,14 @@ const LessonSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  branch: {
+    type: String,
+    required: true,
+  },
   parts: [PartSchema],
   exams: [ExamSchema],
 });
 
-const LessonContainerSchema = new mongoose.Schema({
-  BranchName: {
-    type: String,
-    required: true,
-  },
-  lessons: [LessonSchema],
-});
+const Lesson = mongoose.model("lessons", LessonSchema);
 
-const LessonContainer = mongoose.model("lessons", LessonContainerSchema);
-
-module.exports = LessonContainer;
+module.exports = Lesson;
