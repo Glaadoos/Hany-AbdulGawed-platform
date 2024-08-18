@@ -1,27 +1,44 @@
 import Switch from '@mui/material/Switch';
-
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import { FormLabel } from '@mui/material';
+import { useState } from 'react';
 // component render a div that used to switch between accounts & codes 
 
 const SwitchDiv = ({setView}) =>{
-    const h1_accounts = document.querySelector('#accounts')
-    const h1_codes = document.querySelector('#codes')
+    const [checked, setChecked] = useState('accounts');
+    const btnCheckedColor = '#b30600'
+    const btnColor = '#d6dfef'
     const handleChange = (e) =>{
-        if(e.target.checked){
-            setView('codes');
-            h1_accounts.classList.add('not-checked')
-            h1_codes.classList.remove('not-checked')
-        }else{
-            setView('accounts')
-            h1_accounts.classList.remove('not-checked')
-            h1_codes.classList.add('not-checked')
-        }
+        setChecked(e.target.value)
+        setView(e.target.value)
     }
     return (
-        <div style={{display:'flex',flexDirection:'row'}}>
-            <h4 id='accounts'>Accounts</h4>
-            <Switch onChange={handleChange} />
-            <h4 id='codes' className='not-checked'>Codes</h4>
-        </div>
+        <FormControl>
+            <RadioGroup
+                row
+                aria-labelledby="demo-row-radio-buttons-group-label"
+                name="row-radio-buttons-group"
+            >
+                {['Accounts', 'Codes', 'Lessons'].map((ele, num) => {
+                        return(
+                            <FormControlLabel key={num} labelPlacement="top" value={ele.toLowerCase()} control={
+                                <Radio
+                                    checked={checked === ele.toLowerCase()}
+                                    sx={{
+                                        color: btnColor,
+                                        '&.Mui-checked': {
+                                            color: btnCheckedColor,
+                                        },
+                                    }}
+                                    onChange={handleChange}
+                                />} label={ele} />
+                        )
+                    })}
+            </RadioGroup>
+        </FormControl>
     );
 }
 
