@@ -1,7 +1,6 @@
 const dayjs  = require('dayjs')
 
-const accountsapi = 'https://hany-server.netlify.app/.netlify/functions/api/accounts'
-
+const accountsapi = 'https://hany-server.netlify.app/.netlify/functions/api/accounts' // check before production
 
 export const getAll= async()=>{
     let res;
@@ -97,6 +96,7 @@ export const getAvailableCodes= async(email)=>{
     const data = await res
     return(data);
 }
+
 export const updateAvailableCodes= async(branch, email, changableValue)=>{
     const bodyValue ={
         "availableCodes":{
@@ -120,4 +120,20 @@ export const updateAvailableCodes= async(branch, email, changableValue)=>{
         console.error(err, 'catch in UserAPI>updateAvailableCodes')
     }
 
+}
+
+export const updateAccount = async(id, data)=>{
+    try {
+        const res = await fetch(`${accountsapi}/${id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        console.error(error);
+    }
 }
