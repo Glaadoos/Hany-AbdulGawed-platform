@@ -35,7 +35,7 @@ const DashBoard = ({currentUser}) =>  {
     // get users & branches codes from server function
     const getData = async() =>{
         let usersData = await userApi.getAll().then(data =>{return data})
-        let branchesLessons = await getAll('algebra').then(data =>{return data[0].lessons})
+        let branchesLessons = await getAll('algebra').then(data =>{return data})
         let branchCodes =[];
         Branches.map(async(branch) => {
             let codesData = await CodeAPI.getAll(branch).then(data =>{return data})
@@ -118,6 +118,7 @@ const DashBoard = ({currentUser}) =>  {
                             : 
                             // lessons
                                 <>
+                                <h1>Don't use | Not finished yet</h1>
                                     <TableHead args={['#','Name','Order']}/>
                                     <tbody>
                                         {lessons.map((lesson, num) => {
