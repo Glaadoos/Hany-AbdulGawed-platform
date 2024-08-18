@@ -159,7 +159,7 @@ router.delete("/deleteAll", async (req, res) => {
 async function getAccount(req, res, next) {
   let account;
   try {
-    account = await Account.findOne({ id: req.params.id });
+    account = await Account.findOne({ id: req.params.id }) || await Account.findOne({ email: req.params.id });
     if (account == null) {
       return res
         .status(404)
