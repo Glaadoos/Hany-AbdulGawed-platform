@@ -16,7 +16,7 @@ import SetPayingSystem from "./components/Essential/SetPayingSystem";
 import DashBoard from "./components/Main/Admin/adminDashboard";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
-import LessonView from "./components/Main/Admin/Lesson View/lessonView";
+import LessonView from "./components/Main/Admin/Lesson-View/lessonView";
 
 function App({redirect_url}) {
   const [currentUser, setCurrentUser] = useState({
