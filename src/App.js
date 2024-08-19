@@ -16,6 +16,7 @@ import SetPayingSystem from "./components/Essential/SetPayingSystem";
 import DashBoard from "./components/Main/Admin/adminDashboard";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
+import LessonView from "./components/Main/Admin/Lesson-View/lessonView";
 
 function App({redirect_url}) {
   const [currentUser, setCurrentUser] = useState({
@@ -234,6 +235,10 @@ function App({redirect_url}) {
             currentUser={currentUser}
             />
           }
+        />
+        <Route
+          path="/admin/lessons"
+          element={<LessonView />}
         />
       </Routes>
       <Footer/>

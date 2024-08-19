@@ -1,48 +1,40 @@
-import {Table} from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import {Table} from 'react-bootstrap';
 import {useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import * as userApi from "../../../API/UesrApi";
+import * as lessonsApi from "../../../API/LessonsAPI";
 import * as CodeAPI from '../../../API/CodeAPI';
 import UserCard from './UserCard';
 import SwitchDiv from './SwitchElement';
 import LoadingScreen from '../loadingScreen'
 import {TableHead, Col} from './Tables';
-import { getAll } from '../../../API/LessonsAPI';
 
 
 
 const DashBoard = ({currentUser}) =>  {
-// state variables
     const [users, setUsers] = useState([])
     const [codes, setCodes] = useState([])
-    const [lessons, setLessons] = useState([])
+    const [lessons, setLessons]= useState([])
     const [loading, setLoading] = useState(true)
     const [view, setView] = useState('accounts')
+    const [search, setSearch] = useState('')
     const Branches =['Algebra', 'Calculus', 'Statics', 'Dynamics', 'SpatialGeomatry']
-// essential functions
-    //names sorter function 
-    const sorter = (a, b) => {
-        if(typeof a.order === 'number' && typeof b.order === 'number'){
-           return a.order - b.order;
-        }else if(typeof a.order === 'number' && typeof b.order !== 'number'){
-           return -1;
-        }else if(typeof a.order !== 'number' && typeof b.order === 'number'){
-           return 1;
-        }else{
-           return a.order > b.order ? 1 : -1;
-        }
-    }
+
     // get users & branches codes from server function
     const getData = async() =>{
+        let lessons =[]
         let usersData = await userApi.getAll().then(data =>{return data})
-        let branchesLessons = await getAll('algebra').then(data =>{return data})
         let branchCodes =[];
         Branches.map(async(branch) => {
+            let lesson= await lessonsApi.getAll(branch.toLowerCase()).then(data =>{return data})
+            lesson.sort((a, b) => a.order.replace(branch.toLowerCase(), '') - b.order.replace(branch.toLowerCase(), ''))
+            lessons.push(...lesson)
             let codesData = await CodeAPI.getAll(branch).then(data =>{return data})
             codesData.push({"branch":`${branch}`,"order":'',"codes":''})
             branchCodes.push(codesData)
         })
-        return[usersData, branchCodes, branchesLessons]
+        return[usersData, branchCodes, lessons]
     }
 // fetch date & set loading screen 
     useEffect(() =>{
@@ -55,11 +47,10 @@ const DashBoard = ({currentUser}) =>  {
         }
         Fetch();
     },[])
-
     return (
         <>
             <UserCard currentUser={currentUser} />
-            <SwitchDiv setView={setView} />
+            <SwitchDiv view={view} setView={setView} setSearch={setSearch} />
             { loading ?
                 <LoadingScreen />
             :
@@ -75,9 +66,9 @@ const DashBoard = ({currentUser}) =>  {
                                                 return(
                                                     <tr key={num}>
                                                         <Col role={'rank'} data={num+1} index={num}/>
-                                                        <Col id={user.id} role={'name'} data={user.name} index={num}/>
-                                                        <Col id={user.id} role={'email'} data={user.email} index={num}/>
-                                                        <Col id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
+                                                        <Col view={view} id={user.id} role={'name'} data={user.name} index={num}/>
+                                                        <Col view={view} id={user.id} role={'email'} data={user.email} index={num}/>
+                                                        <Col view={view} id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
                                                         <Col role={'rank'} data={user.availableCodes.length} index={num}/>
                                                     </tr>
                                                 );
@@ -90,8 +81,13 @@ const DashBoard = ({currentUser}) =>  {
                                 <>
                                     <TableHead args={['#','Branch','Order','Codes']}/>
                                     <tbody>
-                                        {codes.map(ele => ele.sort((a, b) => a.order.localeCompare(b.order))
+                                        {codes.filter(branchCodes => {
+                                            if(search.length !== 0 ) return branchCodes[4].order.toLowerCase().includes(search.toLowerCase())
+                                            else if(search.length === 0) return true
+                                            else return true
+                                        }).map(ele => ele.sort((a, b) => a.order.localeCompare(b.order))
                                         .map((code, num) => {
+                                            // console.log(code)
                                             return(
                                                 <tr key={num}>
                                                     <Col role={'rank'} data={num+1} index={num}/>
@@ -118,16 +114,22 @@ const DashBoard = ({currentUser}) =>  {
                             : 
                             // lessons
                                 <>
-                                <h1>Don't use | Not finished yet</h1>
-                                    <TableHead args={['#','Name','Order']}/>
+                                    <TableHead args={['#','Branch','Name','Order', 'Parts']}/>
                                     <tbody>
-                                        {lessons.map((lesson, num) => {
+                                        {lessons.filter(lesson => {
+                                            if(search.length !== 0 ) return lesson.order.toLowerCase().includes(search.toLowerCase())
+                                            else if(search.length === 0) return true
+                                            else return true
+                                        })
+                                        .map((lesson, num) => {
                                             return(
                                                 <tr key={num}>
                                                     <Col role={'rank'} data={num+1} index={num}/>
-                                                    <Col role={'name'} data={lesson.name} index={num}/>
-                                                    <Col role={'order'} data={lesson.order} index={num}/>
-                                                    
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'branch'} data={lesson.branch} index={num}/>
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'name'} data={lesson.name} index={num}/>
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'order'} data={lesson.order} index={num}/>
+                                                    <Col role={'rank'} view={view} id={[lesson.order, lesson.branch]} data={lesson.parts.length} index={num}/>
+                                                    <Link to={`/admin/lessons?order=${lesson.order}&branch=${lesson.branch}`}><button variant="contained">View</button></Link>
                                                 </tr>
                                             );
                                         })}

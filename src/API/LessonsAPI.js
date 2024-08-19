@@ -1,4 +1,4 @@
-const lessonsApi = 'https://hany-server.netlify.app/.netlify/functions/api/lessons'
+const lessonsApi = 'http://localhost:8888/.netlify/functions/api/lessons'
 
 export const getAll= async(branch)=>{
     let res;

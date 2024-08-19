@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { updateAccount } from "../../../API/UesrApi";
+import { updateSpecific } from "../../../API/LessonsAPI";
 
 // component for handleing the edit box, will be in next deploy
 
-export const Ui = ({id, editView, setEditView, role}) =>{
+export const Ui = ({view, id, editView, setEditView, role}) =>{
     
     const [input, setInput] = useState('');
 
@@ -17,13 +18,22 @@ export const Ui = ({id, editView, setEditView, role}) =>{
     }
     const handleSubmit = async(e) =>{
         if(input){
-            console.log(e.target.dataset.role);
-            if(await updateAccount(id, {
-                [e.target.dataset.role]: input
-            })){
-                setEditView(false);
-                setInput('');
-                window.location.reload()
+            if(view === 'accounts'){
+                    if(await updateAccount(id, {
+                        [e.target.dataset.role]: input
+                    })){
+                        setEditView(false);
+                        setInput('');
+                        window.location.reload()
+                    }
+            }
+            if(view === 'lessons'){
+                if(await updateSpecific(id[1], id[0],
+                    {[e.target.dataset.role]: input})){
+                        setEditView(false);
+                        setInput('');
+                        window.location.reload()
+                    }
             }else{
                 alert('something went wrong')
                 setEditView(false);
