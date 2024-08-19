@@ -7,7 +7,7 @@ import UserCard from './UserCard';
 import SwitchDiv from './SwitchElement';
 import LoadingScreen from '../loadingScreen'
 import {TableHead, Col} from './Tables';
-import { getAll } from '../../../API/LessonsAPI';
+import { useLessonsAPI } from '../../../hooks/useLessonsAPI';
 
 
 
@@ -15,9 +15,9 @@ const DashBoard = ({currentUser}) =>  {
 // state variables
     const [users, setUsers] = useState([])
     const [codes, setCodes] = useState([])
-    const [lessons, setLessons] = useState([])
+    const lessons= useLessonsAPI('algebra')
     const [loading, setLoading] = useState(true)
-    const [view, setView] = useState('accounts')
+    const [view, setView] = useState('lessons')
     const Branches =['Algebra', 'Calculus', 'Statics', 'Dynamics', 'SpatialGeomatry']
 // essential functions
     //names sorter function 
@@ -35,22 +35,21 @@ const DashBoard = ({currentUser}) =>  {
     // get users & branches codes from server function
     const getData = async() =>{
         let usersData = await userApi.getAll().then(data =>{return data})
-        let branchesLessons = await getAll('algebra').then(data =>{return data})
         let branchCodes =[];
         Branches.map(async(branch) => {
             let codesData = await CodeAPI.getAll(branch).then(data =>{return data})
             codesData.push({"branch":`${branch}`,"order":'',"codes":''})
             branchCodes.push(codesData)
         })
-        return[usersData, branchCodes, branchesLessons]
+        return[usersData, branchCodes]
     }
 // fetch date & set loading screen 
     useEffect(() =>{
+        
         const Fetch = async()=>{
             let data = await getData().then(data =>{return data});
             setUsers(data[0]);
             setCodes(data[1]);
-            setLessons(data[2]);
             setLoading(false)
         }
         Fetch();
@@ -75,9 +74,9 @@ const DashBoard = ({currentUser}) =>  {
                                                 return(
                                                     <tr key={num}>
                                                         <Col role={'rank'} data={num+1} index={num}/>
-                                                        <Col id={user.id} role={'name'} data={user.name} index={num}/>
-                                                        <Col id={user.id} role={'email'} data={user.email} index={num}/>
-                                                        <Col id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
+                                                        <Col view={view} id={user.id} role={'name'} data={user.name} index={num}/>
+                                                        <Col view={view} id={user.id} role={'email'} data={user.email} index={num}/>
+                                                        <Col view={view} id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
                                                         <Col role={'rank'} data={user.availableCodes.length} index={num}/>
                                                     </tr>
                                                 );
@@ -118,16 +117,15 @@ const DashBoard = ({currentUser}) =>  {
                             : 
                             // lessons
                                 <>
-                                <h1>Don't use | Not finished yet</h1>
-                                    <TableHead args={['#','Name','Order']}/>
+                                    <TableHead args={['#','Branch','Name','Order']}/>
                                     <tbody>
                                         {lessons.map((lesson, num) => {
                                             return(
                                                 <tr key={num}>
                                                     <Col role={'rank'} data={num+1} index={num}/>
-                                                    <Col role={'name'} data={lesson.name} index={num}/>
-                                                    <Col role={'order'} data={lesson.order} index={num}/>
-                                                    
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'branch'} data={lesson.branch} index={num}/>
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'name'} data={lesson.name} index={num}/>
+                                                    <Col view={view} id={[lesson.order, lesson.branch]} role={'order'} data={lesson.order} index={num}/>
                                                 </tr>
                                             );
                                         })}

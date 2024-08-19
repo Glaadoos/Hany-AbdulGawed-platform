@@ -22,7 +22,7 @@ export const TableHead = ({args}) =>{
     data => the data will be show in column
     index => special key for object returned
 */
-export const Col = ({id, role ,data, index}) =>{
+export const Col = ({view, id, role ,data, index}) =>{
     // Hide The Codes State
     const [hidden, setHidden] = useState(true);
     // Show Edit btn State
@@ -70,7 +70,7 @@ export const Col = ({id, role ,data, index}) =>{
                 {tools && role!== 'rank' ? 
                     <h5 className={!editView ?  'editable' : 'editable flex-col'} >
                         {data}
-                        <Ui id={id} editView={editView} setEditView={setEditView} role={role} />
+                        <Ui view={view} id={id} editView={editView} setEditView={setEditView} role={role} />
                     </h5>
                     :   <h5>{data}</h5>
                 }
