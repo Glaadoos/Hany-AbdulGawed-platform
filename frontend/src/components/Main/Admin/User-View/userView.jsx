@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { useSearchParams } from "react-router-dom";
 import { getSpecific } from "../../../../API/UesrApi";
+import './user-view.css';
+import NormalUserView from "./normalUserView";
+import EditUser from "./editUser";
 
 
 export default function UserView() {
@@ -19,15 +22,15 @@ export default function UserView() {
         getUser()
     }, [searchParams])
 
+    const handleEdit = () => {
+        setEdit(!edit)
+    }
+
     return (
         <div className="user-view">
-            <div>{user.id}</div>
-            <div>{user.email}</div>
-            <div>{user.name}</div>
-            <div>{user.payingSystem}</div>
-            <div>{user.admin}</div>
-            <div>{user.admin}</div>
-            <div>{codes.map((item) => <div>{item.branch}: {item.code}: {item.order}: {item.date}</div>)}</div>
+            {
+                edit ? <EditUser user={user} codes={codes} handleEdit={handleEdit} /> : <NormalUserView user={user} codes={codes} handleEdit={handleEdit} />
+            }
         </div>
     )
 }
