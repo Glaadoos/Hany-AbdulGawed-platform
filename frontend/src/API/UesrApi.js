@@ -122,6 +122,22 @@ export const updateAvailableCodes= async(branch, email, changableValue)=>{
 
 }
 
+export const updateCodes = async(id, branch, order, data)=>{
+    try {
+        const res = await fetch(`${accountsapi}/${id}/${branch}/${order}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json",
+            },
+            body: JSON.stringify(data),
+        });
+        const json = await res.json();
+        return json;
+    } catch (error) {
+        console.error(error);
+    }
+}
+
 export const updateAccount = async(id, data)=>{
     try {
         const res = await fetch(`${accountsapi}/${id}`, {

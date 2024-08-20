@@ -70,6 +70,7 @@ const DashBoard = ({currentUser}) =>  {
                                                         <Col view={view} id={user.id} role={'email'} data={user.email} index={num}/>
                                                         <Col view={view} id={user.id} role={'payingSystem'} data={user.payingSystem} index={num}/>
                                                         <Col role={'rank'} data={user.availableCodes.length} index={num}/>
+                                                        <Link to={`/admin/user?id=${encodeURIComponent(user.email)}`}><button variant="contained">View</button></Link>
                                                     </tr>
                                                 );
                                             })}

@@ -129,6 +129,27 @@ router.patch("/:id", getAccount, async (req, res) => {
   }
 });
 
+//Updating account codes
+router.patch("/:id/:branch/:order", getAccount, async (req, res) => {
+  const id = req.params.id
+  const branch = req.params.branch
+  const order = req.params.order
+  try {
+    const account = await Account.findOne({ id: id })
+    let newCodes = account.availableCodes.filter(code => code.branch !== branch || code.order !== order)
+    const code = account.availableCodes.filter(code => code.branch === branch && code.order === order)[0]
+
+    code.date = req.body.date
+    newCodes.push(code)
+    account.availableCodes = newCodes
+
+    await account.updateOne({ availableCodes: newCodes })
+    res.status(200).send({ message: 'code updated' })
+  } catch (error) {
+    res.status(500).json({ message: error.message });
+  }
+})
+
 //Deleting one account
 router.delete("/delete", async (req, res) => {
   console.log(req.apiGateway.event.rawUrl)

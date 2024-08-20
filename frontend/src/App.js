@@ -17,6 +17,7 @@ import DashBoard from "./components/Main/Admin/adminDashboard";
 import * as Api from "./API/UesrApi";
 import { useAuth0 } from "@auth0/auth0-react";
 import LessonView from "./components/Main/Admin/Lesson-View/lessonView";
+import UserView from "./components/Main/Admin/User-View/userView";
 
 function App({redirect_url}) {
   const [currentUser, setCurrentUser] = useState({
@@ -239,6 +240,10 @@ function App({redirect_url}) {
         <Route
           path="/admin/lessons"
           element={<LessonView />}
+        />
+        <Route
+          path="/admin/user"
+          element={<UserView />}
         />
       </Routes>
       <Footer/>
