@@ -1,16 +1,17 @@
-### Backend Repository: Hany-backend-server
+### Educational website using React.js & Express.js
 
+## Frontend Repository: Hany-AbdulGawed-platform
 ## Description:
-> The Hany-backend-server repository provides the backend infrastructure for the educational platform dedicated to streaming math lessons. Using Express.js and MongoDB, this repository manages server-side operations, including user authentication, lesson data storage, and streaming services. The backend ensures a secure and efficient environment for delivering educational content to students.
+> The Hany-AbdulGawed platform repository contains the frontend components and logic for an educational platform dedicated to streaming math lessons. Built with React.js, this repository focuses on creating an engaging and user-friendly interface that allows students to access live and recorded math lessons seamlessly. The platform aims to enhance the learning experience with interactive features and intuitive navigation.
 
 ## Key Features:
 
-- Express.js Framework: Implements a RESTful API server using Express for routing and middleware.
-- MongoDB Database: Utilizes MongoDB for efficient data storage and retrieval, handling user information and lesson content.
-- Model-View-Controller (MVC) Architecture: Organizes code into models, routes, and controllers for clarity and maintainability.
-- Authentication and Authorization: Ensures secure access to the platform with user authentication and authorization mechanisms, such as JWT tokens.
-- Streaming Support: Facilitates live and recorded lesson streaming, ensuring smooth and reliable video delivery.
-- Error Handling and Middleware: Includes middleware for request validation, logging, and error handling to maintain robust server operations.
+- React.js Framework: Utilizes React for building dynamic and responsive user interfaces.
+- Component-Based Architecture: Organizes UI elements into reusable components for modular and maintainable code.
+- State Management: Manages application state effectively using React hooks like useState and useEffect.
+- Responsive Design: Ensures a consistent and accessible experience across various devices and screen sizes.
+- API Integration: Communicates with the backend server to fetch lesson data, stream videos, and handle user interactions.
+- Styling: Applies CSS or CSS-in-JS libraries to maintain a cohesive and modern design throughout the platform.
 
 ## Purpose:
-> The backend repository aims to provide a secure, scalable, and efficient server-side solution for the educational platform, supporting the delivery of high-quality math lessons and ensuring seamless interaction between the frontend and backend components.
+> The frontend repository aims to deliver an intuitive and interactive user interface for students to access math lessons, participate in live streams, and engage with educational content, making the learning process more effective and enjoyable.

@@ -1,0 +1,31 @@
+div.lesson-view{
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    font-family: "El Messiri", sans-serif;
+}
+
+ul.parts{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    font-family: "El Messiri", sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+li.part-link{
+    font-family: "Ubuntu Sans Mono", monospace;
+}
+div.lesson-view>form{
+    width:70%;
+    display: flex;
+    padding: 20px 40px;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+}
+div.lesson-view>form>input{
+    width: 80%;
+}

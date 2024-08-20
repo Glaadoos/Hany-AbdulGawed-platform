@@ -1,7 +1,7 @@
-# Local Netlify folder
-.netlify
-.env
 
-node_modules
-/account.rest
-/code.rest
+# dependencies
+/node_modules
+/Essential
+.firebase
+build
+/.env
