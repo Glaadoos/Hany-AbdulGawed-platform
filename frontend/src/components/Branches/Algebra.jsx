@@ -310,45 +310,49 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
                                             <img className="arrow-div" src={arrowUp} alt="arrow-up"/>
                                         </div>
                                     </div>
-                                    {/* <ul key={'lesson-parts'+num} className='lesson-parts'>
-                                        {lesson.parts.map((part,num)=>{
-                                            if(part.lessonName.search('مسائل الملزمة') !== -1){
-                                                return(
-                                                    <li key={'partObject'+num}>
-                                                        <ul className='lesson-part'>
-                                                            <li key={'partName'+num}>
-                                                                {part.lessonName}
-                                                            </li>
-                                                            <li key={'partLink'+num}>
-                                                                <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
-                                                            </li>
-                                                        </ul>
-                                                    </li>
-                                                )
-                                            }
-                                            
-                                        })}
-                                        
-                                        {
-                                            lesson.exam.map(Exam =>{
-                                                return(
-                                                    Exam.link ?
-                                                        <li key={'examObject'+num}>
+                                    {
+                                        lesson.order.search('revision') === -1 &&
+                                        <ul key={'lesson-parts'+num} className='lesson-parts'>
+                                            {lesson.parts.map((part,num)=>{
+                                                if(part.lessonName.search('مسائل الملزمة') !== -1){
+                                                    return(
+                                                        <li key={'partObject'+num}>
                                                             <ul className='lesson-part'>
-                                                                <li key={'examName'+num}>
-                                                                    {Exam.name }
+                                                                <li key={'partName'+num}>
+                                                                    {part.lessonName}
                                                                 </li>
-                                                                <li key={'examLink'+num}>
-                                                                    <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={Exam.link}>الاختبار</a>
+                                                                <li key={'partLink'+num}>
+                                                                    <a target='_blank' rel="noreferrer"  style={{textDecoration: 'none'}} href={part.link}>القائمة</a>
                                                                 </li>
                                                             </ul>
-                                                        </li>     
-                                                        :
-                                                        ''
-                                                )
-                                            })
-                                        }
-                                    </ul> */}
+                                                        </li>
+                                                    )
+                                                }
+                                                
+                                            })}
+                                            
+                                            {
+                                                lesson.exams.map(Exam =>{
+                                                    return(
+                                                        Exam.link ?
+                                                            <li key={'examObject'+num}>
+                                                                <ul className='lesson-part'>
+                                                                    <li key={'examName'+num}>
+                                                                        {Exam.name }
+                                                                    </li>
+                                                                    <li key={'examLink'+num}>
+                                                                        <a target='_blank' rel="noreferrer" style={{textDecoration: 'none'}} href={Exam.link}>الاختبار</a>
+                                                                    </li>
+                                                                </ul>
+                                                            </li>     
+                                                            :
+                                                            ''
+                                                    )
+                                                })
+                                            }
+                                        </ul>
+                                    }
+                                    
                                 </Fragment>
                             )
                         }
