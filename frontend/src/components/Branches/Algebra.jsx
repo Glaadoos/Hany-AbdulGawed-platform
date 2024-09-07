@@ -94,7 +94,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         return [`${d} days`, `${pad(h)} hours`, `${pad(m)} minutes`].join(', ');
     }
     const handleDateChange = (userCodes, order) => {
-        
         if(userCodes.filter(obj => obj.order === order)[0].date !== 'Open'){
             let date = dayjs(userCodes.filter(obj => obj.order === order)[0].date);
             let dataOfClose = dayjs(date.add(hours, 'h')) ;
@@ -103,7 +102,6 @@ const Algebra = ({setVideoId, user, userPayingSystem, userCodes}) =>{
         }else{
             return['Open', 'Open']
         }
-            
     }
     
     if(user === null){
