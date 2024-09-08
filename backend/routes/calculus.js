@@ -135,4 +135,19 @@ router.delete("/", async (req, res) => {
   }
 });
 
+// delete all
+router.delete("/deleteAll", async (req, res) => {
+  try {
+    await Code.deleteMany();  
+    return res
+      .status(201)
+      .json({
+        message: "All codes deleted"
+      });
+  } catch (err) {
+    console.log(err.message);
+    res.status(400).json({ message: err.message });
+  }
+});
+
 module.exports = router;
